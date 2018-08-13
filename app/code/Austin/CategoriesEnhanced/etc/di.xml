@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Theme\Block\Html\Topmenu" type="Austin\CategoriesEnhanced\Block\Html\Topmenu" />
+    <type name="Magento\Theme\Block\Html\Topmenu">
+        <plugin name="austin.categories.enhanced.catalog.top.menu" type="Austin\CategoriesEnhanced\Plugin\Block\Topmenu"/>
+    </type>
+</config>
