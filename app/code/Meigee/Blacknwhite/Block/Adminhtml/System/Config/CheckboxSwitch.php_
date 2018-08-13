@@ -1,0 +1,76 @@
+<?php
+
+namespace Meigee\Blacknwhite\Block\Adminhtml\System\Config;
+use Magento\Framework\Data\Form\Element\AbstractElement;
+
+abstract class CheckboxSwitch extends \Magento\Config\Block\System\Config\Form\Field
+{
+    protected function _getElementHtml(AbstractElement $element)
+    {
+        $element->setChecked((bool)$element->getValue());
+        $element->addClass('onoffswitch-checkbox');
+        return '
+<style>
+    body .onoffswitch {
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    body .onoffswitch-checkbox {
+        display: none!important;
+    }
+    body .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 20px;
+    }
+    body .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    body .onoffswitch-inner .label-on, 
+    body .onoffswitch-inner .label-off {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    body .onoffswitch-inner .label-on {
+/*        content: "ON"; */
+        padding-left: 10px;
+        background-color: #34A7C1; color: #FFFFFF;
+    }
+    body .onoffswitch-inner .label-off {
+/*        content: "OFF";   */
+        padding-right: 10px;
+        background-color: #EEEEEE; color: #999999;
+        text-align: right;
+    }
+    body .onoffswitch-switch {
+        display: block; width: 18px; margin: 6px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 56px;
+        border: 2px solid #999999; border-radius: 20px;
+        transition: all 0.3s ease-in 0s;
+    }
+    body .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    body .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+    }
+</style>
+                <div class="onoffswitch">
+                    '.$element->getElementHtml().'
+                    <label class="onoffswitch-label" for="'.$element->getId().'">
+                        <span class="onoffswitch-inner">
+							<span class="label-on">'.$this->getOnLabel().'</span>
+							<span class="label-off">'.$this->getOffLabel().'</span>
+						</span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>';
+    }
+
+    abstract function getOnLabel();
+    abstract function getOffLabel();
+
+}

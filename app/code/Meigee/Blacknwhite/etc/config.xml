@@ -1,0 +1,1430 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Core/etc/config.xsd">
+    <default>
+      <blacknwhite_general>
+	        <blacknwhite_layout>
+	          <site_layout>boxed-layout</site_layout>
+	          <container_width>1372</container_width>
+	        </blacknwhite_layout>
+	        <blacknwhite_header>
+	          <header_layout>header-1</header_layout>
+	          <sticky_header>1</sticky_header>
+	          <sticky_header_opacity>100</sticky_header_opacity>
+	          <!-- <sticky_header_btn>0</sticky_header_btn> -->
+	          <sticky_header_tablet>sticky-tablet</sticky_header_tablet>
+	          <sticky_header_logo>1</sticky_header_logo>
+	          <sticky_header_nav>1</sticky_header_nav>
+	          <sticky_header_cart>1</sticky_header_cart>
+	          <sticky_header_search>0</sticky_header_search>
+	        </blacknwhite_header>
+	        <blacknwhite_footer>
+	          <custom_footer>1</custom_footer>
+	          <custom_footer_block>blacknwhite_footer</custom_footer_block>
+	        </blacknwhite_footer>
+	        <blacknwhite_logo>
+	          <custom_logo_status>0</custom_logo_status>
+	          <custom_logo_image></custom_logo_image>
+	          <custom_logo_alt></custom_logo_alt>
+	          <small_logo_status>0</small_logo_status>
+	          <small_logo_image></small_logo_image>
+	        </blacknwhite_logo>
+				<blacknwhite_topcart>
+					<icon>1</icon>
+					<text>1</text>
+					<counter>1</counter>
+				</blacknwhite_topcart>
+				<blacknwhite_toplinks>
+					<!-- <toplinks_type>0</toplinks_type> -->
+					<!-- <toplinks_account>1</toplinks_account> -->
+					<toplinks_compare>0</toplinks_compare>
+					<toplinks_wishlist>0</toplinks_wishlist>
+					<toplinks_register>0</toplinks_register>
+					<toplinks_login>0</toplinks_login>
+					<!-- <toplinks_cart>1</toplinks_cart>
+					<toplinks_checkout>1</toplinks_checkout> -->
+				</blacknwhite_toplinks>
+				<blacknwhite_product_listing>
+					<grid_columns>three-columns</grid_columns>
+					<product_name>1</product_name>
+					<rating_stars>1</rating_stars>
+					<rating_cust_link>1</rating_cust_link>
+					<review_link>1</review_link>
+					<product_price>1</product_price>
+					<cart_btn>1</cart_btn>
+					<compare_btn>1</compare_btn>
+					<quickview_btn>1</quickview_btn>
+					<wishlist_btn>1</wishlist_btn>
+					<mailtofriend_btn>1</mailtofriend_btn>
+					<!-- <moreviews_btn>1</moreviews_btn> -->
+					<hide_sidebar_btn>1</hide_sidebar_btn>
+					<hide_sidebar>0</hide_sidebar>
+					<product_name_aligment>text-left</product_name_aligment>
+					<layer_accordion>1</layer_accordion>
+				</blacknwhite_product_listing>
+				<blacknwhite_lang_switcher>
+					<lang_switcher_status>language_flags</lang_switcher_status>
+					<lang_switcher_label>0</lang_switcher_label>
+				</blacknwhite_lang_switcher>
+				<blacknwhite_currency_switcher>
+					<currency_switcher_status>currency_images</currency_switcher_status>
+					<currency_switcher_label>0</currency_switcher_label>
+				</blacknwhite_currency_switcher>
+				<blacknwhite_labels>
+					<label_new>1</label_new>
+					<label_sale>1</label_sale>
+					<label_only_left>1</label_only_left>
+					<label_type>label-type-2</label_type>
+				</blacknwhite_labels>
+				<blacknwhite_countdown>
+					<timer_status>1</timer_status>
+					<timer_listing_status>1</timer_listing_status>
+					<timer_listing_display>1</timer_listing_display>
+					<timer_product_status>1</timer_product_status>
+					<timer_product_display>1</timer_product_display>
+				</blacknwhite_countdown>
+				<blacknwhite_lightbox>
+					<lightbox_status>1</lightbox_status>
+					<lightbox_home>0</lightbox_home>
+					<lightbox_listing>0</lightbox_listing>
+					<lightbox_product>1</lightbox_product>
+				</blacknwhite_lightbox>
+				<blacknwhite_image_hover>
+					<image_hover_status>1</image_hover_status>
+					<image_hover_type>0</image_hover_type>
+				</blacknwhite_image_hover>
+				<blacknwhite_contactmap>
+					<contactmap_status>1</contactmap_status>
+					<contactmap_latitude>40.69370</contactmap_latitude>
+					<contactmap_longitude>-73.94738</contactmap_longitude>
+					<contactmap_zoom>15</contactmap_zoom>
+					<contactmap_type>ROADMAP</contactmap_type>
+					<contactmap_marker>1</contactmap_marker>
+					<contactmap_marker_title>Brooklyn, NY, United States</contactmap_marker_title>
+					<contactmap_block_status>1</contactmap_block_status>
+					<contactmap_block_static>blacknwhite_contact_map_block</contactmap_block_static>
+					<contactmap_block_width>260</contactmap_block_width>
+					<contactmap_block_height>129</contactmap_block_height>
+					<contactmap_block_position>right-bottom</contactmap_block_position>
+				</blacknwhite_contactmap>
+				<blacknwhite_popup_content>
+					<status>1</status>
+					<static>blacknwhite_popup_content</static>
+					<expires>30</expires>
+					<onlyhome>0</onlyhome>
+					<width>828</width>
+					<height>389</height>
+					<mobile>1</mobile>
+					<tablet>1</tablet>
+				</blacknwhite_popup_content>
+				<blacknwhite_facebook_block>
+					<status>0</status>
+					<url>https://www.facebook.com/meigeeteam</url>
+					<height>340</height>
+					<faces>1</faces>
+					<smallheader>0</smallheader>
+					<posts>1</posts>
+					<cover>0</cover>
+					<adaptive_width>1</adaptive_width>
+				</blacknwhite_facebook_block>
+      </blacknwhite_general>
+
+        <blacknwhite_theme_design>
+	      	<base_colors>
+				<general_site_bg>#fff</general_site_bg>
+				<general_main_color>#FF1341</general_main_color>
+				<general_second_color>#F8BA75</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#fff</menu_block_bg>
+				<menu_block_border>#eee</menu_block_border>
+				<menu_link_color>#222; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #222; #222; #222</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#222; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>#fff; #222; #222; #222</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#F8BA75; #FF1341; #FF1341; #FF1341</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#ddd</header_search_switchers_border>
+				<header_search_input_border>#efefef</header_search_input_border>
+				<header_search_button_bg>#fff; #fff; #fff; #fff</header_search_button_bg>
+				<header_search_button_color>#aaa; #aaa; #aaa; #aaa</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#fff</header_slider_title_2>
+				<header_slider_title_3>#F8BA75</header_slider_title_3>
+				<header_slider_title_4>#FF1341</header_slider_title_4>
+				<header_slider_arrows_bg>#222; #FF1341; #FF1341; #FF1341</header_slider_arrows_bg>
+				<header_slider_arrows_color>#fff; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#FF1341; #222; #222; #222</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#888</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#fff; #eee; #eee; #eee</content_toolar_select_bg>
+				<content_toolar_select_border>#dfdfdf; #eee; #eee; #eee</content_toolar_select_border>
+				<content_toolar_select_color>#222; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#eee; #FF1341; #FF1341; #FF1341</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#aaa; #fff; #fff; #fff</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #FF1341; #FF1341; #FF1341</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#fff; #eee; #eee; #eee</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#ddd; #ddd; #ddd; #ddd</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#888; #888; #888; #888</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #fff; #222; #222</content_pager_btns_bg>
+				<content_pager_btns_border>#fff; #ddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #fff; #fff</content_pager_btns_color>
+				<content_home_banners_title_color>#222</content_home_banners_title_color>
+				<content_home_banners_title2_color>#004EB2</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.8)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#fff; #FF1341; #FF1341; #FF1341</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#222; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>#fff</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#FF1341</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,.5)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#fff; #FF1341; #FF1341; #FF1341</not_found_btn_border>
+				<not_found_btn_color>#fff; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>rgba(255,255,255,0); #FF1341; #FF1341; #FF1341</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #FF1341; #FF1341; #FF1341</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #FF1341; #FF1341; #FF1341</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#fff; #FF1341; #FF1341; #FF1341</buttons_type1_bg>
+				<buttons_type1_border>#eee; #FF1341; #FF1341; #FF1341</buttons_type1_border>
+				<buttons_type1_color>#aaa; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#222; #FF1341; #FF1341; #FF1341</buttons_type2_bg>
+				<buttons_type2_border>#222; #FF1341; #FF1341; #FF1341</buttons_type2_border>
+				<buttons_type2_color>#fff; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#FF1341; #fff; #fff; #fff</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#FF1341; #eee; #eee; #eee</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #aaa; #aaa; #aaa</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#F8BA75; #F8BA75; #F8BA75; #F8BA75</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#E0AE77; #F8BA75; #F8BA75; #F8BA75</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>#fff</products_border>
+				<products_title_color>#222; #FF1341; #FF1341; #FF1341</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#F8BA75; #FF1341; #FF1341; #FF1341</products_link_color>
+				<products_price_color>#FF1341</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#FF1341</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#FF1341</products_labels_sale_bg>
+				<products_labels_sale_color>#fff</products_labels_sale_color>
+				<products_labels_new_bg>#F8BA75</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#111; #FF1341; #FF1341; #FF1341</social_links_bg>
+				<social_links_border>#111; #FF1341; #FF1341; #FF1341</social_links_border>
+				<social_links_color>#888; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#222</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#666</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2b2b2b; #2b2b2b; #2b2b2b</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #FF1341; #FF1341; #FF1341</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design>
+
+		<blacknwhite_theme_design_blue>
+	      	<base_colors>
+				<general_site_bg>#fff</general_site_bg>
+				<general_main_color>#1565c0</general_main_color>
+				<general_second_color>#4db6ac</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#222</menu_block_bg>
+				<menu_block_border>#222</menu_block_border>
+				<menu_link_color>#fff; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); rgba(255,255,255,0.1); rgba(255,255,255,0.1); rgba(255,255,255,0.1)</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#fff; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>#222; rgba(255,255,255,0.1); rgba(255,255,255,0.1); rgba(255,255,255,0.1)</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#4db6ac; #1565c0; #1565c0; #1565c0</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#ddd</header_search_switchers_border>
+				<header_search_input_border>#efefef</header_search_input_border>
+				<header_search_button_bg>#fff; #fff; #fff; #fff</header_search_button_bg>
+				<header_search_button_color>#aaa; #aaa; #aaa; #aaa</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#fff</header_slider_title_2>
+				<header_slider_title_3>#4db6ac</header_slider_title_3>
+				<header_slider_title_4>#1565c0</header_slider_title_4>
+				<header_slider_arrows_bg>#222; #1565c0; #1565c0; #1565c0</header_slider_arrows_bg>
+				<header_slider_arrows_color>#fff; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#1565c0; #222; #222; #222</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#888</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#fff; #eee; #eee; #eee</content_toolar_select_bg>
+				<content_toolar_select_border>#dfdfdf; #eee; #eee; #eee</content_toolar_select_border>
+				<content_toolar_select_color>#222; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#eee; #1565c0; #1565c0; #1565c0</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#aaa; #fff; #fff; #fff</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #1565c0; #1565c0; #1565c0</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#fff; #eee; #eee; #eee</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#ddd; #ddd; #ddd; #ddd</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#888; #888; #888; #888</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #fff; #222; #222</content_pager_btns_bg>
+				<content_pager_btns_border>#fff; #ddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #fff; #fff</content_pager_btns_color>
+				<content_home_banners_title_color>#222</content_home_banners_title_color>
+				<content_home_banners_title2_color>#004EB2</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.8)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#fff; #1565c0; #1565c0; #1565c0</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#222; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>#fff</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#1565c0</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,.5)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#fff; #1565c0; #1565c0; #1565c0</not_found_btn_border>
+				<not_found_btn_color>#fff; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>rgba(255,255,255,0); #1565c0; #1565c0; #1565c0</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #1565c0; #1565c0; #1565c0</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #1565c0; #1565c0; #1565c0</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#fff; #1565c0; #1565c0; #1565c0</buttons_type1_bg>
+				<buttons_type1_border>#eee; #1565c0; #1565c0; #1565c0</buttons_type1_border>
+				<buttons_type1_color>#aaa; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#222; #1565c0; #1565c0; #1565c0</buttons_type2_bg>
+				<buttons_type2_border>#222; #1565c0; #1565c0; #1565c0</buttons_type2_border>
+				<buttons_type2_color>#fff; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#1565c0; #fff; #fff; #fff</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#1565c0; #eee; #eee; #eee</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #aaa; #aaa; #aaa</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#4db6ac; #4db6ac; #4db6ac; #4db6ac</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#E0AE77; #4db6ac; #4db6ac; #4db6ac</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>#fff</products_border>
+				<products_title_color>#222; #1565c0; #1565c0; #1565c0</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#4db6ac; #1565c0; #1565c0; #1565c0</products_link_color>
+				<products_price_color>#1565c0</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#1565c0</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#1565c0</products_labels_sale_bg>
+				<products_labels_sale_color>#fff</products_labels_sale_color>
+				<products_labels_new_bg>#4db6ac</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#111; #1565c0; #1565c0; #1565c0</social_links_bg>
+				<social_links_border>#111; #1565c0; #1565c0; #1565c0</social_links_border>
+				<social_links_color>#888; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#222</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#666</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2b2b2b; #2b2b2b; #2b2b2b</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #1565c0; #1565c0; #1565c0</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_blue>
+
+        <blacknwhite_theme_design_blue2>
+	      	<base_colors>
+				<general_site_bg>#fff</general_site_bg>
+				<general_main_color>#1976d3</general_main_color>
+				<general_second_color>#ffc107</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#1976d3</menu_block_bg>
+				<menu_block_border>#1976d3</menu_block_border>
+				<menu_link_color>#fff; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #222; #222; #222</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#fff; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>#1976d3; #222; #222; #222</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#fff</header_text>
+				<header_link>#fff; #ffc107; #ffc107; #ffc107</header_link>
+				<header_bg>#1665c1</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#ddd</header_search_switchers_border>
+				<header_search_input_border>#efefef</header_search_input_border>
+				<header_search_button_bg>#fff; #fff; #fff; #fff</header_search_button_bg>
+				<header_search_button_color>#aaa; #aaa; #aaa; #aaa</header_search_button_color>
+				<header_account_link_color>#fff; #fff; #fff; #fff</header_account_link_color>
+				<header_account_link_bg>rgba(0,0,0,0); rgba(255,255,255,0.1); rgba(255,255,255,0.1); rgba(255,255,255,0.1)</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#fff</header_slider_title_2>
+				<header_slider_title_3>#ffc107</header_slider_title_3>
+				<header_slider_title_4>#1976d3</header_slider_title_4>
+				<header_slider_arrows_bg>#222; #1976d3; #1976d3; #1976d3</header_slider_arrows_bg>
+				<header_slider_arrows_color>#fff; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#1976d3; #222; #222; #222</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#888</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#fff; #eee; #eee; #eee</content_toolar_select_bg>
+				<content_toolar_select_border>#dfdfdf; #eee; #eee; #eee</content_toolar_select_border>
+				<content_toolar_select_color>#222; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#eee; #1976d3; #1976d3; #1976d3</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#aaa; #fff; #fff; #fff</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #1976d3; #1976d3; #1976d3</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#fff; #eee; #eee; #eee</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#ddd; #ddd; #ddd; #ddd</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#888; #888; #888; #888</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #fff; #222; #222</content_pager_btns_bg>
+				<content_pager_btns_border>#fff; #ddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #fff; #fff</content_pager_btns_color>
+				<content_home_banners_title_color>#222</content_home_banners_title_color>
+				<content_home_banners_title2_color>#004EB2</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.8)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#fff; #1976d3; #1976d3; #1976d3</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#222; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>#fff</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#1976d3</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,.5)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#fff; #1976d3; #1976d3; #1976d3</not_found_btn_border>
+				<not_found_btn_color>#fff; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>rgba(255,255,255,0); #1976d3; #1976d3; #1976d3</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #1976d3; #1976d3; #1976d3</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #1976d3; #1976d3; #1976d3</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#fff; #1976d3; #1976d3; #1976d3</buttons_type1_bg>
+				<buttons_type1_border>#eee; #1976d3; #1976d3; #1976d3</buttons_type1_border>
+				<buttons_type1_color>#aaa; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#222; #1976d3; #1976d3; #1976d3</buttons_type2_bg>
+				<buttons_type2_border>#222; #1976d3; #1976d3; #1976d3</buttons_type2_border>
+				<buttons_type2_color>#fff; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#1976d3; #fff; #fff; #fff</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#1976d3; #eee; #eee; #eee</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #aaa; #aaa; #aaa</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#ffc107; #ffc107; #ffc107; #ffc107</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#E0AE77; #ffc107; #ffc107; #ffc107</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>#fff</products_border>
+				<products_title_color>#222; #1976d3; #1976d3; #1976d3</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#ffc107; #1976d3; #1976d3; #1976d3</products_link_color>
+				<products_price_color>#1976d3</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#1976d3</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#1976d3</products_labels_sale_bg>
+				<products_labels_sale_color>#fff</products_labels_sale_color>
+				<products_labels_new_bg>#ffc107</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#111; #1976d3; #1976d3; #1976d3</social_links_bg>
+				<social_links_border>#111; #1976d3; #1976d3; #1976d3</social_links_border>
+				<social_links_color>#888; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#222</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#666</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2b2b2b; #2b2b2b; #2b2b2b</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #1976d3; #1976d3; #1976d3</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_blue2>
+		
+		<blacknwhite_theme_design_electronics>
+	      	<base_colors>
+				<general_site_bg>#eee</general_site_bg>
+				<general_main_color>#ffd800</general_main_color>
+				<general_second_color>#004eb2</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#ffd800</menu_block_bg>
+				<menu_block_border>rgba(0,0,0,0)</menu_block_border>
+				<menu_link_color>#222; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #222; #222; #222</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#222; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>rgba(0,0,0,0); #222; #222; #222</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#004eb2; #ffd800; #ffd800; #ffd800</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#ffd800</header_search_switchers_border>
+				<header_search_input_border>rgba(0,0,0,0)</header_search_input_border>
+				<header_search_button_bg>#ffd800; #004eb2; #004eb2; #004eb2</header_search_button_bg>
+				<header_search_button_color>#333333; #ffffff; #ffffff; #ffffff</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#222</header_slider_title_2>
+				<header_slider_title_3>#f8ba75</header_slider_title_3>
+				<header_slider_title_4>#004eb2</header_slider_title_4>
+				<header_slider_arrows_bg>rgba(0,0,0,0); #13a3ff; #13a3ff; #13a3ff</header_slider_arrows_bg>
+				<header_slider_arrows_color>#666; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#ffd800; #004eb2; #004eb2; #004eb2</header_slider_btn_bg>
+				<header_slider_btn_color>#333; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#222</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#f0f0f0; #f0f0f0; #f0f0f0; #f0f0f0</content_toolar_select_bg>
+				<content_toolar_select_border>#fff; #fff; #fff; #fff</content_toolar_select_border>
+				<content_toolar_select_color>#888; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#b2b2b2; #333; #333; #333</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #ccc; #ccc; #ccc</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #004eb2; #004eb2; #004eb2</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#eee; #004eb2; #004eb2; #004eb2</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#eee; #004eb2; #004eb2; #004eb2</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#aaa; #fff; #fff; #fff</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #f0f0f0; #f0f0f0; #f0f0f0</content_pager_btns_bg>
+				<content_pager_btns_border>#e5e5e5; #dddddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #222; #222</content_pager_btns_color>
+				<content_home_banners_title_color>#333333</content_home_banners_title_color>
+				<content_home_banners_title2_color>#004eb2</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.8)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#ffd800; #004eb2; #004eb2; #004eb2</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#222; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>rgba(0,0,0,0.8)</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#FFD800</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,0)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#ffd800; #004EB2; #004EB2; #004EB2</not_found_btn_border>
+				<not_found_btn_color>#222; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>#ffd800; #004EB2; #004EB2; #004EB2</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #ffd800; #ffd800; #ffd800</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #ffd800; #ffd800; #ffd800</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#ffd800; #004eb2; #004eb2; #004eb2</buttons_type1_bg>
+				<buttons_type1_border>#ffd800; #004eb2; #004eb2; #004eb2</buttons_type1_border>
+				<buttons_type1_color>#222; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#004eb2; #ffd800; #ffd800; #ffd800</buttons_type2_bg>
+				<buttons_type2_border>#004eb2; #ffd800; #ffd800; #ffd800</buttons_type2_border>
+				<buttons_type2_color>#fff; #333; #333; #333</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#4caf50; #ffd800; #ffd800; #ffd800</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#4caf50; #ffd800; #ffd800; #ffd800</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #222; #222; #222</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#f8ba75; #f8ba75; #f8ba75; #f8ba75</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#e0ae77; #f8ba75; #f8ba75; #f8ba75</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>rgba(0,0,0,0.1)</products_border>
+				<products_title_color>#222; #004eb2; #004eb2; #004eb2</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#004eb2; #ffd800; #ffd800; #ffd800</products_link_color>
+				<products_price_color>#004eb2</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#004eb2</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#004eb2</products_labels_sale_bg>
+				<products_labels_sale_color>#fff</products_labels_sale_color>
+				<products_labels_new_bg>#ffd800</products_labels_new_bg>
+				<products_labels_new_color>#222</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#fff; #ffd800; #ffd800; #ffd800</social_links_bg>
+				<social_links_border>#fff; #ffd800; #ffd800; #ffd800</social_links_border>
+				<social_links_color>#b2b2b2; #222; #222; #222</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#333</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#888</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2f2f2f; #2f2f2f; #2f2f2f</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #004eb2; #004eb2; #004eb2</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_electronics>
+
+        <blacknwhite_theme_design_electronics_green>
+	      	<base_colors>
+				<general_site_bg>#eee</general_site_bg>
+				<general_main_color>#4cb050</general_main_color>
+				<general_second_color>#004eb2</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#4cb050</menu_block_bg>
+				<menu_block_border>rgba(0,0,0,0)</menu_block_border>
+				<menu_link_color>#fff; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #222; #222; #222</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#fff; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>rgba(0,0,0,0); #222; #222; #222</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#004eb2; #4cb050; #4cb050; #4cb050</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#4cb050</header_search_switchers_border>
+				<header_search_input_border>rgba(0,0,0,0)</header_search_input_border>
+				<header_search_button_bg>#4cb050; #004eb2; #004eb2; #004eb2</header_search_button_bg>
+				<header_search_button_color>#fff; #ffffff; #ffffff; #ffffff</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#222</header_slider_title_2>
+				<header_slider_title_3>#f8ba75</header_slider_title_3>
+				<header_slider_title_4>#004eb2</header_slider_title_4>
+				<header_slider_arrows_bg>rgba(0,0,0,0); #004eb2; #004eb2; #004eb2</header_slider_arrows_bg>
+				<header_slider_arrows_color>#666; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#4cb050; #004eb2; #004eb2; #004eb2</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#222</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#f0f0f0; #f0f0f0; #f0f0f0; #f0f0f0</content_toolar_select_bg>
+				<content_toolar_select_border>#fff; #fff; #fff; #fff</content_toolar_select_border>
+				<content_toolar_select_color>#888; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#b2b2b2; #333; #333; #333</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #ccc; #ccc; #ccc</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #004eb2; #004eb2; #004eb2</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#eee; #004eb2; #004eb2; #004eb2</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#eee; #004eb2; #004eb2; #004eb2</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#aaa; #fff; #fff; #fff</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #f0f0f0; #f0f0f0; #f0f0f0</content_pager_btns_bg>
+				<content_pager_btns_border>#e5e5e5; #dddddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #222; #222</content_pager_btns_color>
+				<content_home_banners_title_color>#333333</content_home_banners_title_color>
+				<content_home_banners_title2_color>#004eb2</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.8)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#4cb050; #004eb2; #004eb2; #004eb2</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#fff; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>#fff</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#4cb050</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,0)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#4cb050; #004EB2; #004EB2; #004EB2</not_found_btn_border>
+				<not_found_btn_color>#fff; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>#4cb050; #004EB2; #004EB2; #004EB2</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #4cb050; #4cb050; #4cb050</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #4cb050; #4cb050; #4cb050</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#4cb050; #004eb2; #004eb2; #004eb2</buttons_type1_bg>
+				<buttons_type1_border>#4cb050; #004eb2; #004eb2; #004eb2</buttons_type1_border>
+				<buttons_type1_color>#fff; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#004eb2; #4cb050; #4cb050; #4cb050</buttons_type2_bg>
+				<buttons_type2_border>#004eb2; #4cb050; #4cb050; #4cb050</buttons_type2_border>
+				<buttons_type2_color>#fff; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#4caf50; #004eb2; #004eb2; #004eb2</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#4caf50; #004eb2; #004eb2; #004eb2</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #fff; #fff; #fff</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#f8ba75; #f8ba75; #f8ba75; #f8ba75</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#e0ae77; #f8ba75; #f8ba75; #f8ba75</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>rgba(0,0,0,0.1)</products_border>
+				<products_title_color>#222; #004eb2; #004eb2; #004eb2</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#004eb2; #4cb050; #4cb050; #4cb050</products_link_color>
+				<products_price_color>#004eb2</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#004eb2</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#004eb2</products_labels_sale_bg>
+				<products_labels_sale_color>#fff</products_labels_sale_color>
+				<products_labels_new_bg>#4cb050</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#fff; #4cb050; #4cb050; #4cb050</social_links_bg>
+				<social_links_border>#fff; #4cb050; #4cb050; #4cb050</social_links_border>
+				<social_links_color>#b2b2b2; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#333</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#888</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2f2f2f; #2f2f2f; #2f2f2f</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #004eb2; #004eb2; #004eb2</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_electronics_green>
+
+        <blacknwhite_theme_design_electronics_blue>
+	      	<base_colors>
+				<general_site_bg>#eee</general_site_bg>
+				<general_main_color>#1976d3</general_main_color>
+				<general_second_color>#ffc107</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#1976d3</menu_block_bg>
+				<menu_block_border>rgba(0,0,0,0)</menu_block_border>
+				<menu_link_color>#fff; #fff; #fff; #fff</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #222; #222; #222</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#fff; #fff; #fff; #fff</header_cart_color>
+				<header_cart_bg>rgba(0,0,0,0); #222; #222; #222</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#ffc107; #1976d3; #1976d3; #1976d3</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#aaa</header_search_switchers_color>
+				<header_search_switchers_border>#1976d3</header_search_switchers_border>
+				<header_search_input_border>rgba(0,0,0,0)</header_search_input_border>
+				<header_search_button_bg>#1976d3; #ffc107; #ffc107; #ffc107</header_search_button_bg>
+				<header_search_button_color>#fff; #222; #222; #222</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#222</header_slider_title_2>
+				<header_slider_title_3>#f8ba75</header_slider_title_3>
+				<header_slider_title_4>#ffc107</header_slider_title_4>
+				<header_slider_arrows_bg>rgba(0,0,0,0); #ffc107; #ffc107; #ffc107</header_slider_arrows_bg>
+				<header_slider_arrows_color>#666; #222; #222; #222</header_slider_arrows_color>
+				<header_slider_btn_bg>#1976d3; #ffc107; #ffc107; #ffc107</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #222; #222; #222</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#222</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#f0f0f0; #f0f0f0; #f0f0f0; #f0f0f0</content_toolar_select_bg>
+				<content_toolar_select_border>#fff; #fff; #fff; #fff</content_toolar_select_border>
+				<content_toolar_select_color>#888; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#b2b2b2; #333; #333; #333</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; #ccc; #ccc; #ccc</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #ffc107; #ffc107; #ffc107</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #222; #222; #222</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#eee; #ffc107; #ffc107; #ffc107</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>#eee; #ffc107; #ffc107; #ffc107</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#aaa; #222; #222; #222</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #f0f0f0; #f0f0f0; #f0f0f0</content_pager_btns_bg>
+				<content_pager_btns_border>#e5e5e5; #dddddd; #222; #222</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #222; #222</content_pager_btns_color>
+				<content_home_banners_title_color>#333333</content_home_banners_title_color>
+				<content_home_banners_title2_color>#1976d3</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>rgba(0,0,0,0.3)</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#1976d3; #ffc107; #ffc107; #ffc107</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#fff; #222; #222; #222</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>#222</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#ffc107</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,0)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#1976d3; #ffc107; #ffc107; #ffc107</not_found_btn_border>
+				<not_found_btn_color>#fff; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>#1976d3; #ffc107; #ffc107; #ffc107</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #1976d3; #1976d3; #1976d3</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #1976d3; #1976d3; #1976d3</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#1976d3; #ffc107; #ffc107; #ffc107</buttons_type1_bg>
+				<buttons_type1_border>#1976d3; #ffc107; #ffc107; #ffc107</buttons_type1_border>
+				<buttons_type1_color>#fff; #222; #222; #222</buttons_type1_color>
+				<buttons_type2_bg>#ffc107; #1976d3; #1976d3; #1976d3</buttons_type2_bg>
+				<buttons_type2_border>#ffc107; #1976d3; #1976d3; #1976d3</buttons_type2_border>
+				<buttons_type2_color>#222; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#4caf50; #ffc107; #ffc107; #ffc107</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#4caf50; #ffc107; #ffc107; #ffc107</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #222; #222; #222</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#f8ba75; #f8ba75; #f8ba75; #f8ba75</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #fff; #fff; #fff</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#e0ae77; #f8ba75; #f8ba75; #f8ba75</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#fff; #fff; #fff; #fff</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>rgba(0,0,0,0.1)</products_border>
+				<products_title_color>#222; #ffc107; #ffc107; #ffc107</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#ffc107; #1976d3; #1976d3; #1976d3</products_link_color>
+				<products_price_color>#1976d3</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#1976d3</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#ffc107</products_labels_sale_bg>
+				<products_labels_sale_color>#222</products_labels_sale_color>
+				<products_labels_new_bg>#1976d3</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#fff; #1976d3; #1976d3; #1976d3</social_links_bg>
+				<social_links_border>#fff; #1976d3; #1976d3; #1976d3</social_links_border>
+				<social_links_color>#b2b2b2; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#333</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#888</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#222</footer_middle_bg>
+				<footer_middle_text_color>#fff</footer_middle_text_color>
+				<footer_middle_link_color>#aaa; #aaa; #aaa; #aaa</footer_middle_link_color>
+				<footer_middle_link_bg>#222; #2f2f2f; #2f2f2f; #2f2f2f</footer_middle_link_bg>
+				<footer_bottom_bg>#111</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #ffc107; #ffc107; #ffc107</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_electronics_blue>
+
+		<blacknwhite_theme_design_decor>
+	      	<base_colors>
+				<general_site_bg>#ffffff</general_site_bg>
+				<general_main_color>#506179</general_main_color>
+				<general_second_color>#ffb300</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#e0e0e2</menu_block_bg>
+				<menu_block_border>#ffffff</menu_block_border>
+				<menu_link_color>#222; #222; #222; #222</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #c9c9cb; #c9c9cb; #c9c9cb</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #aaa; #aaa; #aaa</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#222; #222; #222; #222</header_cart_color>
+				<header_cart_bg>rgba(0,0,0,0); rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#888</header_text>
+				<header_link>#506179; #222; #222; #222</header_link>
+				<header_bg>#fff</header_bg>
+				<header_search_switchers_bg>#fff</header_search_switchers_bg>
+				<header_search_switchers_color>#222</header_search_switchers_color>
+				<header_search_switchers_border>rgba(0,0,0,0.1)</header_search_switchers_border>
+				<header_search_input_border>rgba(0,0,0,0.1)</header_search_input_border>
+				<header_search_button_bg>rgba(0,0,0,0); rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</header_search_button_bg>
+				<header_search_button_color>#222; #222; #222; #222</header_search_button_color>
+				<header_account_link_color>#222; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>rgba(0,0,0,0); rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#222</header_slider_title_2>
+				<header_slider_title_3>#ffb300</header_slider_title_3>
+				<header_slider_title_4>#506179</header_slider_title_4>
+				<header_slider_arrows_bg>rgba(0,0,0,0); #506179; #506179; #506179</header_slider_arrows_bg>
+				<header_slider_arrows_color>#222; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#fff; #506179; #506179; #506179</header_slider_btn_bg>
+				<header_slider_btn_color>#333; #fff; #fff; #fff</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#222</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#f0f0f0; #f0f0f0; #f0f0f0; #f0f0f0</content_toolar_select_bg>
+				<content_toolar_select_border>#fff; #fff; #fff; #fff</content_toolar_select_border>
+				<content_toolar_select_color>#888; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#b2b2b2; #333; #333; #333</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #506179; #506179; #506179</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#fff; #eee; #eee; #eee</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#aaa; #666; #666; #666</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #f0f0f0; #f0f0f0; #f0f0f0</content_pager_btns_bg>
+				<content_pager_btns_border>#e5e5e5; #dddddd; #e5e5e5; #e5e5e5</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #222; #222</content_pager_btns_color>
+				<content_home_banners_title_color>#222</content_home_banners_title_color>
+				<content_home_banners_title2_color>#fff</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>#fff</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#fff; #506179; #506179; #506179</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#222; #fff; #fff; #fff</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>rgba(0,0,0,0.8)</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#506179</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,0)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#FFB300; #506179; #506179; #506179</not_found_btn_border>
+				<not_found_btn_color>#222; #fff; #fff; #fff</not_found_btn_color>
+				<not_found_btn_bg>#FFB300; #506179; #506179; #506179</not_found_btn_bg>
+				<not_found_footer_links_color>#aaa; #fff; #fff; #fff</not_found_footer_links_color>
+				<not_found_copyright_color>#aaa</not_found_copyright_color>
+				<not_found_copyright_link_color>#aaa; #fff; #fff; #fff</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#506179; #222; #222; #222</buttons_type1_bg>
+				<buttons_type1_border>#506179; #222; #222; #222</buttons_type1_border>
+				<buttons_type1_color>#fff; #fff; #fff; #fff</buttons_type1_color>
+				<buttons_type2_bg>#222; #506179; #506179; #506179</buttons_type2_bg>
+				<buttons_type2_border>#222; #506179; #506179; #506179</buttons_type2_border>
+				<buttons_type2_color>#fff; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#506179; #222; #222; #222</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#506179; #222; #222; #222</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #fff; #fff; #fff</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#f0f0f0; #d9d9d9; #d9d9d9; #d9d9d9</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#a1a1a1; #929292; #929292; #929292</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#f0f0f0; #d9d9d9; #d9d9d9; #d9d9d9</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#a1a1a1; #929292; #929292; #929292</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>#fff</products_border>
+				<products_title_color>#222; #506179; #506179; #506179</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#506179; #222222; #222222; #222222</products_link_color>
+				<products_price_color>#222</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#ffb300</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#ffb300</products_labels_sale_bg>
+				<products_labels_sale_color>#333</products_labels_sale_color>
+				<products_labels_new_bg>#506179</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#f8f8f8; #506179; #506179; #506179</social_links_bg>
+				<social_links_border>#f8f8f8; #506179; #506179; #506179</social_links_border>
+				<social_links_color>#636363; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#333</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#f8f8f8</footer_top_bg>
+				<footer_top_text_color>#999</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#f8f8f8</footer_middle_bg>
+				<footer_middle_text_color>#888888</footer_middle_text_color>
+				<footer_middle_link_color>#666666; #666666; #666666; #666666</footer_middle_link_color>
+				<footer_middle_link_bg>#ffffff; #ffffff; #ffffff; #ffffff</footer_middle_link_bg>
+				<footer_bottom_bg>#f8f8f8</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #506179; #506179; #506179</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_decor>
+
+        <blacknwhite_theme_design_clothes2>
+	      	<base_colors>
+				<general_site_bg>#ffffff</general_site_bg>
+				<general_main_color>#222222</general_main_color>
+				<general_second_color>#eeb686</general_second_color>
+			</base_colors>
+			<menu_colors>
+				<menu_block_bg>#333333</menu_block_bg>
+				<menu_block_border>#ffffff</menu_block_border>
+				<menu_link_color>#fff; #222; #222; #222</menu_link_color>
+				<menu_link_bg>rgba(0,0,0,0); #eeb686; #eeb686; #eeb686</menu_link_bg>
+				<menu_dropdown_wrapper_color>#222</menu_dropdown_wrapper_color>
+				<menu_dropdown_top_text_color>#666</menu_dropdown_top_text_color>
+				<menu_dropdown_top_border>#4c4c4c</menu_dropdown_top_border>
+				<menu_dropdown_top_icons>#fff</menu_dropdown_top_icons>
+				<menu_dropdown_top_titles_color>#fff</menu_dropdown_top_titles_color>
+				<menu_dropdown_subtitles_color>#fff</menu_dropdown_subtitles_color>
+				<menu_dropdown_subtitles_bg>#393939</menu_dropdown_subtitles_bg>
+				<menu_dropdown_links_color>#aaa; #eeb686; #eeb686; #eeb686</menu_dropdown_links_color>
+				<menu_dropdown_links_bg>rgba(0,0,0,0); #2f2f2f; #2f2f2f; #2f2f2f</menu_dropdown_links_bg>
+				<menu_dropdown_bottom_text_color>#aaa</menu_dropdown_bottom_text_color>
+				<menu_dropdown_bottom_bg>#393939</menu_dropdown_bottom_bg>
+				<header_cart_color>#fff; #222; #222; #222</header_cart_color>
+				<header_cart_bg>rgba(0,0,0,0); #eeb686; #eeb686; #eeb686</header_cart_bg>
+			</menu_colors>
+			<header_design>
+				<header_text>#fff</header_text>
+				<header_link>#fff; #eeb686; #eeb686; #eeb686</header_link>
+				<header_bg>#222</header_bg>
+				<header_search_switchers_bg>#222</header_search_switchers_bg>
+				<header_search_switchers_color>#fff</header_search_switchers_color>
+				<header_search_switchers_border>rgba(255,255,255,0.1)</header_search_switchers_border>
+				<header_search_input_border>rgba(0,0,0,0)</header_search_input_border>
+				<header_search_button_bg>#222; #eeb686; #eeb686; #eeb686</header_search_button_bg>
+				<header_search_button_color>#fff; #222; #222; #222</header_search_button_color>
+				<header_account_link_color>#fff; #222; #222; #222</header_account_link_color>
+				<header_account_link_bg>rgba(0,0,0,0); #eeb686; #eeb686; #eeb686</header_account_link_bg>
+				<header_account_sub_bg>#fff</header_account_sub_bg>
+				<header_account_sub_link_color>#666; #666; #666; #666</header_account_sub_link_color>
+				<header_account_sub_link_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</header_account_sub_link_bg>
+			</header_design>
+			<header_slider>
+				<header_slider_title_1>#222</header_slider_title_1>
+				<header_slider_title_2>#222</header_slider_title_2>
+				<header_slider_title_3>#eeb686</header_slider_title_3>
+				<header_slider_title_4>#fff</header_slider_title_4>
+				<header_slider_arrows_bg>#222; #eeb686; #eeb686; #eeb686</header_slider_arrows_bg>
+				<header_slider_arrows_color>#222; #fff; #fff; #fff</header_slider_arrows_color>
+				<header_slider_btn_bg>#222; #eeb686; #eeb686; #eeb686</header_slider_btn_bg>
+				<header_slider_btn_color>#fff; #222; #222; #222</header_slider_btn_color>
+			</header_slider>
+			<content_design>
+				<content_title_color>#222</content_title_color>
+				<content_title_border>#eee</content_title_border>
+				<content_toolar_label>#888</content_toolar_label>
+				<content_toolar_select_bg>#f0f0f0; #f0f0f0; #f0f0f0; #f0f0f0</content_toolar_select_bg>
+				<content_toolar_select_border>#fff; #fff; #fff; #fff</content_toolar_select_border>
+				<content_toolar_select_color>#888; #222; #222; #222</content_toolar_select_color>
+				<content_toolar_select_dropdown_link_bg>#eee; #ddd; #ddd; #ddd</content_toolar_select_dropdown_link_bg>
+				<content_toolar_select_dropdown_link_color>#888; #888; #888; #888</content_toolar_select_dropdown_link_color>
+				<content_toolar_grid_switcher_bg>#fff; #fff; #fff; #fff</content_toolar_grid_switcher_bg>
+				<content_toolar_grid_switcher_color>#b2b2b2; #333; #333; #333</content_toolar_grid_switcher_color>
+				<content_toolar_grid_switcher_border>#fff; rgba(0,0,0,0); rgba(0,0,0,0); rgba(0,0,0,0)</content_toolar_grid_switcher_border>
+				<content_toolar_desc_switcher_bg>#ddd; #222; #222; #222</content_toolar_desc_switcher_bg>
+				<content_toolar_desc_switcher_color>#888; #fff; #fff; #fff</content_toolar_desc_switcher_color>
+				<content_toolar_sidebar_btn_bg>#fff; #222; #222; #222</content_toolar_sidebar_btn_bg>
+				<content_toolar_sidebar_btn_border>rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1); rgba(0,0,0,0.1)</content_toolar_sidebar_btn_border>
+				<content_toolar_sidebar_btn_color>#aaa; #fff; #fff; #fff</content_toolar_sidebar_btn_color>
+				<content_pager_btns_divider>#ddd</content_pager_btns_divider>
+				<content_pager_btns_bg>#fff; #f0f0f0; #f0f0f0; #f0f0f0</content_pager_btns_bg>
+				<content_pager_btns_border>#e5e5e5; #dddddd; #e5e5e5; #e5e5e5</content_pager_btns_border>
+				<content_pager_btns_color>#888; #888; #222; #222</content_pager_btns_color>
+				<content_home_banners_title_color>#222</content_home_banners_title_color>
+				<content_home_banners_title2_color>#fff</content_home_banners_title2_color>
+				<content_home_banners_subtitle_color>#fff</content_home_banners_subtitle_color>
+				<content_home_banners_btn_bg>#222; #eeb686; #eeb686; #eeb686</content_home_banners_btn_bg>
+				<content_home_banners_btn_color>#fff; #222; #222; #222</content_home_banners_btn_color>
+				<content_sidebar_features_icon_color>rgba(0,0,0,0.8)</content_sidebar_features_icon_color>
+				<content_sidebar_features_icon_bg>#eeb686</content_sidebar_features_icon_bg>
+			</content_design>
+			<not_found_page_design>
+				<not_found_search_bg>rgba(255,255,255,.2)</not_found_search_bg>
+				<not_found_search_icon>#fff</not_found_search_icon>
+				<not_found_search_border>rgba(255,255,255,0)</not_found_search_border>
+				<not_found_search_color>#fff</not_found_search_color>
+				<not_found_title_color>#fff</not_found_title_color>
+				<not_found_subtitle_color>#fff</not_found_subtitle_color>
+				<not_found_text_color>#fff</not_found_text_color>
+				<not_found_btn_border>#222; #eeb686; #eeb686; #eeb686</not_found_btn_border>
+				<not_found_btn_color>#fff; #222; #222; #222</not_found_btn_color>
+				<not_found_btn_bg>#222; #eeb686; #eeb686; #eeb686</not_found_btn_bg>
+				<not_found_footer_links_color>#fff; #eeb686; #eeb686; #eeb686</not_found_footer_links_color>
+				<not_found_copyright_color>rgba(255,255,255,0.7)</not_found_copyright_color>
+				<not_found_copyright_link_color>#fff; #eeb686; #eeb686; #eeb686</not_found_copyright_link_color>
+			</not_found_page_design>
+			<buttons_design>
+				<buttons_type1_bg>#222; #eeb686; #eeb686; #eeb686</buttons_type1_bg>
+				<buttons_type1_border>#222; #eeb686; #eeb686; #eeb686</buttons_type1_border>
+				<buttons_type1_color>#fff; #222; #222; #222</buttons_type1_color>
+				<buttons_type2_bg>#eeb686; #222; #222; #222</buttons_type2_bg>
+				<buttons_type2_border>#eeb686; #222; #222; #222</buttons_type2_border>
+				<buttons_type2_color>#222; #fff; #fff; #fff</buttons_type2_color>
+				<buttons_productpage_cart_btn_bg>#222; #eeb686; #eeb686; #eeb686</buttons_productpage_cart_btn_bg>
+				<buttons_productpage_cart_btn_border>#222; #eeb686; #eeb686; #eeb686</buttons_productpage_cart_btn_border>
+				<buttons_productpage_cart_btn_color>#fff; #222; #222; #222</buttons_productpage_cart_btn_color>
+				<buttons_quickview_btn_bg>#222; #eeb686; #eeb686; #eeb686</buttons_quickview_btn_bg>
+				<buttons_quickview_btn_color>#fff; #222; #222; #222</buttons_quickview_btn_color>
+				<buttons_moreviews_btn_bg>#eee; #ddd; #ddd; #ddd</buttons_moreviews_btn_bg>
+				<buttons_moreviews_btn_color>#aaa; #888; #888; #888</buttons_moreviews_btn_color>
+			</buttons_design>
+			<products_design>
+				<products_bg>#fff</products_bg>
+				<products_border>#fff</products_border>
+				<products_title_color>#222; #eeb686; #eeb686; #eeb686</products_title_color>
+				<products_text_color>#888</products_text_color>
+				<products_link_color>#222; #eeb686; #eeb686; #eeb686</products_link_color>
+				<products_price_color>#7f7f7f</products_price_color>
+				<products_old_price_color>#aaa</products_old_price_color>
+				<products_special_price_color>#7f7f7f</products_special_price_color>
+				<products_divider_color>#ddd</products_divider_color>
+				<products_labels_sale_bg>#eeb686</products_labels_sale_bg>
+				<products_labels_sale_color>#333</products_labels_sale_color>
+				<products_labels_new_bg>#222</products_labels_new_bg>
+				<products_labels_new_color>#fff</products_labels_new_color>
+			</products_design>
+			<price_countdown>
+				<price_countdown_timer_bg>#DD1313</price_countdown_timer_bg>
+				<price_countdown_timer_color>#fff</price_countdown_timer_color>
+			</price_countdown>
+			<social_links>
+				<social_links_bg>#fff; #222; #222; #222</social_links_bg>
+				<social_links_border>#fff; #222; #222; #222</social_links_border>
+				<social_links_color>#636363; #fff; #fff; #fff</social_links_color>
+			</social_links>
+			<footer_design>
+				<footer_top_title_color>#333</footer_top_title_color>
+				<footer_top_title_border>#eee</footer_top_title_border>
+				<footer_top_subtitle_color>#222</footer_top_subtitle_color>
+				<footer_top_bg>#fff</footer_top_bg>
+				<footer_top_text_color>#666</footer_top_text_color>
+				<footer_top_link_color>#666; #666; #666; #666</footer_top_link_color>
+				<footer_top_link_bg>#fff; #fff; #fff; #fff</footer_top_link_bg>
+				<footer_top_icon_block_bg>#fff; #f5f5f5; #f5f5f5; #f5f5f5</footer_top_icon_block_bg>
+				<footer_top_icon_block_color>#aaa; #aaa; #aaa; #aaa</footer_top_icon_block_color>
+				<footer_top_icon_block_border>#eee</footer_top_icon_block_border>
+				<footer_middle_title_color>#fff</footer_middle_title_color>
+				<footer_middle_title_border_color>#393939</footer_middle_title_border_color>
+				<footer_middle_bg>#fff</footer_middle_bg>
+				<footer_middle_text_color>#888888</footer_middle_text_color>
+				<footer_middle_link_color>#666666; #666666; #666666; #666666</footer_middle_link_color>
+				<footer_middle_link_bg>#ffffff; #ffffff; #ffffff; #ffffff</footer_middle_link_bg>
+				<footer_bottom_bg>#fff</footer_bottom_bg>
+				<footer_bottom_text_color>#aaa</footer_bottom_text_color>
+				<footer_bottom_link_color>#aaa; #222; #222; #222</footer_bottom_link_color>
+			</footer_design>
+        </blacknwhite_theme_design_clothes2>
+
+        <blacknwhite_bg_slider>
+			<blacknwhite_bgslider_options>
+				<bgslider_status>1</bgslider_status>
+				<bgslider_fade>22</bgslider_fade>
+				<bgslider_duration>1</bgslider_duration>
+				<bgslider_slides></bgslider_slides>
+			</blacknwhite_bgslider_options>
+        </blacknwhite_bg_slider>
+
+
+        <blacknwhite_section2>
+            <blacknwhite_group3>
+                <field____1>1</field____1>
+                <field____2>Tutorial - Simple News</field____2>
+                <field____3>1</field____3>
+                <field____4>1</field____4>
+                <field____5>1</field____5>
+                <field____6>1</field____6>
+                <field____7>1</field____7>
+                <field____7_1>1</field____7_1>
+                <field____8>1</field____8>
+                <field____9>1</field____9>
+            </blacknwhite_group3>
+            <blacknwhite_group4>
+                <field____11>1</field____11>
+                <field____12>1</field____12>
+                <field____13>1</field____13>
+                <field____14>1</field____14>
+                <field____15>1</field____15>
+                <field____16>1</field____16>
+                <field____17>1</field____17>
+                <field____172>0</field____172>
+                <field____173>1</field____173>
+            </blacknwhite_group4>
+        </blacknwhite_section2>
+
+
+
+
+
+
+    </default>
+</config>

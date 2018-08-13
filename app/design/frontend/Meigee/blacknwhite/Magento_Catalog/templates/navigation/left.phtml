@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Category left navigation
+ *
+ * @var $block \Magento\Catalog\Block\Navigation
+ */
+?>
+<?php if (!$block->getCategory()) {
+    return;
+} ?>
+<?php $_categories = $block->getCurrentChildCategories(); ?>
+<?php $_count = is_array($_categories) ? count($_categories) : $_categories->count(); ?>
+<?php if ($_count): ?>
+    <div class="block filter no-acc">
+        <div class="block-title">
+            <strong><?= /* @escapeNotVerified */ __('Shop By') ?></strong>
+        </div>
+        <div class="content">
+            <strong class="block-subtitle"><?= /* @escapeNotVerified */ __('Shopping Options') ?></strong>
+            <dl class="options" id="narrow-by-list2">
+                <dt class="filter-options-title"><strong><?= /* @escapeNotVerified */ __('Category') ?></strong></dt>
+                <dd>
+                    <ol class="items">
+						<?php /** @var \Magento\Catalog\Model\Category $_category */ ?>
+                        <?php foreach ($_categories as $_category): ?>
+                            <?php if ($_category->getIsActive()): ?>
+                                <li class="item">
+                                    <a href="<?= /* @escapeNotVerified */ $block->getCategoryUrl($_category) ?>"<?php if ($block->isCategoryActive($_category)): ?> class="current"<?php endif; ?>>
+										<span class="filter-label"><?= $block->escapeHtml($_category->getName()) ?></span>
+										<span class="count"><?= /* @escapeNotVerified */ $_category->getProductCount() ?></span>
+									</a>
+                                </li>
+                            <?php endif; ?>
+                        <?php endforeach ?>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+    </div>
+<?php endif; ?>

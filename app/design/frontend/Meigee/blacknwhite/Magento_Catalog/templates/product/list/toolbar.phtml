@@ -1,0 +1,116 @@
+<?php
+/**
+ * Copyright © Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+use Magento\Catalog\Model\Product\ProductList\Toolbar;
+$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+$sidebar_hider = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_product_listing', 'hide_sidebar_btn');
+$sidebar_hider_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_product_listing', 'hide_sidebar');
+
+
+?>
+<?php if ($block->getCollection()->getSize()): ?>
+    <div class="toolbar clearfix toolbar-products" data-mage-init='<?= /* @escapeNotVerified */ $block->getWidgetOptionsJson() ?>'>
+        <?= $block->getPagerHtml() ?>
+		<?php if($sidebar_hider): ?>
+			<div class="sidebar-button<?php if($sidebar_hider_status){echo ' open';} ?>"><i class="fa fa-arrows-h"></i><span class="open"><?php echo __('Show Sidebar') ?></span><span class="close"><?php echo __('Hide Sidebar') ?></span></div>
+		<?php endif; ?>
+        <?php if ($block->isExpanded()): ?>
+            <?php include ($block->getTemplateFile('Magento_Catalog::product/list/toolbar/viewmode.phtml')) ?>
+        <?php endif; ?>
+
+        <?php include ($block->getTemplateFile('Magento_Catalog::product/list/toolbar/amount.phtml')) ?>
+
+        <?php if ($block->isExpanded()): ?>
+            <?php include ($block->getTemplateFile('Magento_Catalog::product/list/toolbar/sorter.phtml')) ?>
+        <?php endif; ?>
+
+        <?php include ($block->getTemplateFile('Magento_Catalog::product/list/toolbar/limiter.phtml')) ?>
+    </div>
+	<?php if($sidebar_hider): ?>
+	<script>
+		require([
+			'jquery'
+		], function ($) {
+			'use strict';
+			/* Sidebar Hide */
+			function sidebarHide(){
+				if(!jQuery('body.page-layout-1column').length && !jQuery('.toolbar').parent().hasClass('.toolbar-bottom')){
+					var mainContainer = jQuery('.main-container');
+					
+					var button = jQuery('.toolbar .sidebar-button');
+					if(button.length){
+						var sidebars = jQuery('.sidebar');
+						var colMain = jQuery('.content-inner');
+						
+						if(jQuery('body.page-layout-3columns').length){
+							var oroginalGrid = 'col-sm-6';
+						}else{
+							var oroginalGrid = 'col-sm-9';
+						}
+						
+						// if(jQuery('#products-list').length){
+							// var listCol = jQuery('#products-list li.item .right-col');
+							// var listColClasses = listCol.attr('class');
+						// }
+						
+						if(sidebars.css('display') == 'block' || sidebars.css('display') == 'inline'){
+							button.removeClass('open');
+						}
+						
+						button.off().on('click', function(){
+							
+							var isVisible = false;
+							if(sidebars.css('display') == 'block' || sidebars.css('display') == 'inline'){
+								var isVisible = true;
+							}
+							
+							if(isVisible){
+								sidebars.fadeOut('fast', function(){
+									colMain.attr('class', colMain.attr('class').replace(/col-sm-9|col-sm-6/ig, 'col-sm-12'));
+									mainContainer.addClass('sidebar-off');
+									
+									// if(jQuery('#products-list').length){
+										// jQuery('#products-list li.item .right-col').attr('class', 'omega right-col grid_9');
+									// }
+									button.addClass('open');
+									setTimeout(function(){
+										jQuery(window).trigger('resize');
+									}, 500);
+								});
+
+							}else{
+								colMain.attr('class', colMain.attr('class').replace(/col-sm-12/i, oroginalGrid));
+								setTimeout(function(){
+									sidebars.fadeIn('fast');
+									mainContainer.removeClass('sidebar-off');
+									
+									// if(jQuery('#products-list').length){
+										// jQuery('#products-list li.item .right-col').attr('class', listColClasses);
+									// }
+									button.removeClass('open');
+									setTimeout(function(){
+										jQuery(window).trigger('resize');
+									}, 500);
+								}, 100);
+							}
+						});
+					}
+				}
+			}
+			sidebarHide();
+		});
+		</script>
+	<?php endif; ?>
+<?php endif ?>

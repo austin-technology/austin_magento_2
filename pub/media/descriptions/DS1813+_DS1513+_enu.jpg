@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en-global" data-lang-code="en-global" data-user-country="au">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Synology Inc.">
+	<meta name="description" content="Network Attached Storage (NAS) for home and business, Synology is dedicated to provide DiskStation NAS that offers RAID storage, storage for virtualization, backup, NVR, and mobile app support.">
+
+	<title>Synology Inc.</title>
+	<base href="https://www.synology.com/" />
+
+	<link type="image/x-icon" rel="shortcut icon" href="img/icon/favicon.ico" />
+	<link type="image/x-icon" rel="shortcut icon" href="img/icon/favicon.png" />
+	<link type="image/x-icon" rel="icon" href="img/icon/animated_favicon.gif" />
+	<link rel="apple-touch-icon" sizes="57x57"   href="img/icon/touch-icon-57.png"/>
+	<link rel="apple-touch-icon" sizes="72x72"   href="img/icon/touch-icon-72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icon/touch-icon-144.png"/>
+	<link rel="apple-touch-icon" sizes="76x76"   href="img/icon/touch-icon-76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icon/touch-icon-120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icon/touch-icon-152.png">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/syno.css">
+
+			<script src="js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="js/vendor/vue/vue-2.3.4.min.js"></script>
+	
+	<link rel="stylesheet" href="css/home/main.css">
+
+			<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PNPJHJ2');</script>
+	<!-- End Google Tag Manager -->
+	
+</head>
+<body class="clearfix en-global">
+			<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNPJHJ2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<style>
+#cookies_header {
+	display: none;
+	background-color: #0d1824;
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	z-index: 201;
+	font-size: 12px;
+	line-height: 18px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+@media (min-width: 1024px) {
+	#cookies_header {
+		position: static;
+		font-size: 15px;
+		line-height: 24px;
+	}
+}
+#cookies_header .mg_fix_10 {
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-right: 60px;
+}
+@media (min-width: 1024px) {
+	#cookies_header .mg_fix_10 {
+		padding-right: 0;
+	}
+}
+#cookies_header a {
+	color: #0dd399;
+	text-decoration: underline;
+}
+#cookies_header .cookies_btn {
+	background: #0dd399;
+	color: #0a0e13;
+	padding: 8px 20px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 20px;
+	font-weight: 600;
+	outline: none;
+	display: inline-block;
+	min-width: 150px;
+	width: auto;
+	font-size: 14px;
+}
+@media (min-width: 568px) {
+	#cookies_header .cookies_btn {
+		min-width: 170px;
+		font-size: 16px;
+	}
+}
+#cookies_header .cookies_btn:hover {
+	background: #0eebaa;
+}
+@media (min-width: 1024px) {
+	#cookies_header .cookies_btn {
+		padding: 8px 10px;
+	}
+}
+#cookies_header .cookies_block {
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+	#cookies_header .cookies_block {
+		padding: 10px;
+	}
+}
+#cookies_header .cookies_title {
+	font-size: 18px;
+	text-align: left;
+}
+@media (min-width: 1024px) {
+	#cookies_header .cookies_title {
+		text-align: center;
+	}
+}
+</style>
+<div id="cookies_header">
+	<div class="container-960">
+		<div class="pure-g mg_fix_10">
+			<div class="pure-u-1-1 pure-u-lg-3-4 align-middle">
+				<div class="cookies_block">
+					We use cookies to help us improve our webpage. Please read our <a href="company/legal/cookie_policy">Cookie Policy</a>.
+				</div>
+			</div>
+			<div class="pure-u-1-1 pure-u-lg-1-4 align-middle">
+				<div class="cookies_block">
+					<button class="cookies_btn">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="root" class="clearfix">
+		<header>
+			
+<nav id="header_nav">
+	<div id="main_menu">
+		<a id="menu_link">
+			<span class="line line_top"></span>
+			<span class="line line_md"></span>
+			<span class="line line_bottom"></span>
+		</a>
+
+		<div class="container">
+			<a class="brand" href="https://www.synology.com/en-global">
+				<img class="synology_logo" src="img/logo/logo_gray.svg" alt="Synology" title="Synology">
+			</a>
+			<div id="menuitems">
+					<ul class="synomenu d1 left clearfix">
+								<li class="  ">
+									<a class="has_child">
+						<span>Products
+													<i class="icon_arrow" aria-hidden="true"></i>
+							<i class="active_triangle"></i>
+						
+						</span>
+					</a>
+						<ul class="synomenu d2 left clearfix">
+								<li class="">
+									<a class="has_child">
+						<span>NAS
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="dsm">
+						<span>DiskStation Manager</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/series/j">
+						<span> J Series</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/series/value">
+						<span>Value Series</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/series/plus">
+						<span>Plus Series</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/series/xs">
+						<span>FS & XS Series</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/compare">
+						<span>Compare All NAS Models</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Networking
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="srm">
+						<span>Synology Router Manager</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/RT1900ac">
+						<span>RT1900ac</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/RT2600ac">
+						<span>RT2600ac</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/Client_VPN_Access_License">
+						<span>Client VPN Access License</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/Site_to_Site_VPN_License">
+						<span>Site-to-Site VPN License</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Surveillance
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="surveillance">
+						<span>Surveillance Station</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/NVR1218">
+						<span>Network Video Recorder</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/visual_station">
+						<span>VisualStation</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/Device_License_Pack">
+						<span>Device License Pack</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/nvr_selector">
+						<span>NVR Selector</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Applications & Services
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="https://c2.synology.com" target="_blank">
+						<span>Synology Cloud²</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/presto">
+						<span>Presto File Server</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/mailplus">
+						<span>MailPlus</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/packages">
+						<span>DSM Packages</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/licenses">
+						<span>Licenses</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Accessories
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="products/expansion">
+						<span>Expansion Units</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/accessories/ram_railkit">
+						<span>RAM Modules & Rail Kits</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/accessories/add_in">
+						<span>Add-in Cards</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="products/spare_parts">
+						<span>Spare Parts</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Solutions
+													<i class="icon_arrow" aria-hidden="true"></i>
+							<i class="active_triangle"></i>
+						
+						</span>
+					</a>
+						<ul class="synomenu d2 left clearfix">
+								<li class="">
+									<a class="has_child">
+						<span>For Home
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="dsm/feature/drive">
+						<span>File Syncing</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/moments">
+						<span>Photo Album</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/audio_station">
+						<span>Music Library</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/video_station">
+						<span>Video Collections</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/desktop_backup">
+						<span>PC Backup</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="https://c2.synology.com/backup" target="_blank">
+						<span>C2 Backup</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/replacement_for_external_storage">
+						<span>External Storage Replacement</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="">
+						<span></span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>For Business
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="dsm/feature/file_sharing">
+						<span>File Sharing</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/data_protection">
+						<span>Data Backup</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/snapshot_replication">
+						<span>Snapshot and Replication</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/high_availability">
+						<span>High Availability</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/storage_virtualization">
+						<span>iSCSI Storage</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/mailplus">
+						<span>Mail Server</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/office">
+						<span>Productivity</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="dsm/feature/virtual_machine_manager">
+						<span>Virtualization</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>For Surveillance
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="solution/surveillance_small_business">
+						<span>Small-sized Business</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/SMB">
+						<span>Medium-sized Business</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/surveillance_large">
+						<span>Large-scale Deployments</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Customer Stories
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="company/case_study?q_industries=business">
+						<span>Business</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study?q_industries=education">
+						<span>Education and Public Sectors</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study?q_industries=health">
+						<span>Healthcare</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study?q_industries=media">
+						<span>Media and Entertainment</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study?q_solutions=surveillance">
+						<span>Surveillance</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study">
+						<span>See All Customer Stories</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Security
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="solution/ransomware">
+						<span>Protection against Ransomware</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/how_protect_NAS">
+						<span>Comprehensive Security Protection</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/security">
+						<span>Security Advisory</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/security_scan">
+						<span>Security Scan</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Support
+													<i class="icon_arrow" aria-hidden="true"></i>
+							<i class="active_triangle"></i>
+						
+						</span>
+					</a>
+						<ul class="synomenu d2 left clearfix">
+								<li class="">
+									<a class="has_child">
+						<span>Resources
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="knowledgebase">
+						<span>Knowledge Base</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/download">
+						<span>Download Center</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/white_paper">
+						<span>White Papers</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/contact_us">
+						<span>Contact us</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Product and Support Status
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="products/status">
+						<span>Product Support Status</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/synology_service">
+						<span>Service Status</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="solution/SRS">
+						<span>Synology Replacement Service</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>Security
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="support/security">
+						<span>Security Advisory</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/security_scan">
+						<span>Security Scan Results</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="support/bounty_program">
+						<span>Synology Bounty Program</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+					</ul>
+
+							</li>
+								<li class="">
+									<a class="has_child">
+						<span>About Us
+													<i class="icon_arrow" aria-hidden="true"></i>
+							<i class="active_triangle"></i>
+						
+						</span>
+					</a>
+						<ul class="synomenu d2 left clearfix">
+								<li class="">
+									<a class="has_child">
+						<span>Company
+						
+						</span>
+					</a>
+						<ul class="synomenu d3 left clearfix">
+								<li class="">
+									<a href="company">
+						<span>About Synology</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/case_study">
+						<span>Customer Stories</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/news">
+						<span>Newsroom</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/contact_us">
+						<span>Contact us</span>
+					</a>
+							</li>
+								<li class="">
+									<a href="company/career">
+						<span>Jobs</span>
+					</a>
+							</li>
+					</ul>
+
+							</li>
+					</ul>
+
+							</li>
+							<li class="hide-desktop">
+				<a href="search" class="search-link">
+					<i>&nbsp;</i>
+					<span class="txt">
+						Search Synology.com
+					</span>
+				</a>
+			</li>
+			<li class="hide-desktop">
+				<a href="https://account.synology.com" class="login-link">
+					<span class="btn btn-primary blue btn-sm btn-block">Sign in</span>
+				</a>
+			</li>
+			</ul>
+
+				<ul class="synomenu d1 right">
+					<li>
+																	<div id="google-syno-quicksearch">
+							<form action="">
+								<label for="kyword">
+									<input id="kyword" type="text" placeholder="Search Synology.com">
+								</label>
+								<button class="icon-pos-search" type="submit">
+									<i class="icon icon_search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+										</li>
+
+					<li class="login_btn">
+						<a href="https://account.synology.com/">
+							<span class="btn btn-primary blue">Sign in</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<script>
+	$(document).ready(function() {
+		SYNO_MENU.init();
+	});
+</script>		</header>
+
+		<main id="main" class="home">
+										<div id="home">
+	<section>
+		<div class="homebanners">
+			<div class="flexslider slideshow control">
+				<ul class="slides">
+											<li id="li_SS82_beta">
+	<a href="beta/2018_SurveillanceStation_82_beta" class="height_wrap" rel="noopener noreferrer">
+		<div class="pure-g autopad">
+			<div class="pure-u-1-1 text">
+				<div class="min_xs_center">
+					<h1 class="title">Surveillance Station 8.2<sup class="beta">BETA</sup></h1>
+					<p>The new LiveCam and revamped DS cam revolutionize your methods of recording and surveilling. Dual Authorization, Smart Time Lapse, and other refreshing features included in the all new Application Center will make you reimagine your use of Surveillance Station.</p>
+					<span class="btn btn-primary btn-learnmore white">Join Beta</span>
+				</div>
+			</div>
+		</div>
+	</a>
+</li>
+											<li id="li_ActiveBackupOffice365">
+	<div class="height_wrap">
+		<div class="pure-g autopad-36">
+			<div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-12-24 pure-u-xl-11-24 pure-u-xxl-10-24 text">
+				<h1 class="style_h1 title">Active Backup <br><i>for G Suite and Office 365</i></h1>
+				<p class="style_p margin_bottom30">
+				Cost-effective cloud backup solution perfect for protecting your business data against malicious attacks and accidents. <br>
+				</p>
+
+				<a href="beta/2018_Active_Backup_for_GSuite" rel="noopener noreferrer">
+					G Suite 2.0 Beta 
+					<span class="read_more_icon"></span>
+				</a>
+
+				<a href="dsm/feature/active_backup_office365" rel="noopener noreferrer">
+					Office 365 Official
+					<span class="read_more_icon"></span>
+				</a>
+			</div>
+			<div class="pure-u-1-1 pure-u-md-1-2 pure-u-xl-13-24 align-middle">
+			</div>
+		</div>
+	</div>
+</li>
+											<li id="li_VMMPro">
+	<a href="dsm/feature/virtual_machine_manager" class="height_wrap" rel="noopener noreferrer">
+		<div class="pure-g autopad center">
+			<div class="pure-u-1-1 text">
+				<p class="container-640 margin_bottom30 dsm62official_p">Virtual Machine Manager Pro</p>
+				<h1 class="title">A Fusion of Computing and Storage</h1>
+				<!--p class="container-960 margin_bottom30 dsm62official_p">Easily host multiple virtual machines on your Synology NAS while fully protecting your digital assets with a robust cluster infrastructure.</p-->
+				<span class="btn btn-primary btn-learnmore">Learn more</span>
+			</div>
+		</div>
+	</a>
+</li>
+											<li id="li_ActiveBackupBusiness">
+	<a href="beta/2018_ActiveBackup_for_Business_beta" class="height_wrap" rel="noopener noreferrer">
+		<div class="pure-g autopad-36">
+			<div class="pure-u-1-1 pure-u-lg-12-24 pure-u-xl-11-24 pure-u-xxl-10-24 text">
+				<h1 class="style_h1 title">Active Backup for Business</h1>
+				<p class="style_p">
+					All-in-one data protection. Simplify the complicated. Active Backup for Business provides data protection across diverse IT environments, ranging from physical devices to virtual workloads, on a single NAS.
+				</p>
+				<span class="style_span btn btn-primary btn-learnmore">Join Beta</span>
+			</div>
+			<div class="pure-u-1-1 pure-u-xl-13-24 align-middle">
+			</div>
+		</div>
+	</a>
+</li>
+									</ul>
+				<style>
+											#home .homebanners #li_SS82_beta{position:relative;overflow:hidden;color:#fff;background-size:cover;background-position:center top;background-repeat:no-repeat;background-image:url("img/homebanner/20180717_SS82_beta/bg_sm.jpg")}#home .homebanners #li_SS82_beta a{color:#fff}#home .homebanners #li_SS82_beta a:hover,#home .homebanners #li_SS82_beta a:active{color:#fff}#home .homebanners #li_SS82_beta h1,#home .homebanners #li_SS82_beta p{color:#fff}@media (min-width: 1440px){#home .homebanners #li_SS82_beta h1{font-size:46px}}#home .homebanners #li_SS82_beta h1.title .beta{left:10px}#home .homebanners #li_SS82_beta .btn{background-color:#fff;color:#0067e6;min-width:80px}@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){#home .homebanners #li_SS82_beta{background-image:url("img/homebanner/20180717_SS82_beta/bg_sm@2x.jpg")}}@media (min-width: 768px){#home .homebanners #li_SS82_beta{background-image:url("img/homebanner/20180717_SS82_beta/bg_md.jpg")}}@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx){#home .homebanners #li_SS82_beta{background-image:url("img/homebanner/20180717_SS82_beta/bg_md@2x.jpg")}}@media (min-width: 1280px){#home .homebanners #li_SS82_beta{background-image:url("img/homebanner/20180717_SS82_beta/bg_xl.jpg")}}@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 2dppx){#home .homebanners #li_SS82_beta{background-image:url("img/homebanner/20180717_SS82_beta/bg_xl@2x.jpg")}}#home .homebanners #li_SS82_beta img{position:absolute}#home .homebanners #li_SS82_beta .height_wrap{box-sizing:border-box;padding:20px}@media (min-width: 1024px){#home .homebanners #li_SS82_beta .height_wrap{padding:30px}}@media (min-width: 1280px){#home .homebanners #li_SS82_beta .height_wrap{padding:60px}}@media (min-width: 1440px){#home .homebanners #li_SS82_beta .height_wrap{padding:100px 30px 60px 60px}#home .homebanners #li_SS82_beta .height_wrap img{margin-top:-40px}}@media (min-width: 480px){#home .homebanners #li_SS82_beta .text{padding-top:50px}#home .homebanners #li_SS82_beta .text .min_xs_center{text-align:center}}@media (min-width: 768px){#home .homebanners #li_SS82_beta .text{max-width:700px;margin:0 auto}}
+
+											#li_ActiveBackupOffice365{position:relative;overflow:hidden;background-size:cover;background-position:center center;background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_sm.jpg")}#li_ActiveBackupOffice365 a{color:#fff;padding-right:30px}#li_ActiveBackupOffice365 a:hover,#li_ActiveBackupOffice365 a:active{color:#fff}#li_ActiveBackupOffice365 i{color:#0067e4}#li_ActiveBackupOffice365 .read_more_icon{width:12px;height:12px;margin-left:5px;background-image:url(img/homebanner/20180606_Official_ActiveBackupOffice365/read_more.png);background-repeat:no-repeat;background-color:#0067e6;background-position:center center;display:inline-block;vertical-align:middle;border-radius:12px}@media (min-width: 1440px){#li_ActiveBackupOffice365 h1{width:90%}#li_ActiveBackupOffice365 p{width:90%}}@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){#li_ActiveBackupOffice365{background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_sm@2x.jpg")}}@media (min-width: 768px){#li_ActiveBackupOffice365{background-position:center bottom;background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_md.jpg")}}@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx){#li_ActiveBackupOffice365{background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_md@2x.jpg")}}@media (min-width: 1280px){#li_ActiveBackupOffice365{background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_xl.jpg")}}@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 2dppx){#li_ActiveBackupOffice365{background-image:url("img/homebanner/20180627_ActiveBackup_GSuite_Office365/bg_xl@2x.jpg")}}#li_ActiveBackupOffice365 .height_wrap{box-sizing:border-box;padding:20px}@media (min-width: 1024px){#li_ActiveBackupOffice365 .height_wrap{padding:30px}}@media (min-width: 1280px){#li_ActiveBackupOffice365 .height_wrap{padding:60px 0 0 60px}}@media (min-width: 1440px){#li_ActiveBackupOffice365 .height_wrap{padding:100px 0 0 60px}}#home .homebanners .text h1.style_h1,#home .homebanners .text p.style_p{color:#fff}#home .homebanners .text h1.style_h1 i{color:#fff}#home .homebanners .text span.style_span{margin-right:10px}
+
+											#li_VMMPro{position:relative;overflow:hidden;color:#fff;background-size:cover;background-position:center bottom;background-repeat:no-repeat;background-image:url("img/homebanner/20180620_VMMpro/bg_xl.jpg")}#li_VMMPro a{color:#fff}#li_VMMPro a:hover,#li_VMMPro a:active{color:#fff}#li_VMMPro h1,#li_VMMPro p{color:#fff}@media (min-width: 1440px){#li_VMMPro h1{font-size:46px}}#li_VMMPro p{line-height:30px}@media (max-width: 767px){#li_VMMPro{background-position:50% 70%}}@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){#li_VMMPro{background-image:url("img/homebanner/20180620_VMMpro/bg_xl@2x.jpg")}}#li_VMMPro img{position:absolute}#li_VMMPro .height_wrap{box-sizing:border-box;padding:20px}@media (min-width: 1024px){#li_VMMPro .height_wrap{padding:30px}}@media (min-width: 1280px){#li_VMMPro .height_wrap{padding:90px 0 0 0}}@media (min-width: 1440px){#li_VMMPro .height_wrap{padding:140px 0 0 0}}@media (max-width: 1279px){#li_VMMPro .text{padding-top:80px}}@media (min-width: 1024px){#home .homebanners .text p.dsm62official_p{font-size:22px}}@media (min-width: 1440px){#home .homebanners .text p.dsm62official_p{font-size:24px}}
+
+											#li_ActiveBackupBusiness{position:relative;overflow:hidden;background-size:cover;background-position:center center;background-image:url("img/homebanner/20180613_Beta_ActiveBackupBusiness/bg_xl.jpg")}#li_ActiveBackupBusiness a{color:#fff}#li_ActiveBackupBusiness a:hover,#li_ActiveBackupBusiness a:active{color:#fff}#li_ActiveBackupBusiness i{color:#0067e4}@media (min-width: 1440px){#li_ActiveBackupBusiness h1{width:90%}}@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){#li_ActiveBackupBusiness{background-image:url("img/homebanner/20180613_Beta_ActiveBackupBusiness/bg_xl@2x.jpg")}}@media (max-width: 1023px){#li_ActiveBackupBusiness p{width:50%}}@media (max-width: 767px){#li_ActiveBackupBusiness{background-position:58% 50%}#li_ActiveBackupBusiness p{width:100%}}#li_ActiveBackupBusiness .height_wrap{box-sizing:border-box;padding:20px}@media (min-width: 1024px){#li_ActiveBackupBusiness .height_wrap{padding:30px}}@media (min-width: 1280px){#li_ActiveBackupBusiness .height_wrap{padding:60px 0 0 60px}}@media (min-width: 1440px){#li_ActiveBackupBusiness .height_wrap{padding:100px 0 0 60px}}#home .homebanners .text h1.style_h1,#home .homebanners .text p.style_p{color:#fff}#home .homebanners .text span.style_span{margin-right:10px}
+
+									</style>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="smallbanners">
+			<div class="pure-g">
+							<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-lg-1-4">
+					<a class="index_sb" name="dsm_live_demo_web40" href="https://demo.synology.com/"  target="_blank" rel="noopener noreferrer">
+						<div class="caption">
+							<h3 class="title ellipsis">Live demo</h3>
+							<p class="dot-ellipsis dot-resize-update">Experience Synology's most acclaimed DSM operating system for free today!</p>
+						</div>
+					</a>
+				</div>
+							<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-lg-1-4">
+					<a class="index_sb" name="Privacy" href="privacy" rel="noopener noreferrer" >
+						<div class="caption">
+							<h3 class="title ellipsis">Your Privacy Matters</h3>
+							<p class="dot-ellipsis dot-resize-update">Learn how Synology keeps your personal information private and safe</p>
+						</div>
+					</a>
+				</div>
+							<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-lg-1-4">
+					<a class="index_sb" name="Webinar_v2_web40" href="events/SPOT_webinar" rel="noopener noreferrer" >
+						<div class="caption">
+							<h3 class="title ellipsis">Active Backup for Business Webinar</h3>
+							<p class="dot-ellipsis dot-resize-update">Learn more about Synology Active Backup for Business together!</p>
+						</div>
+					</a>
+				</div>
+							<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-lg-1-4">
+					<a class="index_sb" name="video_tutorial_web40" href="knowledgebase/DSM/video" rel="noopener noreferrer" >
+						<div class="caption">
+							<h3 class="title ellipsis">Synology video tutorials</h3>
+							<p class="dot-ellipsis dot-resize-update">Get started and learn more about Synology's great features! </p>
+						</div>
+					</a>
+				</div>
+						</div>
+		</div>
+		<style>
+							.index_sb[name="dsm_live_demo_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage/191"); }
+							.index_sb[name="Privacy"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage/389"); }
+							.index_sb[name="Webinar_v2_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage/193"); }
+							.index_sb[name="video_tutorial_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage/192"); }
+			
+			@media (-webkit-min-device-pixel-ratio: 2),
+				   (min-device-pixel-ratio: 2),
+				   (min-resolution: 192dpi),
+				   (min-resolution: 2dppx) {
+									.index_sb[name="dsm_live_demo_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage2x/191"); }
+									.index_sb[name="Privacy"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage2x/389"); }
+									.index_sb[name="Webinar_v2_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage2x/193"); }
+									.index_sb[name="video_tutorial_web40"]:before { background-image: url("https://www.synology.com/api/homepage/smallbanner/getImage2x/192"); }
+							}
+		</style>
+	</section>
+
+
+	
+		<section id="case_study_bannerv2" class="case_lang_en-global">
+	<div class="pure-g">
+		<div class="pure-u-1-1 pure-u-xl-7-24 align-middle">
+			<div class="case_study_left">
+				<div class="case_study_title">
+					Why Synology?<br>Find out from our customers.
+				</div>
+				<div class="case_study_btm">
+					<a class="read_more" href="company/case_study" rel="noopener noreferrer">
+						View all customer stories <span class="read_more_icon"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="pure-u-1-1 pure-u-xl-17-24 right_pos_fix">
+			<div class="case_study_right">
+				<div class="pure-g fix_height_item">
+											<div class="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4 case_item">
+							<div class="bg bg1"></div>
+							<a href="company/case_study/holidayinn_riyadh" rel="noopener noreferrer">
+								<div class="tbl-cell">
+									<div class="logo">
+										<img src="img/home/case_study_banner/en-global/logo1.png" srcset="img/home/case_study_banner/en-global/logo1@2x.png 2x">
+									</div>
+									<div class="btn btn-primary blue btn-xs learn_more_btn">Learn more</div>
+								</div>
+							</a>
+						</div>
+											<div class="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4 case_item">
+							<div class="bg bg2"></div>
+							<a href="company/case_study/Premium_automobiles" rel="noopener noreferrer">
+								<div class="tbl-cell">
+									<div class="logo">
+										<img src="img/home/case_study_banner/en-global/logo2.png" srcset="img/home/case_study_banner/en-global/logo2@2x.png 2x">
+									</div>
+									<div class="btn btn-primary blue btn-xs learn_more_btn">Learn more</div>
+								</div>
+							</a>
+						</div>
+											<div class="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4 case_item">
+							<div class="bg bg3"></div>
+							<a href="company/case_study/Jetstar_Pacific" rel="noopener noreferrer">
+								<div class="tbl-cell">
+									<div class="logo">
+										<img src="img/home/case_study_banner/en-global/logo3.png" srcset="img/home/case_study_banner/en-global/logo3@2x.png 2x">
+									</div>
+									<div class="btn btn-primary blue btn-xs learn_more_btn">Learn more</div>
+								</div>
+							</a>
+						</div>
+											<div class="pure-u-1-1 pure-u-sm-1-2 pure-u-lg-1-4 case_item">
+							<div class="bg bg4"></div>
+							<a href="company/case_study/Unilever" rel="noopener noreferrer">
+								<div class="tbl-cell">
+									<div class="logo">
+										<img src="img/home/case_study_banner/en-global/logo4.png" srcset="img/home/case_study_banner/en-global/logo4@2x.png 2x">
+									</div>
+									<div class="btn btn-primary blue btn-xs learn_more_btn">Learn more</div>
+								</div>
+							</a>
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</section>
+	</div>
+			
+		</main>
+
+		<footer>
+			
+
+<div id="footer">
+	<div class="container">
+		<div class="pure-g autopad">
+			<div class="tools pure-u-1-1 pure-u-xl-6-24">
+				<div class="pure-g autopad">
+										<div class="tool pure-u-1-2 pure-u-sm-1-4 pure-u-lg-1-4 pure-u-xl-1-2">
+						<div class="center">
+							<a href="support/nas_selector">
+							<img src="img/footer/footer_icon_nas.png" srcset="img/footer/footer_icon_nas_2x.png 2x">
+							NAS Selector
+							</a>
+						</div>
+					</div>
+										<div class="tool pure-u-1-2 pure-u-sm-1-4 pure-u-lg-1-4 pure-u-xl-1-2">
+						<div class="center">
+							<a href="support/nvr_selector">
+							<img src="img/footer/footer_icon_nvr.png" srcset="img/footer/footer_icon_nvr_2x.png 2x">
+							NVR Selector
+							</a>
+						</div>
+					</div>
+										<div class="tool pure-u-1-2 pure-u-sm-1-4 pure-u-lg-1-4 pure-u-xl-1-2">
+						<div class="center">
+							<a href="wheretobuy">
+							<img src="img/footer/footer_icon_wtb.png" srcset="img/footer/footer_icon_wtb_2x.png 2x">
+							Where to Buy
+							</a>
+						</div>
+					</div>
+										<div class="tool pure-u-1-2 pure-u-sm-1-4 pure-u-lg-1-4 pure-u-xl-1-2">
+						<div class="center">
+							<a href="support/RAID_calculator">
+							<img src="img/footer/footer_icon_raid.png" srcset="img/footer/footer_icon_raid_2x.png 2x">
+							RAID Calculator
+							</a>
+						</div>
+					</div>
+									</div>
+			</div>
+			<div class="tools pure-u-1-24 hide-at-lg"></div>
+			<div class="links pure-u-1-1 pure-u-xl-17-24">
+				<div class="pure-g">
+																	<div class="pure-u-1-1 pure-u-lg-1-4 footer_menu_pad_fix">
+							<h4 class="title" data-toggle-ft-menu>Compatibility</h4>
+							<ul class="footer_menu_item_mobile">
+																							<li>
+									<a href="compatibility/hd">
+										<span>HDD/SSD</span>
+									</a>
+								</li>
+																							<li>
+									<a href="compatibility/camera">
+										<span>IP Camera</span>
+									</a>
+								</li>
+																							<li>
+									<a href="compatibility/router">
+										<span>Router</span>
+									</a>
+								</li>
+																							<li>
+									<a href="compatibility?search_by=category&category=network_interface_cards&p=1">
+										<span>Network Card</span>
+									</a>
+								</li>
+																							<li>
+									<a href="compatibility">
+										<span>Other Devices</span>
+									</a>
+								</li>
+														</ul>
+						</div>
+																	<div class="pure-u-1-1 pure-u-lg-1-4 footer_menu_pad_fix">
+							<h4 class="title" data-toggle-ft-menu>Support</h4>
+							<ul class="footer_menu_item_mobile">
+																							<li>
+									<a href="support">
+										<span>Knowledge Base</span>
+									</a>
+								</li>
+																							<li>
+									<a href="support/download">
+										<span>Download Center</span>
+									</a>
+								</li>
+																							<li>
+									<a href="support/security">
+										<span>Security Advisory</span>
+									</a>
+								</li>
+																							<li>
+									<a href="support/developer">
+										<span>Developers</span>
+									</a>
+								</li>
+																							<li>
+									<a href="https://account.synology.com" target="_blank">
+										<span>Synology Account</span>
+									</a>
+								</li>
+														</ul>
+						</div>
+																	<div class="pure-u-1-1 pure-u-lg-1-4 footer_menu_pad_fix">
+							<h4 class="title" data-toggle-ft-menu>Company</h4>
+							<ul class="footer_menu_item_mobile">
+																							<li>
+									<a href="company">
+										<span>About Synology</span>
+									</a>
+								</li>
+																							<li>
+									<a href="company/news">
+										<span>Newsroom</span>
+									</a>
+								</li>
+																							<li>
+									<a href="company/reviews">
+										<span>Media Coverage</span>
+									</a>
+								</li>
+																							<li>
+									<a href="company/case_study">
+										<span>Customer Stories</span>
+									</a>
+								</li>
+																							<li>
+									<a href="company/user_comments">
+										<span>User Comments</span>
+									</a>
+								</li>
+																							<li>
+									<a href="company/contact_us">
+										<span>Contact us</span>
+									</a>
+								</li>
+														</ul>
+						</div>
+																	<div class="pure-u-1-1 pure-u-lg-1-4 footer_menu_pad_fix">
+							<h4 class="title" data-toggle-ft-menu>Resources</h4>
+							<ul class="footer_menu_item_mobile">
+																							<li>
+									<a href="beta">
+										<span>Beta Program</span>
+									</a>
+								</li>
+																							<li>
+									<a href="support/bounty_program">
+										<span>Bounty Program</span>
+									</a>
+								</li>
+														</ul>
+						</div>
+									</div>
+			</div>
+			<div class="copyright pure-u-1-1">
+				<div class="pure-g autopad">
+					<div class="pure-u-1-1 pure-u-md-3-5">
+						<span>Copyright © 2018 Synology Inc. All rights reserved.</span>
+												<div class="terms_wrap">
+							<a href="company/legal/terms_conditions" title="Terms &amp; Conditions" class="terms">Terms &amp; Conditions</a> |
+							<a href="privacy" title="Privacy">Privacy</a>
+						</div>
+					</div>
+					<div class="pure-u-1-1 pure-u-md-2-5 right">
+						<ul class="social_links">
+															<li>
+									<a href="https://www.facebook.com/synology?ref=nf" target="_blank" title="Facebook" rel="noopener">
+										<i class="icon-fb"></i>
+									</a>
+								</li>
+							
+															<li>
+									<a href="https://twitter.com/synology" target="_blank" title="Twitter" rel="noopener">
+										<i class="icon-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/user/synologyinc" target="_blank" title="Youtube" rel="noopener">
+										<i class="icon-youtube"></i>
+									</a>
+								</li>
+							
+														<li>
+								<a href="https://www.instagram.com/synology.official/" target="_blank" title="instagram" rel="noopener">
+									<i class="icon-instagram"></i>
+								</a>
+							</li>
+													</ul>
+						<a class="change_language"><i class="fa fa-globe"></i> English - Global</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/template" id="lang_dialog">
+	<div class="pure-g autopad">
+								<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="English - Global" data-lang="en-global" class="chgLang active">English - Global</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Čeština" data-lang="cs-cz" class="chgLang">Čeština</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Dansk" data-lang="da-dk" class="chgLang">Dansk</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Deutsch" data-lang="de-de" class="chgLang">Deutsch</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="English - UK" data-lang="en-uk" class="chgLang">English - UK</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="English - US" data-lang="en-us" class="chgLang">English - US</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Español" data-lang="es-es" class="chgLang">Español</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Español - Mexico" data-lang="es-mx" class="chgLang">Español - Mexico</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Français" data-lang="fr-fr" class="chgLang">Français</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Magyar" data-lang="hu-hu" class="chgLang">Magyar</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Italiano" data-lang="it-it" class="chgLang">Italiano</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="日本語" data-lang="ja-jp" class="chgLang">日本語</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="한국어" data-lang="ko-kr" class="chgLang">한국어</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Nederlands" data-lang="nl-nl" class="chgLang">Nederlands</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Polski" data-lang="pl-pl" class="chgLang">Polski</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Русский" data-lang="ru-ru" class="chgLang">Русский</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Svenska" data-lang="sv-se" class="chgLang">Svenska</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="Türkçe" data-lang="tr-tr" class="chgLang">Türkçe</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="简体中文" data-lang="zh-cn" class="chgLang">简体中文</a>
+			</div>
+											<div class="pure-u-1-1 pure-u-xs-1-2 pure-u-md-1-3 pure-u-lg-1-4">
+				<a href="#" title="繁體中文" data-lang="zh-tw" class="chgLang">繁體中文</a>
+			</div>
+						</div>
+</script>
+
+<script>
+	$(document).ready(function() {
+		SYNO_WEB.footer();
+	});
+</script>
+		</footer>
+	</div>
+	<div id="mask"></div>
+	<input type="hidden" name="_token" value="s6wYe3gjQhDjhmv61RXY8UvAdV0WxE5p1FAfgbhF">
+
+	<script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/vendor/jquery-deparam/jquery-deparam.js"></script>
+	<script src="js/vendor/flexslider/jquery.flexslider-min.js"></script>
+	<script src="js/vendor/dotdotdot/jquery.dotdotdot.min.js"></script>
+	<script src="js/vendor/tiptip/jquery.tipTip.js"></script>
+	<script src="js/vendor/bootstrap.tabs.min.js"></script>
+	<script src="js/vendor/select2/select2.js"></script>
+	<script src="js/vendor/jquery.autocomplete.min.js"></script>
+
+	<script src="js/syno/syno_web.js?v=392926274"></script>
+	<script src="js/syno/syno_helper.js?v=693406244"></script>
+	<script src="js/syno/syno_menu.js?v=355973213"></script>
+	<script src="js/syno/syno_flexslider.js?v=1135765005"></script>
+	<script src="js/syno/syno_affix.js?v=1462135004"></script>
+	<script src="js/syno/syno_feature_item_menu.js?v=1872429396"></script>
+	<script src="js/syno/syno_router.js?v=373066008"></script>
+	<script src="js/syno/syno_dialog.js?v=706680849"></script>
+	<script src="js/syno/syno_footer.js?v=443141260"></script>
+	<script src="js/syno/cookie_opt_in.js"></script>
+	
+			<script>
+window.console = (window.console || {});
+window.console.log = function() {};
+window.console.trace = function() {};
+console.info("%cStop!", "color: red; font-weight: bold; font-size: 50px;");
+console.info("%cThis is a console for developers. If someone has asked you to open this " + "window, they are likely trying to compromise your account.", "color: red;");
+console.info("%cPlease close this window now.", "color: blue;");
+</script>
+
+<script>
+  // LiveChat open in LAN
+      // contact window
+    var __lc = {};
+    __lc.license = 5914341;
+
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+
+	
+
+					<script>
+			$(document).ready(function(){
+				var $searchFormByG = $('#google-syno-quicksearch form');
+				$searchFormByG.on('submit', function(e) {
+					e.preventDefault();
+					var q = $.trim($('#kyword').val());
+					if (q.length) {
+						$.ajax({
+							method: 'POST',
+							url: SYNO_WEB.baseHref + 'api/search/quickSearch',
+							data: {
+								lang: SYNO_WEB.langCode,
+								query: q
+							}
+						}).always(function() {
+							window.location = SYNO_WEB.baseURI + SYNO_WEB.langCode + '/search?q=' + encodeURIComponent(q);
+							$searchFormByG[0].reset();
+						});
+					}
+					return false;
+				});
+
+				$('#kyword').on('focus', function(e) {
+					$searchFormByG.addClass('open');
+				});
+
+				$('#kyword').click(function(e) {
+					e.stopPropagation();
+					$searchFormByG.addClass('open');
+				});
+
+				$('#root').click(function() {
+					if ($searchFormByG.hasClass('open')) {
+						$searchFormByG.removeClass('open');
+					}
+				});
+			});
+		</script>
+	
+	
+<template id="syno-checkbox_template">
+	<label class="syno-btn-checkbox btn btn-sm" :class="labelStyle">
+		<i :class="iconStyle" v-if="icon"></i>
+		<slot></slot>
+		<input type="checkbox" :name="name" :value="opt" :checked="checked" :disabled="disabled" @change="$emit('input', !value)">
+	</label>
+</template>
+
+<script>
+	Vue.component('syno-checkbox', {
+		template: "#syno-checkbox_template",
+		props: {
+			name: null,
+			value: null,
+			opt: null,
+			disabled: {
+				type: Boolean,
+				default: false,
+			},
+			classNormal: {
+				type: String,
+				default: 'btn-outline-primary'
+			},
+			classChecked: {
+				type: String,
+				default: 'btn-primary active'
+			},
+			classDisabled: {
+				type: String,
+				default: 'btn-outline-secondary disabled'
+			},
+			icon: {
+				type: Boolean,
+				default: true
+			},
+			iconNormal: {
+				type: String,
+				default: 'fa fa-minus'
+			},
+			iconChecked: {
+				type: String,
+				default: 'fa fa-check'
+			},
+		},
+		computed: {
+			checked: function() {
+				return this.value;
+			},
+			labelStyle: function() {
+				if (this.disabled) {
+					return this.classDisabled;
+				} else if (this.checked) {
+					return this.classChecked;
+				}
+				return this.classNormal;
+			},
+			iconStyle: function() {
+				return (this.checked) ? this.iconChecked : this.iconNormal;
+			}
+		}
+	});
+</script>
+
+
+<template id="syno-radio_template">
+	<label class="syno-btn-radio btn" :class="labelStyle">
+		<i :class="iconStyle" v-if="icon"></i>
+		<slot></slot>
+		<input type="radio" :name="name" :value="opt" :checked="checked" :disabled="disabled" @change="$emit('input', opt)">
+	</label>
+</template>
+
+<script>
+	Vue.component('syno-radio', {
+		template: "#syno-radio_template",
+		props: {
+			name: null,
+			value: null,
+			opt: null,
+			disabled: {
+				type: Boolean,
+				default: false,
+			},
+			classNormal: {
+				type: String,
+				default: 'btn-outline-primary'
+			},
+			classChecked: {
+				type: String,
+				default: 'btn-primary active'
+			},
+			classDisabled: {
+				type: String,
+				default: 'btn-outline-secondary disabled'
+			},
+			icon: {
+				type: Boolean,
+				default: false
+			},
+			iconNormal: {
+				type: String,
+				default: 'fa '
+			},
+			iconChecked: {
+				type: String,
+				default: 'fa fa-circle'
+			},
+		},
+		computed: {
+			checked: function() {
+				return this.value == this.opt;
+			},
+			labelStyle: function() {
+				if (this.disabled) {
+					return this.classDisabled;
+				} else if (this.checked) {
+					return this.classChecked;
+				}
+				return this.classNormal;
+			},
+			iconStyle: function() {
+				return (this.checked) ? this.iconChecked : this.iconNormal;
+			}
+		},
+	});
+</script>
+
+<script>
+	Vue.component('select2', {
+		props: {
+			value: null,
+			placeholder: {
+				type: String,
+				default: "Find your Synology product"
+			},
+			label_search: {
+				type: String,
+				default: "Enter Product's Model Name"
+			},
+			label_select: {
+				type: String,
+				default: "Select a product"
+			},
+		},
+		template: '<select><slot></slot></select>',
+		mounted: function () {
+			var vm = this;
+			$(this.$el)
+				// init select2
+				.select2({
+					placeholder: this.placeholder
+				})
+				.val(this.value)
+				.trigger('change')
+				.on('change', function () {
+					vm.$emit('input', this.value)
+				})
+				.on("select2:open", function() {
+					$(".select2-dropdown .area_hint").remove();
+					if (vm.label_search) {
+						$(".select2-search--dropdown").prepend('<span class="area_hint">'+vm.label_search+'</span>');
+					}
+					if (vm.label_select) {
+						$(".select2-results").prepend('<span class="area_hint">'+vm.label_select+'</span>');
+					}
+				});
+			
+		},
+		watch: {
+			value: function (value) {
+				// update value
+				$(this.$el).val(value).trigger('change');
+			}
+		},
+		destroyed: function () {
+			$(this.$el).off().select2('destroy')
+		}
+	});
+</script>
+<script>
+	Vue.component('select2-plain', {
+		template: '<select><slot></slot></select>',
+		props: {
+			value: null,
+			placeholder: {
+				type: String,
+				default: "Please select"
+			},
+			label_select: {
+				type: String,
+				default: null
+			},
+		},
+		mounted: function () {
+			var vm = this;
+			this.forceupdate();
+			$(this.$el)
+				// init select2
+				.val(this.value)
+				.trigger('change')
+				.on('change', function () {
+					vm.$emit('input', this.value)
+				})
+				.on("select2:open", function() {
+					$(".select2-dropdown .area_hint").remove();
+					if (vm.label_select) {
+						$(".select2-results").prepend('<span class="area_hint">'+vm.label_select+'</span>');
+					}
+				});
+			
+		},
+		methods: {
+			forceupdate: function() {
+				$(this.$el)
+					.select2({
+						placeholder: this.placeholder,
+						minimumResultsForSearch: -1
+					});
+			}
+		},
+		watch: {
+			value: function (value) {
+				// update value
+				$(this.$el).val(value).trigger('change');
+			}
+		},
+		destroyed: function () {
+			$(this.$el).off().select2('destroy')
+		}
+	});
+</script>
+</body>
+</html>

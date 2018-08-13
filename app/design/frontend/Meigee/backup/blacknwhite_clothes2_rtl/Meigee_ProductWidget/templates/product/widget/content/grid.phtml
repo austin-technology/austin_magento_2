@@ -1,0 +1,239 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Template for displaying products list widget
+ *
+ * @var $block \Magento\CatalogWidget\Block\Product\ProductsList
+ */
+?>
+<?php if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())):?>
+<?php
+    $type = 'widget-product-grid';
+    $mode = 'grid';
+
+    $image = 'new_products_content_widget_grid';
+    $title = $block->getTitle() ? __($block->getTitle()) : '';
+	
+	$widget_type = $this->getData('widget_type');
+	if($widget_type == 'bestsellers') {
+		$items = $block->getBestSellersCollection()->getItems();
+	} elseif($widget_type == 'newproducts') {
+		$items = $block->getNewProductsCollection()->getItems();
+	} elseif($widget_type == 'featuredcategory') {
+		$items = $block->getFeaturedCategoryProductsCollection()->getItems();
+	} elseif($widget_type == 'saleproducts') {
+		$items = $block->getSaleProductsCollection()->getItems();
+	} else {
+		$items = $block->getProductCollection()->getItems();
+	}
+
+    $showWishlist = true;
+    $showCompare = true;
+	$mailtofriend_btn = false;
+    $showCart = true;
+    // $templateType =  \Magento\Catalog\Block\Product\ReviewRendererInterface::FULL_VIEW;
+    // $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+    $templateType = false;
+    $description = false;
+	
+	$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+	$lightbox_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_lightbox', 'lightbox_status');
+	$lightbox_widget_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_lightbox', 'lightbox_home');
+	$quickview_status = $this->helper('WeltPixel\Quickview\Helper\Data')->getConfig('weltpixel_quickview/general/enable_product_listing');
+    $quickview_btn = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_product_listing', 'quickview_btn');
+	
+	$name_align = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_product_listing', 'product_name_aligment');
+	$stock_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_product_listing', 'stock_status');
+	$widget_id = $block->getData('widget_id');
+	$type_price = 'widget-product-grid-'.$widget_id;
+	
+	$labels_type = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_labels', 'label_type');
+	$label_new = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_labels', 'label_new');
+	$label_sale = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_labels', 'label_sale');
+
+	$front_helper = $this->helper('\Meigee\Blacknwhite\Helper\FrontHelper');
+	$image_hover_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_image_hover', 'image_hover_status');
+	
+	$productsPerRow = $block->getProductsPerRow();
+
+    switch($productsPerRow){
+        case 1:
+            $productsPerRow = 'one-column';
+        break;
+        case 2:
+            $productsPerRow = 'two-columns';
+        break;
+        case 3:
+            $productsPerRow = 'three-columns';
+        break;
+        case 4:
+            $productsPerRow = 'four-columns';
+        break;
+        case 5:
+            $productsPerRow = 'five-columns';
+        break;
+        case 6:
+            $productsPerRow = 'six-columns';
+        break;
+    }
+	
+?>
+    <div class="block widget block-products-list widget-meigee-grid <?php /* @escapeNotVerified */ echo $mode; ?>" id="widget-products-<?php echo $widget_id; ?>">
+        <?php if ($title):?>
+        <div class="widget-title">
+            <h2><?php /* @escapeNotVerified */ echo $title; ?></h2>
+        </div>
+        <?php endif ?>
+        <div class="block-content">
+            <?php /* @escapeNotVerified */ echo '<!-- ' . $image . '-->' ?>
+            <div class=" products-<?php /* @escapeNotVerified */ echo $mode; ?> <?php /* @escapeNotVerified */ echo $mode .' '. $type .' '.$productsPerRow; ?>">
+                <ol class="products clearfix list items product-items row">
+                    <?php $iterator = 1; ?>
+                    <?php foreach ($items as $_item): ?>
+                        <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="item">' : '</li><li class="item">' ?>
+                         <div class="product-item-info clearfix" data-container="product-grid">
+                            <div class="image-wrapper">
+								<?php
+									$hoverImage = $image_hover_status ? $_item->getHoverImage() : false;
+									if ($hoverImage) {
+										$hoverImageUrl = $this->helper('Magento\Catalog\Helper\Image')
+														  ->init($_item, 'hover_image')
+														  ->setImageFile($hoverImage)
+														  ->getUrl();
+										$productImage = $block->getImage($_item, $image, array('data-hover-image'=>$hoverImageUrl));
+									}
+									else
+									{
+										$productImage = $block->getImage($_item, $image);
+									}
+									
+									if($front_helper->isProductNew($_item) || $front_helper->isProductSale($_item) || $front_helper->isProductOnlyLeft($_item)){
+										echo '<div class="product-labels clearfix '.$labels_type.' '.(($front_helper->isProductNew($_item) && $front_helper->isProductSale($_item)) || ($front_helper->isProductNew($_item) && $front_helper->isProductOnlyLeft($_item)) ? ' two-items' : '').'">';
+											if($front_helper->isProductNew($_item) && $label_new) {
+												echo '<span class="label-new">'.__('new').'</span>';
+											}
+											if($front_helper->isProductOnlyLeft($_item) && $label_sale) {
+												echo $front_helper->isProductOnlyLeft($_item);
+											} elseif($front_helper->isProductSale($_item) && $label_sale) {
+												echo '<span class="label-sale">'.__('sale').'</span>';
+											}
+										echo '</div>';
+									}
+								?>
+								<div class="hover-buttons">
+									<?php if($quickview_btn && $quickview_status) { ?>
+	                                	<a href="javascript: void(0);" data-quickview-url="<?php echo $block->getBaseUrl(); ?>weltpixel_quickview/catalog_product/view/id/<?php echo $block->escapeHtml($_item->getEntityId()); ?>" class="weltpixel-quickview"><i class="fa fa-search"></i><span><?php /* @escapeNotVerified */ echo __('Quick view') ?></span></a>
+	                                <?php } ?>
+	                                <?php if($lightbox_status && $lightbox_widget_status){ ?>
+	                                	<div class="lightbox-wrapper">
+		                                    <a href="<?php echo $block->getImage($_item, $image)->getImageUrl();  ?>" class="lightbox-button" data-toggle="lightbox" data-footer="<?php echo $block->escapeHtml($_item->getName()); ?>" title="<?php echo __('Lightbox'); ?>">
+		                                        <i class="fa fa-eye"></i><span><?php /* @escapeNotVerified */ echo __('Lightbox') ?></span>
+		                                    </a>
+		                                </div>
+	                                <?php } ?>
+	                            </div>
+								<a href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>" class="product-item-photo" tabindex="-1">
+                                    <?php echo $block->getImage($_item, $image)->toHtml(); ?>
+                                </a>
+                            </div>
+                            <div class="product details product-item-details">
+                                <strong class="product name product-item-name <?php echo $name_align; ?>">
+                                    <a title="<?php echo $block->escapeHtml($_item->getName()) ?>"
+                                       href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>"
+                                       class="product-item-link">
+                                        <?php echo $block->escapeHtml($_item->getName()) ?>
+                                    </a>
+                                </strong>
+                                <?php if ($templateType): ?>
+                                    <?php echo $block->getReviewsSummaryHtml($_item, $templateType, true) ?>
+                                <?php endif; ?>
+								
+								<?php echo $block->getProductPriceHtml($_item, $type_price); ?>
+								<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Catalog::product/product_timer.phtml")->setProduct($_item)->toHtml(); ?>
+								<?php if($stock_status != 4 && $stock_status != 2) {
+									if ($_item->getIsSalable()): ?>
+										<div class="stock available"><span><?php /* @escapeNotVerified */ echo __('In stock') ?></span></div>
+									<?php else: ?>
+										<div class="stock unavailable"><span><?php /* @escapeNotVerified */ echo __('Out of stock') ?></span></div>
+									<?php endif;
+								} ?>
+								<div class="product-item-inner">
+									<?php if($block->getProductPriceHtml($_item, $type_price) || $showCart || $showWishlist || $showCompare){ ?>
+										<div class="product actions product-item-actions">
+											<?php if ($showCart){ ?>
+												<div class="actions-primary">
+													<?php if ($_item->isSaleable()){ ?>
+														<?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
+															<button data-mage-init='{"redirectUrl":{"url":"<?php /* @escapeNotVerified */ echo $block->getAddToCartUrl($_item) ?>"}}'
+																type="button"
+																	title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>"
+																	class="action tocart btn btn-default btn-cart">
+																<span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+															</button>
+														<?php else: ?>
+															<?php
+																$postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+																$postData = $postDataHelper->getPostData($block->getAddToCartUrl($_item), ['product' => $_item->getEntityId()])
+															?>
+															<button data-post='<?php /* @escapeNotVerified */ echo $postData; ?>'
+																type="button"
+																	title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>"
+																	class="action tocart btn btn-default btn-cart">
+																<span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+															</button>
+														<?php endif; ?>
+													<?php }else{ ?>
+														<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" title="<?php echo __('Read more') ?>" class="btn btn-default"><?php echo __('Read more') ?></a>
+													<?php } ?>
+												</div>
+											<?php } ?>
+											<?php if($showWishlist || $showCompare || $mailtofriend_btn){ ?>
+												<div data-role="add-to-links" class="actions-secondary">
+													<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist): ?>
+														<a href="#"
+														   class="action towishlist"
+														   title="<?php echo $block->escapeHtml(__('Add to Wish List')); ?>"
+														   aria-label="<?php echo $block->escapeHtml(__('Add to Wish List')); ?>"
+														   data-post='<?php /* @escapeNotVerified */ echo $block->getAddToWishlistParams($_item); ?>'
+														   data-action="add-to-wishlist"
+														   role="button">
+															<i class="fa fa-heart-o"></i>
+														</a>
+													<?php endif; ?>
+													<?php if($showCompare){
+														$compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare'); ?>
+														<a href="#"
+														   class="action tocompare"
+														   title="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   aria-label="<?php echo $block->escapeHtml(__('Add to Compare')); ?>"
+														   data-post='<?php /* @escapeNotVerified */ echo $compareHelper->getPostDataParams($_item); ?>'
+														   role="button">
+															<i class="fa fa-signal"></i>
+														</a>
+													<?php } ?>
+													<?php if ($mailtofriend_btn){ ?>
+														<a href="<?php /* @escapeNotVerified */ echo $this->helper('Magento\Catalog\Helper\Product')->getEmailToFriendUrl($_item) ?>" class="action mailto friend" title="<?php /* @escapeNotVerified */ echo __('Email') ?>"><i class="fa fa-envelope-o"></i></a>
+													<?php } ?>
+												</div>
+											<?php } ?>
+										</div>
+									<?php } ?>
+								</div>
+                            </div>
+                        </div>
+                        <?php echo($iterator == count($items)+1) ? '</li>' : '' ?>
+                    <?php endforeach ?>
+                </ol>
+            </div>
+			<?php echo $block->getPagerHtml(); ?>
+        </div>
+    </div>
+<?php endif;?>

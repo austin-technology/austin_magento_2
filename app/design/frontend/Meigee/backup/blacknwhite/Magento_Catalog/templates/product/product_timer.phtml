@@ -1,0 +1,44 @@
+<?php 
+$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+$timer_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_countdown', 'timer_status');
+$timer_list_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_countdown', 'timer_listing_status');
+$timer_list_display = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_countdown', 'timer_listing_display');
+$timer_product_status = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_countdown', 'timer_product_status');
+$timer_product_display = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_countdown', 'timer_product_display');
+$front_helper = $this->helper('\Meigee\Blacknwhite\Helper\FrontHelper');
+$current_page = $front_helper->getCurrentPage();
+if(($timer_status && $timer_list_status && $current_page != 'catalog_product_view') || ($timer_status && $timer_product_status && $current_page == 'catalog_product_view')) {
+	$_product = $this->getProduct();
+	$special_to_date = $_product->getSpecialToDate();
+	if($special_to_date){
+		$specialprice = $_product->getSpecialPrice(); 
+		$specialPriceFromDate = $_product->getSpecialFromDate();
+		$today =  time();
+		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+		$magentoDateObject = $objectManager->create('Magento\Framework\Stdlib\DateTime\DateTime');
+		$magentoDate = $magentoDateObject->gmtDate();
+		if ($specialprice && isset($specialPriceFromDate) && isset($special_to_date)):
+			if($today >= strtotime($specialPriceFromDate) && $today <= strtotime($special_to_date) || $today >= strtotime( $specialPriceFromDate) && is_null($special_to_date)):
+	?>
+				<div class="timer-<?php echo $_product->getId(); ?> timer-box clearfix<?php echo (($timer_list_display == 0 && $current_page != 'catalog_product_view') || ($timer_product_display == 0 && $current_page == 'catalog_product_view') ? ' no-days' : ''); ?>">
+						<div class="days"><span>00</span></div>
+						<div class="hours"><span>00</span></div>
+						<div class="minutes"><span>00</span></div>
+						<div class="seconds"><span>00</span></div>
+				</div>
+				<script type="text/javascript">
+					require(["jquery"], function(jQuery)
+					{
+						endDate = new Date("<?php echo Date("m/d/y", strtotime($special_to_date)).' 11:59:00 PM'; ?>");
+						startDate = new Date(Date.parse("<?php echo Date("m/d/y h:i:s A", strtotime($magentoDate)); ?>"));
+						dateDiff = new Date((endDate)-(startDate));
+						secondsDiff = Math.floor(dateDiff.valueOf()/1000);
+						new productTimer.init(secondsDiff, <?php echo $_product->getId(); ?>);
+					});
+				</script>
+	<?php 
+			endif;
+		endif; 
+	}
+}
+?>

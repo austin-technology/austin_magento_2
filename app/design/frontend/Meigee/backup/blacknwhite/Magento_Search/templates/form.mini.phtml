@@ -1,0 +1,52 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var $helper \Magento\Search\Helper\Data */
+$helper = $this->helper(\Magento\Search\Helper\Data::class);
+$rand = rand(5, 1500);
+?>
+<div class="block block-search">
+    <div class="block block-title"><strong><?= /* @escapeNotVerified */ __('Search') ?></strong></div>
+    <div class="block block-content">
+		<span class="search-button"><i class="fa fa-search"></i></span>
+        <form class="form minisearch" id="search_mini_form_<?= $rand ?>" action="<?= /* @escapeNotVerified */ $helper->getResultUrl() ?>" method="get">
+			<div class="input-group">
+				<span class="input-group-btn">
+					<button type="submit"
+							title="<?= $block->escapeHtml(__('Search')) ?>"
+							class="action btn btn-default">
+						<span><i class="fa fa-search"></i></span>
+					</button>
+				</span>
+			   <input id="search_<?= $rand ?>"
+				   data-mage-init='{"quickSearch":{
+						"formSelector":"#search_mini_form_<?= $rand ?>",
+						"url":"<?= /* @escapeNotVerified */ $helper->getSuggestUrl()?>",
+						"destinationSelector":"#search_autocomplete_<?= $rand ?>"}
+				   }'
+				   type="text"
+				   name="<?= /* @escapeNotVerified */ $helper->getQueryParamName() ?>"
+				   value="<?= /* @escapeNotVerified */ $helper->getEscapedQueryText() ?>"
+				   placeholder="<?= /* @escapeNotVerified */ __('Search entire store here...') ?>"
+				   class="form-control"
+				   maxlength="<?= /* @escapeNotVerified */ $helper->getMaxQueryLength() ?>"
+				   role="combobox"
+				   aria-haspopup="false"
+				   aria-expanded="true"
+				   aria-autocomplete="both"
+				   autocomplete="off"/>
+				<div id="search_autocomplete_<?= $rand ?>" class="search-autocomplete"></div>
+			</div>
+			<?= $block->getChildHtml() ?>
+        </form>
+    </div>
+</div>
+
+

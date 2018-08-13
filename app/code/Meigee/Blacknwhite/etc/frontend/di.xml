@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+
+
+
+    <!-- preference for='Magento\Framework\View\Layout\Reader\Block' type='\Meigee\Blacknwhite\Preference\View\Block' / -->
+    <!--<preference for='Magento\Framework\View\Layout\Reader\Container' type='Meigee\Blacknwhite\Preference\View\Container' />-->
+    <!--<preference for='Magento\Framework\View\Layout\Reader\Move' type='Meigee\Blacknwhite\Preference\View\Move' />-->
+    <!--<preference for='Magento\Framework\View\Layout\Reader\UiComponent' type='Meigee\Blacknwhite\Preference\View\UiComponent' />-->
+    <!--<preference for='Magento\Framework\View\Page\Config\Reader\Body' type='Meigee\Blacknwhite\Preference\View\Body' />-->
+    <!--<preference for='Magento\Framework\View\Page\Config\Reader\Head' type='Meigee\Blacknwhite\Preference\View\Head' />-->
+    <!--<preference for='Magento\Framework\View\Page\Config\Reader\Html' type='Meigee\Blacknwhite\Preference\View\Html' />-->
+
+
+  
+<!--<preference for='Magento\Framework\View\Layout\Reader\Block' type='\Meigee\Blacknwhite\Preference\View\Block' />-->
+
+
+
+
+
+<preference for='Magento\Framework\View\Layout\Reader\Block' type='Meigee\Blacknwhite\Preference\View\Block' />
+<preference for='Magento\Framework\View\Layout\Reader\Container' type='Meigee\Blacknwhite\Preference\View\Container' />
+<preference for='Magento\Framework\View\Layout\Reader\Move' type='Meigee\Blacknwhite\Preference\View\Move' />
+<preference for='Magento\Framework\View\Layout\Reader\UiComponent' type='Meigee\Blacknwhite\Preference\View\UiComponent' />
+
+<preference for='Magento\Framework\View\Page\Config\Reader\Body' type='Meigee\Blacknwhite\Preference\View\Body' />
+<preference for='Magento\Framework\View\Page\Config\Reader\Head' type='Meigee\Blacknwhite\Preference\View\Head' />
+<preference for='Magento\Framework\View\Page\Config\Reader\Html' type='Meigee\Blacknwhite\Preference\View\Html' />
+
+
+  <type name="Magento\Framework\View\Result\Page">
+    <plugin name="meigeeBlacknwhiteResultPage" type="Meigee\Blacknwhite\Plugin\Result\Page"/>
+  </type>
+</config>

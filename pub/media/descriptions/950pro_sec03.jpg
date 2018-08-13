@@ -1,0 +1,3542 @@
+
+<!DOCTYPE html>
+	<html lang="en" >
+	    <head>
+	    	
+        <title>Samsung Semiconductor Global Official Website | Samsung | Samsung Semiconductor Global Website</title>
+        <meta name="title" content="Samsung Semiconductor Global Official Website | Samsung | Samsung Semiconductor Global Website">
+ 
+	        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+        
+        <meta name="msvalidate.01" content="BBC38A9581FDFDD81877CF82702846B4"/>
+        
+        <link rel="canonical" href="//www.samsung.com/semiconductor/"> 
+        
+        <meta name="keywords" content="Samsung Semiconductor, Samsung Exynos, Samsung DRAM, Samsung Processor Products, Samsung Semiconductor Solutions">
+        <meta name="description" content="Welcome to Samsung Semiconductor Official Website. Find Samsung Semiconductor SSD, Exynos, Applications, Samsung Processors, DRAM and Solutions.">
+        <meta name="date" content="2018-08-08"><!--Latest Publishing Date -->
+        <meta name="sitecode" content="semiconductor">
+    
+        <meta property="og:title" content="Samsung Semiconductor Global Official Website | Samsung | Samsung Semiconductor Global Website"/>
+        <meta property="og:description" content="Welcome to Samsung Semiconductor Official Website. Find Samsung Semiconductor SSD, Exynos, Applications, Samsung Processors, DRAM and Solutions."/>
+    
+        <meta itemprop="name" content="Samsung Semiconductor">
+        <meta itemprop="image" content="Samsung Semiconductor">
+        <meta itemprop="url" content="//www.samsung.com/semiconductor/">
+        <meta itemprop="description" content="Welcome to Samsung Semiconductor Official Website. Find Samsung Semiconductor SSD, Exynos, Applications, Samsung Processors, DRAM and Solutions.">
+        <meta itemprop="keywords" content="Samsung Semiconductor, Samsung Exynos, Samsung DRAM, Samsung Processor Products, Samsung Semiconductor Solutions">
+
+        <link rel="shortcut icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico">
+        <link rel="apple-touch-icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.gif">
+        
+        
+        
+
+ 
+            <link rel="stylesheet" href="//cdn.samsung.com/etc/designs/semi/global/business/templates/page.css" type="text/css"/>
+
+	        
+	        
+
+	        
+
+	        <link rel="stylesheet" href="//cdn.samsung.com/etc/designs/semi/global/business/templates/page-home.css" type="text/css"/>
+
+	        
+			
+      
+	        <!--[if lt IE 9]>
+	            <script src="/etc/designs/semi/global/business/js/modern.lib.min.js"></script>
+	        <![endif]-->
+	        
+<script type="text/javascript">
+var siteCode = "global";
+var I18N_HINT = "semiconductor";
+var I18N_LOCALE = siteCode
+if( siteCode =="cn") {
+	I18N_LOCALE="cn";
+	I18N_HINT="semiconductor-cn"
+}
+var pagePath = window.location.pathname.replace("/semiconductor-cn.html", "/semiconductor/").replace("/semiconductor-cn/", "/semiconductor/").replace("/semiconductor/cn/", "/semiconductor/").replace("/content/samsung", "").replace(".html", "/").split("/");
+var digitalData = {
+   "page" : { 
+      "pageInfo" : {
+         "siteCode" : siteCode,
+         "siteSection" : siteCode + ":" + pagePath[1], 
+         "pageName" : "", 
+		 "pageURL" : window.location.href,
+		 "pageTrack" : "semiconductor home" 
+      },
+      "pathIndicator" : { 
+         "depth_2" : "",
+		 "depth_3" : "",
+		 "depth_4" : "",
+		 "depth_5" : ""
+	  }
+   },
+   "product" : {
+      "category" : "", 
+	  "model_code" : "", 
+	  "model_name" : ""
+   },
+   "insight" : {
+	  "contents_type" : "",
+      "content_title" : ""
+   }
+}
+
+// depth Info.
+var depth = pagePath.length;
+var depth_last = pagePath[depth-1];
+if(depth_last ==""){
+    depth -= 1;
+}
+
+//set pathIndicator
+digitalData.page.pathIndicator.depth_2 = pagePath[1];
+
+if (digitalData.page.pageTrack != "semiconductor insights detail") {
+	if(depth >= 3) digitalData.page.pathIndicator.depth_3 = pagePath[2];
+	if(depth >= 4) digitalData.page.pathIndicator.depth_4 = pagePath[3];
+	if(depth >= 5) digitalData.page.pathIndicator.depth_5 = pagePath[4];
+}
+
+//set pageName
+var pageName = siteCode;
+if(digitalData.page.pathIndicator.depth_2 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_2;
+if(digitalData.page.pathIndicator.depth_3 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_3;
+if(digitalData.page.pathIndicator.depth_4 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_4;
+if(digitalData.page.pathIndicator.depth_5 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_5.trim();
+digitalData.page.pageInfo.pageName = pageName;
+</script>
+
+			
+	        <script src="//assets.adobedtm.com/2f39014c5d5172df150d19eb00fe42ddba079437/satelliteLib-3aa46787c50754a61315768a5aed6696b9eafa4c.js"></script>
+	        
+	        
+				<!-- Google Tag Manager iProspect Korea-->
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-PW2Z36M');</script>
+				<!-- End Google Tag Manager iProspect Korea-->			
+			
+	        
+	    </head>
+	    <body class="cookie-warning">
+	    	
+	    		<!-- Google Tag Manager (noscript) iProspect Korea-->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW2Z36M"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<!-- End Google Tag Manager (noscript) iProspect Korea-->
+	    	
+	    	
+	        
+	        <div id="wrap">
+				<!--googleoff: all-->
+	            
+<header id="header" role="banner">
+	<div class="s-skip-content">
+        <a href="#content" id="skipToContent">Skip to content</a>    
+	</div>
+    <!--cq:include path="iparb" resourceType="/libs/foundation/components/iparsys"/-->
+    
+<input type="hidden" id="siteCode" value="semiconductor">
+
+
+<nav class="gb-gnb" role="navigation" id="gbGnb">
+	
+	<div class="gb-gnb__notice-bar" style="display: none;">
+    	<div class="gb-gnb__notice-bar-inner">
+    		<p class="gb-gnb__notice-bar-desc">This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.
+			<br><a href="//www.samsung.com/semiconductor/privacy-global" class="gb-gnb__notice-bar-link">Find out more here<span class="s-svg s-arw-right"></span></a></p>
+    		<button type="button" class="s-svg s-ico-close"><span class="blind">Close</span></button>
+    	</div>
+    </div>
+	
+	<div class="gb-gnb__utility-navi">
+	
+        
+			<a href="/semiconductor" class="utility-business" data-link-info="true^/semiconductor^" data-omni="b2b_utility menu:semiconductor" title="Go to Samsung Semiconductor">SEMICONDUCTOR</a>
+       	
+    
+    <span class="utility-right">
+	
+        
+			<a href="https://www.samsung.com/semiconductor/cn/" target="_blank" data-link-info="true^https://www.samsung.com/semiconductor/cn/^_blank" data-omni="b2b_utility menu:chinese site" class="s-svg">
+				<span class="s-ico-new-window">CHINESE SITE</span>
+			</a>
+			
+			
+		
+	
+	</span>
+</div>
+
+	
+	
+	<div class="gb-gnb__dimmed" style="display: none"></div>
+	
+	
+	<div class="gb-gnb__bar">
+		<div class="gb-gnb__bar-inner">
+			
+			<a href="/semiconductor" class="s-svg gb-gnb__logo" title="Go to Samsung Semiconductor"><span class="blind">Samsung</span></a>
+			
+			
+			<button type="button" class="s-svg s-gnb-toggler"><span class="blind">Open the Menu</span></button>
+
+			
+			<ul class="gb-gnb__main" role="menubar">
+				
+				
+
+
+
+    
+        <li class="s-depth1-wrap" role="menu">
+            <a href="#" class="s-btn-toggler js-toggler" data-link-info="false^^" data-omni="b2b_products" aria-selected="false">PRODUCTS</a>
+            <div class="gb-gnb__drop-desktop">
+                <div class="gb-gnb__drop-inner" role="menuitem">
+                	
+                	
+                    <div class="s-depth2-col">
+                        <ul>
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/dram" data-omni="b2b_products:dram"><span class="s-depth2-link">DRAM</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/ddr4" class="s-depth3-link" data-omni="b2b_products:dram:ddr4">DDR4</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/ddr3" class="s-depth3-link" data-omni="b2b_products:dram:ddr3">DDR3</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/hbm-aquabolt" class="s-depth3-link" data-omni="b2b_products:dram:hbm aquabolt">HBM Aquabolt</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/hbm-flarebolt" class="s-depth3-link" data-omni="b2b_products:dram:hbm flarebolt">HBM Flarebolt</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/gddr6" class="s-depth3-link" data-omni="b2b_products:dram:gddr6">GDDR6</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/gddr5" class="s-depth3-link" data-omni="b2b_products:dram:gddr5">GDDR5</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/lpddr4x" class="s-depth3-link" data-omni="b2b_products:dram:lpddr4x">LPDDR4X</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/lpddr4" class="s-depth3-link" data-omni="b2b_products:dram:lpddr4">LPDDR4</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/lpddr3" class="s-depth3-link" data-omni="b2b_products:dram:lpddr3">LPDDR3</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/dram/module" class="s-depth3-link" data-omni="b2b_products:dram:module">MODULE</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="s-depth2-col">
+                        <ul>
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/ssd" data-omni="b2b_products:ssd"><span class="s-depth2-link">SSD</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/ssd/client-ssd" class="s-depth3-link" data-omni="b2b_products:ssd:client ssd">Client SSD</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/ssd/enterprise-ssd" class="s-depth3-link" data-omni="b2b_products:ssd:enterprise ssd">Enterprise SSD</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/ssd/z-ssd" class="s-depth3-link" data-omni="b2b_products:ssd:z-ssd">Z-SSD</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/estorage" data-omni="b2b_products:estorage"><span class="s-depth2-link">eSTORAGE</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/estorage/eufs" class="s-depth3-link" data-omni="b2b_products:estorage:eufs">eUFS</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/estorage/emmc" class="s-depth3-link" data-omni="b2b_products:estorage:emmc">eMMC</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/mcp" data-omni="b2b_products:mcp"><span class="s-depth2-link">MCP</span></a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="s-depth2-col">
+                        <ul>
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/processor" data-omni="b2b_products:processor"><span class="s-depth2-link">PROCESSOR</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/processor/mobile-processor" class="s-depth3-link" data-omni="b2b_products:processor:mobile processor">Mobile Processor</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/processor/iot-processor" class="s-depth3-link" data-omni="b2b_products:processor:iot processor">IoT Processor</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/processor/modem" class="s-depth3-link" data-omni="b2b_products:processor:modem">Modem</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/processor/rf" class="s-depth3-link" data-omni="b2b_products:processor:rf">RF</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/image-sensor" data-omni="b2b_products:image sensor"><span class="s-depth2-link">IMAGE SENSOR</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/image-sensor/mobile-image-sensor" class="s-depth3-link" data-omni="b2b_products:image sensor:mobile image sensor">Mobile Image Sensor</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/image-sensor/automotive-image-sensor" class="s-depth3-link" data-omni="b2b_products:image sensor:automotive image sensor">Automotive Image Sensor</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/image-sensor/isocell-plug-and-play" class="s-depth3-link" data-omni="b2b_products:image sensor:isocell plug and play">ISOCELL Plug and Play</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="s-depth2-col">
+                        <ul>
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/security" data-omni="b2b_products:security solutions"><span class="s-depth2-link">SECURITY SOLUTIONS</span></a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/display-ic" data-omni="b2b_products:display ic"><span class="s-depth2-link">DISPLAY IC</span></a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/products/power-ic" data-omni="b2b_products:power ic"><span class="s-depth2-link">POWER IC</span></a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </li>
+                        
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/products/bio-processor" data-omni="b2b_products:bio-processor"><span class="s-depth2-link">BIO-PROCESSOR</span></a>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    
+                 	
+                 	
+	                <div class="gb-gnb__drop-feature">
+						<div class="gb-gnb__drop-feature-in">
+							
+							<!-- <div class="feature-text align-left">
+								<strong>HBM Aquabolt</strong>
+								<p>The New Era of 
+Supercomputing</p>
+								<div class="__button">
+									<a href="/semiconductor/dram/hbm-aquabolt" data-omni="b2b_HBM Aquabolt"><button type="button" class="s-btn-encased">EXPLORE MORE</button></a>
+								</div>
+							</div> -->
+							
+							
+							<div class="feature-visual">
+								<a href="/semiconductor/dram/hbm-aquabolt" title="Go to Samsung semiconductor, HBM Aquabolt">
+									<img class="js-img-src" alt="Front and back view of Samsung HBM Aquabolt - The New Era of Supercompution" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-aquabolt.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-aquabolt.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-aquabolt.jpg?$ORIGIN_JPG$">
+									<noscript>
+										<img src="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-aquabolt.jpg?$ORIGIN_JPG$" alt="Front and back view of Samsung HBM Aquabolt - The New Era of Supercompution">
+									</noscript>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+                    <button type="button" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                </div>
+            </div>
+        </li>
+        
+    
+
+    
+        <li class="s-depth1-wrap" role="menu">
+            <a href="#" class="s-btn-toggler js-toggler" data-link-info="false^^" data-omni="b2b_solutions" aria-selected="false">SOLUTIONS</a>
+            <div class="gb-gnb__drop-desktop">
+                <div class="gb-gnb__drop-inner" role="menuitem">
+                	
+                	
+                    <div class="s-depth2-col">
+                        <ul>
+                            <li class="s-depth2-wrap">
+                                <a href="/semiconductor/solutions/applications" data-omni="b2b_solutions:applications"><span class="s-depth2-link">APPLICATIONS</span></a>
+                                
+                                
+                                
+                                
+                                
+                                <div class="s-depth3-wrap">
+                                     <ul>
+                                         
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/automotive" class="s-depth3-link" data-omni="b2b_solutions:applications:automotive">Automotive</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/desktop" class="s-depth3-link" data-omni="b2b_solutions:applications:desktop">Desktop</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/gaming-graphic-card" class="s-depth3-link" data-omni="b2b_solutions:applications:gaming graphic card">Gaming</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/iot-solution" class="s-depth3-link" data-omni="b2b_solutions:applications:iot">IoT</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/laptop" class="s-depth3-link" data-omni="b2b_solutions:applications:laptop">Laptop</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/networkswitch-networkrouter" class="s-depth3-link" data-omni="b2b_solutions:applications:network switch router">Network</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/server" class="s-depth3-link" data-omni="b2b_solutions:applications:server">Server</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/smart-tv" class="s-depth3-link" data-omni="b2b_solutions:applications:smart tv">Smart TV</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/smartphone" class="s-depth3-link" data-omni="b2b_solutions:applications:smartphone">Smartphone</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/smartwatch-smartband" class="s-depth3-link" data-omni="b2b_solutions:applications:smartwatch band">Smartwatch &amp; Band</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/tablet" class="s-depth3-link" data-omni="b2b_solutions:applications:tablet">Tablet</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     
+                                         <li>
+                                            <a href="/semiconductor/solutions/virtual-reality-augmented-reality" class="s-depth3-link" data-omni="b2b_solutions:applications:vr ar">VR &amp; AR</a>
+                                            
+                                            
+                                            
+                                            
+                                         </li>
+                                     </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                 	
+                 	
+	                <div class="gb-gnb__drop-feature">
+						<div class="gb-gnb__drop-feature-in">
+							
+							<!-- <div class="feature-text align-left">
+								<strong>Smartphone</strong>
+								<p></p>
+								<div class="__button">
+									<a href="/semiconductor/solutions/smartphone" data-omni="b2b_Smartphone"><button type="button" class="s-btn-encased">EXPLORE MORE</button></a>
+								</div>
+							</div> -->
+							
+							
+							<div class="feature-visual">
+								<a href="/semiconductor/solutions/smartphone" title="Go to Samsung semiconductor, Smartphone">
+									<img class="js-img-src" alt="Front and back view of Smartphone - Powering Marvels in Smartphones" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-smartphone.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-smartphone.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-smartphone.jpg?$ORIGIN_JPG$">
+									<noscript>
+										<img src="//images.samsung.com/is/image/samsung/p5/semiconductor/gnb/gnb-banner-smartphone.jpg?$ORIGIN_JPG$" alt="Front and back view of Smartphone - Powering Marvels in Smartphones">
+									</noscript>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+                    <button type="button" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                </div>
+            </div>
+        </li>
+        
+    
+
+				
+            </ul>
+			
+
+			
+			
+			<div class="gb-gnb__drop-mobile drilldown" style="min-height: 575px">
+				<div class="gb-gnb__drop-mobile-wrap drilldown-container">
+					<div class="drilldown-root">
+						<ul class="s-depth1-wrap" id="mobile_left">
+							
+							
+
+
+
+    
+        <li>
+            <a href="#" class="s-depth1-link" data-omni="b2b_products">PRODUCTS<span class="s-svg s-arw-right"></span></a>
+            <div class="drilldown-sub">
+                <div class="drilldown-back">
+                    <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                </div>
+                <ul>
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_products:dram">DRAM</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/dram" data-omni="b2b_products:dram:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/ddr4" data-omni="b2b_products:dram:ddr4">DDR4</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/ddr3" data-omni="b2b_products:dram:ddr3">DDR3</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/hbm-aquabolt" data-omni="b2b_products:dram:hbm aquabolt">HBM Aquabolt</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/hbm-flarebolt" data-omni="b2b_products:dram:hbm flarebolt">HBM Flarebolt</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/gddr6" data-omni="b2b_products:dram:gddr6">GDDR6</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/gddr5" data-omni="b2b_products:dram:gddr5">GDDR5</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/lpddr4x" data-omni="b2b_products:dram:lpddr4x">LPDDR4X</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/lpddr4" data-omni="b2b_products:dram:lpddr4">LPDDR4</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/lpddr3" data-omni="b2b_products:dram:lpddr3">LPDDR3</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/dram/module" data-omni="b2b_products:dram:module">MODULE</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_products:ssd">SSD</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/ssd" data-omni="b2b_products:ssd:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/ssd/client-ssd" data-omni="b2b_products:ssd:client ssd">Client SSD</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/ssd/enterprise-ssd" data-omni="b2b_products:ssd:enterprise ssd">Enterprise SSD</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/ssd/z-ssd" data-omni="b2b_products:ssd:z-ssd">Z-SSD</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_products:estorage">eSTORAGE</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/estorage" data-omni="b2b_products:estorage:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/estorage/eufs" data-omni="b2b_products:estorage:eufs">eUFS</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/estorage/emmc" data-omni="b2b_products:estorage:emmc">eMMC</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="/semiconductor/mcp" class="s-depth2-link" data-omni="b2b_products:mcp">MCP</a>
+                        
+                        
+                        
+                        
+                        
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_products:processor">PROCESSOR</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/processor" data-omni="b2b_products:processor:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/processor/mobile-processor" data-omni="b2b_products:processor:mobile processor">Mobile Processor</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/processor/iot-processor" data-omni="b2b_products:processor:iot processor">IoT Processor</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/processor/modem" data-omni="b2b_products:processor:modem">Modem</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/processor/rf" data-omni="b2b_products:processor:rf">RF</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="/semiconductor/security" class="s-depth2-link" data-omni="b2b_products:security solutions">SECURITY SOLUTIONS</a>
+                        
+                        
+                        
+                        
+                        
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_products:image sensor">IMAGE SENSOR</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/image-sensor" data-omni="b2b_products:image sensor:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/image-sensor/mobile-image-sensor" data-omni="b2b_products:image sensor:mobile image sensor">Mobile Image Sensor</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/image-sensor/automotive-image-sensor" data-omni="b2b_products:image sensor:automotive image sensor">Automotive Image Sensor</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/image-sensor/isocell-plug-and-play" data-omni="b2b_products:image sensor:isocell plug and play">ISOCELL Plug and Play</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="/semiconductor/display-ic" class="s-depth2-link" data-omni="b2b_products:display ic">DISPLAY IC</a>
+                        
+                        
+                        
+                        
+                        
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="/semiconductor/products/power-ic" class="s-depth2-link" data-omni="b2b_products:power ic">POWER IC</a>
+                        
+                        
+                        
+                        
+                        
+                    </li>
+                    
+                
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="/semiconductor/products/bio-processor" class="s-depth2-link" data-omni="b2b_products:bio-processor">BIO-PROCESSOR</a>
+                        
+                        
+                        
+                        
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+    
+
+    
+        <li>
+            <a href="#" class="s-depth1-link" data-omni="b2b_solutions">SOLUTIONS<span class="s-svg s-arw-right"></span></a>
+            <div class="drilldown-sub">
+                <div class="drilldown-back">
+                    <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                </div>
+                <ul>
+                	
+                    <li class="s-depth2-wrap">
+                        <a href="#" class="s-depth2-link" data-omni="b2b_solutions:applications">APPLICATIONS</a>
+                        
+                        
+                        
+                        
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link s-depth3-link-bold" href="/semiconductor/solutions/applications" data-omni="b2b_solutions:applications:overview">Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/automotive" data-omni="b2b_solutions:applications:automotive">Automotive</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/desktop" data-omni="b2b_solutions:applications:desktop">Desktop</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/gaming-graphic-card" data-omni="b2b_solutions:applications:gaming graphic card">Gaming</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/iot-solution" data-omni="b2b_solutions:applications:iot">IoT</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/laptop" data-omni="b2b_solutions:applications:laptop">Laptop</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/networkswitch-networkrouter" data-omni="b2b_solutions:applications:network switch router">Network</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/server" data-omni="b2b_solutions:applications:server">Server</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/smart-tv" data-omni="b2b_solutions:applications:smart tv">Smart TV</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/smartphone" data-omni="b2b_solutions:applications:smartphone">Smartphone</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/smartwatch-smartband" data-omni="b2b_solutions:applications:smartwatch band">Smartwatch &amp; Band</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/tablet" data-omni="b2b_solutions:applications:tablet">Tablet</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/solutions/virtual-reality-augmented-reality" data-omni="b2b_solutions:applications:vr ar">VR &amp; AR</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+    
+
+
+               
+
+    
+        
+        <li>
+            <a class="s-depth1-link" href="/semiconductor/insights" data-omni="b2b_insights">INSIGHTS</a>
+            
+            
+            
+            
+            
+        </li>
+    
+
+    
+        <li>
+            <a href="#" class="s-depth1-link" data-omni="b2b_support">SUPPORT<span class="s-svg s-arw-right"></span></a>
+            <div class="drilldown-sub">
+                <div class="drilldown-back">
+                    <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                </div>
+                <ul>
+                    <li class="s-depth2-wrap">
+                        
+                        
+                        
+                        
+                        <a href="#" class="s-depth2-link" data-omni="b2b_support:product support tools" title="Expand product support tools Menu">PRODUCT SUPPORT TOOLS</a>
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/products-finder" data-omni="b2b_support:product support tools:product finder">Product Finder</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/technical-resources" data-omni="b2b_support:product support tools:technical resources">Technical Resources</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/storage-tco-calculator" data-omni="b2b_support:product support tools:storage tco calculator">Storage TCO Calculator</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                
+                    <li class="s-depth2-wrap">
+                        
+                        
+                        
+                        
+                        <a href="#" class="s-depth2-link" data-omni="b2b_support:quality support" title="Expand quality support Menu">QUALITY SUPPORT</a>
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/quality-management" data-omni="b2b_support:quality support:quality management">Quality Management</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/customer-service" data-omni="b2b_support:quality support:customer service">Customer Service</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                
+                    <li class="s-depth2-wrap">
+                        
+                        
+                        
+                        
+                        <a href="#" class="s-depth2-link" data-omni="b2b_support:contact us" title="Expand contact us Menu">CONTACT US</a>
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/global-network" data-omni="b2b_support:contact us:global network">Global Network</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/support/faqs" data-omni="b2b_support:contact us:faqs">FAQs</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                
+                                
+                                
+                                <a class="s-depth3-link" href="#" onclick="popup_open('http://www.samsung.com/semiconductor/support/contact-us_popup/',500,800);" data-omni="b2b_support:contact us:contact us">Contact Us</a>
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        
+    
+
+    
+        <li>
+            <a href="#" class="s-depth1-link" data-omni="b2b_about us">ABOUT US<span class="s-svg s-arw-right"></span></a>
+            <div class="drilldown-sub">
+                <div class="drilldown-back">
+                    <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                </div>
+                <ul>
+                    <li class="s-depth2-wrap">
+                        
+                        
+                        
+                        
+                        <a href="#" class="s-depth2-link" data-omni="b2b_about us:company information" title="Expand company information Menu">COMPANY INFORMATION</a>
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/business-overview" data-omni="b2b_about us:company information:business overview">Business Overview</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/location" data-omni="b2b_about us:company information:location">Location</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/executives" data-omni="b2b_about us:company information:executives">Executives</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/history" data-omni="b2b_about us:company information:history">History</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/csr" data-omni="b2b_about us:company information:csr">CSR</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/open-innovation" data-omni="b2b_about us:company information:open innovation">Open Innovation</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/careers" data-omni="b2b_about us:company information:careers">Careers</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                
+                    <li class="s-depth2-wrap">
+                        
+                        
+                        
+                        
+                        <a href="#" class="s-depth2-link" data-omni="b2b_about us:ehs" title="Expand ehs Menu">EHS</a>
+                        <ul>
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/green-management" data-omni="b2b_about us:ehs:green management">Green Management</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/environmental-conservation" data-omni="b2b_about us:ehs:environmental conservation">Environmental Conservation</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/employment-health" data-omni="b2b_about us:ehs:employment health">Employment Health</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/safety-management" data-omni="b2b_about us:ehs:safety management">Safety Management</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/global-compliance" data-omni="b2b_about us:ehs:global compliance">Global Compliance</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        
+                            <li>
+                                <a class="s-depth3-link" href="/semiconductor/about-us/external-cooperation" data-omni="b2b_about us:ehs:external cooperation">External Cooperation</a>
+                                
+                                
+                                
+                                
+                            </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        
+    
+    
+							
+						</ul>
+						
+						
+
+<ul class="s-depth1-wrap s-depth1-wrap-link">
+	
+        <li>
+	        <a class="s-depth1-link" href="https://www.samsung.com/semiconductor/cn/" target="_blank" data-link-info="true^https://www.samsung.com/semiconductor/cn/^_blank" data-omni="b2b_utility menu:chinese site">
+	        	CHINESE SITE<span class="s-svg s-ico-new-window"></span>
+	        </a>
+	        
+	        
+        </li>
+	
+</ul>
+
+						
+					</div>
+				</div>
+			</div>
+			
+
+			
+			<button type="button" class="s-svg s-ico-close js-mo-close"><span class="blind">Close the Menu</span></button>
+
+			
+			<div class="gb-gnb__sub">
+				<ul class="gb-gnb__sub-nav" role="menubar">
+					
+
+             
+
+    
+        
+        <li class="s-depth1-wrap">
+            <a href="/semiconductor/insights" class="s-btn-link" data-omni="b2b_insights">INSIGHTS<span class="s-svg s-arw-right"></span></a>
+            
+            
+            
+             
+             
+         </li>
+    
+
+    
+        <li class="s-depth1-wrap" role="menu">
+            <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="true^/^" data-omni="b2b_support" aria-selected="false">SUPPORT</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="menuitem">
+                        <div class="s-depth2-col">
+                            <ul>
+                                <li class="s-depth2-wrap">
+                                    
+                                    
+                                    
+                                    
+                                    <span class="s-depth2-link" data-omni="b2b_support:product support tools">PRODUCT SUPPORT TOOLS</span>
+                                    
+                                    <div class="s-depth3-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="/semiconductor/support/products-finder" class="s-depth3-link" data-omni="b2b_support:product support tools:product finder">Product Finder</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/support/technical-resources" class="s-depth3-link" data-omni="b2b_support:product support tools:technical resources">Technical Resources</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/support/storage-tco-calculator" class="s-depth3-link" data-omni="b2b_support:product support tools:storage tco calculator">Storage TCO Calculator</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                
+                        <div class="s-depth2-col">
+                            <ul>
+                                <li class="s-depth2-wrap">
+                                    
+                                    
+                                    
+                                    
+                                    <span class="s-depth2-link" data-omni="b2b_support:quality support">QUALITY SUPPORT</span>
+                                    
+                                    <div class="s-depth3-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="/semiconductor/support/quality-management" class="s-depth3-link" data-omni="b2b_support:quality support:quality management">Quality Management</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/support/customer-service" class="s-depth3-link" data-omni="b2b_support:quality support:customer service">Customer Service</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                
+                        <div class="s-depth2-col">
+                            <ul>
+                                <li class="s-depth2-wrap">
+                                    
+                                    
+                                    
+                                    
+                                    <span class="s-depth2-link" data-omni="b2b_support:contact us">CONTACT US</span>
+                                    
+                                    <div class="s-depth3-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="/semiconductor/support/global-network" class="s-depth3-link" data-omni="b2b_support:contact us:global network">Global Network</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/support/faqs" class="s-depth3-link" data-omni="b2b_support:contact us:faqs">FAQs</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                
+                                                
+                                                
+                                                <a href="#" onclick="popup_open('http://www.samsung.com/semiconductor/support/contact-us_popup/',500,800);" class="s-depth3-link" data-omni="b2b_support:contact us:contact us">Contact Us</a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                </div>
+            </div>
+        </li>
+        
+    
+
+    
+        <li class="s-depth1-wrap" role="menu">
+            <a href="#" class="s-btn-toggler js-toggler js-depth1-link" data-link-info="true^/semiconductor/about-us/business-overview^" data-omni="b2b_about us" aria-selected="false">ABOUT US</a>
+                <div class="gb-gnb__drop-desktop">
+                    <div class="gb-gnb__drop-inner" role="menuitem">
+                        <div class="s-depth2-col">
+                            <ul>
+                                <li class="s-depth2-wrap">
+                                    
+                                    
+                                    
+                                    
+                                    <span class="s-depth2-link" data-omni="b2b_about us:company information">COMPANY INFORMATION</span>
+                                    
+                                    <div class="s-depth3-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="/semiconductor/about-us/business-overview" class="s-depth3-link" data-omni="b2b_about us:company information:business overview">Business Overview</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/location" class="s-depth3-link" data-omni="b2b_about us:company information:location">Location</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/executives" class="s-depth3-link" data-omni="b2b_about us:company information:executives">Executives</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/history" class="s-depth3-link" data-omni="b2b_about us:company information:history">History</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/csr" class="s-depth3-link" data-omni="b2b_about us:company information:csr">CSR</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/open-innovation" class="s-depth3-link" data-omni="b2b_about us:company information:open innovation">Open Innovation</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/careers" class="s-depth3-link" data-omni="b2b_about us:company information:careers">Careers</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                
+                        <div class="s-depth2-col">
+                            <ul>
+                                <li class="s-depth2-wrap">
+                                    
+                                    
+                                    
+                                    
+                                    <span class="s-depth2-link" data-omni="b2b_about us:ehs">EHS</span>
+                                    
+                                    <div class="s-depth3-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="/semiconductor/about-us/green-management" class="s-depth3-link" data-omni="b2b_about us:ehs:green management">Green Management</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/environmental-conservation" class="s-depth3-link" data-omni="b2b_about us:ehs:environmental conservation">Environmental Conservation</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/employment-health" class="s-depth3-link" data-omni="b2b_about us:ehs:employment health">Employment Health</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/safety-management" class="s-depth3-link" data-omni="b2b_about us:ehs:safety management">Safety Management</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/global-compliance" class="s-depth3-link" data-omni="b2b_about us:ehs:global compliance">Global Compliance</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/semiconductor/about-us/external-cooperation" class="s-depth3-link" data-omni="b2b_about us:ehs:external cooperation">External Cooperation</a>
+                                                
+                                                
+                                                
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                </div>
+            </div>
+        </li>
+        
+    
+
+                </ul>
+				
+				<ul class="gb-gnb__utility">
+					<li>
+						
+						<button type="button" class="s-btn-utility js-ico-search" title="Search" aria-expanded="false" data-omni="search">
+						<span class="s-svg s-ico-search"><span class="blind">Open Search Layer</span></span>
+						<span class="s-search-arrow"></span>
+						</button>
+						
+						<div class="gb-gnb__search">
+							<div class="gb-gnb__search-inner">
+								<div class="gb-gnb__search-bar">
+									<div class="gb-gnb__search-input-wrap">
+										<label for="01_1203" class="blind">Input Search Keyword</label>
+										<input type="text" id="01_1203" name="gnb_search" class="gb-gnb__search-input" autocomplete="off">
+										<button type="submit" class="s-svg s-ico-search"><span class="blind">Search</span></button>
+										
+										<button type="button" class="s-svg s-ico-close"><span class="blind">Search Layer Close</span></button>
+									</div>
+									<div class="gb-gnb__search-history cookie" style="display: none;">
+										<div class="gb-gnb__search-history-title">Search History</div>
+										<ul></ul>
+										<button type="button" class="gb-gnb__search-history-close">CLEAR HISTORY</button>
+									</div>
+									
+									<div class="gb-gnb__search-history no-suggestion" style="display: block">
+										<div class="gb-gnb__search-history-title" style="display:none">Search Suggestions</div>
+										<p class="gb-gnb__search-suggest-nodata" style="display:none">No Suggestions</p>
+									</div>
+								</div>
+								
+								<div class="gb-gnb__search-suggest">
+									<div class="gb-gnb__search-suggest-inner">
+										
+										<div class="gb-gnb__search-typeahead" style="display: none">
+											<div class="gb-gnb__search-typeahead-title"></div>
+											<ul></ul>
+										</div>
+										
+										
+										
+										
+										<div class="gb-gnb__search-suggest-list" style="display: block;">
+										<!-- 
+											<p class="gb-gnb__search-suggest-list-category-tit">Search Suggestions</p>
+											<ul class="gb-gnb__search-suggest-list-category">
+											</ul>
+											<ul class="gb-gnb__search-suggest-list-select">
+											</ul>
+										 -->	
+										</div>		
+												
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
+					</li>
+				</ul>
+                
+				
+					<input type="hidden" name="searchPath" id="searchPath" value="/semiconductor/search/"/>
+				
+				<input type="hidden" name="domain" id="domain" value="www.samsung.com"/>
+
+				<!-- No Access Layer Popup -->
+				<div class="layer_popup" id="confirmPopup" style="display:none;">
+					<div id="popup-type02" class="popAlign">
+						<div class="popup_wrap">
+							<h2 class="pop-tit"></h2>
+							<p class="msg-text tc"></p>
+							<div class="pop-btn">
+								<a href="javascript:void(0)" class="button login-leave-btn" title="No Access OK">OK</a>
+							</div>
+							<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
+								<span class="blind">No Access Close</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			
+				
+				<!-- Black Background Area -->
+				<div id="dimContainer">
+					<div class="lightbox-skrim" style="display:none"></div>
+				</div>
+		</div>
+		</div>
+	</div>
+</nav>
+
+
+    <input type="hidden" name="runModeString" id="runModeString" value="[prod][crx3][nosamplecontent][publish][publish2][live][crx3tar][ap]"/>
+    <input type="hidden" name="searchDomain" id="searchDomain" value="//searchapi.samsung.com/semi"/>
+    <input type="hidden" name="scene7domain" id="scene7domain" value="//images.samsung.com/is/image/samsung/p5/" />
+</header>
+
+	            
+		
+		
+	
+				<!--googleon: all-->
+	            
+<div id="content" role="main">
+    <!-- include the Hero Carousel component -->
+    <div class="he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-z-ssd-mobile.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-z-ssd-pc.jpg?$ORIGIN_JPG$" alt="Samsung Z-SSD™ against an image of electrical circuit." data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-z-ssd-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-z-ssd-pc.jpg?$ORIGIN_JPG$" alt="Samsung Z-SSD™ against an image of electrical circuit."/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">Z-SSD</p>
+
+                <h2 class="hero-carousel__slide-title">Redefining <br />
+Fast Responsiveness</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/ssd/z-ssd" title="Learn More : Go to Z-SSD Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-image-sensor_mobile_kv.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-image_sensor_pc_kv.jpg?$ORIGIN_JPG$" alt="ISOCELL image sensor in a sphere formed by pentagonal surface and colorful wireframe" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-image_sensor_pc_kv.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-image_sensor_pc_kv.jpg?$ORIGIN_JPG$" alt="ISOCELL image sensor in a sphere formed by pentagonal surface and colorful wireframe"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel--tshadow hero-carousel__text-left">
+                <p class="hero-carousel__text-eybrow">ISOCELL Plus</p>
+
+                <h2 class="hero-carousel__slide-title">A Picture-Perfect <br />
+Pixel Technology<br /></h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/insights/news-events/the-isocell-plus-for-enhanced-color-and-sharpness/" title="Learn More : Go to ISOCELL Plus News Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-1-nf1-ssd-mobile.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-1-nf1-ssd-pc.jpg?$ORIGIN_JPG$" alt="PM983 NF1 NVMe™ SSD chip mounted on the server." data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-1-nf1-ssd-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-1-nf1-ssd-pc.jpg?$ORIGIN_JPG$" alt="PM983 NF1 NVMe™ SSD chip mounted on the server."/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel--tshadow hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">NF1 SSD</p>
+
+                <h2 class="hero-carousel__slide-title">Server Scalability Enhanced with NF1 SSD</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/insights/tech-leadership/server-scalability-enhanced-with-nf1-ssd/" title="Learn More : Go to NF1 SSD News Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-9-9610-insights-mobile.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-9-9610-insights-pc.jpg?$ORIGIN_JPG$" alt="Exynos 7 series (9610) processor against an image of a neural network" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-9-9610-insights-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-9-9610-insights-pc.jpg?$ORIGIN_JPG$" alt="Exynos 7 series (9610) processor against an image of a neural network"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-right hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">Exynos 7 Series 9610</p>
+
+                <h2 class="hero-carousel__slide-title">Intelligent Processor <br />
+for Enriched Photography</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/insights/news-events/premium-multimedia-experiences-with-exynos-7-series-9610" title="Learn More : Go to Premium Multimedia Experiences with Exynos 7 Series 9610 News Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-lpddr5-mo.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-lpddr5-pc.jpg?$ORIGIN_JPG$" alt="Front view of Samsung LPDDR5 is laid on top of back view of Samsung LPDDR5 against an image of a neural network" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-lpddr5-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-lpddr5-pc.jpg?$ORIGIN_JPG$" alt="Front view of Samsung LPDDR5 is laid on top of back view of Samsung LPDDR5 against an image of a neural network"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel--tshadow hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">LPDDR5</p>
+
+                <h2 class="hero-carousel__slide-title">Accelerating<br />
+the Mobile <br />
+Intelligence</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/insights/news-events/samsung-announces-8gb-lpddr5-dram" title="Learn More : Go to Samsung Announces 8Gb LPDDR5 DRAM News Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-10-iseocell-image-sensor-pc.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-10-iseocell-image-sensor-mobile.jpg?$ORIGIN_JPG$" alt="Hardware inside the smartphone and rear camera module parts are layered on top of ISOCELL image sensor" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-10-iseocell-image-sensor-mobile.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/0-kv-semi-home-10-iseocell-image-sensor-mobile.jpg?$ORIGIN_JPG$" alt="Hardware inside the smartphone and rear camera module parts are layered on top of ISOCELL image sensor"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">ISOCELL Plug and Play</p>
+
+                <h2 class="hero-carousel__slide-title">Packed to Unleash<br />
+Camera Performance</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_learn more_20180807" href="/semiconductor/image-sensor/isocell-plug-and-play" title="Learn More : Go to ISOCELL PLUG &amp; PLAY Product Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</section></div>
+
+     
+    <!-- include the parsys component -->
+    <div class="par parsys"><div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    <style scoped="scoped">.mo_only { display: none; }
+
+.txt_fff { color: #fff; text-shadow: 0 1px 3px #000; }
+
+div.feature { width: 100%; max-width: 1440px; margin: 0 auto; }
+
+div.f01 { padding-top: 40px; }
+
+div.f01 hr { width: 40px; height: 5px; margin: 0 auto; background: #000; border: none; }
+
+div.f01 h2 { padding: 29px 0px 17px; font-family: "SamsungSharpSans", arial; font-size: 32px; letter-spacing: 0px; text-align: center; }
+
+div.f01 ul.column_ul { width: 100%; overflow: hidden; }
+
+div.f01 ul.column_ul > li { overflow: hidden; float: left; display: inline-block; width: 32.98%; margin-right: 0.53%; }
+
+div.f01 ul.column_ul > li:last-child { float: right; margin-right: 0; }
+
+div.f01 ul.column_ul > li > a { position: relative; display: inline-block; width: 100%; height: 100%; }
+
+div.f01 ul.column_ul > li > a > img.col_img { width: 100%;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: all;
+transition-property: all;
+-webkit-transition-timing-function: ease-in-out;
+transition-timing-function: ease-in-out;}
+
+div.f01 ul.column_ul > li > a > h3 { display: block; position: absolute; bottom: 18px; width: 100%; font-size: 18px; font-weight: bold; text-align: center; text-decoration: none; }
+
+
+
+<!--hover-->
+
+div.f01 ul.column_ul > li > a:hover img.col_img { transform: scale(1.15); }
+
+div.f01 ul.column_ul > li > a:hover > h3 { text-decoration: underline; text-underline-position: under; }
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+div.f01 { padding-top: 2.7777vw; }
+
+div.f01 hr { width: 2.7777vw; height: 0.3472vw; }
+
+div.f01 h2 { padding: 2.0138vw 0px 1.18055555vw; font-size: 2.2222vw; }
+
+div.f01 ul.column_ul > li > a > h3 { bottom: 1.25vw; font-size: 1.25vw; }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+div.f01 h2 { font-size: 23px; }
+
+div.f01 ul.column_ul > li > a > h3 { font-size: 13px; }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.mo_only { display: block; width: 100%; margin: 4.1666vw 0 6.8055vw; padding-left: 0.8333vw; text-align: center; }
+
+div.feature { max-width: 768px; }
+
+div.f01 hr { width: 5.5555vw; height: 0.6944vw; }
+
+div.f01 { overflow: hidden; padding-top: 6.5277vw; }
+
+div.f01 h2 { padding: 4.4444vw 0px 2.7777vw; font-size: 7.5vw; letter-spacing: 0px; }
+
+div.f01 ul.column_ul { position: relative; width: 100%; min-height: 59.7222vw; overflow: hidden; }
+
+div.f01 ul.column_ul > li { position: relative; top: 0; left: 0; overflow: hidden; float: left; display: inline-block; width: 100%; margin-right: 0; }
+
+div.f01 ul.column_ul > li:last-child { float: left; margin-right: 0; }
+
+div.f01 ul.column_ul > li > a { display: inline-block; width: 100%; height: 100%; }
+
+div.f01 ul.column_ul > li > a > h3 { display: block; position: absolute; bottom: 4.3055vw; width: 100%; font-size: 5.5555vw; font-weight: bold; text-align: center; text-decoration: none; }
+
+div.f01 ul.column_ul > li:first-child > a > h3 {letter-spacing: -0.8px;}
+
+.mo_only > li { display: inline-block; width: 2.5vw; height: 2.3611vw; margin-right: 1.6666vw; }
+.mo_only > li > a { box-sizing: border-box; display: inline-block; width: 100%; height: 100%; border-radius: 20px; border: 1px solid #626262; }
+.mo_only > li > a.active { background: #626262;  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+
+.mo_only { margin: 13px 0 22px; padding-left: 3px; }
+
+div.feature { min-width: 320px; }
+
+div.f01 hr { width: 18px; height: 2px; }
+
+div.f01 { padding-top: 21px; }
+
+div.f01 h2 { padding: 14px 0px 9px; font-size: 24px; }
+
+div.f01 ul.column_ul { min-height: 191px; }
+
+div.f01 ul.column_ul > li > a > h3 { bottom: 14px; font-size: 18px; }
+
+.mo_only > li { width: 8px; height: 7px; margin-right: 5px; }
+}</style>
+    
+    
+    <div class="feature f01" tabindex="0">
+	<hr>
+	<h2>Explore New Insights</h2>
+	<ul class="column_ul">
+		<li>
+			<a href="/semiconductor/insights/tech-leadership/samsung-system-lsi-showcases-innovative-semiconductor-technology-at-2018-mwc-shanghai/" title="Learn More : Go to Samsung Semiconductor at 2018 MWC Shanghai Page" data-omni="insight:tech leadership:Samsung Semiconductor at 2018 MWC Shanghai">
+				<img class="col_img js-img-src js-img-lazy" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mwc-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mwc-pc.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mwc-mo.jpg?$ORIGIN_JPG$" alt="2018 MWC Shanghai logo against an image of Samsung Electronics experience zone"/>
+				<h3 class="">2018 MWC Shanghai</h3>
+			</a>
+		</li>
+		<li>
+			<a href="/semiconductor/insights/tech-leadership/open-mpdk-and-unvme-user-space-device-driver/" title="Learn More : Go to OpenMPDK and uNVMe User Space Device Driver News Page" data-omni="insights:tech leadership:OpenMPDK and uNVMe User Space Device Driver">
+				<img class="col_img  js-img-src js-img-lazy" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mpdk-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mpdk-pc.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-mpdk-mo.jpg?$ORIGIN_JPG$" alt="A man is looking at the server in the server room holding a laptop on his hand."/>
+				<h3 class="txt_fff">Open MPDK and uNVMe</h3>
+			</a>
+		</li>
+		<li>
+			<a href="/semiconductor/insights/news-events/samsungs-newest-isocell-image-sensor-enables-mobile-devices-to-slow-down-time/" title="Learn More : Go to Samsung’s Newest ISOCELL Image Sensor Enables Mobile News Page" data-omni="insights:news events:samsungs newest isocell image sensor enables mobile devices to slow down time">
+				<img class="col_img js-img-src js-img-lazy" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-isocell-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-isocell-pc.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/insight-thumb-isocell-mo.jpg?$ORIGIN_JPG$" alt="Image describing the connection between smartphone camera and ISOCELL."/>
+				<h3 class="txt_fff">The 3-stack ISOCELL Fast 2L3</h3>
+			</a>
+		</li>
+	</ul>
+	<ul class="mo_only">
+		<li><a href="#" title="" class="active"></a></li>
+		<li><a href="#" title=""></a></li>
+		<li><a href="#" title=""></a></li>
+	</ul>
+</div>
+
+    <script>
+        ;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+            /*!
+ * @fileOverview TouchSwipe - jQuery Plugin
+ * @version 1.6.18
+ *
+ * @author Matt Bryson http://www.github.com/mattbryson
+ * @see https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+ * @see http://labs.rampinteractive.co.uk/touchSwipe/
+ * @see http://plugins.jquery.com/project/touchSwipe
+ * @license
+ * Copyright (c) 2010-2015 Matt Bryson
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ *
+ */
+! function(factory) {
+    "function" == typeof define && define.amd && define.amd.jQuery ? define(["jquery"], factory) : factory("undefined" != typeof module && module.exports ? require("jquery") : jQuery)
+}(function($) {
+    "use strict";
+
+    function init(options) {
+        return !options || void 0 !== options.allowPageScroll || void 0 === options.swipe && void 0 === options.swipeStatus || (options.allowPageScroll = NONE), void 0 !== options.click && void 0 === options.tap && (options.tap = options.click), options || (options = {}), options = $.extend({}, $.fn.swipe.defaults, options), this.each(function() {
+            var $this = $(this),
+                plugin = $this.data(PLUGIN_NS);
+            plugin || (plugin = new TouchSwipe(this, options), $this.data(PLUGIN_NS, plugin))
+        })
+    }
+
+    function TouchSwipe(element, options) {
+        function touchStart(jqEvent) {
+            if (!(getTouchInProgress() || $(jqEvent.target).closest(options.excludedElements, $element).length > 0)) {
+                var event = jqEvent.originalEvent ? jqEvent.originalEvent : jqEvent;
+                if (!event.pointerType || "mouse" != event.pointerType || 0 != options.fallbackToMouseEvents) {
+                    var ret, touches = event.touches,
+                        evt = touches ? touches[0] : event;
+                    return phase = PHASE_START, touches ? fingerCount = touches.length : options.preventDefaultEvents !== !1 && jqEvent.preventDefault(), distance = 0, direction = null, currentDirection = null, pinchDirection = null, duration = 0, startTouchesDistance = 0, endTouchesDistance = 0, pinchZoom = 1, pinchDistance = 0, maximumsMap = createMaximumsData(), cancelMultiFingerRelease(), createFingerData(0, evt), !touches || fingerCount === options.fingers || options.fingers === ALL_FINGERS || hasPinches() ? (startTime = getTimeStamp(), 2 == fingerCount && (createFingerData(1, touches[1]), startTouchesDistance = endTouchesDistance = calculateTouchesDistance(fingerData[0].start, fingerData[1].start)), (options.swipeStatus || options.pinchStatus) && (ret = triggerHandler(event, phase))) : ret = !1, ret === !1 ? (phase = PHASE_CANCEL, triggerHandler(event, phase), ret) : (options.hold && (holdTimeout = setTimeout($.proxy(function() {
+                        $element.trigger("hold", [event.target]), options.hold && (ret = options.hold.call($element, event, event.target))
+                    }, this), options.longTapThreshold)), setTouchInProgress(!0), null)
+                }
+            }
+        }
+
+        function touchMove(jqEvent) {
+            var event = jqEvent.originalEvent ? jqEvent.originalEvent : jqEvent;
+            if (phase !== PHASE_END && phase !== PHASE_CANCEL && !inMultiFingerRelease()) {
+                var ret, touches = event.touches,
+                    evt = touches ? touches[0] : event,
+                    currentFinger = updateFingerData(evt);
+                if (endTime = getTimeStamp(), touches && (fingerCount = touches.length), options.hold && clearTimeout(holdTimeout), phase = PHASE_MOVE, 2 == fingerCount && (0 == startTouchesDistance ? (createFingerData(1, touches[1]), startTouchesDistance = endTouchesDistance = calculateTouchesDistance(fingerData[0].start, fingerData[1].start)) : (updateFingerData(touches[1]), endTouchesDistance = calculateTouchesDistance(fingerData[0].end, fingerData[1].end), pinchDirection = calculatePinchDirection(fingerData[0].end, fingerData[1].end)), pinchZoom = calculatePinchZoom(startTouchesDistance, endTouchesDistance), pinchDistance = Math.abs(startTouchesDistance - endTouchesDistance)), fingerCount === options.fingers || options.fingers === ALL_FINGERS || !touches || hasPinches()) {
+                    if (direction = calculateDirection(currentFinger.start, currentFinger.end), currentDirection = calculateDirection(currentFinger.last, currentFinger.end), validateDefaultEvent(jqEvent, currentDirection), distance = calculateDistance(currentFinger.start, currentFinger.end), duration = calculateDuration(), setMaxDistance(direction, distance), ret = triggerHandler(event, phase), !options.triggerOnTouchEnd || options.triggerOnTouchLeave) {
+                        var inBounds = !0;
+                        if (options.triggerOnTouchLeave) {
+                            var bounds = getbounds(this);
+                            inBounds = isInBounds(currentFinger.end, bounds)
+                        }!options.triggerOnTouchEnd && inBounds ? phase = getNextPhase(PHASE_MOVE) : options.triggerOnTouchLeave && !inBounds && (phase = getNextPhase(PHASE_END)), phase != PHASE_CANCEL && phase != PHASE_END || triggerHandler(event, phase)
+                    }
+                } else phase = PHASE_CANCEL, triggerHandler(event, phase);
+                ret === !1 && (phase = PHASE_CANCEL, triggerHandler(event, phase))
+            }
+        }
+
+        function touchEnd(jqEvent) {
+            var event = jqEvent.originalEvent ? jqEvent.originalEvent : jqEvent,
+                touches = event.touches;
+            if (touches) {
+                if (touches.length && !inMultiFingerRelease()) return startMultiFingerRelease(event), !0;
+                if (touches.length && inMultiFingerRelease()) return !0
+            }
+            return inMultiFingerRelease() && (fingerCount = fingerCountAtRelease), endTime = getTimeStamp(), duration = calculateDuration(), didSwipeBackToCancel() || !validateSwipeDistance() ? (phase = PHASE_CANCEL, triggerHandler(event, phase)) : options.triggerOnTouchEnd || options.triggerOnTouchEnd === !1 && phase === PHASE_MOVE ? (options.preventDefaultEvents !== !1 && jqEvent.preventDefault(), phase = PHASE_END, triggerHandler(event, phase)) : !options.triggerOnTouchEnd && hasTap() ? (phase = PHASE_END, triggerHandlerForGesture(event, phase, TAP)) : phase === PHASE_MOVE && (phase = PHASE_CANCEL, triggerHandler(event, phase)), setTouchInProgress(!1), null
+        }
+
+        function touchCancel() {
+            fingerCount = 0, endTime = 0, startTime = 0, startTouchesDistance = 0, endTouchesDistance = 0, pinchZoom = 1, cancelMultiFingerRelease(), setTouchInProgress(!1)
+        }
+
+        function touchLeave(jqEvent) {
+            var event = jqEvent.originalEvent ? jqEvent.originalEvent : jqEvent;
+            options.triggerOnTouchLeave && (phase = getNextPhase(PHASE_END), triggerHandler(event, phase))
+        }
+
+        function removeListeners() {
+            $element.unbind(START_EV, touchStart), $element.unbind(CANCEL_EV, touchCancel), $element.unbind(MOVE_EV, touchMove), $element.unbind(END_EV, touchEnd), LEAVE_EV && $element.unbind(LEAVE_EV, touchLeave), setTouchInProgress(!1)
+        }
+
+        function getNextPhase(currentPhase) {
+            var nextPhase = currentPhase,
+                validTime = validateSwipeTime(),
+                validDistance = validateSwipeDistance(),
+                didCancel = didSwipeBackToCancel();
+            return !validTime || didCancel ? nextPhase = PHASE_CANCEL : !validDistance || currentPhase != PHASE_MOVE || options.triggerOnTouchEnd && !options.triggerOnTouchLeave ? !validDistance && currentPhase == PHASE_END && options.triggerOnTouchLeave && (nextPhase = PHASE_CANCEL) : nextPhase = PHASE_END, nextPhase
+        }
+
+        function triggerHandler(event, phase) {
+            var ret, touches = event.touches;
+            return (didSwipe() || hasSwipes()) && (ret = triggerHandlerForGesture(event, phase, SWIPE)), (didPinch() || hasPinches()) && ret !== !1 && (ret = triggerHandlerForGesture(event, phase, PINCH)), didDoubleTap() && ret !== !1 ? ret = triggerHandlerForGesture(event, phase, DOUBLE_TAP) : didLongTap() && ret !== !1 ? ret = triggerHandlerForGesture(event, phase, LONG_TAP) : didTap() && ret !== !1 && (ret = triggerHandlerForGesture(event, phase, TAP)), phase === PHASE_CANCEL && touchCancel(event), phase === PHASE_END && (touches ? touches.length || touchCancel(event) : touchCancel(event)), ret
+        }
+
+        function triggerHandlerForGesture(event, phase, gesture) {
+            var ret;
+            if (gesture == SWIPE) {
+                if ($element.trigger("swipeStatus", [phase, direction || null, distance || 0, duration || 0, fingerCount, fingerData, currentDirection]), options.swipeStatus && (ret = options.swipeStatus.call($element, event, phase, direction || null, distance || 0, duration || 0, fingerCount, fingerData, currentDirection), ret === !1)) return !1;
+                if (phase == PHASE_END && validateSwipe()) {
+                    if (clearTimeout(singleTapTimeout), clearTimeout(holdTimeout), $element.trigger("swipe", [direction, distance, duration, fingerCount, fingerData, currentDirection]), options.swipe && (ret = options.swipe.call($element, event, direction, distance, duration, fingerCount, fingerData, currentDirection), ret === !1)) return !1;
+                    switch (direction) {
+                        case LEFT:
+                            $element.trigger("swipeLeft", [direction, distance, duration, fingerCount, fingerData, currentDirection]), options.swipeLeft && (ret = options.swipeLeft.call($element, event, direction, distance, duration, fingerCount, fingerData, currentDirection));
+                            break;
+                        case RIGHT:
+                            $element.trigger("swipeRight", [direction, distance, duration, fingerCount, fingerData, currentDirection]), options.swipeRight && (ret = options.swipeRight.call($element, event, direction, distance, duration, fingerCount, fingerData, currentDirection));
+                            break;
+                        case UP:
+                            $element.trigger("swipeUp", [direction, distance, duration, fingerCount, fingerData, currentDirection]), options.swipeUp && (ret = options.swipeUp.call($element, event, direction, distance, duration, fingerCount, fingerData, currentDirection));
+                            break;
+                        case DOWN:
+                            $element.trigger("swipeDown", [direction, distance, duration, fingerCount, fingerData, currentDirection]), options.swipeDown && (ret = options.swipeDown.call($element, event, direction, distance, duration, fingerCount, fingerData, currentDirection))
+                    }
+                }
+            }
+            if (gesture == PINCH) {
+                if ($element.trigger("pinchStatus", [phase, pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData]), options.pinchStatus && (ret = options.pinchStatus.call($element, event, phase, pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData), ret === !1)) return !1;
+                if (phase == PHASE_END && validatePinch()) switch (pinchDirection) {
+                    case IN:
+                        $element.trigger("pinchIn", [pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData]), options.pinchIn && (ret = options.pinchIn.call($element, event, pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData));
+                        break;
+                    case OUT:
+                        $element.trigger("pinchOut", [pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData]), options.pinchOut && (ret = options.pinchOut.call($element, event, pinchDirection || null, pinchDistance || 0, duration || 0, fingerCount, pinchZoom, fingerData))
+                }
+            }
+            return gesture == TAP ? phase !== PHASE_CANCEL && phase !== PHASE_END || (clearTimeout(singleTapTimeout), clearTimeout(holdTimeout), hasDoubleTap() && !inDoubleTap() ? (doubleTapStartTime = getTimeStamp(), singleTapTimeout = setTimeout($.proxy(function() {
+                doubleTapStartTime = null, $element.trigger("tap", [event.target]), options.tap && (ret = options.tap.call($element, event, event.target))
+            }, this), options.doubleTapThreshold)) : (doubleTapStartTime = null, $element.trigger("tap", [event.target]), options.tap && (ret = options.tap.call($element, event, event.target)))) : gesture == DOUBLE_TAP ? phase !== PHASE_CANCEL && phase !== PHASE_END || (clearTimeout(singleTapTimeout), clearTimeout(holdTimeout), doubleTapStartTime = null, $element.trigger("doubletap", [event.target]), options.doubleTap && (ret = options.doubleTap.call($element, event, event.target))) : gesture == LONG_TAP && (phase !== PHASE_CANCEL && phase !== PHASE_END || (clearTimeout(singleTapTimeout), doubleTapStartTime = null, $element.trigger("longtap", [event.target]), options.longTap && (ret = options.longTap.call($element, event, event.target)))), ret
+        }
+
+        function validateSwipeDistance() {
+            var valid = !0;
+            return null !== options.threshold && (valid = distance >= options.threshold), valid
+        }
+
+        function didSwipeBackToCancel() {
+            var cancelled = !1;
+            return null !== options.cancelThreshold && null !== direction && (cancelled = getMaxDistance(direction) - distance >= options.cancelThreshold), cancelled
+        }
+
+        function validatePinchDistance() {
+            return null !== options.pinchThreshold ? pinchDistance >= options.pinchThreshold : !0
+        }
+
+        function validateSwipeTime() {
+            var result;
+            return result = options.maxTimeThreshold ? !(duration >= options.maxTimeThreshold) : !0
+        }
+
+        function validateDefaultEvent(jqEvent, direction) {
+            if (options.preventDefaultEvents !== !1)
+                if (options.allowPageScroll === NONE) jqEvent.preventDefault();
+                else {
+                    var auto = options.allowPageScroll === AUTO;
+                    switch (direction) {
+                        case LEFT:
+                            (options.swipeLeft && auto || !auto && options.allowPageScroll != HORIZONTAL) && jqEvent.preventDefault();
+                            break;
+                        case RIGHT:
+                            (options.swipeRight && auto || !auto && options.allowPageScroll != HORIZONTAL) && jqEvent.preventDefault();
+                            break;
+                        case UP:
+                            (options.swipeUp && auto || !auto && options.allowPageScroll != VERTICAL) && jqEvent.preventDefault();
+                            break;
+                        case DOWN:
+                            (options.swipeDown && auto || !auto && options.allowPageScroll != VERTICAL) && jqEvent.preventDefault();
+                            break;
+                        case NONE:
+                    }
+                }
+        }
+
+        function validatePinch() {
+            var hasCorrectFingerCount = validateFingers(),
+                hasEndPoint = validateEndPoint(),
+                hasCorrectDistance = validatePinchDistance();
+            return hasCorrectFingerCount && hasEndPoint && hasCorrectDistance
+        }
+
+        function hasPinches() {
+            return !!(options.pinchStatus || options.pinchIn || options.pinchOut)
+        }
+
+        function didPinch() {
+            return !(!validatePinch() || !hasPinches())
+        }
+
+        function validateSwipe() {
+            var hasValidTime = validateSwipeTime(),
+                hasValidDistance = validateSwipeDistance(),
+                hasCorrectFingerCount = validateFingers(),
+                hasEndPoint = validateEndPoint(),
+                didCancel = didSwipeBackToCancel(),
+                valid = !didCancel && hasEndPoint && hasCorrectFingerCount && hasValidDistance && hasValidTime;
+            return valid
+        }
+
+        function hasSwipes() {
+            return !!(options.swipe || options.swipeStatus || options.swipeLeft || options.swipeRight || options.swipeUp || options.swipeDown)
+        }
+
+        function didSwipe() {
+            return !(!validateSwipe() || !hasSwipes())
+        }
+
+        function validateFingers() {
+            return fingerCount === options.fingers || options.fingers === ALL_FINGERS || !SUPPORTS_TOUCH
+        }
+
+        function validateEndPoint() {
+            return 0 !== fingerData[0].end.x
+        }
+
+        function hasTap() {
+            return !!options.tap
+        }
+
+        function hasDoubleTap() {
+            return !!options.doubleTap
+        }
+
+        function hasLongTap() {
+            return !!options.longTap
+        }
+
+        function validateDoubleTap() {
+            if (null == doubleTapStartTime) return !1;
+            var now = getTimeStamp();
+            return hasDoubleTap() && now - doubleTapStartTime <= options.doubleTapThreshold
+        }
+
+        function inDoubleTap() {
+            return validateDoubleTap()
+        }
+
+        function validateTap() {
+            return (1 === fingerCount || !SUPPORTS_TOUCH) && (isNaN(distance) || distance < options.threshold)
+        }
+
+        function validateLongTap() {
+            return duration > options.longTapThreshold && DOUBLE_TAP_THRESHOLD > distance
+        }
+
+        function didTap() {
+            return !(!validateTap() || !hasTap())
+        }
+
+        function didDoubleTap() {
+            return !(!validateDoubleTap() || !hasDoubleTap())
+        }
+
+        function didLongTap() {
+            return !(!validateLongTap() || !hasLongTap())
+        }
+
+        function startMultiFingerRelease(event) {
+            previousTouchEndTime = getTimeStamp(), fingerCountAtRelease = event.touches.length + 1
+        }
+
+        function cancelMultiFingerRelease() {
+            previousTouchEndTime = 0, fingerCountAtRelease = 0
+        }
+
+        function inMultiFingerRelease() {
+            var withinThreshold = !1;
+            if (previousTouchEndTime) {
+                var diff = getTimeStamp() - previousTouchEndTime;
+                diff <= options.fingerReleaseThreshold && (withinThreshold = !0)
+            }
+            return withinThreshold
+        }
+
+        function getTouchInProgress() {
+            return !($element.data(PLUGIN_NS + "_intouch") !== !0)
+        }
+
+        function setTouchInProgress(val) {
+            $element && (val === !0 ? ($element.bind(MOVE_EV, touchMove), $element.bind(END_EV, touchEnd), LEAVE_EV && $element.bind(LEAVE_EV, touchLeave)) : ($element.unbind(MOVE_EV, touchMove, !1), $element.unbind(END_EV, touchEnd, !1), LEAVE_EV && $element.unbind(LEAVE_EV, touchLeave, !1)), $element.data(PLUGIN_NS + "_intouch", val === !0))
+        }
+
+        function createFingerData(id, evt) {
+            var f = {
+                start: {
+                    x: 0,
+                    y: 0
+                },
+                last: {
+                    x: 0,
+                    y: 0
+                },
+                end: {
+                    x: 0,
+                    y: 0
+                }
+            };
+            return f.start.x = f.last.x = f.end.x = evt.pageX || evt.clientX, f.start.y = f.last.y = f.end.y = evt.pageY || evt.clientY, fingerData[id] = f, f
+        }
+
+        function updateFingerData(evt) {
+            var id = void 0 !== evt.identifier ? evt.identifier : 0,
+                f = getFingerData(id);
+            return null === f && (f = createFingerData(id, evt)), f.last.x = f.end.x, f.last.y = f.end.y, f.end.x = evt.pageX || evt.clientX, f.end.y = evt.pageY || evt.clientY, f
+        }
+
+        function getFingerData(id) {
+            return fingerData[id] || null
+        }
+
+        function setMaxDistance(direction, distance) {
+            direction != NONE && (distance = Math.max(distance, getMaxDistance(direction)), maximumsMap[direction].distance = distance)
+        }
+
+        function getMaxDistance(direction) {
+            return maximumsMap[direction] ? maximumsMap[direction].distance : void 0
+        }
+
+        function createMaximumsData() {
+            var maxData = {};
+            return maxData[LEFT] = createMaximumVO(LEFT), maxData[RIGHT] = createMaximumVO(RIGHT), maxData[UP] = createMaximumVO(UP), maxData[DOWN] = createMaximumVO(DOWN), maxData
+        }
+
+        function createMaximumVO(dir) {
+            return {
+                direction: dir,
+                distance: 0
+            }
+        }
+
+        function calculateDuration() {
+            return endTime - startTime
+        }
+
+        function calculateTouchesDistance(startPoint, endPoint) {
+            var diffX = Math.abs(startPoint.x - endPoint.x),
+                diffY = Math.abs(startPoint.y - endPoint.y);
+            return Math.round(Math.sqrt(diffX * diffX + diffY * diffY))
+        }
+
+        function calculatePinchZoom(startDistance, endDistance) {
+            var percent = endDistance / startDistance * 1;
+            return percent.toFixed(2)
+        }
+
+        function calculatePinchDirection() {
+            return 1 > pinchZoom ? OUT : IN
+        }
+
+        function calculateDistance(startPoint, endPoint) {
+            return Math.round(Math.sqrt(Math.pow(endPoint.x - startPoint.x, 2) + Math.pow(endPoint.y - startPoint.y, 2)))
+        }
+
+        function calculateAngle(startPoint, endPoint) {
+            var x = startPoint.x - endPoint.x,
+                y = endPoint.y - startPoint.y,
+                r = Math.atan2(y, x),
+                angle = Math.round(180 * r / Math.PI);
+            return 0 > angle && (angle = 360 - Math.abs(angle)), angle
+        }
+
+        function calculateDirection(startPoint, endPoint) {
+            if (comparePoints(startPoint, endPoint)) return NONE;
+            var angle = calculateAngle(startPoint, endPoint);
+            return 45 >= angle && angle >= 0 ? LEFT : 360 >= angle && angle >= 315 ? LEFT : angle >= 135 && 225 >= angle ? RIGHT : angle > 45 && 135 > angle ? DOWN : UP
+        }
+
+        function getTimeStamp() {
+            var now = new Date;
+            return now.getTime()
+        }
+
+        function getbounds(el) {
+            el = $(el);
+            var offset = el.offset(),
+                bounds = {
+                    left: offset.left,
+                    right: offset.left + el.outerWidth(),
+                    top: offset.top,
+                    bottom: offset.top + el.outerHeight()
+                };
+            return bounds
+        }
+
+        function isInBounds(point, bounds) {
+            return point.x > bounds.left && point.x < bounds.right && point.y > bounds.top && point.y < bounds.bottom
+        }
+
+        function comparePoints(pointA, pointB) {
+            return pointA.x == pointB.x && pointA.y == pointB.y
+        }
+        var options = $.extend({}, options),
+            useTouchEvents = SUPPORTS_TOUCH || SUPPORTS_POINTER || !options.fallbackToMouseEvents,
+            START_EV = useTouchEvents ? SUPPORTS_POINTER ? SUPPORTS_POINTER_IE10 ? "MSPointerDown" : "pointerdown" : "touchstart" : "mousedown",
+            MOVE_EV = useTouchEvents ? SUPPORTS_POINTER ? SUPPORTS_POINTER_IE10 ? "MSPointerMove" : "pointermove" : "touchmove" : "mousemove",
+            END_EV = useTouchEvents ? SUPPORTS_POINTER ? SUPPORTS_POINTER_IE10 ? "MSPointerUp" : "pointerup" : "touchend" : "mouseup",
+            LEAVE_EV = useTouchEvents ? SUPPORTS_POINTER ? "mouseleave" : null : "mouseleave",
+            CANCEL_EV = SUPPORTS_POINTER ? SUPPORTS_POINTER_IE10 ? "MSPointerCancel" : "pointercancel" : "touchcancel",
+            distance = 0,
+            direction = null,
+            currentDirection = null,
+            duration = 0,
+            startTouchesDistance = 0,
+            endTouchesDistance = 0,
+            pinchZoom = 1,
+            pinchDistance = 0,
+            pinchDirection = 0,
+            maximumsMap = null,
+            $element = $(element),
+            phase = "start",
+            fingerCount = 0,
+            fingerData = {},
+            startTime = 0,
+            endTime = 0,
+            previousTouchEndTime = 0,
+            fingerCountAtRelease = 0,
+            doubleTapStartTime = 0,
+            singleTapTimeout = null,
+            holdTimeout = null;
+        try {
+            $element.bind(START_EV, touchStart), $element.bind(CANCEL_EV, touchCancel)
+        } catch (e) {
+            $.error("events not supported " + START_EV + "," + CANCEL_EV + " on jQuery.swipe")
+        }
+        this.enable = function() {
+            return this.disable(), $element.bind(START_EV, touchStart), $element.bind(CANCEL_EV, touchCancel), $element
+        }, this.disable = function() {
+            return removeListeners(), $element
+        }, this.destroy = function() {
+            removeListeners(), $element.data(PLUGIN_NS, null), $element = null
+        }, this.option = function(property, value) {
+            if ("object" == typeof property) options = $.extend(options, property);
+            else if (void 0 !== options[property]) {
+                if (void 0 === value) return options[property];
+                options[property] = value
+            } else {
+                if (!property) return options;
+                $.error("Option " + property + " does not exist on jQuery.swipe.options")
+            }
+            return null
+        }
+    }
+    var VERSION = "1.6.18",
+        LEFT = "left",
+        RIGHT = "right",
+        UP = "up",
+        DOWN = "down",
+        IN = "in",
+        OUT = "out",
+        NONE = "none",
+        AUTO = "auto",
+        SWIPE = "swipe",
+        PINCH = "pinch",
+        TAP = "tap",
+        DOUBLE_TAP = "doubletap",
+        LONG_TAP = "longtap",
+        HORIZONTAL = "horizontal",
+        VERTICAL = "vertical",
+        ALL_FINGERS = "all",
+        DOUBLE_TAP_THRESHOLD = 10,
+        PHASE_START = "start",
+        PHASE_MOVE = "move",
+        PHASE_END = "end",
+        PHASE_CANCEL = "cancel",
+        SUPPORTS_TOUCH = "ontouchstart" in window,
+        SUPPORTS_POINTER_IE10 = window.navigator.msPointerEnabled && !window.navigator.pointerEnabled && !SUPPORTS_TOUCH,
+        SUPPORTS_POINTER = (window.navigator.pointerEnabled || window.navigator.msPointerEnabled) && !SUPPORTS_TOUCH,
+        PLUGIN_NS = "TouchSwipe",
+        defaults = {
+            fingers: 1,
+            threshold: 75,
+            cancelThreshold: null,
+            pinchThreshold: 20,
+            maxTimeThreshold: null,
+            fingerReleaseThreshold: 250,
+            longTapThreshold: 500,
+            doubleTapThreshold: 200,
+            swipe: null,
+            swipeLeft: null,
+            swipeRight: null,
+            swipeUp: null,
+            swipeDown: null,
+            swipeStatus: null,
+            pinchIn: null,
+            pinchOut: null,
+            pinchStatus: null,
+            click: null,
+            tap: null,
+            doubleTap: null,
+            longTap: null,
+            hold: null,
+            triggerOnTouchEnd: !0,
+            triggerOnTouchLeave: !1,
+            allowPageScroll: "auto",
+            fallbackToMouseEvents: !0,
+            excludedElements: ".noSwipe",
+            preventDefaultEvents: !0
+        };
+    $.fn.swipe = function(method) {
+        var $this = $(this),
+            plugin = $this.data(PLUGIN_NS);
+        if (plugin && "string" == typeof method) {
+            if (plugin[method]) return plugin[method].apply(plugin, Array.prototype.slice.call(arguments, 1));
+            $.error("Method " + method + " does not exist on jQuery.swipe")
+        } else if (plugin && "object" == typeof method) plugin.option.apply(plugin, arguments);
+        else if (!(plugin || "object" != typeof method && method)) return init.apply(this, arguments);
+        return $this
+    }, $.fn.swipe.version = VERSION, $.fn.swipe.defaults = defaults, $.fn.swipe.phases = {
+        PHASE_START: PHASE_START,
+        PHASE_MOVE: PHASE_MOVE,
+        PHASE_END: PHASE_END,
+        PHASE_CANCEL: PHASE_CANCEL
+    }, $.fn.swipe.directions = {
+        LEFT: LEFT,
+        RIGHT: RIGHT,
+        UP: UP,
+        DOWN: DOWN,
+        IN: IN,
+        OUT: OUT
+    }, $.fn.swipe.pageScroll = {
+        NONE: NONE,
+        HORIZONTAL: HORIZONTAL,
+        VERTICAL: VERTICAL,
+        AUTO: AUTO
+    }, $.fn.swipe.fingers = {
+        ONE: 1,
+        TWO: 2,
+        THREE: 3,
+        FOUR: 4,
+        FIVE: 5,
+        ALL: ALL_FINGERS
+    }
+});
+
+
+$(window).load(onLoad)
+		.resize(onResize);
+
+function onLoad()
+{
+	onResize();
+	onSwipe();
+}
+
+function onResize()
+{
+	if (viewportWidth() > 768)
+	{
+		swipeAble = false;
+		$("div.f01 ul.column_ul").css({"width": "","transition":"","transform":""});
+		$("div.f01 ul.column_ul > li").css({"width": ""});
+	}else{
+		swipeAble = true;
+		$("div.f01 ul.column_ul").css({"width": (viewportWidth()*3) + "px"});
+		$("div.f01 ul.column_ul > li").css({"width": viewportWidth() + "px"});
+	}
+
+	onSwipe();
+}
+
+var swipeAble = false;
+var showPage = 0;
+var swipeOut = false;
+var touchMove = 0;
+var touchAble = false;
+var clickAble = true;
+function onSwipe()
+{
+	if (swipeAble)
+	{
+		$("div.f01 ul.column_ul").hover(function(){
+		},function(){
+			if (touchAble)
+			{
+				$(this).off('touchstart', this);
+				$(this).off('touchmove', this);
+				$(this).off('touchend', this);
+				$(this).off('mousedown', this);
+				$(this).off('mousemove', this);
+				$(this).off('mouseup', this);
+				
+				console.log("touchMove : " + touchMove);
+				if (Math.abs(touchMove) > (viewportWidth() / 4))
+				{
+					if (touchMove < 0 && showPage > 0)
+					{
+						showPage--;
+					}else if (touchMove > 0 && showPage < 2)
+					{
+						showPage++;
+					}
+
+					console.log("touchMove : " + touchMove + ", showPage : " + showPage);
+				}
+				$("div.f01 ul.column_ul").css({"transition":"all 0.3s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+				$(".mo_only > li > a").removeClass("active");
+				$(".mo_only > li > a").eq(showPage).addClass("active");
+				swipeOut = true;
+				touchMove = 0;
+			}
+			
+		});		
+
+		$("div.f01 ul.column_ul").swipe({
+			swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData) {
+				touchAble = true;
+				if (phase == "move")
+				{
+					clickAble = false;
+				}
+				if (phase == "start")
+				{
+					clickAble = true;
+					swipeOut = false;
+				}
+				if (swipeOut)
+				{
+					return false;
+				}
+				touchMove = distance;
+				if (direction == "right")
+				{
+					touchMove = -distance;
+				}
+				var slideMove = -(showPage * viewportWidth())-touchMove;
+
+				
+				$("div.f01 ul.column_ul").css({"transition":"","transform":"translate(" + slideMove + "px, 0px)"});
+				
+				if ((viewportWidth() / 4) < slideMove)
+				{	
+					$("div.f01 ul.column_ul").css({"transition":"all 0.5s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+					$(this).off('touchstart', this);
+					$(this).off('touchmove', this);
+					$(this).off('touchend', this);
+					$(this).off('mousedown', this);
+					$(this).off('mousemove', this);
+					$(this).off('mouseup', this);
+					return false;
+				}else if (slideMove < (-(2 * viewportWidth())-(viewportWidth() / 4)))
+				{
+					$("div.f01 ul.column_ul").css({"transition":"all 0.5s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+					$(this).off('touchstart', this);
+					$(this).off('touchmove', this);
+					$(this).off('touchend', this);
+					$(this).off('mousedown', this);
+					$(this).off('mousemove', this);
+					$(this).off('mouseup', this);
+					return false;
+				}
+
+				if (phase == "cancel")
+				{
+					$("div.f01 ul.column_ul").css({"transition":"all 0.3s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+				}
+			},
+			swipe:function(event, phase, direction, distance, duration, fingerCount, fingerData) {
+				if (!swipeOut)
+				{
+					touchAble = false;
+					if(Math.abs(touchMove) > (viewportWidth() / 4))
+					{
+						if(direction == "left" || phase == "left" || direction == "right" || phase == "right")
+						{
+							if (direction == "left" || phase == "left")
+							{
+								showPage++;
+								if (showPage > 2)
+								{
+									showPage = 2;
+								}
+							}else{
+								showPage--;
+								if (showPage < 0)
+								{
+									showPage = 0;
+								}
+							}
+							console.log("showPage : " + showPage);
+
+							$("div.f01 ul.column_ul").css({"transition":"all 0.6s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+
+							$(".mo_only > li > a").removeClass("active");
+							$(".mo_only > li > a").eq(showPage).addClass("active");
+						}					
+					}else{
+						$("div.f01 ul.column_ul").css({"transition":"all 0.3s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+					}
+				}				
+			},
+			allowPageScroll:"vertical"
+		});
+
+		$(document).on("click","div.f01 ul.column_ul > li > a", function(){
+			if (clickAble)
+			{
+				document.location.href=$(this).attr("href");
+			}
+			
+			return false;
+		});
+
+		$(document).on("click", ".mo_only > li > a", function(){
+			$(".mo_only > li > a").removeClass("active");
+			$(this).addClass("active");		
+			
+			if ($(this).parent().index() != showPage)
+			{
+				if ($(this).parent().index() - showPage == 2)
+				{
+					showPage = $(this).parent().index();
+					$("div.f01 ul.column_ul").css({"transition":"all 0.9s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+				}else{
+					showPage = $(this).parent().index();
+					$("div.f01 ul.column_ul").css({"transition":"all 0.6s","transform":"translate(" + -(showPage * viewportWidth()) + "px, 0px)"});
+				}
+			}
+			return false;
+		});
+	}	
+}
+
+function viewportWidth() 
+{  
+	if (typeof document.documentElement.clientWidth != 'undefined' && typeof window.innerWidth != 'undefined')  
+	{
+		if(document.documentElement.clientWidth > window.innerWidth)
+			return document.documentElement.clientWidth;
+		else
+			return window.innerWidth;  
+	}else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+	{
+		return document.documentElement.clientWidth;  
+	}else{
+		return viewportwidth = document.getElementsByTagName('body')[0].clientWidth;
+	} 
+}
+
+	
+        });
+    </script>
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    
+    
+    
+    <div class="feature f02" tabindex='0' style="margin-top: 6px;">
+	<div class="obj">
+		<img class="js-img-src js-img-lazy" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-mobile-processor-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-mobile-processor-pc.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-mobile-processor-mo.jpg?$ORIGIN_JPG$" alt="Angled side view of Exynos 9 Series (9810) processor"/>
+	</div>
+	<div class="txt align_r">
+		<div class="valign">
+			<div class="middle">
+				<div class="t_content">
+					<h2>Create Infinite
+Possibilities</h2>
+					<p>The mobile processor that accelerates speed and extends battery life</p>
+					<a href="/semiconductor/processor/mobile-processor/" title="Learn More : Go to Mobile Processor Product Page" class="f02_cta">LEARN MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    <style scoped="scoped">div.f02 { position: relative; height: 620px; }
+
+.obj { box-sizing: border-box; display: inline-block; width: 100%; text-align: center; max-height: 620px; }
+
+.obj > img { width: 100%; }
+
+.valign { display: table; height: 100%; width: 100%;}
+
+.valign .middle { display: table-cell; vertical-align: middle;}
+
+.f02 .txt { box-sizing: border-box; display: inline-block; width: 60.6%; height: 100%; }
+
+.f02 h2 { padding-top: 2px; font-family: "SamsungSharpSans", arial; font-size: 68px; font-weight: bold; letter-spacing: -0.1px; line-height: 1.15; }
+
+.f02 p { font-family: "SamsungOne", arial; font-size: 20px; margin-top: 10px; line-height: 1.4; letter-spacing: 0; }
+
+.f02_cta { display: inline-block; margin-top: 33px; margin-right: 12px; padding: 26px 35px 22px; font-family: "SamsungOne", arial; font-size: 12px; font-weight: bold; letter-spacing: 0.2em; line-height: 1px; border: 1px solid #000; border-radius: 45px; text-transform: uppercase; 
+-webkit-transition-duration: 0.3s; 
+transition-duration: 0.3s;
+-webkit-transition-property: background, color, border-color;
+transition-property: background,color,border-color;
+-webkit-transition-timing-function: ease-in-out;
+transition-timing-function: ease-in-out; }
+
+.f02 .txt.align_r { position: absolute; right: 0; top: 0; width: 50%; padding-right: 0; padding-left: 3.76667%; }
+
+.f02 .txt.align_l { position: absolute; left: 0; top: 0; padding-left: 4.16667%; padding-right: 24px; }
+
+.f02_cta:hover, .f02_cta:active, .f02_cta:focus { border: 1px solid #000; background-color: #000; color: #fff;}
+
+.kf02_fff { color: #fff; }
+
+.bor_fff { border: 1px solid #fff; } 
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+div.f02 { height: auto; }
+
+.obj { max-height: 43.0555vw; }
+
+.f02 h2 { padding-top: 0.1388vw; font-size: 4.7222vw; }
+
+.f02 p { font-size: 1.3888vwvw; margin-top: 0.6944vw; }
+
+.f02_cta { margin-top: 2.2916vw; margin-right: 0.8333vw; padding: 1.8055vw 2.4305vw 1.5277vw; font-size: 0.8333vw; }
+
+.f02 .txt.align_l { padding-right: 1.6666vw; }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+.f02 h2 {  font-size: 48px; }
+
+.f02 p { font-size: 14px; }
+
+.f02_cta {  font-size: 8px; }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+div.f02 { min-width: 320px; height: auto; }
+
+.obj { max-height: none; }
+
+.valign .middle { vertical-align: top;}
+
+.f02 .txt { width: 100%; padding-top: 11.6666vw; text-align: center; }
+
+.f02 h2 { padding-left: 1.6666vw; padding-right: 1.6666vw; font-size: 9.0277vw; letter-spacing: -0.18px; line-height: 1.22; }
+
+.f02 p { display: none; }
+
+.f02_cta { margin-top: 2.3611vw; margin-right: 0; padding: 5.5555vw 7.3611vw 5.8333vw; font-size: 3.6111vw; letter-spacing: 0.16em; line-height: 1px; }
+
+.f02 .txt.align_r { width: 100%; padding-left: 0px; }
+
+.f02 .txt.align_l { padding-left: 0; padding-right: 0; }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+.f02 .txt { padding-top: 37px; }
+
+.f02 h2 { padding-left: 5px; padding-right: 5px; font-size: 29px; letter-spacing: -0.18px; line-height: 1.22; }
+
+.f02 p { display: none; }
+
+.f02_cta { margin-top: 8px; margin-right: 0; padding: 18px 24px 19px; font-size: 12px; }
+}</style>
+    
+    
+    <div class="feature f02 kf02_fff" tabindex='0'>
+	<div class="obj">
+		<img class="js-img-src js-img-lazy" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-ufs-mo.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-ufs-mo.jpg?$ORIGIN_JPG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/kf-ufs-pc.jpg?$ORIGIN_JPG$" alt="Samsung eUFS is placed on the smartphone. Various multimedia content is passing through eUFS to show its capability."/>
+	</div>
+	<div class="txt align_r">
+		<div class="valign">
+			<div class="middle">
+				<div class="t_content">
+					<h2>Store more. <br>View more. <br>Instantly.</h2>
+					<p>UFS Delivers the Next-level Performance and Efficiency</p>
+					<a href="/semiconductor/insights/tech-leadership/ufs-delivers-the-next-level-of-performance-and-power-efficiency/" title="Learn More : Go to UFS Delivers the Next-level Performance and Efficiency News Page" class="f02_cta bor_fff">LEARN MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    
+    
+    
+    <div class="section he-semi-hero-carousel"><section class="hero-carousel kv-visual1">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel slick-initialized slick-slider s-single-slide">
+        
+    <div aria-live="polite" class="slick-list draggable vcover_js" style="height: 331px;"><div class="slick-track" role="listbox" style="opacity: 1; width: 768px; transform: translate3d(0px, 0px, 0px);"><div class="hero-carousel__slide slick-slide slick-current slick-active vcover_js" aria-selected="true" style="width: 768px;" data-slick-index="0" aria-hidden="false" tabindex="-1" aria-describedby="slick-slide10">
+
+            <div class="hero-carousel__img-wrap">
+                
+                <div class="s-view-video">
+    <button type="button" class="s-btn-video js-video js-pop-btn" data-omni="video_ _20180614" data-vid-type="youtube" data-vid-view="inner" data-vid-data="{
+            &quot;videoID&quot;        : &quot;owr5v4XLT4Q&quot;,
+            &quot;autoPlay&quot;        : &quot;true&quot;,
+            &quot;divID&quot;            : &quot;video_play_5801ed91f7c841b2b04fb95873ec5af0&quot;
+        }" tabindex="0">
+        <span class="s-play-video">WATCH VIDEO</span>
+    </button></div>
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/vcover-samsung-ssd-mo.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/vcover-samsung-ssd-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/vcover-samsung-ssd-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy" alt="This video introduces Samsung's New Generation Small Form Factor, NGSFF (NF1) SSD. It delivers high serviceability, hyper scalability, outstanding performance, and also lower power consumption. NGSFF (NF1) SSD will take server storage to a new dimension.">
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/homepage/vcover-hbm-aquabolt-pc.jpg?$ORIGIN_JPG$"/>
+                </noscript>
+
+                
+        <div class="s-video-inner-wrapper">
+            <div id="video_play_5801ed91f7c841b2b04fb95873ec5af0"></div>
+            <button type="button" class="s-media-close brightcove-bcc-btn-close js-pop-close" data-div-id="video_play_5801ed91f7c841b2b04fb95873ec5af0" tabindex="0">Close</button>
+        </div>
+            </div>
+            
+            
+        </div></div></div></div>
+
+    
+        
+    
+</section></div>
+
+    <script>
+        ;(function(win,doc,callback){'use strict';callback=callback||function(){};function detach(){if(doc.addEventListener){doc.removeEventListener('DOMContentLoaded',completed);}else{doc.detachEvent('onreadystatechange',completed);}}function completed(){if(doc.addEventListener||event.type==='load'||doc.readyState==='complete'){detach();callback(window,window.jQuery);}}function init(){if (doc.addEventListener){doc.addEventListener('DOMContentLoaded',completed);}else{doc.attachEvent('onreadystatechange',completed);}}init();})(window,document,function(win,$){
+            $(".vcover_js").css({"height" : "auto", "width" : "100%"});
+        });
+    </script>
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    <style scoped="scoped">.footer_sup {display: block; padding: 10px 0; border-top: 1px solid #d0d0d0; background:#f7f7f7; text-align: center; font-size: 14px;}
+
+@media screen and (max-width: 1440px){
+.footer_sup {font-size: 0.97222vw;}
+}
+
+@media screen and (max-width: 1024px){
+.footer_sup {font-size: 1.36719vw;}
+}
+
+@media screen and (max-width: 768px){
+.footer_sup {font-size: 3.05556vw;}
+}</style>
+    
+    
+    <sup class="footer_sup">Need for Speed Materials © 2018 Electronic Arts Inc. Need for Speed is a trademark of Electronic Arts Inc.</sup>
+
+    
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    <style scoped="scoped">@media (max-width: 768px) { 
+
+div.par.parsys>div:nth-child(2) p.hero-carousel__text-body {
+    display: none;
+}
+
+ }</style>
+    
+    
+     
+
+    
+</section></div>
+
+</div>
+
+    
+</div>
+
+				<!--googleoff: all-->
+	            	   
+<div class="ge-semi-layer-exit-modal"> 
+<div class="exit-modal" role="dialog" style="display:none;" id="exit-modal_01">
+	<p class="exit-modal__title">You are entering <em class="urlsee">samsungha.com</em></p>
+	<p class="exit-modal__dec"></p>
+	<div class="exit-modal__btn">
+		<!-- Default button -->
+		<!-- <a href="#" class="s-btn-encased" id="exit-modal_01_01">CONTINUE</a> -->
+		<!-- //Default button -->
+		<!-- new window button -->
+		<a href="javascript:" class="s-btn-encased s-mo-full s-ico-new-window" id="exit-modal_01_01" title="Open in a new window" target="_blank">CONTINUE</a>
+		<!-- //New Window Button -->
+		<a href="javascript:" class="s-btn-encased js-exit-modal-close" id="exit-modal_01_02">CANCEL</a>
+	</div>
+	<button type="button" class="exit-modal__close js-exit-modal-close" id="exit-modal_01_03"><span id="exit-modal_01_04">Close Layer</span></button>
+</div>
+<!-- <div><button class="js-exit-modal-alert" style="font-size:40px;" data-href="//www.samsung.com/sg">OPEN</button></div> --></div>
+
+				<!--googleon: all-->
+	            
+
+<!--googleoff: all-->
+    <footer id="footer" role="contentinfo">
+        <div class="gb-footer" id="gbfooter">
+            <div class="gb-footer__top">
+                <div class="gb-footer__inner">
+                    <div class="gb-footer__container">
+                        <div class="gb-footer__btn-top">
+                            <a href="#">Back to Top</a>
+                        </div>
+                        <div class="gb-footer__col-wrap">
+                            <!--/* footer nav */-->
+                            <div class="gb-footer__nav-link gb-footer__col2">
+                                <div class="gb-footer__col4-wrap gb-footer__about-us">
+    
+    <ul class="gb-footer__col4">
+        <li class="gb-footer__item ">
+            <a data-omni="Insights" href="/semiconductor/insights">Insights</a>
+        </li>
+    
+        <li class="gb-footer__item ">
+            <a data-omni="Product Finder" href="/semiconductor/support/products-finder">Product Finder</a>
+        </li>
+    
+        <li class="gb-footer__item ">
+            <a data-omni="Technical Resources" href="/semiconductor/support/technical-resources">Technical Resources</a>
+        </li>
+    
+        <li class="gb-footer__item ">
+            <a data-omni="TCO Calculator" href="/semiconductor/support/storage-tco-calculator">TCO Calculator</a>
+        </li>
+    
+        <li class="gb-footer__item ">
+            <a data-omni="About Us" href="/semiconductor/about-us/business-overview">About Us</a>
+        </li>
+    </ul></div>
+
+                                <!--/* //footer nav list */-->
+                                
+                                <div class="product-link">
+
+
+<div class="gb-footer__col4-wrap">
+    <strong><a href="#" data-omni="products">PRODUCTS</a></strong>
+    <ul class="gb-footer__col4">
+        
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/dram" data-omni="dram">DRAM</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/ssd" data-omni="ssd">SSD</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/estorage" data-omni="estorage">eSTORAGE</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/mcp" data-omni="mcp">MCP</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/processor" data-omni="processor">PROCESSOR</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/image-sensor" data-omni="image sensor">IMAGE SENSOR</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/security" data-omni="security solutions">SECURITY SOLUTIONS</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/display-ic" data-omni="display ic">DISPLAY IC</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/products/power-ic" data-omni="power ic">POWER IC</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/products/bio-processor" data-omni="bio-processor">BIO-PROCESSOR</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+    </ul>
+    
+</div>
+
+<div class="gb-footer__col4-wrap">
+    <strong><a href="#" data-omni="solutions">SOLUTIONS</a></strong>
+    <ul class="gb-footer__col4">
+        
+        
+        
+        <li class="gb-footer__item">
+            <a href="/semiconductor/solutions/applications" data-omni="applications">APPLICATIONS</a>
+            
+            
+            
+            
+            
+            
+        </li>
+        
+    </ul>
+    
+</div>
+
+   </div>
+
+                                
+                                <div class="gb-footer__col4-wrap gb-footer__col4-wrap-empty">
+                                </div>
+                                
+                                <div class="gb-footer__col4-wrap">
+
+    
+    
+    
+        <strong><a title="Expand Global Sites Menu" href="//www.samsung.com/semiconductor/minisite/exynos/%20">Global Sites</a></strong>
+        <ul class="gb-footer__col4">
+            <li class="gb-footer__item gb-footer__blank">
+                <a data-omni="Samsung Business" href="//www.samsung.com/business/" title="Open in a new window" target="_blank">Samsung Business</a>
+            </li>
+        
+            <li class="gb-footer__item gb-footer__blank">
+                <a data-omni="Exynos English" href="/semiconductor/minisite/exynos" title="Open in a new window" target="_blank">Exynos</a>
+            </li>
+        
+            <li class="gb-footer__item gb-footer__blank">
+                <a data-omni="LED" href="//www.samsung.com/global/business/led/" title="Open in a new window" target="_blank">LED</a>
+            </li>
+        
+            <li class="gb-footer__item gb-footer__blank">
+                <a data-omni="Display" href="http://www.samsungdisplay.com/" title="Open in a new window" target="_blank">Display</a>
+            </li>
+        
+            <li class="gb-footer__item gb-footer__blank">
+                <a data-omni="Worker Safety" href="/semiconductor/minisite/EHS" title="Open in a new window" target="_blank">Worker Safety</a>
+            </li>
+        </ul>
+    </div>
+
+                                
+                                <div class="gb-footer__col4-wrap-sns">
+    <div class="gb-footer__col4-wrap">
+        
+        
+            <strong>Follow us</strong>
+            <ul class="gb-footer__col4">
+                <li class="gb-footer__item gb-footer__svg">
+                    <a data-omni="facebook : open in a new window" href="https://www.facebook.com/SamsungSemiUS" title="Facebook : Open in a New Window" target="_blank"><img src="//cdn.samsung.com/etc/designs/semi/global/business/img/svg-gb-facebook.svg"/></a>
+                </li>
+            
+                <li class="gb-footer__item gb-footer__svg">
+                    <a data-omni="twitter : open in a new window" href="https://twitter.com/SamsungSemiUS" title="Twitter : Open in a New Window" target="_blank"><img src="//cdn.samsung.com/etc/designs/semi/global/business/img/svg-gb-twitter.svg"/></a>
+                </li>
+            
+                <li class="gb-footer__item gb-footer__svg">
+                    <a data-omni="youtube : open in a new window" href="https://www.youtube.com/samsung" title="Youtube : Open in a New Window" target="_blank"><img src="//cdn.samsung.com/etc/designs/semi/global/business/img/svg-gb-youtube.svg"/></a>
+                </li>
+            
+                <li class="gb-footer__item gb-footer__svg">
+                    <a data-omni="linkedin : open in a new window" href="https://www.linkedin.com/company/samsung-semiconductor-inc-" title="LinkedIn : Open in a New Window" target="_blank"><img src="//cdn.samsung.com/etc/designs/semi/global/business/img/svg-gb-in-square.svg"/></a>
+                </li>
+            
+                <li class="gb-footer__item gb-footer__svg">
+                    <a data-omni="samsung blog : open in a new window" href="http://www.samsungsemiblog.com" title="Samsung Blog : Open in a New Window" target="_blank"><img src="//cdn.samsung.com/etc/designs/semi/global/business/img/svg-gb-blog.svg"/></a>
+                </li>
+            </ul>
+                
+    </div></div>
+
+                            </div>
+                        </div>
+
+                        <div class="gb-footer__copyright">
+    
+    <p class="gb-footer__text">Copyright © 1995-2018 SAMSUNG All Rights Reserved.</p></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gb-footer__bottom">
+                <div class="gb-footer__inner">
+                    <div class="gb-footer__container">
+                        <div class="gb-footer__bottom-list">
+    
+    <ul class="gb-footer__list">
+        <li class="gb-footer__item">
+            <a data-omni="privacy" href="/semiconductor/privacy-global">PRIVACY</a>
+        </li>
+    
+        <li class="gb-footer__item">
+            <a data-omni="legal" href="/semiconductor/legal">LEGAL</a>
+        </li>
+    
+        <li class="gb-footer__item">
+            <a data-omni="sitemap" href="/semiconductor/sitemap">SITEMAP</a>
+        </li>
+    </ul></div>
+
+                        <div class="local-legal">
+    
+    <p class="gb-footer__browser">This website is best viewed using Microsoft Internet Explorer 9 or higher, and/or latest version of Google Chrome and Mozila Firefox browsers.</p></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/* s-to-top-btn */-->
+        <div class="s-to-top-btn">
+            <button>Go to Top</button>
+        </div>        
+    </footer>
+<!--googleon: all-->    
+
+	        </div>
+	        
+	        <script type="text/javascript" src="//cdn.samsung.com/etc/designs/semi/global/business/templates/page.js"></script>
+
+	        
+	        
+<script type="text/javascript" src="//cdn.samsung.com/etc/designs/semi/global/business/templates/page-home.js"></script>
+ 
+	        
+	        <script type="text/javascript">_satellite.pageBottom();</script>
+	    </body>
+	</html>

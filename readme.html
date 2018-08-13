@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Connection Bridge Setup Guide</title>
+        <style type="text/css">
+            html{
+                background: #EEEEEE;
+            }
+            body{
+                max-width:960px;
+                margin: 0 auto;
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+                line-height: 1.5;
+            }
+            a{
+                color: #428BCA;
+            }
+            ol.list li{
+                margin-top: 10px;
+            }
+            .content{
+                background: #FFFFFF;
+                color: #666;
+                border: 1px solid #E4E4E4;
+                padding: 20px;
+            }
+            .logo{
+                width: 320px;
+                height: 80px;
+                margin: 20px auto;
+                display: block;
+            }
+            .button{
+                display: table;
+                margin: 0 auto;
+                background: #428bca;
+                padding: 10px 30px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 30px;
+                -moz-border-radius: 30px;
+                -webkit-border-radius: 30px;
+            }
+            .middle{
+                text-align: center;
+            }
+
+         </style>
+    </head>
+    <body>
+        <img src="https://www.shopping-cart-migration.com/images/cart2cart_logo_400.png" class="logo" alt="Cart2Cart" title="Cart2Cart"/>
+        <div class="content">
+      
+                <h1 class="middle">Connection Bridge Setup Guide</h1>
+            <p class="middle"><i>Cart2Cart - Shopping Cart Migration Service (c) MagneticOne.com </i></p>
+
+            <p>Dear Customer,</p>
+
+            <p>Thank you for choosing Cart2Cart. This manual will help to set up a Connection Bridge
+            on your site in a few minutes. For better understanding it is recommended to look through a short video tutorial.</p>  
+
+            <p class="middle">
+                    <iframe width="420" height="236" src="https://www.youtube.com/embed/ZbeB_b-B8d4"  frameborder="0" allowfullscreen></iframe>
+                    <iframe width="420" height="236" src="https://www.youtube.com/embed/6GGGrMvx3CE"  frameborder="0" allowfullscreen></iframe>
+             </p>
+            <p>If you experience any problems during installation, don't hesitate to contact us. We will be happy to help.</p> 
+            
+            <a href="https://support.magneticone.com/visitor/index.php?/LiveChat/Chat/Request/_sessionID=grscfyo59880iypt7if9jyrey9dkfysy/_proactive=0/_filterDepartmentID=6%2C66/_randomNumber=55/_fullName=/_email=/_promptType=chat&utm_source=BridgeHTML&utm_medium=Chat&utm_campaign=ConnectionBridge" target="_blank" class="button">Start a Live Chat</a>
+            <p>A few simple steps to install a Connection Bridge:</p>
+            <ol class="list">
+                <li>Right after you <strong>click “Download”  link, save the files to your local computer</strong>. They will be downloaded as zip files and you will have to extract them from the archive.</li>
+                <li>Now, you have to <strong>connect your Source and Target Stores via FTP client</strong> e.g.Filezilla, FileFTP, CuteFTP, WinSCP, etc.</li>
+                    <ul>
+                        <li>If you don’t have FTP client installed yet you can set it up in a few simple steps. A detailed guidelines on how to do that you can find <a href="http://www.youtube.com/watch?v=Wtqq1Mn1ltA" target="_blank">here</a>.</li>
+                        <li>In case you don’t have FTP access details, you can get them by simply contacting your hosting provider or developer. If they can’t help you, please contact our <a href="https://support.magneticone.com/index.php?/Tickets/Submit&utm_source=BridgeHTML&utm_medium=Ticket&utm_campaign=ConnectionBridge" target="_blank">Support Team</a>.</li> 
+                    </ul>
+
+                <li><strong>Upload "bridge2cart" folder from the archive to your store root directory</strong>. Simply copy the <strong><i>“bridge2cart”</i></strong> folder extracted from the Connection Bridge files and paste it into your Source or Target Store accordingly.
+                    Folder <b>"bridge2cart"</b> includes file <b>index.php</b> which doesn’t allow Google to index a folder <b>"bridge2cart"</b>. </li>
+                <ul>
+                    <li>Note: For Wordpress (WooCommerce, Shopp, WP e-Commerce) or Joomla (AceShop, JooCart, VirtueMart, MijoShop) e-commerce plugins the "bridge2cart" folder should be uploaded to the root directory where your CMS (Wordpress/Joomla) is installed, not your e-commerce plugin directory.</li>
+                </ul>
+
+                <li>You can <strong>check if the Connection Bridge files have been installed correctly</strong>. To do that  enter <i>http://[yourstore url]/bridge2cart/bridge.php</i> within your browser address line. If the message “BRIDGE_INSTALLED” appears, it means the <strong>bridge files are working correctly</strong>. Otherwise set the permissions as following:</li>
+                  <ul><li>"bridge.php" - 644 or 666, depending on your server configuration;</li>
+                  <li>"/bridge2cart" folder - 755 or 777, depending on your server configuration.</li></ul> 
+                <span>If you face some troubles while setting the permissions, please contact our <a href="https://support.magneticone.com/index.php?/Tickets/Submit&utm_source=BridgeHTML&utm_medium=Ticket&utm_campaign=ConnectionBridge" target="_blank">Support Team</a>.</span> 
+
+                <li>To be able to copy images during your migration please check the writing permissions
+                on your Target store for image directory and ALL subfolders/files it contains (chmod 777).</li>
+            </ol>
+            
+            <strong>NOTE!</strong>
+            <ul>
+                <li>We strongly recommend to <a href="https://www.shopping-cart-migration.com/faq/1-general-questions/12-i-use-cart2cart-for-the-first-time-what-do-i-have-to-know-about-the-migration-process#turn-off-redirects" target="_blank">turn off redirect</a> on your site for proper work of the Connection Bridge files. To check if you need to turn off redirect, follow this link <i>"http://[yourstore url]/bridge2cart/bridge.php"</i> and once it's redirecting to some other link you should disable redirects in your .htaccess file. It's a hidden file residing in your "shop" folder.</li>
+                <li>In order to prevent accidental blocking of Cart2Cart IPs, it is recommended to add them to your white list. Find more info how to that here.</li>
+            </ul>
+
+
+            <p>If you have any questions, you can check out the following <a href="https://www.shopping-cart-migration.com/faq/1-general-questions/47-what-are-the-connection-bridge-files-and-how-to-download-them?utm_source=BridgeHTML&utm_medium=FAQ&utm_campaign=ConnectionBridge" target="_blank">FAQ</a> or feel free to contact our <a href="https://support.magneticone.com/index.php?/Tickets/Submit&utm_source=BridgeHTML&utm_medium=Ticket&utm_campaign=ConnectionBridge" target="_blank">Support Team</a>.</p>
+
+
+            <p>Sincerely yours,</br>
+            Cart2Cart Team</br>
+            <a href="https://www.shopping-cart-migration.com/" target="_blank">www.shopping-cart-migration.com</a></p>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-211799-27', 'shopping-cart-migration.com'); 
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

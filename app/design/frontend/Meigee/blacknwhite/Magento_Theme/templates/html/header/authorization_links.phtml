@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+$login_link = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_toplinks', 'toplinks_login');
+$register_link = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_toplinks', 'toplinks_register');
+?>
+<?php if(!$login_link){ ?>
+	<?php echo $this->getChildHtml("authorization-link-login"); ?>
+<?php } ?>
+<?php if(!$register_link){ ?>
+	<?php echo $this->getChildHtml("register-link"); ?>
+<?php } ?>

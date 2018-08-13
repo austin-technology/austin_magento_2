@@ -1,0 +1,70 @@
+/**
+ * @package     blacknwhite
+ * @copyright   Copyright (c) 2010-2016 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+
+
+
+
+/* #Tablet (Portrait) ================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 1007px) {
+	.page-header .panel {float: none;}
+	.page-header .right-block{float: left; width: 92%;}
+	.page-header .right-block .bottom-block {float: left;}
+	.page-header .right-block .top-block{float: right;}
+	.page-header .action.nav-toggle i{margin-left: 5px; margin-right: 0;}
+	
+	.nav-before-open .page-wrapper{-webkit-transition: right .3s;-moz-transition: right .3s;-ms-transition: right .3s;transition: right .3s; left: auto; right: 0;}
+	.nav-open .page-wrapper {right: 50%; left: auto;}
+	.header-wrapper .navbar-collapse{
+		-webkit-transition: right .3s;
+		-moz-transition: right .3s;
+		-ms-transition: right .3s;
+		transition: right .3s;
+		left: auto;
+		right: -50%;
+	}
+	.nav-open .navbar-collapse{left: auto; right: 0;}
+	.navbar-nav > li {float: none;}
+	.header-wrapper .navbar-collapse.collapse li.level-top.parent:after{left: 0; right: auto;}
+	
+	body .navigation .submenu:not(:first-child) ul{padding-right: 15px!important; padding-left: 0;}
+	
+	.minicart-wrapper .block-minicart{left: 0; right: auto;}
+	
+	.footer .footer-topline .custom-footer-content.features li i{right: 0; left: auto;}
+	.footer .footer-topline .custom-footer-content.features li > div h3 {padding-right: 19px; padding-left: 0;}
+}
+
+
+/*  #Mobile (Portrait) ================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px){
+	.header-wrapper .header.links {margin-left: 0;}
+	
+	.page-header .action.nav-toggle i{margin-left: 5px; margin-right: 0;}
+	
+	.nav-before-open .page-wrapper{-webkit-transition: right .3s;-moz-transition: right .3s;-ms-transition: right .3s;transition: right .3s; left: auto; right: 0;}
+	.nav-open .page-wrapper {right: 50%; left: auto;}
+	.header-wrapper .navbar-collapse{
+		-webkit-transition: right .3s;
+		-moz-transition: right .3s;
+		-ms-transition: right .3s;
+		transition: right .3s;
+		left: auto;
+		right: -100%;
+	}
+	.nav-open .navbar-collapse{left: auto; right: 0;}
+	.navbar-nav > li {float: none;}
+	.header-wrapper .navbar-collapse.collapse li.level-top.parent:after{left: 0; right: auto;}
+	
+	body .navigation .submenu:not(:first-child) ul{padding-right: 15px!important; padding-left: 0;}
+	
+	.footer .footer-second-line > .container{overflow: hidden;}
+}
+
+
+
+
+

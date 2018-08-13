@@ -1,0 +1,18 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Meigee_Blacknwhite::top_level"
+             title="Meigee"
+             module="Meigee_Blacknwhite"
+             sortOrder="9999"
+             resource="Magento_Backend::system"
+            />
+		<add id="Meigee_Blacknwhite::second_level"
+             title="Blacknwhite"
+             module="Meigee_Blacknwhite"
+             sortOrder="1"
+             resource="Meigee_Blacknwhite::system"
+             parent="Meigee_Blacknwhite::top_level"
+			 action="adminhtml/system_config/edit/section/blacknwhite_general"
+            />
+    </menu>
+</config>

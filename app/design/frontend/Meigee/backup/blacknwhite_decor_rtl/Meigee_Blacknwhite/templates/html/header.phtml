@@ -1,0 +1,45 @@
+<?php
+	$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+?>
+<div class="header-wrapper">
+  <header class="page-header header-3 rtl">
+    <div class="container">
+      <div class="row">
+        <div class="menu-wrapper col-sm-3 col-md-4">
+          <div class="toggle-nav clearfix"><?php echo $this->getChildHtml("catalog.topnav"); ?> </div>
+        </div>  
+        <div class="logo-wrapper col-sm-3 col-md-3">
+          <?php echo $this->getChildHtml("meigee_mobile_header"); ?>
+          <div class="panel header">
+            <div class="header content">
+              <?php echo $this->getChildHtml("logo"); ?>
+              <?php echo $this->getChildHtml("under.logo"); ?> 
+            </div>
+          </div>
+        </div>
+        <div class="header-top-right col-sm-6 col-md-5">
+          <?php echo $this->getChildHtml("header.links"); ?> 
+          <?php echo $this->getChildHtml("topSearch"); ?>
+          <?php if ($this->getChildHtml("blacknwhite.header.socials") || $this->getChildHtml("currency") || $this->getChildHtml("store_language")) { ?>
+            <div class="settings-wrapper">
+              <div class="settings-btn">
+                <span class="icon-open"><i class="fa fa-cog"></i></span>
+                <span class="icon-close"><i class="fa fa-times"></i></span>
+              </div>
+              <div class="settings-content">
+                <?php if ($header_socials = $this->getChildHtml("blacknwhite.header.socials")): ?>
+                    <?php echo $header_socials; ?>
+                <?php endif; ?>
+                <?php echo $this->getChildHtml("currency"); ?> 
+                <?php echo $this->getChildHtml("store_language"); ?> 
+              </div>
+            </div>
+          <?php } ?>
+          <?php echo $this->getChildHtml("minicart"); ?>
+        </div>
+      </div>
+    </div>
+    <?php echo $this->getChildHtml("bgslider"); ?>
+  </header>
+  <?php echo $this->getChildHtml("meigee_sticky_header"); ?>
+</div>

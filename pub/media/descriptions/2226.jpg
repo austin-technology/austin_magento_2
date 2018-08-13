@@ -1,0 +1,3457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="utf-8" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	
+	<meta name="msvalidate.01" content="410E4BFFE03EE59B0699BC080618F2AB" />
+	
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+		<title>
+			GIGABYTE Global
+		</title>
+
+	<!--og-->
+	<meta property="og:title" content="GIGABYTE Global">
+	<meta name="og:description" content="">
+	<meta name="og:site_name" content="GIGABYTE">
+
+	<meta property="og:image" content="/FileUpload/MainMenuIcon/2016/ogimg-logo.png" />
+	<link rel="shortcut icon" href="/Images/favicon_b.ico" type="image/x-icon" />
+	
+	<link rel="apple-touch-icon" href="/Images/Apple-Touch-Icon/apple-touch-icon.png" sizes="57x57" />
+	<link rel="apple-touch-icon" href="/Images/Apple-Touch-Icon/apple-touch-icon-120x120.png" sizes="120x120" />
+	<link rel="apple-touch-icon" href="/Images/Apple-Touch-Icon/apple-touch-icon-152x152.png" sizes="152x152" />
+	<link rel="apple-touch-icon" href="/Images/Apple-Touch-Icon/apple-touch-icon-167x167.png" sizes="167x167" />
+	<link rel="apple-touch-icon" href="/Images/Apple-Touch-Icon/apple-touch-icon-180x180.png" sizes="180x180" />
+	<link rel="apple-touch-icon-precomposed" href="/Images/Apple-Touch-Icon/apple-touch-icon-precomposed.png" sizes="57x57" />
+	<link rel="apple-touch-icon-precomposed" href="/Images/Apple-Touch-Icon/apple-touch-icon-120x120-precomposed.png" sizes="120x120" />
+	<link rel="apple-touch-icon-precomposed" href="/Images/Apple-Touch-Icon/apple-touch-icon-152x152-precomposed.png" sizes="152x152" />
+	<link rel="apple-touch-icon-precomposed" href="/Images/Apple-Touch-Icon/apple-touch-icon-167x167-precomposed.png" sizes="167x167" />
+	<link rel="apple-touch-icon-precomposed" href="/Images/Apple-Touch-Icon/apple-touch-icon-180x180-precomposed.png" sizes="180x180" />
+
+	
+	<link type="text/css" rel="stylesheet" href="/Content/ErrorPage.css" />
+
+
+			<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+			<script src="/Scripts/CDNScript/jquery.min.js"></script>
+			<script src="/Scripts/CDNScript/jquery-ui.min.js"></script>
+			<link rel="stylesheet" href="/Content/jquery-ui.css">
+			<link rel="stylesheet" href="/Content/font-awesome.min.css">
+	<script src="/Scripts/announce.js"></script>
+	
+
+		<!--CN Holiday-->
+		<!--LiveChat-->
+
+
+
+
+	
+
+	
+	
+	<script src="/Scripts/common.js"></script>
+	<script src="/Scripts/FlowType.js"></script>
+	
+
+	<script type="text/javascript">
+		window.holidayContent = "";
+		//規避IE8 不支援Js IndexOf function 無法顯示錯誤 Update By Cody.yang 2017/07/17。
+		if (!Array.prototype.indexOf)
+		{
+			Array.prototype.indexOf = function(elt /*, from*/)
+			{
+				var len = this.length >>> 0;
+
+				var from = Number(arguments[1]) || 0;
+				from = (from < 0)
+					? Math.ceil(from)
+					: Math.floor(from);
+				if (from < 0)
+					from += len;
+
+				for (; from < len; from++)
+				{
+					if (from in this &&
+						this[from] === elt)
+						return from;
+				}
+				return -1;
+			};
+		}
+
+		CheckIsMobile();
+		CheckIsIE();
+
+		if (window.isIE8) {
+			if (typeof ("") !== "undefined") {
+				var isCheckSnsListIe8 = "";
+				if (isCheckSnsListIe8 === "isSNSList") {
+					document.location.href= "https://www.facebook.com/GIGABYTEofficial/";
+				}
+			}
+		}
+
+		window.userAgent = navigator.userAgent;
+
+		window.CountryCode = "global";
+
+		window.isCN = false;
+		window.isTW = false;
+		window.isHK = false;
+		window.isDE = false;
+
+		window.isUS = false;
+		window.isCA = false;
+
+		window.isProduction = true;
+
+		window.MotherBoardCk = 2;
+		window.GraphicsCardCk = 3;
+		window.LaptopCk = 5;
+		window.MiniPcBareboneCk = 104;
+		window.isCNAdCK = new Array(window.MotherBoardCk,window.GraphicsCardCk,window.MiniPcBareboneCk);
+		window.GTMCategory = '';
+		window.GTMAction = '';
+		window.GTMLabel = '';
+
+		var b2bCkArr = new Array();
+				
+					b2bCkArr.push(101);
+				
+				
+					b2bCkArr.push(102);
+				
+				
+					b2bCkArr.push(103);
+				
+				
+					b2bCkArr.push(106);
+				
+				
+					b2bCkArr.push(107);
+				
+				
+					b2bCkArr.push(108);
+				
+				
+					b2bCkArr.push(109);
+				
+				
+					b2bCkArr.push(110);
+				
+				
+					b2bCkArr.push(111);
+				
+				
+					b2bCkArr.push(112);
+				
+				
+					b2bCkArr.push(113);
+				
+				
+					b2bCkArr.push(114);
+				
+				
+					b2bCkArr.push(125);
+				
+				
+					b2bCkArr.push(131);
+				
+				
+					b2bCkArr.push(133);
+				
+				
+					b2bCkArr.push(134);
+				
+
+		if (typeof(b2bCkArr)!=='undefined') {
+			window.b2BClassKey = b2bCkArr;
+		}
+
+		var getSubString = function(getDecodeString, maxNumber) {
+			var split = getDecodeString.split(" ");
+			var totalLong = 0;
+			var subString = "";
+
+			for (var i = 0; i < split.length; i++) {
+				var getLong = split[i].length;
+
+				totalLong = totalLong + getLong;
+
+				if (totalLong > maxNumber) {
+					return subString;
+				} else {
+					subString = subString + split[i] + " ";
+				}
+			}
+			return subString;
+		}
+
+		window.ciKeyword = ["gigabyte", "aorus"];
+
+		var GetLimitSubString = {
+
+			//是否包含中文
+			hasZh: function(str){
+				for(var i = 0;i < str.length; i++)
+				{
+					if(str.charCodeAt(i) > 255) //如果是漢字，則字符串長度加2
+						return true;
+					return false;
+				}
+			},
+			//重新計算長度，中文+2，英文+1
+			getlen: function(str){
+				var strlen = 0;
+				for(var i = 0;i < str.length; i++)
+				{
+					if(str.charCodeAt(i) > 255) //如果是漢字，則字符串長度加2
+						strlen += 2;
+					else
+						strlen++;
+				}
+				return strlen;
+			},
+			//限制中文長度
+			limitlTwHk: function(str, len){
+				var result = "";
+				var strlen = 0;
+				for(var i = 0;i < str.length; i++)
+				{
+					if(str.charCodeAt(i) > 255) //如果是漢字，則字符串長度加2
+						strlen += 2;
+					else
+						strlen++;
+
+					result += str.substr(i,1);
+
+					if(strlen >= len){
+						break;
+					}
+				}
+				if (str.length > len) {
+					result = result + '..';
+				}
+				return result;
+			},
+			//限制中文GIGABYTE全大寫
+			limitTwHkGIGABYTE: function(str, ciKeyword) {
+				var tempStr = str;
+				for (var k = 0; k < ciKeyword.length; k++) {
+					if (tempStr.toLowerCase().indexOf(ciKeyword[k]) > -1) {
+						//var tempReg=new RegExp(ciKeyword[k],"g");   //加上"g"為全部取代
+						//tempStr=tempStr.replace(tempReg ,ciKeyword[k].toUpperCase());  //取代為CI全大寫
+						var beginIndex = tempStr.toLowerCase().indexOf(ciKeyword[k]);
+						tempStr =
+							tempStr.substring(0,beginIndex) //頭
+							+tempStr.substring(beginIndex,beginIndex+ciKeyword[k].length).toUpperCase() //符合字串
+							+tempStr.substring(beginIndex+ciKeyword[k].length,tempStr.length); //尾
+					}
+				}
+				str = tempStr;
+				return str;
+			},
+			//限制英文長度
+			limitEn: function(str, maxNumber, ciKeyword) {
+				var split = str.split(" ");
+				var totalLong = 0;
+				var subString = "";
+
+				for (var i = 0; i < split.length; i++) {
+					var getLong = split[i].length;
+
+					//限制GIGABYTE AORUS全大寫
+					for (var k = 0; k < ciKeyword.length; k++) {
+						if (split[i].indexOf(ciKeyword[i]) > -1) {
+							split[i] = ciKeyword[i].toUpperCase();
+						}
+					}
+
+					totalLong = totalLong + getLong;
+
+					if (totalLong > maxNumber) {
+						if (str.length > maxNumber) {
+							subString = subString.substring(0, subString.length-1);
+							subString = subString + '..';
+						}
+						return subString;
+					} else {
+						subString = subString + split[i] + " ";
+					}
+				}
+				return subString;
+			}
+		}
+
+		String.format = function() {
+			var s = arguments[0];
+			for (var i = 0; i < arguments.length - 1; i++) {
+				var reg = new RegExp("\\{" + i + "\\}", "gm");
+				s = s.replace(reg, arguments[i + 1]);
+			}
+			return s;
+		}
+
+		var rePlaceCnAdKeyword = function(data, checkCk, productId) {
+			//Remove 特效/精准 from Sara.Hung's request By Cody.Yang 2017/08/09
+			if (window.location.hash !== "#sp") {
+				//data = data.replace(/(最佳|最高级|最低价|最便宜|最流行|最受欢迎|最新科技|最新技术|最新科学|中国第一|全网第一|销量第一|排名第一|唯一|第一品牌|NO.1|TOP.1|独一无二|全国第一|遗留|仅此一次|最后一波|销冠|国家级|全球级|宇宙级|世界级|顶级工艺|顶级享受|绝佳|首个|首选|独家|独家配方|首发|全网首发|全国首发|首次|首款|全国销量冠军|国家级产品|国家领导人|填补国内空白|中国驰名|国际品质|大牌|金牌|名牌|王牌|领袖品牌|世界领先|遥遥领先|领导者|缔造者|创领品牌|领先上市|巨星|著名|掌门人|至尊|巅峰|资深|领袖|之王|王者|冠军|史无前例|前无古人|永久|万能|百分之百|祖传|无敌|纯天然|高档|正品|真皮|超赚|老字号|中国驰名商标|特供|专供|专家推荐|质量免检|无需国家质量检测|免抽检|国家领导人推荐|国家机关推荐|点击领奖|恭喜获奖|全民免单|点击有惊喜|点击获取|点击转身|点击试穿|点击翻转|领取奖品|秒杀|抢爆|再不抢就没了|不会更便宜了|没有他就|错过就没机会了|万人疯抢|全民疯抢|抢购|卖疯了|抢疯了|随时结束|随时涨价|马上降价|顶尖)/gi, '*');
+
+				data = data.replace(/(最佳|最具|最爱|最赚|最优|最优秀|最好|最大|最大程度|最高|最高级|最高端|最奢侈|最低|最低级|最底|最便宜|史上最低价|最流行|最受欢迎|最时尚|最聚拢|最符合|最舒适|最先|最先进|最先进科学|最后|最新|最新技术|最新科学|最新科技|中国第一|全网第一|销量第一|排名第一|唯一|第一品牌|NO.1|TOP1|TOP.1|独一无二|全国第一|遗留|一天|仅此一次|仅此一款|最后一波|销冠|国家级|国际级|世界级|千万级|百万级|星级|甲级|超甲级|全球级|宇宙级|顶级|顶尖|尖端|顶级工艺|顶级享受|高级|极品|极佳|绝佳|绝对|终极|极致|致极|极具|完美|绝佳|极佳|至|至尊|至臻|臻品|臻致|臻席|压轴|问鼎|空前|绝后|绝版|无双|非此莫属|巅峰|资深|前所未有|无人能及|顶级|鼎级|鼎冠|定鼎|完美|翘楚之作|不可再生|不可复制|绝无仅有|寸土寸金|淋漓尽致|无与伦比|唯一|卓越|卓著|前无古人|前无古人后无来者|绝版|珍稀|臻稀|稀少|绝无仅有|绝不在有|稀世珍宝|千金难求|世所罕见|不可多得|空前绝后|寥寥无几|屈指可数|首个|首选|独家|独家配方|首发|全网首发|全国首发|首席|首府|首选|首屈一指|全国首家|国家领导人|国门|国宅|首次|首款|全国销量冠军|国家级产品|填补国内空白|中国驰名|国际品质|黄金旺铺|黄金价值|黄金地段|金钱|金融汇币图片|外国货币|大牌|金牌|名牌|王牌|领袖品牌|领先上市|巨星|著名|掌门人|冠军|王|之王|王者楼王|墅王|皇家|世界领先|遥遥领先|领先|领导者|创领品牌|缔造者|领袖|引领|创领|领航|耀领|史无前例|前无古人|永久|万能|百分之百|祖传|无敌|纯天然|高档|正品|真皮|超赚|老字号|中国驰名商标|特供|专供|专家推荐|质量免检|无需国家质量检测|免抽检|国家领导人推荐|国家机关推荐|点击领奖|恭喜获奖|全民免单|点击有惊喜|点击获取|点击转身|点击试穿|点击翻转|领取奖品|秒杀|抢爆|再不抢就没了|不会更便宜了|没有他就|错过就没机会了|万人疯抢|全民疯抢|抢购|卖疯了|抢疯了|随时结束|随时涨价|马上降价|领导人推荐)/gi, '*');
+
+				//data = data.replace(/^5A$/gi, '*');
+				//5A特殊處理 規避5A前置:中文/>/空格/雙引號
+				data = data.replace(/([\u4e00-\u9fa5]|>|\s|\q)(5A)([\u4e00-\u9fa5])/gi, '$1*$3');
+				data = data.replace(/(台灣|台湾)[^台湾地区]/gi, '台湾地区');
+				//data = data.replace(/(地区地区)/gi, '地区');
+			}
+
+			//客製廣告法單詞文字規避主板顯卡
+			if (checkCk < 0 ) {
+				if(productId === "6264" || productId === "6261" || productId === "6260")
+				{
+					data = data.replace(/(最|神|極)/gi, '*');
+				}
+				else
+				{
+					data = data.replace(/(最|超|级|极|神|極)/gi, '*');
+				}
+			}
+
+			return data;
+		}
+
+		if (typeof String.prototype.trim !== 'function') {
+			String.prototype.trim = function() {
+				return this.replace(/^\s+|\s+$/g, '');
+			};
+		}
+		var writeLog = function(obj) {
+			try {
+				console.log("%o", obj);
+			} catch (e) {
+			}
+		}
+		var SendGaEvent = function(category, action, label) {
+			try {
+				
+				{
+					//<text>
+					ga('send', 'event', category, action, label);
+					ga('B2C.send', 'event', category, action, label);
+					//</text>
+				}
+
+				window.GTMCategory = category;
+				window.GTMAction = action;
+				window.GTMLabel = label;
+			} catch (e) {
+				writeLog('ga not found');
+			}
+		};
+		var fixLtRonRTLForSearch=function(inputId) {
+		}
+		//Head Menu 展開用
+		//$(function () {
+		//	$("#for-menu-header-2").css("display","block");
+		//});
+		//判斷設定新舊版本前台version
+		var setGetFrontVersion=function() {
+	            
+
+	            	getFrontVersion();
+
+            	
+		}
+		//form action check by neal
+		//未來可合併function
+		var checkSearch=function() {
+			var keyWord = $("#full-search-keyword").val();
+			if (keyWord.length >= 2) {
+				return true;
+			} else {
+				var strTip = "Minimum three characters";
+				$("#full-search-keyword").attr("title", strTip);
+				$("#full-search-keyword").tooltip().tooltip("open");
+				setTimeout(function () {
+					$("#full-search-keyword").tooltip().tooltip("close");
+					$("#full-search-keyword").attr("title", "");
+				}, 2000);
+				return false;
+			}
+
+
+		}
+		var setFooterInfoPadding=function() {
+			var BrowsweWidth = $(window).width();
+			if ($(".new-footer").length > 0) {
+				if (BrowsweWidth > RwdWid) {
+					//console.log($(".footer-info-area").innerWidth());
+					var getFooter = $(".footer-info-area");
+
+					//調整FOOTER 左下角各ITEM 寬度
+					var getPaddingBottomMax = 0;
+					getFooter.children('.footer-info').find('li').each(function() {
+						if (parseInt($(this).css("padding-bottom")) > getPaddingBottomMax) {
+							getPaddingBottomMax = parseInt($(this).css("padding-bottom"));
+						}
+					});
+					getFooter.children('.footer-info').find('li').css("padding-bottom", getPaddingBottomMax);
+
+					getFooter.ready(function() {
+						if ($(".footer-info").length > 4) {
+							var getfooterWidth = parseInt(getFooter.width());
+							var getFooterInfo = 0;
+
+							getFooter.children('.footer-info').each(function() {
+								//console.log($(this).outerWidth());
+								getFooterInfo = getFooterInfo + parseInt($(this).outerWidth());
+							});
+							//console.log("-----");
+							var getMarginNum = parseInt((getfooterWidth - getFooterInfo) / ($(".footer-info").length)) - 10;
+							//console.log(getMarginNum);
+							
+								$('.footer-info').css("margin-right", getMarginNum);
+							
+						}
+					});
+				} else {
+					$('.sns-slider-Content').css("display", "none");
+				}
+			}
+		}
+		//設定新舊版首頁改版cookie，已不需要
+		var setFrontVersion=function(version) {
+			document.cookie = "version="+version;
+		}
+		//set class
+		var setClass=function(isNewVersion) {
+			if (isNewVersion) {
+				$("#header-bar").addClass("new-header-bar");
+				$(".new_menu_slide_area").attr("style", "");
+				$("footer").addClass("new-footer");
+				$(".footer-info-other").each(function() {
+					$(this).removeClass("old");
+				});
+				$(".MobileMenuArea").addClass("new-mobile-header-bar");
+				$(".MobileMenuSubArea").addClass("new-mobile-header-bar");
+
+				//
+
+				//<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+				var cssId = 'LatoCss';  // you could encode the css path itself to generate id..
+				if (!document.getElementById(cssId))
+				{
+					var head  = document.getElementsByTagName('head')[0];
+					var link  = document.createElement('link');
+					link.id   = cssId;
+					link.rel  = 'stylesheet';
+					link.type = 'text/css';
+					link.href = 'https://fonts.googleapis.com/css?family=Lato';
+					link.media = 'all';
+					head.appendChild(link);
+				}
+
+			} else {
+				$("#header-bar").removeClass("new-header-bar");
+				$("footer").removeClass("new-footer");
+				$(".footer-info-other").each(function() {
+					$(this).addClass("old");
+				});
+				$(".MobileMenuArea").removeClass("new-mobile-header-bar");
+				$(".MobileMenuSubArea").removeClass("new-mobile-header-bar");
+				var cssId = 'LatoCss';  // you could encode the css path itself to generate id..
+				if (document.getElementById(cssId)) {
+					document.getElementById(cssId).remove();
+				}
+			}
+		}
+		//取得cookie
+		var getFrontVersion=function() {
+			var arr_cookie = document.cookie.split(';');
+			var lenth = arr_cookie.length;
+			var isNewVersion = false;
+			for (var i = 0; i < lenth; i++) {
+				if (arr_cookie[i].indexOf('version=')>-1) {
+					var cook=arr_cookie[i].replace('version=',"").trim();
+					isNewVersion = (cook==="New");
+				}
+				if (i===(lenth-1)) {
+					setClass(isNewVersion);
+				}
+			}
+		}
+
+		//新版menu 動態效果
+		var setNewFrontVersionMenuAnimate=function() {
+			var newHeader = $(".new-menu-header");
+			var newHeaderLen = newHeader.length;
+			//lato字體在某些瀏覽器會隱藏中文,因此中文menu title body 走向play字體
+			for (var header = 0; header < newHeaderLen; header++) {
+				var HeaderTitle = newHeader.eq(header).find("li.MenuTitle");
+				var TitleLength=HeaderTitle.length;
+				for (var title = 0; title < TitleLength; title++) {
+					var nowTitle = HeaderTitle.eq(title);
+					var showBodyName = nowTitle.attr("data-menu");
+					setHoverShowMenu(nowTitle,showBodyName);
+					//title 第一張先載入圖片
+					/*if (title===0) {
+						var imgArea = $("#new-menu-image-" + nowTitle.attr("data-titleid"));
+						if (imgArea.length>0) {
+							var img = imgArea.find(".img").find("img");
+							if (img.length>0) {
+								img.attr("src", img.attr("data-src"));
+							}
+						}
+					}*/
+				}
+
+			}
+
+		}
+		var currentWindowWid = 0;
+		var NewMenuHeightInit=function() {
+			if (currentWindowWid!==$(window).width()) {
+				currentWindowWid = $(window).width();
+				$("div[id^='for-menu-header-']").hide();
+				$("div[id^='for-menu-header-']").removeClass("new-menu-show");
+				$("ul[id^='new-menu-header-']").attr("style","");
+				$(".MenuTitle").removeClass("animate_slide").removeClass("Current");
+				$(".menuBody").removeClass("showbody").attr("style","");
+				$(".menuBody").find(".menuBody-item ").removeClass("animate_slide");
+				headerObjid = "";
+				minMenuHeight = 0;
+			}
+
+		}
+		var hidemoreSeoWord=function() {
+			var seo = $(".model_seo");
+			var seoLength = seo.length;
+			for (var i = 0; i < seoLength; i++) {
+				var item = seo.eq(i);
+				var text = item.attr("data-content");
+				if (text.length>0) {
+
+				}
+			}
+		}
+		var nowNAme = "",titleName="",headerObjid="",minMenuHeight=0;
+		var setMenuheight=function(titlObj,TilteImg,bodyObj) {
+			//讓menu body & menu title 高度一致
+			var Titlenum = titlObj.parent().find("li").length;
+			var nowHeaderId = titlObj.parent().parent().parent().attr("data-headerid");
+			if (headerObjid!==titlObj.parent().parent().parent().attr("id")) {
+				//headerObjid = titlObj.parent().parent().parent().attr("id");
+				var MaxBodynum = $("#new-menu-header-maxChild-"+titlObj.parent().attr("id").trim().replace("new-menu-header-","")).val();
+				var maxitem = MaxBodynum;
+				var itemHeight = 60;
+				if (Titlenum>MaxBodynum) {
+					maxitem = Titlenum;
+				}
+
+				if (Titlenum>0) {
+					//itemHeight = titlObj.parent().find("li").eq(0).outerHeight();
+					itemHeight = 46;
+					if ($(window).width() < 1455) {
+						itemHeight = 35;
+					}
+				}
+
+				var height = (maxitem * itemHeight) + 20;
+				if (height<bodyObj.outerHeight()) {
+					height = bodyObj.outerHeight();
+				}
+
+				if (nowHeaderId === "1" || nowHeaderId === "2") {
+					var headerBarWidth = $("#header-bar").width();
+					if (headerBarWidth>1210) {
+						if (headerBarWidth < 1450) {
+							if (height < 370) {
+								height = 370;
+							}
+						} else {
+							if (height<450) {
+								height = 450;
+							}
+						}
+					}
+
+				}
+				minMenuHeight = height;
+
+
+				//TilteImg.css("height", height);
+			}
+			if (!titlObj.parent().parent().parent().hasClass("noBodyMenu")) {
+				if (titlObj.parent().height()<minMenuHeight) {
+					titlObj.parent().css("height", minMenuHeight);
+				}
+				if (titlObj.parent().height()<minMenuHeight || bodyObj.height()<minMenuHeight) {
+					if (bodyObj.length>0) {
+						bodyObj.css("height", minMenuHeight);
+						titlObj.parent().css("height", minMenuHeight);
+						if (TilteImg.height()<minMenuHeight) {
+							TilteImg.css("height", minMenuHeight);
+						}
+					}
+
+				}
+			}
+
+		}
+		var setClassTimeout=function(obj,time) {
+			setTimeout(function(){ obj.addClass("animate_slide");}, time);
+		}
+		var hidenewversionMenu=function() {
+			$(".animate_slide").removeClass("animate_slide");
+			$("ul[id^=new-menu-header-]").find("li.Current").removeClass("Current");
+			$("ul[id^=new-menu-Body-]").removeClass("showbody");
+			$(".new-menu-show").slideUp().removeClass("new-menu-show");
+		}
+		var showBodyHover=function(titlObj) {
+			if (!titlObj.hasClass("Current")) {
+				//load title img
+				var imgArea = $("#new-menu-image-" + titlObj.attr("data-titleid"));
+				if (imgArea.length>0) {
+					var img = imgArea.find(".img").find("img");
+					if(img.length>0 && (img.attr("src")==="" || img.attr("src")=== undefined)) {
+						img.attr("src",img.attr("data-src"));
+					}
+				}
+				//load titel img
+				var bodyName=titlObj.attr("data-menu");
+				titlObj.addClass("Current");
+				$(".MenuTitle:not(#"+titlObj.attr("id")+")").removeClass("Current");
+				$(".menuBody").hide();
+				var Tilteid = titlObj.attr("data-titleid");
+				var TilteImg = $("#new-menu-image-" + Tilteid);
+				var bodyObj = $("#" + bodyName);
+				bodyObj.css("opacity","1").css("display", "inline-block");
+				if (!bodyObj.hasClass("showbody")) {
+					bodyObj.addClass("showbody");
+					var bodyItem = bodyObj.find(".menuBody-item");
+					var lengthBodyItem = bodyObj.find(".menuBody-item").length;
+					$(".menuBody:not(#"+bodyObj.attr("id")+")").removeClass("showbody");
+					$(".menuBody").find(".menuBody-item").removeClass("animate_slide");
+					for (var i = 0; i < lengthBodyItem; i++) {
+						var time = (i+1) * 50;
+						setClassTimeout(bodyItem.eq(i),time);
+					}
+					//$(".menuBody:not(#"+bodyObj.attr("id")+")").find(".menuBody-item").removeClass("animate_slide");
+				}
+				TilteImg.addClass("show_image");
+				$(".menuTilteImage:not(#"+TilteImg.attr("id")+")").removeClass("show_image").attr("style", "");
+				setTimeout(function(){ setMenuheight(titlObj,TilteImg,bodyObj); }, 300);
+				setMenuheight(titlObj,TilteImg,bodyObj);
+
+			}
+
+		}
+		var setNobodyMenuPosition=function(header) {
+			//設定menu位子
+			//var header = titlObj.parent().parent().parent();
+			if (header.hasClass("noBodyMenu")) {
+				var header_id = header.attr("id");
+				var menuObj = $("li[data-target-slide='" + header_id + "']");
+				if (menuObj.length===1) {
+					//var Prevpos = menuObj.prev().offset().left;
+                        
+	                        var pos = menuObj.offset().left;
+	                        var marginleft = menuObj.css("margin-left").replace("px","");
+	                        header.css("margin-left", pos-marginleft);
+                        
+
+				}
+
+			}
+
+			//設定menu位子
+		}
+		var setHoverShowMenu = function(titlObj, bodyName) {
+
+
+			titlObj.children("a").hover(function() {
+				//hover in function
+
+				//將目前的hover時間 初始化
+				hoverMenuCurrentTime = 0;
+
+				//將目前的hover interval function 初始化
+				clearInterval(setInterValHoverTime);
+				setInterValHoverTime = null;
+
+				//每100ms 判斷是否要執行hover效果
+				setInterValHoverTime = setInterval(function() {
+					//每過100ms hover停留時間+100ms
+					hoverMenuCurrentTime = hoverMenuCurrentTime + 100;
+
+					//若hover 停留時間超過設定的最高時間
+					if (hoverMenuCurrentTime <= hoverMenuLimitTime) {
+
+						//若hover 停留時間超過設定的最高時間 停止判斷hover 時間
+						clearInterval(setInterValHoverTime);
+						setInterValHoverTime = null;
+						//若hover 停留時間超過設定的最高時間 執行hover效果
+						showBodyHover(titlObj);
+					}
+				}, 100);
+			}, function() {
+				//hover out function
+
+				//將目前的hover時間 初始化
+				hoverMenuCurrentTime = 0;
+
+				//將目前的hover interval function 初始化
+				clearInterval(setInterValHoverTime);
+				setInterValHoverTime = null;
+			});
+
+		}
+		var checknewMenu = function(data_id) {
+			//var data_id = that.attr("data-headerid").trim();
+			var obj = $(".new-header-bar").find("#new-menu-header-" + data_id);
+
+			if (obj.length > 0) {
+				var titles = obj.find(".MenuTitle");
+				if (titles.length > 0) {
+					showBodyHover(titles.eq(0));
+					//titles.eq(0).children("a").trigger("mouseover");
+					//console.log(titles.eq(0).children("a"));
+				} else {
+					showBodyHover($(".new-header-bar").find("ul[id^=new-menu-header-]").eq(0).children("li").eq(0));
+					// $(".new-header-bar").find("ul[id^=new-menu-header-]").eq(0).children("li").eq(0).children("a").trigger("mouseover");
+				}
+			}
+
+		}
+		//Call new version Buy CHILD
+		var CallChildBuy = function() {
+			var buy = $("#buy_child_item");
+			if (buy.hasClass("show_child_buy")) {
+				buy.toggle("slide", {
+					direction: "up",
+					complete: function() {
+						buy.removeClass("show_child_buy");
+					}
+				}, newversionSlideTime);
+			} else {
+				buy.toggle("slide", {
+					direction: "up",
+					complete: function() {
+						buy.addClass("show_child_buy");
+						buy.attr("style", "");
+					}
+				}, newversionSlideTime);
+				// buy.addClass("show_child_buy");
+
+				//關掉新版search
+				if ($("#Top-Menu-Search").find("#full-search-keyword").hasClass("search-input-show")) {
+					$(".search_icon").trigger("click");
+				}
+				//關掉新版menu
+				hidenewversionMenu();
+
+			}
+		}
+
+		var setNewMenuTitleSlide = function(that) {
+			var headerTitle = that.find(".new-menu-header ").children(".MenuTitle");
+			var titleLength = headerTitle.length;
+			var title = $(".new-menu-header ").find(".MenuTitle");
+			//animate_slide
+			title.removeClass("animate_slide");
+			that.find(".new-menu-header ").find("ul[id^='new-menu-Body-']").find(".menuBody-item").removeClass("animate_slide");
+			for (var i = 0; i < titleLength; i++) {
+				var obj = headerTitle.eq(i);
+				var time = (i + 1) * 50;
+				//setClassTimeout(obj,time); //取消title 延遲塞入class by neal
+				obj.addClass("animate_slide");
+				if (i === (titleLength - 1)) {
+					//呼叫menu出現時，判斷新版menu條件 by neal 2017/10/17
+					//console.log(that);
+					checknewMenu(that.attr("data-headerid"));
+				}
+			}
+			if (titleLength === 0) {
+				checknewMenu(that.attr("data-headerid"));
+			}
+			//console.log(that.find(".new-menu-header ").children(".MenuTitle"));
+			//console.log(that.attr("id").replace("for-menu-header-","new-menu-header-"));
+		}
+
+		var setSnsButtonMoreSlide = function() {
+
+			//$(".social-btn-more").click(function() {
+			//	$('.sns-slider-Content').show('slide', {direction: 'down'}, 500);
+			//});
+
+			//var ul = $("#list");
+			//ul.on('click focus','li',function(){
+			//	$(this)
+			//		.css("background-color","#FFFF00")
+			//		.siblings().css('background','');
+			//}).on('blur','li',function(){
+			//	$(this).css('background','');
+			//});
+
+			$('body').click(function(event) {
+				var target = $(event.target);
+				//console.log($('.sns-slider-Content'));
+				if ($('.sns-slider-Content').length > 0) {
+					if ((target.parents(".social-btn-more").length > 0 || target.hasClass('social-btn-more')) && $('.sns-slider-Content').css("display") === "none") {
+						$('.sns-slider-Content').show('slide', { direction: 'down' }, 500);
+					} else {
+						$('.sns-slider-Content').hide('slide', { direction: 'down' }, 500);
+					}
+				}
+			});
+		}
+		var RwdWid = 960;
+		var hoverMenuCurrentTime = 0, hoverMenuLimitTime = 400, setInterValHoverTime = null; //ms 為單位 設定100ms的倍數
+		var newversionSlideTime = 200;
+
+		//set popular poduct function
+		var setPopularProduct = function() {
+			//var cookie = CookieWithCountryCode.get("popularProduct");
+			//判斷是否為重新整理頁面
+			var cookie = CookieWithCountryCode.get("PagePath");
+			var nowPathName = window.location.pathname;
+			var isRefresh = true;
+			if (cookie!==nowPathName) {
+				CookieWithCountryCode.set("PagePath", nowPathName, "false");
+				isRefresh = false;
+			}
+			var PageType = "";
+			var ck = 0;
+			var pid = 0;
+			var fid = 0;
+			var filterPids = "";
+			var viewModelName = "";
+			var viewModelUrl = "";
+			if ($("#PageType").length == 1) {
+				PageType = $("#PageType").val();
+				ck = $("#ck").val();
+				if ($("#isPid").length>0) {
+					pid = $("#isPid").val();
+				}
+				if ($('#fid').length>0) {
+					fid = $('#fid').val();
+					var filter = $("li[data-id='Node-" + fid + "']");
+					if (filter.length===1) {
+						filterPids = filter.attr("data-pid").split(",");
+					}
+
+				}
+				viewModelName = $("#viewModelName").val();
+				viewModelUrl = $("#viewModelUrl").val();
+			}
+		}
+
+		var setJsonPopular=function(showType, useJson, hasScore) {
+			var Search=$("#Top-Menu-Search");
+			var div=$("<div></div>");
+			div.addClass("popularArea").css("line-height","26px");
+			var divFirst=$("<div></div>");
+			divFirst.addClass("title");
+
+
+			var strTilte = "Popular recommendation";
+			var gaTagName = "Popular";
+			if (hasScore) {
+				strTilte = "You maybe like";
+				gaTagName = "YouWillLike";
+			}
+
+			if (showType === "viewItems") {
+				strTilte = "Your browsing history";
+				gaTagName = "UserBrowsingHistory";
+			}
+
+			divFirst.append(strTilte);
+			div.append(divFirst);
+			for (var i = 0; i < useJson.length; i++) {
+				var item = useJson[i];
+				divFirst = $("<div></div>");
+				var link = $("<a></a>");
+				link.attr("href", item.url);
+				link.attr("onclick",
+					"SendGaEvent('Top-Menu-" + gaTagName + "-product','" + item.name + "', location.pathname + location.search);");
+				link.append(item.name);
+				divFirst.append(link);
+				div.append(divFirst);
+			}
+			Search.append(div);
+		}
+
+		var removeExistArrayJson = function(productJson, ck) {
+			var result = [];
+			for (var i = 0; i < productJson.length; i++) {
+				if (productJson[i].class_key !== ck) {
+					result.push(productJson[i]);
+				}
+			}
+			return result;
+		}
+
+		//Global CN 強制轉Https update By Cody.Yang 2018/07/19
+		var checRredirectHttps = function(url) {
+			
+			var result = 'http:';
+
+			result = (url === 'www.gigabyte.com' || url === 'www.gigabyte.cn') && location.protocol === 'https:'
+				? 'https:' 
+				: 'http:';
+
+			return result;
+		}
+
+		$(function() {
+			
+			getRwdCookie();
+			//setGetFrontVersion();
+			setNewFrontVersionMenuAnimate();
+			setSnsButtonMoreSlide();
+
+			//set popular product
+			setPopularProduct();
+
+			$("#PageMainContent,footer").on('click', function() {
+				//console.log($(window).width <= RwdWid && MenuShow);
+				if ($(window).width() <= RwdWid && MenuShow) {
+					//ShowMenu();
+				}
+			});
+			$("#Top-Menu-Search").submit(function() {
+				SendGaEvent('Top-Menu', 'Searchbar-SearchWord:' + $("#full-search-keyword").val(), location.pathname + location.search);
+			});
+			MobileMenuFunction();
+			//$(".main-content-background").on('click',function() {
+			//	if (MenuShow) {
+			//		ShowMenu();
+
+			//	}
+			//});
+
+			var responsiveFontSize = function() {
+				/* Replace icon_arrorw01.png for title arrow by Paul Lu 20140912 end */
+				var customerFontRatio = 120;
+				//if ($('#header_hid_speicalCSS').val() == "true") {
+				//	$('body').addClass('_speicalCSS');
+				//	$('._speicalCSS .sub_menu>ul>li').each(function (k, v) {
+				//		if (k == 1) {
+				//			$(this).css('margin-left', '-5%').css('margin-right', '5%');
+				//		}
+				//	});
+				//	customerFontRatio = 95;
+				//}
+
+				var customerMinFont = 14.5;
+				if (userAgent.match("MSIE 8")) {
+					customerMinFont = 15;
+				}
+
+				$('body').flowtype({
+					minimum: 1200,
+					maximum: 1920,
+					minFont: customerMinFont,
+					fontRatio: customerFontRatio
+				});
+			};
+			responsiveFontSize();
+			if (window.isIE8) {
+				$('.search_icon').css('margin-top', '50%');
+			}
+			$('.full-search-btn,.search_icon').on('click', function() {
+				var searchInputArea = $('.search-input-show');
+				//$('.content-activity').css("margin-right", searchInputArea.width());
+				$(".content-activity").animate({ left: '0px' }, 600, 'swing');
+				var searchInput = $('#full-search-keyword');
+				var searchInputImg = $('#Top-Menu-Search').find(".search_input_icon");
+
+				if (!searchInput.hasClass('search-input-show')) {
+					//$(".content-other").addClass("show-area");
+
+					if ($("#header-bar").hasClass("new-header-bar")) {
+						$("#header-bar").addClass("show_area_search");
+						if (!searchInput.hasClass("search-input-show")) {
+							$('#Top-Menu-Search').css("opacity", "1");
+							$(".MobileSearch").addClass("alreadyshow");
+							$(".navbar-header").children(".content-other").addClass("show-area");
+
+							if (RwdWid > $("#header-bar").width()) {
+								//$("#Top-Menu-Search").css("height", "0px").css("overflow", "hidden");
+								/*$("#Top-Menu-Search").animate({
+									height: "inital"
+								}, 200, function() {
+									$("#Top-Menu-Search").attr("style", "opacity: 1; display: none;");
+								});*/
+								$('#Top-Menu-Search').slideDown(function() {
+									//$("#Top-Menu-Search").attr("style", "opacity: 1; display: none;");
+								});
+								/* $('#Top-Menu-Search').toggle("slide", {
+									 direction: "down" ,
+									 complete:function() {
+
+									 }
+								 }, newversionSlideTime);*/
+							} else {
+								$('#Top-Menu-Search').toggle("slide", {
+									direction: "up",
+									complete: function() {
+
+									}
+								}, newversionSlideTime);
+							}
+
+
+							//$('#Top-Menu-Search').toggle("slide", { direction: "up" },function() {
+							//$('#Top-Menu-Search').css("display","inline-block");
+							//}, 200);
+						}
+
+					} else {
+						$("#Top-Menu-Search").show();
+					}
+					//關掉buy
+					if ($("#buy_child_item").length > 0) {
+						if ($("#buy_child_item").hasClass("show_child_buy")) {
+							//$("#buy_child_item").removeClass("show_child_buy");
+							CallChildBuy();
+						}
+					}
+					//關掉menu
+					//$("#PageMainContent").trigger('mouseenter');
+					hidenewversionMenu();
+					//$('div[id^="for-menu-header-"]').hide();
+
+					searchInput.addClass('search-input-show');
+					searchInputImg.addClass('search-input-img-show');
+					searchInput.trigger('focus');
+					//$(this).html('&#xE5CD;');
+					//Auto Complete
+					var ajaxUrl_GetProductNameNeedSearchOtherColumn = String.format('/Ajax{0}', '/SearchFunction/GetProductName?limit=10&needSearchOtherColumn=true');
+					$("#full-search-keyword").off('autocomplete').autocomplete({
+						source: function (request, response) {
+							//$.getJSON('/Ajax/SearchFunction/GetProductName?limit=10&needSearchOtherColumn=true',
+							$.getJSON(ajaxUrl_GetProductNameNeedSearchOtherColumn,
+								{ term: encodeURI(request.term.toString()) },
+								function(data) {
+									response(data);
+									fixLtRonRTLForSearch("full-search-keyword");
+								});
+						},
+						minLength: 3, //限制搜尋字元
+						//delay: 10,//控制按鍵後的反應，預設是 400 msec (0.4 秒)
+						classes: {
+							"ui-autocomplete": "MenuAutocomplete"
+						},
+						select: function(event, ui) {
+							//var url = '/' + ui.item.ck + '/' + ui.item.url;
+							var url = String.format('{0}/{1}/{2}','' ,ui.item.ck, ui.item.url);
+							SendGaEvent('Top-Menu', 'Searchbar-Select-Model-Url:' + url, location.pathname + location.search);
+							window.location.href = url;
+						}
+					});
+					
+					// $(".MobileSearch").addClass("alreadyshow");
+					//$("#Top-Menu-Search").addClass("show-area");
+					// $(".navbar-header").children(".content-other").addClass("show-area");
+				} else {
+
+					if ($("#header-bar").hasClass("new-header-bar")) {
+						$("#header-bar").removeClass("show_area_search");
+						if (RwdWid > $("#header-bar").width()) {
+							$('#Top-Menu-Search').slideUp(function() {
+								$('#Top-Menu-Search').css("display","none");
+								$('#Top-Menu-Search').css("opacity","0");
+								searchInput.removeClass('search-input-show');
+								searchInputImg.removeClass('search-input-img-show');
+								$(".navbar-header").children(".content-other").removeClass("show-area");
+							});
+							// $('#Top-Menu-Search').SlideDown();
+							/*$('#Top-Menu-Search').animate({
+								height: "170"
+							}, 200, function() {
+								$('#Top-Menu-Search').css("display","none");
+								$('#Top-Menu-Search').css("opacity","0");
+								searchInput.removeClass('search-input-show');
+								searchInputImg.removeClass('search-input-img-show');
+								$(".navbar-header").children(".content-other").removeClass("show-area");
+							});*/
+						} else {
+							$('#Top-Menu-Search').toggle("slide", {
+								direction: "up" ,
+								complete:function() {
+									$('#Top-Menu-Search').css("display","none");
+									$('#Top-Menu-Search').css("opacity","0");
+									searchInput.removeClass('search-input-show');
+									searchInputImg.removeClass('search-input-img-show');
+									$(".navbar-header").children(".content-other").removeClass("show-area");
+								}
+							}, newversionSlideTime);
+						}
+
+					} else {
+						searchInput.val('');
+						searchInput.removeClass('search-input-show');
+						searchInputImg.removeClass('search-input-img-show');
+					}
+					$(".MobileSearch").removeClass("alreadyshow");
+					var BrowsweWidth = $(window).width();
+					if (BrowsweWidth + 17 < RwdWid && $("#header-bar").width()<RwdWid) {
+						$(".content-other").slideUp(function() {
+							$(".content-other").css("display", "");
+						});
+					}
+
+					//$(this).html('&#xE8B6;');
+
+					// $("#Top-Menu-Search").addClass("show-area");
+				}
+				FixedMaterialIcon();
+			});
+
+			var moveMenuHtmlToUpper = function() {
+				var allTargetSlide = $('div[id^="for-menu-header-"]');
+				var headerBar = $('#header-bar');
+				allTargetSlide.each(function() {
+					var that = $(this);
+					headerBar.append(that);
+					//console.log('ks');
+				});
+			};
+			moveMenuHtmlToUpper();
+
+
+
+			//記錄目前 mouse 是否 hover 在 menu 上 (包含 menu-header & menu-slide)
+			window.menuHeaderHover = false;
+			var setMenuAnimate = function(triggerEvent) {
+				//關掉buy
+				if ($("#buy_child_item").length>0) {
+					if ($("#buy_child_item").hasClass("show_child_buy")) {
+						$("#buy_child_item").removeClass("show_child_buy");
+					}
+				}
+				//關掉新版search
+				if ($("#Top-Menu-Search").find(".search-input-show").length > 0 && $("#header-bar").hasClass("new-header-bar")) {
+					$(".search_icon").trigger("click");
+				}
+
+				//取得所有的 slide
+				var allTargetSlide = $('div[id^="for-menu-header-"]');
+				//取得所有的 menu-header
+				var menuHeaderItem = $('.content-menu>.content-menu-item');
+
+				//recusive 判斷 menu-header 相關資訊
+				menuHeaderItem.each(function() {
+					var that = $(this);
+					//取得該 menu-header 要對應的 menu-slide 為何
+					var thatTargetSlide = $('#' + that.attr('data-target-slide'));
+					//有找到對應的 menu-slide
+					//if (thatTargetSlide.length > 0) {
+					//對該 menu-header 綁定 triggerEvent 事件
+					var thattemp = that;
+					if ($("#header-bar").hasClass("new-header-bar")) {
+						thattemp = that.children("a").children(".header_world").find(".text");
+					}
+
+					thattemp.off(triggerEvent).on(triggerEvent, function() {
+						//記錄是否為對自己進行事件的觸發
+						var selfClick = false;
+						//設定目前 mouse 有 hover 在 menu-header 上
+						window.menuHeaderHover = true;
+						//window.menuHeaderHover = false;
+						//對所有的 menu-slide 進行判斷
+						allTargetSlide.each(function() {
+							//如果目前判斷的 object id 與觸發目前事件的 object 對應的 menu-slide id 相等，且觸發目前事件的 object 對應的 menu-slide 是可視的情況下
+							if ($(this).attr('id') === thatTargetSlide.attr('id') && thatTargetSlide.is(':visible')) {
+
+
+								//設定是對自己進行事件的觸發
+
+								selfClick = true;
+								//如果是觸發 click 事件
+								if (triggerEvent === "click") {
+									//將 menu-header 所有的 mouseenter 移除，避免 ui 操作有問題
+									menuHeaderItem.off('mouseenter');
+								}
+								//移除 active class
+								//that.removeClass('active'); cancel by neal active
+							}
+							//如果 1.目前是觸發 click 而且是對自己進行事件觸發 或者 2.不是對自己進行事件的觸發
+							if ((triggerEvent === "click" && selfClick === true) || selfClick === false) {
+								//關閉目前判斷的 object
+
+								if ($("#header-bar").hasClass("new-header-bar")) {
+									if ($(this).hasClass("new-menu-show")) {
+										$(this).toggle("slide", {
+											direction: "up",
+											complete: function() {
+												$(this).hide();
+											}
+										}, newversionSlideTime);
+									}
+									setNobodyMenuPosition(thatTargetSlide);
+									$(this).removeClass("new-menu-show");
+									var showMenu = $(".new-menu-show").attr("data-headerid");
+									menuHeaderItem.removeClass('active'); //cancel by neal active
+									$('.content-menu>.content-menu-item[data-headerid="'+showMenu+'"]').addClass("active");
+								} else {
+									$(this).fadeOut();
+									//移除 menu-header 上的 active class
+									menuHeaderItem.removeClass('active');
+								}
+
+
+							}
+						});
+						if ($("#header-bar").hasClass("new-header-bar")) {
+							//$("#header-bar").find("ul[id^='new-menu-Body-']").find(".menuBody-item").removeClass("animate_slide");//showbody
+						}
+						//如果不是對自己進行事件觸發
+						if (!selfClick) {
+							//讀取 MainMenuIcon
+							thatTargetSlide.find('.menuBodyImg img')
+								.each(function() {
+									$(this).attr('src', $(this).attr('data-src'));
+								});
+							//將觸發事件的 object 對應到的 menu-slide 顯示
+							if ($("#header-bar").hasClass("new-header-bar")) {
+								if ($("#header-bar").hasClass("new-header-bar")) {
+									//$("#header-bar").find("ul[id^='new-menu-Body-']").find(".menuBody-item").removeClass("animate_slide");//showbody
+								}
+								setNobodyMenuPosition(thatTargetSlide);
+								thatTargetSlide.toggle("slide", {
+									direction: "up",
+									complete: function() {
+										thatTargetSlide.show();
+										//thatTargetSlide.attr("style", "display:block;");
+										setNewMenuTitleSlide(thatTargetSlide);
+									}
+								}, newversionSlideTime);
+								thatTargetSlide.addClass("new-menu-show");
+							} else {
+								//設定menu li等高 by neal
+								thatTargetSlide.fadeIn(function() {
+									//客製AROUS 自訂高度
+									//if ($(this).attr('id') !== 'for-menu-header-2') {
+									setmenuCss($(this), "li-table-cell", 3);
+									//}
+								});
+							}
+
+							//進行 mouseenter 的綁定動作，因為 click 後表示已開啟選單功能
+							setMenuAnimate('mouseenter');
+							//設定 active class 到 menu-header 上
+							that.addClass('active');
+						} else {
+							if (triggerEvent==="click") {
+								if ($("#header-bar").hasClass("new-header-bar")) {//點選取消menu後 取消所有menu class
+									//hidenewversionMenu();
+									//thatSlide.removeClass("new-menu-show");
+									cancelNewMenu();
+
+									//window.menuHeaderHover = false;;
+									//menuHeaderItem.removeClass('active');
+									//menuHeaderItem.off('mouseenter');
+
+								}
+
+							}
+							//$(".animate_slide").removeClass("animate_slide");
+							//setNewMenuTitleSlide(thatTargetSlide);
+
+						}
+					});
+					//如果目前是進行 mouseenter 動作設定
+
+					if (triggerEvent === "mouseenter") {
+
+						//對所有的 menu-slide 進行判斷
+						allTargetSlide.each(function() {
+							var thatSlide = $(this);
+
+							//對目前判斷的 object 進行 mouseenter 綁定 (當滑鼠在 menu-slide hover 時要做的事)
+
+							thatSlide.on('mouseenter', function() {
+								// setNobodyMenuPosition(thatTargetSlide);
+
+								//假設接下來不會去 hover menu-header
+								// window.menuHeaderHover = false; //取消移除 by neal 2017/10/18 改由下方條件執行
+							});
+							$("#PageMainContent").hover(function() {//取消hover
+								if ($("#header-bar").hasClass("new-header-bar")) {
+									if ($(this).hasClass("new-menu-show")) {
+										$(this).toggle("slide", {
+											direction: "up",
+											complete: function() {
+												//thatSlide.removeClass("new-menu-show");
+
+												window.menuHeaderHover = false;
+												menuHeaderItem.off('mouseenter');
+												thatSlide.removeClass("new-menu-show");
+												menuHeaderItem.removeClass('active');
+											}
+										}, newversionSlideTime);
+									}
+								}
+								window.menuHeaderHover = false;
+								menuHeaderItem.off('mouseenter');
+								thatSlide.removeClass("new-menu-show");
+								menuHeaderItem.removeClass('active');
+							});
+							//對目前判斷的 object 綁定 mouseleave 事件
+							thatSlide.off("mouseleave").on("mouseleave", function() {
+								//延遲 1ms 進行是否關閉 menu-slide 判斷，因為有可能 mouse 會 hover 回 menu-header
+								setTimeout(function() {
+									//延遲 1ms 後，若 mouse 沒有 hover 回 menu-header (即 mouse leave 到其他地方去了)
+									if (window.menuHeaderHover === false) {
+										//關閉目前的 menu-slide
+										thatSlide.fadeOut();
+										//取消 menu-header 上的 mouseenter 事件 (即 menu 關閉後，要重新 click 才會再觸發 mouse hover 設定)
+										menuHeaderItem.off('mouseenter');
+										menuHeaderItem.removeClass('active');
+										if ($("#header-bar").hasClass("new-header-bar")) {
+											$(window).trigger('resize');
+											cancelNewMenu();
+										}
+									}
+
+
+								}, 1);
+							});
+						});
+					}
+					//}
+				});
+			};
+				setMenuAnimate('click');
+
+
+
+			var cancelNewMenu=function() {
+				$("#header-bar").find(".content-menu").find(".content-menu-item").children("a").children(".header_world").find(".text").off("mouseenter");
+			}
+			var setIntervalTimer = null;
+			var setMenuPosition = function() {
+				var logo = $('.content-logo');
+				var menuHeaderItem = $('.content-menu>.content-menu-item');
+				menuHeaderItem.height(logo.height());
+				$(".content-other").height(logo.height());
+				//$(".content-other").height($("#Top-Menu-Search").height());
+				$(".cnAd").height(logo.height());
+				$(".content-activity-item").height(logo.height());
+				if (window.isCN) {
+					var BrowsweWidth = $(window).width();
+					if (BrowsweWidth < 960) {
+						var countSns = $('.social-btn-cn-RWD').length;
+						console.log(countSns);
+						if (countSns === 3) {
+							$('.social-btn-cn-RWD').css("width","33%");
+						}
+					}
+					//alert("test");
+				}
+			};
+			$(window).off('resize').on('resize', function() {
+				setMenuPosition();
+				RWDDetactive();
+				setTimeout(function() {
+					SetContentPadding();
+					fixSnsSliderMenu();
+					setFooterInfoPadding();
+				}, 200);
+				//初始化新版menu
+				if ($("#header-bar").hasClass("new-header-bar") ) {
+					NewMenuHeightInit();
+				}
+
+			}).trigger('resize');
+
+			//偵測 Menu 是否定位完成
+			setIntervalTimer = setInterval(function() {
+				setMenuPosition();
+			}, 200);
+			setTimeout(function() {
+				$(window).trigger('resize');
+			}, 200);
+			FixedMaterialIcon();
+		});
+
+		//set pc sub menu li height
+		function setmenuCss(thisObj, classname, num) {
+			var liMenu = thisObj.find("." + classname);
+			var heightCss = 0;
+			var submenuWid = 0;
+			for (var i = 0; i < liMenu.length; i++) {
+				submenuWid = submenuWid + liMenu.eq(i).outerWidth();
+				if (i % num == 0) {
+					heightCss = 0;
+				}
+				if (liMenu.eq(i).height() > heightCss) {
+					heightCss = liMenu.eq(i).height();
+				}
+				if ((i + 1) % num == 0) {
+					for (var j = 0; j < num; j++) {
+						liMenu.eq(i - j).css("height", heightCss + "px");
+					}
+
+				}
+			}
+		}
+
+		//RWD MENU
+		var MenuShow = false;
+		var direction='left';
+		function ShowMenu() {
+
+			if (!MenuShow) {
+				if ($(".MobileSearch ").hasClass("alreadyshow")) {
+					showSearch();
+				}
+				MenuShow = true;
+				$(".MobileMenuArea").slideDown();
+				$(".MobileMenu").addClass("alreadyshow");
+
+			} else {
+				$(".MobileMenuArea").slideUp();
+				$(".MobileMenu").removeClass("alreadyshow");
+				$(".MobileMenuSubArea").slideUp(function() {
+					$(".MobileMenuSubTwo").css("display", "none");
+					$(".MobileMenuArea").css(direction, "0");
+				});
+				MenuShow = false;
+			}
+		}
+
+		function RWDDetactive() {
+			var BrowsweWidth = $(window).width();
+			if (BrowsweWidth + 17 > RwdWid) {
+				if (BrowsweWidth > 1450) {
+					BrowsweWidth = 1450;
+				}
+				$("body").css("font-size", (BrowsweWidth / 100) + "px");
+			} else {
+				$("body").css("font-size", "14.5px");
+			}
+
+			if (BrowsweWidth + 17 > RwdWid) { //初始化所有rwdmenu
+				MobileInit();
+			} else {
+				//$(".content-other").hide();
+			}
+		};
+
+		function MobileInit() {
+			$(".MobileMenuArea").css("display", "none");
+			$(".firstSub").css("display", "none");
+			$(".MobileMenuArea").find(".content-menu-item").attr("class", "content-menu-item");
+			$(".MobileMenuArea").find(".content-menu-item").children("a").children("i").attr("class", "fa fa-caret-down");
+			$(".MobileMenuSubArea").css("display", "none");
+			$(".MobileMenuSubTwo").css("display", "none");
+			$(".MobileMenuArea").css(direction, "0");
+			if ($(".content-other").hasClass("show-area")) {
+				//$(".content-other").removeClass("show-area");
+				//showSearch();
+			}
+
+			$(".MobileMenu ").removeClass("alreadyshow");
+			//$(".MobileSearch ").removeClass("alreadyshow");
+			MenuShow = false;
+		}
+
+		function MobileMenuFunction() {
+			var FirstMenu = $(".MobileMenuArea").find(".content-menu-item").children("a");
+			FirstMenu.on('click', function() {
+				var submenu = $("#" + $(this).parent().attr("data-target-slide"));
+				if ($(this).parent().attr("class") == "content-menu-item active") {
+					$(this).parent().attr("class", "content-menu-item");
+					$(this).children("i").attr("class", "fa fa-caret-down");
+					submenu.slideUp();
+				} else {
+					$(this).parent().attr("class", "content-menu-item active");
+					$(this).children("i").attr("class", "fa fa-caret-up");
+					submenu.slideDown();
+				}
+			});
+			var SecondMenu = $(".MobileMenuArea").find(".content-menu-item").find(".menu-title").children(".next");
+			SecondMenu.on('click', function() {
+				var submenu = $("#" + $(this).attr("data-target-slide"));
+				$(".MobileMenuSubArea").css("position", "fixed");
+				$(".MobileMenuArea").css("position", "fixed");
+				$(".MobileMenuSubArea").css("display", "block");
+				submenu.css("display", "block");
+
+				$(".MobileMenuSubArea").css(direction, "100%");
+                
+	                $(".MobileMenuArea").animate({ left: "-100%" }, function() {
+		                $(".MobileMenuArea").css("position", "");
+	                });
+	                $(".MobileMenuSubArea").animate({ left: "0px" }, function() {
+		                $(".MobileMenuSubArea").css("position", "");
+	                });
+                
+			});
+		}
+
+		function firstSubBack() {
+			$(".MobileMenuSubArea").css("position", "fixed");
+			$(".MobileMenuArea").css("position", "fixed");
+		    
+	    		$(".MobileMenuArea").animate({ left: "0px" });
+	    		$(".MobileMenuSubArea").animate({ left: "100%" }, function() {
+	    			$(".MobileMenuSubArea").css("position", "");
+	    			$(".MobileMenuArea").css("position", "");
+	    			$(".MobileMenuSubArea").css("display", "none");
+	    			$(".MobileMenuSubTwo").css("display", "none");
+	    		});
+    		
+		}
+
+		function showSearch() {
+			if ($("#header-bar").hasClass("new-header-bar")) {
+				var searchInputArea = $('#full-search-keyword');
+				$(".search_icon").trigger('click');
+				if ($(".content-other").hasClass("show-area")) {
+					//searchInputArea.removeClass("search-input-show");
+					//$(".content-other").removeClass("show-area");
+				} else {
+					// $(".content-other").addClass("show-area");
+					//$(".content-other").hide();
+				}
+			} else {
+				$(".content-other").slideDown();
+				$(".full-search-btn").trigger('click');
+			}
+			//$(".content-other").slideDown();
+			// $(".full-search-btn").trigger('click');
+			if (MenuShow) {
+				$(".MobileMenu").trigger('click');
+			}
+		}
+
+		//var setContentPaddingTimer = null;
+		function SetContentPadding() {
+			//if ($(window).width() <= 960 && $("#header-bar").width()<1007) {
+			//	$("#PageMainContent").css("padding-bottom","");
+			//} else {
+			var headerHeight = $("#header-bar").children(".container").height();
+			var FooterHeight = $("footer").height();
+			$("#PageMainContent").css("min-height", ($(window).height() - headerHeight - FooterHeight)+30 + 'px');
+
+			//if (!$("foot").hasClass("new-footer")) {
+			//	if (!$("#header-bar").hasClass("new-header-bar")) {
+			//        $("#PageMainContent").css("min-height", ($(window).height() - headerHeight - FooterHeight) + 'px'); //new version 註解by neal 就version 保留
+			//    }
+			//}
+
+			//}
+		}
+		function fixSnsSliderMenu() {
+			var snsdivWidth = $('.footer-info-sns');
+			var getWidth = 0;
+			$.each(snsdivWidth, function(i, snsdivWidth) {
+				$('.social-btn', snsdivWidth).each(function() {
+					//console.log($(this).outerWidth(true));
+					getWidth = getWidth + parseInt($(this).outerWidth(true));
+				});
+			});
+			var snsLocalItem = $('.sns-slider-Content');
+			snsLocalItem.css('width',getWidth);
+			snsLocalItem.css('top',0 - parseInt(snsLocalItem.outerHeight(true)));
+			//$('.sns-slider-Content').css('padding','0.5%');
+			getWidth = 0;
+		}
+		function setCookie(isRwd) {
+			var d = new Date();
+			//d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
+			d.setTime(d.getTime() + (1 * 30 * 60 * 1000));
+			//d.setTime(d.getTime() - 1);刪除cookie
+			var expires = "expires=" + d.toGMTString();
+			//document.cookie = "isRwd=true" + "; " + expires + ';domain=' + "www.gigabyte.com" + '; path=/';
+			document.cookie = "isRwd=" + isRwd + "; " + expires + ';domain=' + "www.gigabyte.com" + '; path=/';
+			location.reload();
+		}
+
+		function getRwdCookie() {
+			var cookie = document.cookie;
+			if (cookie.indexOf('isRwd') > -1) {
+
+				var cookies = cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					if (cookies[i].indexOf('isRwd') > -1) {
+						var value = cookies[i].split('=');
+						if (value[1] === "false") {
+							$(".topBg").removeClass("Rwd");
+						} else {
+							$(".topBg").addClass("Rwd");
+						}
+					}
+				}
+			}
+			/*console.log(cookie);
+			console.log(cookie.indexOf('isRwd'));*/
+		}
+
+		var FixedMaterialIcon = function() {
+			if (window.isCN) {
+				$('.material-icons')
+					.each(
+						function(k, v) {
+							//console.log(k, encodeURIComponent($(v).text()), encodeURI($(v).html()));
+							var encodeText = encodeURIComponent($(v).text());
+							var imgObj = $('<img />');
+							var blnChange = false;
+							switch (encodeText) {
+							case "%EE%8C%93":
+								imgObj.attr('src', '/Images/Object/arrow_down.png');
+								imgObj.css({
+									'width': '43%',
+									'vertical-align': 'inherit'
+								});
+								//$(v).html(imgObj);
+								blnChange = true;
+								break;
+							case "%EE%8C%94":
+								imgObj.attr('src', '/Images/Object/arrow_left.png');
+								imgObj.css({
+									'width': '100%',
+									'vertical-align': 'inherit'
+								});
+								//$(v).html(imgObj);
+								blnChange = true;
+								break;
+							case "%EE%97%8B":
+								imgObj.attr('src', '/Images/Object/arrow_left_black.png');
+								imgObj.css({
+									'width': '87%',
+									'vertical-align': 'inherit',
+									'margin-bottom': '12%',
+									'opacity': '0.5'
+								});
+								//$(v).html(imgObj);
+								blnChange = true;
+								break;
+							case "%EE%8C%95":
+								imgObj.attr('src', '/Images/Object/arrow_right.png');
+								imgObj.css({
+									'width': '100%',
+									'vertical-align': 'inherit'
+								});
+								//$(v).html(imgObj);
+								blnChange = true;
+								break;
+							case "%EE%8C%96":
+								imgObj.attr('src', '/Images/Object/arrow_up.png');
+								imgObj.css({
+									'width': '43%',
+									'vertical-align': 'inherit'
+								});
+								//$(v).html(imgObj);
+								blnChange = true;
+								break;
+							case "%EE%A2%B6":
+								imgObj.css({
+									'vertical-align': 'inherit',
+									'max-width': '17px'
+								});
+								if ($(v).parent('.search-btn').length > 0) {
+									imgObj.attr('src', '/Images/Object/search_gray.png');
+									imgObj.css({
+										'max-width': '23px'
+									});
+								} else {
+									imgObj.attr('src', '/Images/Object/search.png');
+								}
+								blnChange = true;
+								break;
+							case "%EE%97%8D":
+								imgObj.css({
+									'vertical-align': 'inherit',
+									'max-width': '17px'
+								});
+								imgObj.attr('src', '/Images/Object/close.png');
+								blnChange = true;
+								break;
+							}
+							if (blnChange) {
+								$(v).html(imgObj);
+							}
+						}
+					);
+			}
+			setTimeout(FixedMaterialIcon, 500);
+		};
+	</script>
+	
+	<script type="text/javascript">
+
+	$(function () {
+		var ErrorUrl = location.search.replace("?aspxerrorpath=", "");
+		if (ErrorUrl.trim() !== "") {
+			var query = '';
+				if (query.trim() !== "") {
+					ErrorUrl = ErrorUrl + "?" + query;
+				}
+				console.log(ErrorUrl);
+				SendGaEvent('ErrorPage', 'ErrorUrl', ErrorUrl);
+			}
+
+			var Keyword = $("#keyword");
+			var Btn = $(".sub-btn");
+			Btn.on('click', function () {
+				SearchFunction(Keyword.val());
+			});
+			Keyword.on('keydown', function (event) {
+				if (event.which == 13) {
+					SearchFunction(Keyword.val());
+					return false;
+				}
+			});
+		});
+
+		$(document).on('click', '#keyword', function () {
+			if (typeof jQuery.fn.autocomplete !== 'function')
+				return false;
+			var ajaxUrl_GetProductName = String.format('/Ajax{0}', '/SearchFunction/GetProductName');
+			$("#keyword").off('autocomplete').autocomplete({
+				source: function (request, response) {
+					$.getJSON(ajaxUrl_GetProductName,
+						{ term: encodeURI(request.term.toString()) },
+						function(data) {
+							response(data);
+							fixLtRonRTLForSearch("keyword");
+						});
+				},
+				minLength: 3,						//限制搜尋字元
+				//delay: 10,						//控制按鍵後的反應，預設是 400 msec (0.4 秒)
+				select: function (event, ui) {
+					var url = String.format('{0}/{1}/{2}', '', ui.item.ck, ui.item.url);
+					SendGaEvent('Error-Page', 'Searchbar-Select-Model-Url:' + url, location.pathname + location.search);
+					window.location.href = url;
+				}
+			});
+		});
+
+		function SearchFunction(strKeyWord) {
+			var Keyword = $("#keyword").val();
+			if (strKeyWord.length < 3) {
+				Keyword.attr("title", "Input 3 Words at least!");
+				Keyword.tooltip().tooltip("open");
+				setTimeout(function () {
+					Keyword.tooltip().tooltip("close");
+					Keyword.attr("title", "");
+				}, 2000);
+				return false;
+			} else {
+				SendGaEvent('ErrorPage', 'SearchByKeyWord', strKeyWord);
+				location.href = "" + "/Search?kw=" + strKeyWord;
+			}
+		}
+
+	</script>
+
+	
+	<!--[if lt IE 9]>
+		<script src="/Scripts/respond.js"></script>
+		<script src="/Scripts/html5.js"></script>
+	<![endif]-->
+	<!-- Google Tag Manager -->
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-TC5LTNQ');</script>
+	<!-- End Google Tag Manager -->
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			$(function() {
+				var PolicyCookie = CookieWithCountryCode.get("HasPolicyClosed");
+				if (PolicyCookie === null) {
+					$("div.topBg").AnnounceInit({
+						msg: "This website uses cookies to provide you a more personalized and responsive service. &lt;br/&gt;By using this website you agree to our use of cookies. If you require more information or prefer not to accept cookies please visit our &lt;a id=&quot;policy-url&quot; href=&quot;/Privacy-Policy&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;.",
+						position: "top",
+						afterclose: function() { CookieWithCountryCode.set("HasPolicyClosed", "1", "false", 30) },
+					});
+				}
+				
+			});
+		</script>
+		<!-- Privacy-Policy 20170510 added -->
+<input type="hidden" id="isRtl" value=False>
+
+		<div class="topBg Rwd ">
+			<div class="blockBackground" onclick="hideBlock()"></div>
+			<div class="tooltipArea" style="display: none; position: absolute; z-index: 1000;"></div>
+			
+
+		<div class="navbar navbar-inverse navbar-fixed-top new-header-bar" id="header-bar">
+		<div class="container">
+		<div class="navbar-header ">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		
+		<div class="content-logo">
+			<a href="/" onclick="SendGaEvent('Top-Menu', 'Click-Logo', location.pathname + location.search);">
+					<img id="original_logo" alt="GIGABYTE" title="GIGABYTE" src="/Images/logo.png"/>
+				<img id="center_logo" alt="GIGABYTE" title="GIGABYTE" src="/Images/Menu/logo-center.png"/>
+			</a>
+		</div>
+		<ul class="content-menu google-font">
+		
+			<li class="content-menu-item   " data-target-slide="for-menu-header-1" data-headerid="1">
+
+					<a href="javascript:;" id="community_header" data-link="javascript:;" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[1]', location.pathname + location.search);">
+						<span class="header_world">
+												<span class="text">
+													Products
+														<i class="material-icons">&#xE313;</i>
+														<span class="header_arrow"><img src="/Images/Menu/down-arrow.png"></span>
+												</span>
+											</span>
+
+					</a>
+
+
+					<div id="for-menu-header-1" class="" style="display: none;" data-headerid="1">
+						<div class="menu-slide-background"></div>
+
+
+
+
+
+						
+						<div class="new_menu_slide_area">
+							<ul id="new-menu-header-1" class="new-menu-header ">
+
+
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-1" id="New-Menu-Title-1" data-titleid="1">
+										<a href="/Motherboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[1]', location.pathname + location.search);">
+											<span class="title_name">Motherboard</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-2" id="New-Menu-Title-2" data-titleid="2">
+										<a href="/Graphics-Card" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[2]', location.pathname + location.search);">
+											<span class="title_name">Graphics Card</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-23" id="New-Menu-Title-23" data-titleid="23">
+										<a href="/Mini-PcBarebone" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[23]', location.pathname + location.search);">
+											<span class="title_name">Desktop PC</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-34" id="New-Menu-Title-34" data-titleid="34">
+										<a href="/Laptop" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[34]', location.pathname + location.search);">
+											<span class="title_name">Laptop</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-32" id="New-Menu-Title-32" data-titleid="32">
+										<a href="/Keyboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[32]', location.pathname + location.search);">
+											<span class="title_name">PC Peripherals</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-33" id="New-Menu-Title-33" data-titleid="33">
+										<a href="/Chassis" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[33]', location.pathname + location.search);">
+											<span class="title_name">PC Components</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+
+								<input type="hidden" value="6" id="new-menu-header-maxChild-1">
+							</ul>
+									<ul class="menuBody" id="new-menu-Body-1">
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/AORUS-Gaming" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[129]', location.pathname + location.search);">
+													AORUS Gaming
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/GIGABYTE-Gaming" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[131]', location.pathname + location.search);">
+													GIGABYTE Gaming
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/G1™-Gaming" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[22]', location.pathname + location.search);">
+													G1™ Gaming
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/Ultra-Durable™" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[24]', location.pathname + location.search);">
+													Ultra Durable™
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/Overclocking" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[33]', location.pathname + location.search);">
+													Overclocking
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Motherboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[1]', location.pathname + location.search);">
+													All Series
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-1">
+											<a href="/Motherboard/B450-AORUS-PRO-WIFI-rev-10" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[1]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/2/6635/2018072415171518_mm.png" alt="B450 AORUS PRO WIFI(1.0)" title="B450 AORUS PRO WIFI(1.0)"/>
+												</div>
+												<div class="model_name">B450 AORUS PRO WIFI</div>
+												<div class="model_seo" data-content=""></div>
+											</a>
+										</div>
+									<ul class="menuBody" id="new-menu-Body-2">
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/AORUS" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[130]', location.pathname + location.search);">
+													AORUS
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/XTREME-GAMING" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[85]', location.pathname + location.search);">
+													XTREME GAMING Series 
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/NVIDIA-Series" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[36]', location.pathname + location.search);">
+													NVIDIA Series
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/AMD-Series" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[86]', location.pathname + location.search);">
+													AMD Series
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/Accessory" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[138]', location.pathname + location.search);">
+													Accessory
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Graphics-Card" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[2]', location.pathname + location.search);">
+													All Series
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-2">
+											<a href="/Graphics-Card/GV-N107TAORUS-8GD" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[2]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/3/6484/2017121210061679_mm.png" alt="GV-N107TAORUS-8GD" title="GV-N107TAORUS-8GD"/>
+												</div>
+												<div class="model_name">AORUS GeForce® GTX 1070Ti 8G</div>
+												<div class="model_seo" data-content=""></div>
+											</a>
+										</div>
+									<ul class="menuBody" id="new-menu-Body-23">
+											<li class="menuBody-item  google-font">
+												<a href="/Mini-PcBarebone" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[69]', location.pathname + location.search);">
+													Mini-PC Barebone (BRIX)
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Mini-PcSystem/" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[88]', location.pathname + location.search);">
+													Mini-PC System(BRIX)
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Laptop/U21MD" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[70]', location.pathname + location.search);">
+													Convertible (3 in 1)
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Mini-PcBarebone" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[23]', location.pathname + location.search);">
+													All Products
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-23">
+											<a href="/Mini-PcBarebone/GB-BRi7H-8550-rev-10" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[23]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/104/6560/2018022214024320_mm.png" alt="GB-BRi7H-8550(1.0)" title="GB-BRi7H-8550(1.0)"/>
+												</div>
+												<div class="model_name">GB-BRi7H-8550</div>
+												<div class="model_seo" data-content=""></div>
+											</a>
+										</div>
+									<ul class="menuBody" id="new-menu-Body-34">
+											<li class="menuBody-item  google-font">
+												<a href="https://www.gigabyte.com/Laptop/AORUS" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[66]', location.pathname + location.search);">
+													AORUS
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Laptop/AERO-series" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[67]', location.pathname + location.search);">
+													AERO Series 
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Laptop/Sabre-series" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[68]', location.pathname + location.search);">
+													Sabre Series
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Laptop/P-series" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[89]', location.pathname + location.search);">
+													P Series 
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Laptop" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[34]', location.pathname + location.search);">
+													All Products
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-34">
+											<a href="/Laptop/AERO-15X--i7-8750H" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[34]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/5/6565/2018040318014876_mm.png" alt="AERO 15X (i7-8750H)" title="AERO 15X (i7-8750H)"/>
+												</div>
+												<div class="model_name">AERO 15X (i7-8750H)</div>
+												<div class="model_seo" data-content="GIGABYTE AERO 15 is the most versatile laptop featuring Intel Core i7 processor, NVIDIA GTX graphic, huge battery and bezel-less display">GIGABYTE AERO 15 is the most versatile laptop featuring Intel Core i7 processor, NVIDIA GTX graphic, huge battery and bezel-less display</div>
+											</a>
+										</div>
+									<ul class="menuBody" id="new-menu-Body-32">
+											<li class="menuBody-item  google-font">
+												<a href="/Keyboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[71]', location.pathname + location.search);">
+													Keyboard
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Mouse" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[72]', location.pathname + location.search);">
+													Mouse
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Headset" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[73]', location.pathname + location.search);">
+													Headset
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Keyboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[32]', location.pathname + location.search);">
+													All Products
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-32">
+											<a href="/Headset/Gaming-Headset" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[32]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/46/6416/2017083116491347_mm.png" alt="Gaming Headset" title="Gaming Headset"/>
+												</div>
+												<div class="model_name">AORUS H5</div>
+												<div class="model_seo" data-content=""></div>
+											</a>
+										</div>
+									<ul class="menuBody" id="new-menu-Body-33">
+											<li class="menuBody-item  google-font">
+												<a href="/Chassis" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[82]', location.pathname + location.search);">
+													Chassis
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Power-Supply" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[92]', location.pathname + location.search);">
+													Power Supply
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Thermal-Solution" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[125]', location.pathname + location.search);">
+													Thermal Solution
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Solid-State-Drive" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[139]', location.pathname + location.search);">
+													Solid State Drive (SSD)
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Memory" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[140]', location.pathname + location.search);">
+													Memory
+												</a>
+											</li>
+																					<li class="menuBody-item google-font">
+												<a href="/Chassis" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyAllSeiesByTitleId-[33]', location.pathname + location.search);">
+													All Products
+												</a>
+											</li>
+									</ul>
+										<div class="menuTilteImage" id="new-menu-image-33">
+											<a href="/Memory/AORUS-RGB-Memory-3200MHz" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[33]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Product/53/6645/2018070418274823_mm.png" alt="AORUS RGB Memory 3200MHz" title="AORUS RGB Memory 3200MHz"/>
+												</div>
+												<div class="model_name">AORUS RGB Memory 3200MHz</div>
+												<div class="model_seo" data-content=""></div>
+											</a>
+										</div>
+						</div>
+
+						
+						<div class="clear"></div>
+					</div>
+					<span class="active-mark"></span>
+			</li>
+			<li class="content-menu-item   " data-target-slide="for-menu-header-is4ItemStyle" data-headerid="2">
+
+					<a href="javascript:;" id="community_header" data-link="javascript:;" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[2]', location.pathname + location.search);">
+						<span class="header_world">
+												<span class="text">
+													Gaming
+														<i class="material-icons">&#xE313;</i>
+														<span class="header_arrow"><img src="/Images/Menu/down-arrow.png"></span>
+												</span>
+											</span>
+
+					</a>
+
+
+					<div id="for-menu-header-is4ItemStyle" class="" style="display: none;" data-headerid="2">
+						<div class="menu-slide-background"></div>
+
+
+
+
+
+						
+						<div class="new_menu_slide_area">
+							<ul id="new-menu-header-2" class="new-menu-header ">
+
+
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-43" id="New-Menu-Title-43" data-titleid="43">
+										<a href="http://www.aorus.com/" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[43]', location.pathname + location.search);">
+											<span class="title_name">AORUS</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-61" id="New-Menu-Title-61" data-titleid="61">
+										<a href="javascript:;" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[61]', location.pathname + location.search);">
+											<span class="title_name">G1 Gaming</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-3" id="New-Menu-Title-3" data-titleid="3">
+										<a href="/Graphics-Card/XTREME-GAMING" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[3]', location.pathname + location.search);">
+											<span class="title_name">XTREME GAMING</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+									<li class="google-font MenuTitle" data-menu="new-menu-Body-62" id="New-Menu-Title-62" data-titleid="62">
+										<a href="javascript:;" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyTitle-[62]', location.pathname + location.search);">
+											<span class="title_name">Gaming System</span>
+												<span class="title_arrow"><img src="/Images/Menu/right-arrow.png" class="menu_arrow"></span>
+										</a>
+									</li>
+
+								<input type="hidden" value="10" id="new-menu-header-maxChild-2">
+							</ul>
+									<ul class="menuBody" id="new-menu-Body-43">
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/AORUS-Gaming" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[114]', location.pathname + location.search);">
+													Motherboard
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/AORUS" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[115]', location.pathname + location.search);">
+													Graphics Card
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="https://www.aorus.com/product-list.php?t=35" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[117]', location.pathname + location.search);">
+													Laptop
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="https://www.aorus.com/product-list.php?t=18&amp;t2=30" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[118]', location.pathname + location.search);">
+													Keyboard
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="https://www.aorus.com/product-list.php?t=18&amp;t2=31" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[119]', location.pathname + location.search);">
+													Mouse
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Thermal-Solution/AORUS-CPU-cooler#kf" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[135]', location.pathname + location.search);">
+													Thermal Solution
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Gaming-Gear/AORUS-Gaming-Chair#kf" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[132]', location.pathname + location.search);">
+													Gaming Gear
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Chassis/AORUS" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[136]', location.pathname + location.search);">
+													Chassis
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Headset/Gaming-Headset#kf" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[137]', location.pathname + location.search);">
+													Headset
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="http://www.aorus.com/product-list.php?t=48" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[120]', location.pathname + location.search);">
+													Accessory
+												</a>
+											</li>
+																			</ul>
+										<div class="menuTilteImage aorus" id="new-menu-image-43">
+											<a href="http://www.aorus.com/" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyImg-[43]', location.pathname + location.search);">
+												<div class="img"><img src="" data-src="//static.gigabyte.com/Images/Menu/aorus_menu.png" title="AORUS" alt="AORUS">
+												</div>
+											</a>
+
+										</div>
+									<ul class="menuBody" id="new-menu-Body-61">
+											<li class="menuBody-item  google-font">
+												<a href="/Motherboard/G1™-Gaming" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[121]', location.pathname + location.search);">
+													Motherboard
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/G1-GAMING" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[122]', location.pathname + location.search);">
+													Graphics Card
+												</a>
+											</li>
+																			</ul>
+									<ul class="menuBody" id="new-menu-Body-3">
+											<li class="menuBody-item  google-font">
+												<a href="/Graphics-Card/XTREME-GAMING" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[28]', location.pathname + location.search);">
+													Graphics Card
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Mouse/XM300" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[87]', location.pathname + location.search);">
+													Mouse
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Power-Supply/XP1200M" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[102]', location.pathname + location.search);">
+													 Power Supply
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Thermal-Solution/XTC700" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[126]', location.pathname + location.search);">
+													 Thermal Solution
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Chassis/XTREME-GAMING" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[127]', location.pathname + location.search);">
+													 Chassis
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Keyboard/XG-Keyboard" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[128]', location.pathname + location.search);">
+													 Keyboard
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Headset/XH300#kf" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[133]', location.pathname + location.search);">
+													Headset
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Gaming-Gear/XGC300#kf" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[134]', location.pathname + location.search);">
+													Gaming Gear
+												</a>
+											</li>
+																			</ul>
+									<ul class="menuBody" id="new-menu-Body-62">
+											<li class="menuBody-item  google-font">
+												<a href="/Laptop/Gaming-Laptop" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[123]', location.pathname + location.search);">
+													Laptop
+												</a>
+											</li>
+											<li class="menuBody-item  google-font">
+												<a href="/Mini-PcBarebone/BRIX-Gaming" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuBodyItem-[124]', location.pathname + location.search);">
+													Mini-PC Barebone (BRIX)
+												</a>
+											</li>
+																			</ul>
+						</div>
+
+						
+						<div class="clear"></div>
+					</div>
+					<span class="active-mark"></span>
+			</li>
+			<li class="content-menu-item   " data-target-slide="for-menu-header-3" data-headerid="3">
+
+					<a href="http://b2b.gigabyte.com/" target="_blank" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[3]', location.pathname + location.search);">
+
+						<span class="header_world">
+												<span class="text">
+													Enterprise
+												</span>
+
+											</span>
+
+					</a>
+
+
+			</li>
+			<li class="content-menu-item  community-item-header " data-target-slide="for-menu-header-36" data-headerid="36">
+
+					<a href="/SocialMedia" id="community_header" data-link="/SocialMedia" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[36]', location.pathname + location.search);">
+						<span class="header_world">
+												<span class="text">
+													Social Media
+												</span>
+											</span>
+
+					</a>
+
+
+			</li>
+			<li class="content-menu-item   " data-target-slide="for-menu-header-4" data-headerid="4">
+
+					<a href="/Support" id="community_header" data-link="/Support" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[4]', location.pathname + location.search);">
+						<span class="header_world">
+												<span class="text">
+													Support
+												</span>
+											</span>
+
+					</a>
+
+
+			</li>
+			<li class="content-menu-item buy-item-header  " data-target-slide="for-menu-header-18" data-headerid="18">
+
+					<a href="/Buy" id="community_header" data-link="/Buy" target="" onclick="SendGaEvent('Top-Menu-PC', 'MenuHeader-[18]', location.pathname + location.search);">
+						<span class="header_world">
+												<span class="text">
+													Buy
+												</span>
+											</span>
+
+					</a>
+
+
+			</li>
+		
+		
+
+		</ul>
+		
+		
+		
+		<div class="MobileHeaderActivity">
+			<a target="_blank" onclick="SendGaEvent('Event', 'Hero in You-RWD', location.pathname + location.search);"
+			   href="http://csr.gigabyte.com/make-earth-green-again/index.html">
+Hero in You			</a>
+		</div>
+
+		<div class="MobileSearch" onclick="showSearch()">
+			<i class="fa fa-search" id="mobile-search-open" aria-hidden="true"></i>
+			<img src="/Images/Menu/search_icon.png" id="mobile-search-open-img">
+			<img src="/Images/Menu/close.png" id="mobile-search-close">
+			
+		</div>
+		<div class="MobileMenu" onclick="ShowMenu()">
+			<i class="fa fa-bars" id="mobile-menu-open" aria-hidden="true"></i>
+			<img src="/Images/Menu/menu.png" id="mobile-menu-open-img">
+			<img src="/Images/Menu/close.png" id="mobile-menu-close">
+			
+		</div>
+
+		<div class="MobileSearchArea"></div>
+
+		<div class="content-other">
+
+			
+
+
+			<form id="Top-Menu-Search" action="/Search" onsubmit="return checkSearch();" style="display: none;">
+				<input type="text" id="full-search-keyword" name="kw" placeholder="Model Name" autocomplete="off"/>
+				<span class="submit_area">
+									<img src="/Images/Menu/search_icon.png" class="search_input_icon">
+									<input class="sb-search-submit" type="submit" value="">
+								</span>
+				
+				<div class="HeaderActivity">
+					<a target="_blank" onclick="SendGaEvent('Event', 'Hero in You', location.pathname + location.search);"
+					   href="http://csr.gigabyte.com/make-earth-green-again/index.html">
+Hero in You					</a>
+				</div>
+				
+				
+			</form>
+			<img src="/Images/Menu/search_icon.png" class="search_icon">
+			<i class="material-icons full-search-btn">&#xE8B6;</i>
+			
+		</div>
+
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav"></ul>
+		</div>
+		</div>
+		</div>
+
+			<div class="MobileMenuArea new-mobile-header-bar ">
+				<ul class="Menu google-font">
+						<li class="content-menu-item " data-target-slide="for-Mobilemenu-header-1">
+							<a href="javascript:;" target="" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[1]', location.pathname + location.search);">
+								Products
+									<i class="fa fa-caret-down"></i>
+									<span class="down-arrow"></span>
+							</a>
+
+								<div id="for-Mobilemenu-header-1" class="firstSub">
+									<div class="menu-slide-background"></div>
+
+									<ul class="container" id="menu-header-1">
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-1" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[1]', location.pathname + location.search);">
+															Motherboard
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-2" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[2]', location.pathname + location.search);">
+															Graphics Card
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-23" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[23]', location.pathname + location.search);">
+															Desktop PC
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-34" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[34]', location.pathname + location.search);">
+															Laptop
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-32" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[32]', location.pathname + location.search);">
+															PC Peripherals
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-33" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[33]', location.pathname + location.search);">
+															PC Components
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+
+									</ul>
+
+									<div class="clear"></div>
+								</div>
+								<span class="active-mark"></span>
+						</li>
+						<li class="content-menu-item " data-target-slide="for-Mobilemenu-header-2">
+							<a href="javascript:;" target="" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[2]', location.pathname + location.search);">
+								Gaming
+									<i class="fa fa-caret-down"></i>
+									<span class="down-arrow"></span>
+							</a>
+
+								<div id="for-Mobilemenu-header-2" class="firstSub">
+									<div class="menu-slide-background"></div>
+
+									<ul class="container" id="menu-header-2">
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="_blank" data-target-slide="for-Mobilemenu-sub-43" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[43]', location.pathname + location.search);">
+															AORUS
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-61" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[61]', location.pathname + location.search);">
+															G1 Gaming
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-3" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[3]', location.pathname + location.search);">
+															XTREME GAMING
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+											<li class="li-table-cell google-font" style="width: 100%;">
+
+												<div style="width: 100%;">
+													<div class="menu-title">
+
+														<a href="javascript:;" target="" data-target-slide="for-Mobilemenu-sub-62" class="next"
+														   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyTitle-[62]', location.pathname + location.search);">
+															Gaming System
+																<div class="space">&nbsp;</div>
+																	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+																<span class="arrow-menu-right"></span>
+														</a>
+
+													</div>
+													
+												</div>
+												<div class="clear"></div>
+											</li>
+
+									</ul>
+
+									<div class="clear"></div>
+								</div>
+								<span class="active-mark"></span>
+						</li>
+						<li class="content-menu-item " data-target-slide="for-Mobilemenu-header-3">
+							<a href="http://b2b.gigabyte.com/" target="_blank" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[3]', location.pathname + location.search);">
+								Enterprise
+							</a>
+
+						</li>
+						<li class="content-menu-item isComunity" data-target-slide="for-Mobilemenu-header-36">
+							<a href="/SocialMedia" target="" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[36]', location.pathname + location.search);">
+								Social Media
+							</a>
+
+						</li>
+						<li class="content-menu-item " data-target-slide="for-Mobilemenu-header-4">
+							<a href="/Support" target="" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[4]', location.pathname + location.search);">
+								Support
+							</a>
+
+						</li>
+						<li class="content-menu-item " data-target-slide="for-Mobilemenu-header-18">
+							<a href="/Buy" target="" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuHeader-[18]', location.pathname + location.search);">
+								Buy
+							</a>
+
+						</li>
+									</ul>
+
+				<div class="mobile_sns_area">
+								<div class="social-btn ">
+				<a href="https://www.facebook.com/GIGABYTEofficial/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Fb', location.pathname + location.search);">
+					<img src='/Images/Index/fb_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.youtube.com/user/GIGABYTEChannel" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Youtube', location.pathname + location.search);">
+					<img src='/Images/Index/youtube_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.instagram.com/gigabyte_official/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-IG', location.pathname + location.search);">
+					<img src='/Images/Index/ig_icon_footer.png'>
+				</a>
+			</div>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="MobileMenuSubArea new-mobile-header-bar">
+								<ul id="for-Mobilemenu-sub-1" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[1]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											Motherboard
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Motherboard/AORUS-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[129]', location.pathname + location.search);">
+												<span>AORUS Gaming</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Motherboard/GIGABYTE-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[131]', location.pathname + location.search);">
+												<span>GIGABYTE Gaming</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Motherboard/G1™-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[22]', location.pathname + location.search);">
+												<span>G1™ Gaming</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Motherboard/Ultra-Durable™" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[24]', location.pathname + location.search);">
+												<span>Ultra Durable™</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Motherboard/Overclocking" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[33]', location.pathname + location.search);">
+												<span>Overclocking</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Motherboard" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[1]', location.pathname + location.search);"><span>All Series</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-2" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[2]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											Graphics Card
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/AORUS" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[130]', location.pathname + location.search);">
+												<span>AORUS</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/XTREME-GAMING" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[85]', location.pathname + location.search);">
+												<span>XTREME GAMING Series </span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/NVIDIA-Series" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[36]', location.pathname + location.search);">
+												<span>NVIDIA Series</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/AMD-Series" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[86]', location.pathname + location.search);">
+												<span>AMD Series</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/Accessory" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[138]', location.pathname + location.search);">
+												<span>Accessory</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Graphics-Card" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[2]', location.pathname + location.search);"><span>All Series</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-23" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[23]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											Desktop PC
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Mini-PcBarebone" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[69]', location.pathname + location.search);">
+												<span>Mini-PC Barebone (BRIX)</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Mini-PcSystem/" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[88]', location.pathname + location.search);">
+												<span>Mini-PC System(BRIX)</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Laptop/U21MD" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[70]', location.pathname + location.search);">
+												<span>Convertible (3 in 1)</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Mini-PcBarebone" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[23]', location.pathname + location.search);"><span>All Products</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-34" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[34]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											Laptop
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="https://www.gigabyte.com/Laptop/AORUS" target="_blank"
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[66]', location.pathname + location.search);">
+												<span>AORUS</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Laptop/AERO-series" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[67]', location.pathname + location.search);">
+												<span>AERO Series </span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Laptop/Sabre-series" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[68]', location.pathname + location.search);">
+												<span>Sabre Series</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Laptop/P-series" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[89]', location.pathname + location.search);">
+												<span>P Series </span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Laptop" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[34]', location.pathname + location.search);"><span>All Products</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-32" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[32]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											PC Peripherals
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Keyboard" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[71]', location.pathname + location.search);">
+												<span>Keyboard</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Mouse" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[72]', location.pathname + location.search);">
+												<span>Mouse</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Headset" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[73]', location.pathname + location.search);">
+												<span>Headset</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Keyboard" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[32]', location.pathname + location.search);"><span>All Products</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-33" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[33]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											PC Components
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Chassis" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[82]', location.pathname + location.search);">
+												<span>Chassis</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Power-Supply" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[92]', location.pathname + location.search);">
+												<span>Power Supply</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Thermal-Solution" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[125]', location.pathname + location.search);">
+												<span>Thermal Solution</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Solid-State-Drive" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[139]', location.pathname + location.search);">
+												<span>Solid State Drive (SSD)</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Memory" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[140]', location.pathname + location.search);">
+												<span>Memory</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Chassis" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[33]', location.pathname + location.search);"><span>All Products</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-43" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[43]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											AORUS
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Motherboard/AORUS-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[114]', location.pathname + location.search);">
+												<span>Motherboard</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/AORUS" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[115]', location.pathname + location.search);">
+												<span>Graphics Card</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="https://www.aorus.com/product-list.php?t=35" target="_blank"
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[117]', location.pathname + location.search);">
+												<span>Laptop</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="https://www.aorus.com/product-list.php?t=18&amp;t2=30" target="_blank"
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[118]', location.pathname + location.search);">
+												<span>Keyboard</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="https://www.aorus.com/product-list.php?t=18&amp;t2=31" target="_blank"
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[119]', location.pathname + location.search);">
+												<span>Mouse</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Thermal-Solution/AORUS-CPU-cooler#kf" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[135]', location.pathname + location.search);">
+												<span>Thermal Solution</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Gaming-Gear/AORUS-Gaming-Chair#kf" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[132]', location.pathname + location.search);">
+												<span>Gaming Gear</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Chassis/AORUS" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[136]', location.pathname + location.search);">
+												<span>Chassis</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Headset/Gaming-Headset#kf" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[137]', location.pathname + location.search);">
+												<span>Headset</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="http://www.aorus.com/product-list.php?t=48" target="_blank"
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[120]', location.pathname + location.search);">
+												<span>Accessory</span>
+											</a>
+										</li>
+									
+								</ul>
+								<ul id="for-Mobilemenu-sub-61" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[61]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											G1 Gaming
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Motherboard/G1™-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[121]', location.pathname + location.search);">
+												<span>Motherboard</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/G1-GAMING" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[122]', location.pathname + location.search);">
+												<span>Graphics Card</span>
+											</a>
+										</li>
+									
+								</ul>
+								<ul id="for-Mobilemenu-sub-3" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[3]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											XTREME GAMING
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Graphics-Card/XTREME-GAMING" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[28]', location.pathname + location.search);">
+												<span>Graphics Card</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Mouse/XM300" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[87]', location.pathname + location.search);">
+												<span>Mouse</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Power-Supply/XP1200M" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[102]', location.pathname + location.search);">
+												<span> Power Supply</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Thermal-Solution/XTC700" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[126]', location.pathname + location.search);">
+												<span> Thermal Solution</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Chassis/XTREME-GAMING" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[127]', location.pathname + location.search);">
+												<span> Chassis</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Keyboard/XG-Keyboard" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[128]', location.pathname + location.search);">
+												<span> Keyboard</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Headset/XH300#kf" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[133]', location.pathname + location.search);">
+												<span>Headset</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Gaming-Gear/XGC300#kf" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[134]', location.pathname + location.search);">
+												<span>Gaming Gear</span>
+											</a>
+										</li>
+																			<li class="SubItem">
+											<a href="/Graphics-Card/XTREME-GAMING" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyAllSeiesByTitleId-[3]', location.pathname + location.search);"><span>All Series</span></a>
+										</li>
+
+								</ul>
+								<ul id="for-Mobilemenu-sub-62" class="MobileMenuSubTwo google-font">
+									<li class="backBtn" onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-Back-ByTitle-[62]', location.pathname + location.search);firstSubBack();">
+
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										<span class="back-arrow"></span>
+										<span>Back</span>
+									</li>
+									<li class="SubTitle google-font">
+										<span>
+											Gaming System
+										</span>
+									</li>
+										<li class="SubItem">
+											<a href="/Laptop/Gaming-Laptop" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[123]', location.pathname + location.search);">
+												<span>Laptop</span>
+											</a>
+										</li>
+										<li class="SubItem">
+											<a href="/Mini-PcBarebone/BRIX-Gaming" target=""
+											   onclick="SendGaEvent('Top-Menu-Mobile', 'MenuBodyItem-[124]', location.pathname + location.search);">
+												<span>Mini-PC Barebone (BRIX)</span>
+											</a>
+										</li>
+									
+								</ul>
+
+				<div>
+								<div class="social-btn ">
+				<a href="https://www.facebook.com/GIGABYTEofficial/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Fb', location.pathname + location.search);">
+					<img src='/Images/Index/fb_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.youtube.com/user/GIGABYTEChannel" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Youtube', location.pathname + location.search);">
+					<img src='/Images/Index/youtube_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.instagram.com/gigabyte_official/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-IG', location.pathname + location.search);">
+					<img src='/Images/Index/ig_icon_footer.png'>
+				</a>
+			</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="main-content-background" id="PageMainContent">
+				<div class="container body-content">
+					
+
+<div class="ErrorBody">
+	
+	<!--ErrQuery Str -->
+	<div class="ErrorTitle"><img src="/Images/Error_search.png"/>
+	</div>
+	<div class="ErrorSubTitle">Sorry!
+The page you are looking for is no longer available or has been removed.
+<a href="./"> Back to Homepage. </a></div>
+	<div class="Search">
+
+		
+		<input type="search" id="keyword" placeholder="Model Name"/>
+		<div class="SearchBtn" style="" onclick="SearchFunction($('#keyword').val());">
+		</div>
+
+
+	</div>
+</div>
+				</div>
+			</div>
+
+			<footer class="new-footer ">
+					<div class="sns-slider">
+						<ul class="sns-slider-Content">
+								<li class="sns-Item Social-Fb">
+									<a href="https://www.facebook.com/GIGABYTEofficial/" target=1 onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Fb-GIGABYTE', location.pathname + location.search);">
+										<div class="social-btn">
+											<img src='/Images/Index/fb_icon_footer.png'>
+										</div>
+										<span>GIGABYTE</span>
+									</a>
+								</li>
+								<li class="sns-Item Social-Youtube">
+									<a href="https://www.youtube.com/user/GIGABYTEChannel" target=1 onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Youtube-', location.pathname + location.search);">
+										<div class="social-btn">
+											<img src='/Images/Index/youtube_icon_footer.png'>
+										</div>
+										<span></span>
+									</a>
+								</li>
+								<li class="sns-Item Social-IG">
+									<a href="https://www.instagram.com/gigabyte_official/" target=1 onclick="SendGaEvent('Top-Menu-Mobile', 'Social-IG-', location.pathname + location.search);">
+										<div class="social-btn">
+											<img src='/Images/Index/ig_icon_footer.png'>
+										</div>
+										<span></span>
+									</a>
+								</li>
+						</ul>
+
+					</div>
+				<div class="container">
+					
+					<div class="footer-top google-font">
+
+						<div class="footer-info-area">
+
+								<div class="footer-info ">
+
+									<ul class="footer-info-ul">
+										<li class="footer-info-first">
+												<a href="/About" target=""
+												   onclick="SendGaEvent('Footer', 'FooterInfo-First-[1]', location.pathname + location.search);">
+													About Us
+												</a>
+										</li>
+											<li class="footer-info-other">
+													<a href="/Career" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[5]', location.pathname + location.search);">
+														Career
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/Investor" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[3]', location.pathname + location.search);">
+														Investor
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/CSR" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[4]', location.pathname + location.search);">
+														CSR
+													</a>
+											</li>
+									</ul>
+								</div>
+								<div class="footer-info class ">
+
+									<ul class="footer-info-ul">
+										<li class="footer-info-first">
+												<a href="/Press" target=""
+												   onclick="SendGaEvent('Footer', 'FooterInfo-First-[14]', location.pathname + location.search);">
+													Press Center
+												</a>
+										</li>
+											<li class="footer-info-other">
+													<a href="/Press/News" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[15]', location.pathname + location.search);">
+														Newsroom
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/Press/Awards" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[16]', location.pathname + location.search);">
+														Awards
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/SocialMedia" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[33]', location.pathname + location.search);">
+														Social Media
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="https://www.youtube.com/user/GIGABYTEChannel" target="_blank"
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[18]', location.pathname + location.search);">
+														Videos
+													</a>
+											</li>
+									</ul>
+								</div>
+								<div class="footer-info class ">
+
+									<ul class="footer-info-ul">
+										<li class="footer-info-first">
+												<a href="/Support" target=""
+												   onclick="SendGaEvent('Footer', 'FooterInfo-First-[7]', location.pathname + location.search);">
+													Support
+												</a>
+										</li>
+											<li class="footer-info-other">
+													<a href="/Support/FAQ" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[10]', location.pathname + location.search);">
+														FAQ
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/Support/Technical-Support" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[9]', location.pathname + location.search);">
+														Online Support
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/Support/Warranty" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[11]', location.pathname + location.search);">
+														Warranty
+													</a>
+											</li>
+									</ul>
+								</div>
+								<div class="footer-info class ">
+
+									<ul class="footer-info-ul">
+										<li class="footer-info-first">
+												<a href="/Contact" target=""
+												   onclick="SendGaEvent('Footer', 'FooterInfo-First-[19]', location.pathname + location.search);">
+													Contact Us
+												</a>
+										</li>
+											<li class="footer-info-other">
+													<a href="http://reseller.gigabyte.com/" target="_blank"
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[24]', location.pathname + location.search);">
+														Reseller Center
+													</a>
+											</li>
+											<li class="footer-info-other">
+													<a href="/Site-Map" target=""
+													   onclick="SendGaEvent('Footer', 'FooterInfo-SubItem-[20]', location.pathname + location.search);">
+														Site Map
+													</a>
+											</li>
+									</ul>
+								</div>
+														
+						</div>
+
+						<ul class="footer-info-sns footer-sns">
+										<div class="social-btn ">
+				<a href="https://www.facebook.com/GIGABYTEofficial/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Fb', location.pathname + location.search);">
+					<img src='/Images/Index/fb_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.youtube.com/user/GIGABYTEChannel" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-Youtube', location.pathname + location.search);">
+					<img src='/Images/Index/youtube_icon_footer.png'>
+				</a>
+			</div>
+			<div class="social-btn ">
+				<a href="https://www.instagram.com/gigabyte_official/" target="_blank"
+				   onclick="SendGaEvent('Top-Menu-Mobile', 'Social-IG', location.pathname + location.search);">
+					<img src='/Images/Index/ig_icon_footer.png'>
+				</a>
+			</div>
+
+						</ul>
+					</div>
+					<div class="footer-bottom">
+							<div class="language">
+								
+								<img src='/images/Index/lanaguage.png'>
+								<a href="//www.gigabyte.com/Language"
+								   onclick="SendGaEvent('Footer', 'Language', location.pathname + location.search);">
+									Global (English)
+								</a>
+							</div>
+<div class="copy-right">
+
+							©2018 GIGA-BYTE Technology Co., Ltd. All rights reserved.
+							<span class="policy-area">
+								
+								
+								<span>
+									<span class="separate">|</span>
+									
+									<a href="https://profile.gigabyte.com/TermsOfUse.aspx?l=en-US" target="_blank"
+									   onclick="SendGaEvent('Footer', 'Terms-Of-Use', location.pathname + location.search);">
+										Terms Of Use
+									</a>
+								</span>
+
+								<span>
+									<span class="separate">|</span>
+									
+									<a href="https://profile.gigabyte.com/PrivacyPolicy.aspx?l=en-US" target="_blank"
+									   onclick="SendGaEvent('Footer', 'Privacy-Policy', location.pathname + location.search);">
+										Privacy Policy
+									</a>
+								</span>
+							</span>
+
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<div class="scroll-style"></div>
+
+
+			
+			<!-- 105000000, Global, www.gigabyte.com, www.gigabyte.com, UA-15702764-1, 2018/08/08 10:10:44, 10.210.1.109, https -->
+
+			
+		</div>
+		<script type="text/javascript">
+
+			        
+		var pageTracker = pageTracker || function() {};
+		pageTracker._trackPageview = function() {};
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		try {
+			ga('create', 'UA-15702764-1', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+
+				//Multi account
+				ga('create', 'UA-16835527-23', { 'name': 'B2C' });
+				ga('B2C.require', 'displayfeatures');
+				ga('B2C.send', 'pageview');
+					} catch (err) {
+			writeLog(err);
+		}
+	
+	
+
+
+			//function GetCookie(name) {
+			//	var value = "; " + document.cookie;
+			//	var parts = value.split("; " + name + "=");
+			//	if (parts.length == 2) return parts.pop().split(";").shift();
+			//}
+
+			//function ChangeViewCss(IsRWD){
+			//    if(IsRWD){
+			//        $('.topBg').addClass("Rwd");
+			//        $('#RWDBtn').hide();
+			//        $('#NoRWDBtn').show();
+			//    }
+			//    else{
+			//        $('.topBg').removeClass("Rwd");
+			//        $('#RWDBtn').show();
+			//        $('#NoRWDBtn').hide();
+			//    }
+			//}
+		</script>
+		
+
+	</body>
+
+
+
+</html>

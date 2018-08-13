@@ -1,0 +1,34 @@
+<?php
+	$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+?>
+<?php if ($top_banner = $this->getChildHtml("blacknwhite.top.banner")): ?>
+  <div class="container">
+    <?php echo $top_banner; ?>
+  </div>
+<?php endif; ?>
+<div class="header-wrapper">
+  <header class="page-header header-2">
+    <div class="container">
+    	<?php echo $this->getChildHtml("logo"); ?>
+	    <?php echo $this->getChildHtml("under.logo"); ?> 
+      <?php echo $this->getChildHtml("topSearch"); ?>
+      <div class="header-top-right">
+        <?php echo $this->getChildHtml("header.welcome"); ?>
+        <?php echo $this->getChildHtml("currency"); ?> 
+        <?php echo $this->getChildHtml("store_language"); ?> 
+        <?php echo $this->getChildHtml("header.links"); ?> 
+      </div>
+    </div>
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="menu-inner clearfix">
+          <div class="toggle-nav clearfix"><?php echo $this->getChildHtml("catalog.topnav"); ?> </div>
+          <?php echo $this->getChildHtml("minicart"); ?>
+          <?php echo $this->getChildHtml("meigee_mobile_header"); ?>
+        </div>
+      </div>
+    </div>
+    <?php echo $this->getChildHtml("bgslider"); ?>
+  </header>
+  <?php echo $this->getChildHtml("meigee_sticky_header"); ?>
+</div>

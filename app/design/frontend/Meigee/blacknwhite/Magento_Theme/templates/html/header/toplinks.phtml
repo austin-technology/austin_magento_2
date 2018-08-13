@@ -1,0 +1,20 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+$meigee_helper = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral');
+$wishlist_link = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_toplinks', 'toplinks_wishlist');
+$compare_link = $meigee_helper->getCustomThemeOptionCnf('blacknwhite_toplinks', 'toplinks_compare');
+?>
+<ul class="header links">
+	<?php if(!$compare_link){ ?>
+		<?php echo $this->getChildHtml("catalog.compare.link"); ?>
+	<?php } ?>
+	<?php echo $this->getChildHtml("my-account-link"); ?>
+	<?php if(!$wishlist_link){ ?>
+		<?php echo $this->getChildHtml("wish-list-link"); ?>
+	<?php } ?>
+	<?php echo $this->getChildHtml("authorization-link"); ?>
+</ul>

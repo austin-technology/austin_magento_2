@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" />
+<title>AliExpress.com - Maintaining</title>
+<style>
+body,div,h2,p{margin:0;padding:0;}
+#maintain{width:960px;height:200px;position:relative;margin:200px auto 0;background:url(http://i02.i.aliimg.com/images/cms/upload/aliexpress/other/maintaining.png) no-repeat 50% 0;}
+#maintain .content{position:absolute;left:442px;top:100px;line-height:1.35;font-size:12px;font-family:Arial;color:#333;}
+#maintain h2{font-size:16px;}
+#maintain p{margin-top:5px;font-size:14px;}
+#actions{margin-top:15px;}
+.button-primary{display:inline-block;height:30px;line-height:30px;padding:0 15px;border-radius:3px;font-weight:700;font-size:14px;color:#FFF;background-color:#E62E04;text-decoration:none;}
+</style>
+
+<div id="maintain">
+	<div class="content">
+		<h2>Page cannot be displayed</h2>
+		<p>This page cannot currently be displayed. Our engineers are working hard to fix this problem. Please check back later...</p>
+		<div id="actions">
+			<a href="http://www.aliexpress.com/" class="button-primary">Back to Home Page</a>
+		</div>
+	</div>
+</div>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-17640202-1']);
+_gaq.push(['_setDomainName', 'aliexpress.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://' :'http://') + 'stats.g.doubleclick.net/dc.js';    
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</html>

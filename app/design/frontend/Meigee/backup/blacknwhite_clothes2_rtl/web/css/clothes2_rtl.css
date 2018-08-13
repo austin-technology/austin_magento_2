@@ -1,0 +1,260 @@
+/* 66 of 569 CSS properties converted by rtl.daskhat.ir 
+ These properties should be override originals. 
+ just load rtl css file after original css file.*/ 
+
+/* body {direction:rtl;} */
+
+.page-header .header-top-right{
+    text-align: left;
+}
+
+.minicart-wrapper .title-cart .icon{
+    padding-left: 0;
+}
+
+.minicart-wrapper .title-cart .icon + span{
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+.header-wrapper .block-search{
+    margin-right: 0;
+}
+
+.header-wrapper .block-search .input-group input{
+    padding-right: 8px;
+    padding-left: 0;
+}
+.header-wrapper .block-search .input-group .input-group-btn {
+    padding-left: 0;
+}
+.page-header .welcome {
+    margin-right: 10px;
+}
+
+#home-slider .item .slide-container{
+    right: 17%;
+    left: auto;
+    text-align: right;
+}
+
+#home-slider .item .slide-container-2.slide-skin{
+    right: 17%;
+    left: auto;
+}
+
+#home-slider .item .slide-container.slide-skin-2{
+    left: auto;
+    right: 24%;
+    text-align: right;
+}
+
+#home-slider .item .slide-container-2.slide-skin-2{
+    right: auto;
+    left: 26.5%;
+}
+
+#sticky-header .block-search .input-group .btn{
+    margin-left: 0;
+}
+#sticky-header .right-wrapper {
+    float: left;
+}
+#sticky-header .left-wrapper {
+    padding-left: 10px;
+}
+
+.weltpixel-quickview-catalog-product-view .product-info-main .box-tocart {
+    margin-right: 0;
+}
+.features-block .features i{
+    text-align: right;
+    margin-left: 0;
+}
+
+.brands .brand{
+    float: right;
+}
+
+.footer .switcher .options .action.toggle{
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.cms-no-route .page-header .form.minisearch input{
+    margin-right: 0;
+}
+
+.sidebar .block.filter .filter-current ol li .filter-label{
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.sidebar .block.filter .filter-current ol li a.remove{
+    float: left;
+}
+
+.weltpixel-quickview-catalog-product-view .product-info-main .box-gotoproduct{
+    float: left !important;
+}
+
+.products-grid .item .hover-buttons, .products-list li.item .hover-buttons{
+    left: 0;
+    right: auto;
+}
+
+.page-products .products-grid li.item, .page-products .products-grid li.product-item, .products-grid.wishlist li.product-item {
+    float: right;
+}
+.sidebar .block.filter .filter-options-title strong {
+    float: right;
+}
+
+.cart-summary .title > span, .cart-summary .title strong, .block-title strong, .cart-totals .table-caption, .sidebar .block .block-title strong, .block-collapsible-nav-title strong {
+    float: right;
+}
+
+.products-list li.item .weltpixel-quickview, .products-grid .item .weltpixel-quickview{
+    float: right;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.products-list li.item .lightbox-wrapper, .products-grid .item .lightbox-wrapper{
+    float: right;
+}
+
+.products-list li.item .lightbox-button, .products-grid .item .lightbox-button{
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.products-list li.item .lightbox-button span, .products-grid .item .lightbox-button span, .products-list li.item .weltpixel-quickview span, .products-grid .item .weltpixel-quickview span{
+    margin-right: 0;
+}
+
+.products-grid .product-item-details{
+    padding-left: 23px;
+    padding-right: 0;
+}
+
+.products-grid .actions-secondary a.towishlist{
+    left: 0;
+    right: auto;
+}
+
+.account .actions-toolbar .primary .action + .action{
+    padding-right: 18px;
+    padding-left: 0;
+    border-right: none;
+}
+
+.sidebar .block.block-wishlist .product-item-actions .action.tocart{
+    margin-left: 2px;
+    margin-right: 0;
+}
+.footer .switcher-store {
+    margin-left: 0;
+    margin-right: 60px;
+}
+
+@media only screen and (min-width: 1008px){
+    body .products-grid.five-columns .item .weltpixel-quickview,  body .products-grid.six-columns .item .weltpixel-quickview,  body .products-grid.seven-columns .item .weltpixel-quickview,  body .products-grid.eight-columns .item .weltpixel-quickview,  body .products-grid.slider-five-columns .item .weltpixel-quickview,  body .products-grid.slider-six-columns .item .weltpixel-quickview,  body .products-grid.slider-seven-columns .item .weltpixel-quickview,  body .products-grid.slider-eight-columns .item .weltpixel-quickview,  body .products-grid.five-columns .item .lightbox-button,  body .products-grid.six-columns .item .lightbox-button,  body .products-grid.seven-columns .item .lightbox-button,  body .products-grid.eight-columns .item .lightbox-button,  body .products-grid.slider-five-columns .item .lightbox-button,  body .products-grid.slider-six-columns .item .lightbox-button,  body .products-grid.slider-seven-columns .item .lightbox-button,  body .products-grid.slider-eight-columns .item .lightbox-button{
+        margin-right: 5px;
+        margin-left: 0;
+    }
+
+    body .products-grid.five-columns .actions-secondary a,  body .products-grid.six-columns .actions-secondary a,  body .products-grid.seven-columns .actions-secondary a,  body .products-grid.eight-columns .actions-secondary a,  body .products-grid.slider-five-columns .actions-secondary a,  body .products-grid.slider-six-columns .actions-secondary a,  body .products-grid.slider-seven-columns .actions-secondary a,  body .products-grid.slider-eight-columns .actions-secondary a{
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    body .products-grid.five-columns .product-item-details,  body .products-grid.six-columns .product-item-details,  body .products-grid.seven-columns .product-item-details,  body .products-grid.eight-columns .product-item-details,  body .products-grid.slider-five-columns .product-item-details,  body .products-grid.slider-six-columns .product-item-details,  body .products-grid.slider-seven-columns .product-item-details,  body .products-grid.slider-eight-columns .product-item-details{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1008px) and (max-width: 1374px){
+    #home-slider .item .slide-container.slide-skin{
+        right: 5%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin{
+        right: 5%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container.slide-skin-2{
+        right: 14%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin-2{
+        left: 16.5%;
+        right: auto;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1007px){
+    #home-slider .item .slide-container{
+        right: 6%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin{
+        right: 6%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container.slide-skin-2{
+        right: 6%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin-2{
+        left: 6.5%;
+        right: auto;
+    }
+
+    .col-banners-2 .features-block,  .col-banners-2 a.banner{
+        float: right;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .header-wrapper .header-top-right > .header.links{
+        margin-right: 0;
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+    #home-slider .item .slide-container{
+        right: 5%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin{
+        right: 5%;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container.slide-skin-2{
+        right: 10px;
+        left: auto;
+    }
+
+    #home-slider .item .slide-container-2.slide-skin-2{
+        right: 10px;
+        left: auto;
+    }
+
+    .customer-welcome .action.switch::after{
+        margin-right: 2px;
+        margin-left: 0;
+    }
+
+}
+

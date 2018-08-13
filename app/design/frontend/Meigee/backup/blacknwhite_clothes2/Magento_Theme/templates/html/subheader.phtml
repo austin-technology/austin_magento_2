@@ -1,0 +1,8 @@
+<link href='//fonts.googleapis.com/css?family=Arial:300,400,500,600,700,800|Poppins:400,500,600,700' rel='stylesheet' type='text/css'>
+<?php $contentWidth = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral')->getCustomThemeOptionCnf('blacknwhite_layout', 'container_width'); ?>
+<?php $sticky_opacity = $this->helper('\Meigee\Blacknwhite\Helper\BlacknwhiteGeneral')->getCustomThemeOptionCnf('blacknwhite_header', 'sticky_header_opacity'); ?>
+<style type="text/css">
+	body.boxed-layout .container,
+	body .container {max-width: <?php echo $contentWidth; ?>px; width: 100%;}
+	#sticky-header {opacity: <?php echo $sticky_opacity/100; ?>;}
+</style>

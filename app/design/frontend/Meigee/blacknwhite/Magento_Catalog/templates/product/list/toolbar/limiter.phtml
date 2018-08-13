@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+use Magento\Catalog\Model\Product\ProductList\Toolbar;
+$rand = rand(5, 1500);
+?>
+<div class="field limiter">
+    <label class="label" for="limiter">
+        <span><?= /* @escapeNotVerified */ __('Show') ?></span>
+    </label>
+    <div class="control">
+        <ul id="limiter" class="limiter-options">
+            <?php foreach ($block->getAvailableLimit() as $_key => $_limit):
+
+			?>
+                <li <?php if ($block->isLimitCurrent($_key)): ?>
+                    class="selected"<?php endif ?>>
+                    <a href="javascript:void(0);" data-value="<?= /* @escapeNotVerified */ $_key ?>" data-role="limiter" ><?= /* @escapeNotVerified */ $_limit ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <span class="limiter-text"><?= /* @escapeNotVerified */ __('per page') ?></span>
+</div>

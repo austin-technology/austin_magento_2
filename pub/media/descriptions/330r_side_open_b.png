@@ -1,0 +1,140 @@
+<link href="http://cwsmgmt.corsair.com/newscripts/new/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        
+        
+    <![endif]-->
+<style>
+    .page-header {
+    border-bottom: 0px !important;
+    margin-bottom: 60px;
+    margin-top: 5vh !important;
+    }
+    .hero-spacer {
+    margin-top: 0px;
+    }
+    .hero-feature {
+    margin-bottom: 30px;
+    }
+    footer {
+    margin: 50px 0;
+    }
+    .thumbnail {
+    border: none !important;
+    }
+    .cta {
+    padding-bottom: 20px;
+    }
+    .cta a {
+    padding: .8em 1.6em;
+    text-decoration: none;
+    min-width: 10em;
+    color: #000;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border: 0;
+    }
+    .cta .black {
+    background: #000;
+    color: #fff;
+    }
+    .cta .black:hover {
+    background: #f0cf1e;
+    color: #000
+    }
+    .cta.bottom-center {
+    text-align: center;
+    bottom: 3em;
+    margin-top: 25px;
+    }
+    .cta-video {
+    padding-bottom: 20px;
+    }
+    .cta-video a {
+    padding: .6em 1.6em;
+    text-decoration: none;
+    min-width: 10em;
+    color: #000;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border: 0;
+    }
+    .cta-video .black {
+    border: 3px #000000 solid;
+    color: #000;
+    }
+    .cta-video .black:hover {
+    color: #000
+    }
+    .cta-video.bottom-center {
+    text-align: center;
+    bottom: 3em;
+    margin-top: 25px;
+    }
+    .portfolio-item {
+    text-align: center;
+    }
+    .grid-item {
+    margin: 5px;
+    position: relative;
+    color: #000;
+    overflow: hidden;
+    }
+    .portfolio-item h3 a {
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 1px
+    }
+    .col-md-6 h3, h4 {
+    text-transform: uppercase;
+    }
+    hr {
+    color: #cbcbcb;
+    background-color: #cbcbcb;
+    height: 1px;
+    border-top: 0px !important;
+    }
+    .transitionFade {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    .transitionFade:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+</style>
+<div style="background-color: #fefefe">
+<!-- Page Content -->
+<div class="container" style="padding-top: 100px; min-height:900px; ">
+<!-- Page Heading -->
+<div class="row">
+<div class="col-lg-12">
+<div style="text-align: center;    max-width: 350px; margin-left: auto; margin-right: auto;"> <img alt="" src="http://cwsmgmt.corsair.com/media/Corsair_logo_S_W_800px_no_sail.png " width="70%"></div>
+<h1 class="page-header" style="text-align: center; text-transform: uppercase; font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">Pardon our Dust.</h1>
+</div>
+<p style="text-align: center;    margin-left: auto;margin-right: auto; max-width: 600px;font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'">CORSAIR.com is under maintenance and will be back online shortly.<br> In the meantime, please visit us on <a href="https://www.facebook.com/Corsair/">Facebook</a>.</p>
+</div>
+<!-- /.row -->
+<!-- Footer -->
+<footer>
+<div class="row">
+<div class="col-lg-12"> </div>
+</div>
+<!-- /.row -->
+</footer>
+</div>
+</div>
+<!-- /.container -->

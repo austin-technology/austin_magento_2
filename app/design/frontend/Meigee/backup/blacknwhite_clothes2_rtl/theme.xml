@@ -1,0 +1,7 @@
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+     <title>Blacknwhite Clothes 2 RTL</title>
+     <parent>Meigee/blacknwhite</parent>
+     <media>
+         <preview_image>media/preview.jpg</preview_image>
+     </media>
+ </theme>

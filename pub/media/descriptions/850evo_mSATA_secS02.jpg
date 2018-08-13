@@ -1,0 +1,1042 @@
+
+<!DOCTYPE html>
+	<html lang="en" >
+	    <head>
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer', 'GTM-PW2Z36M');</script>
+            <!-- End Google Tag Manager -->
+            
+	    	
+        <title>Samsung V-NAND SSD | Samsung Semiconductor Official Site | Samsung Semiconductor Global Website</title>
+        <meta name="title" content="Samsung V-NAND SSD | Samsung Semiconductor Official Site | Samsung Semiconductor Global Website">
+ 
+	        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+        
+        <link rel="canonical" href="//www.samsung.com/semiconductor/minisite/ssd/"> 
+        
+        
+        <meta name="keywords" content="Samsung V-NAND SSD, Samsung Magician, Samsung Portable SSD, Samsung Enterprise SSD, Samsung Consumer SSD">
+        <meta name="description" content="Samsung V-NAND SSD official website. Find information about Samsung Consumer SSD, Portable SSD, Enterprise SSD products, download, support, and more. ">
+        <meta name="date" content="2018-07-20"><!--Latest Publishing Date -->
+        <meta name="sitecode" content="semiconductor/minisite/ssd">
+
+        <meta name="twitter:card" content="Samsung Semiconductor SSD">
+        <meta name="twitter:site" content="@Samsung Semiconductor">
+        <meta name="twitter:creator" content="@Samsung Semiconductor">
+        <meta name="twitter:url" content="//www.samsung.com/semiconductor/minisite/ssd/">
+        <meta name="twitter:title" content="Samsung V-NAND SSD | Samsung Semiconductor Official Site">
+        <meta name="twitter:description" content="Samsung V-NAND SSD official website. Find information about Samsung Consumer SSD, Portable SSD, Enterprise SSD products, download, support, and more. ">
+        <meta name='twitter:image' content="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/seoimages/products/img_product_01_2.png"/>
+    
+        <meta property="og:url" content="//www.samsung.com/semiconductor/minisite/ssd/">
+        <meta property="og:image" content="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/seoimages/products/img_product_01_2.png">
+        <meta property="og:type" content="web page">
+        <meta property="og:site_name" content="Samsung Semiconductor">
+        <meta property="og:locale" content="en">
+        <meta property="og:title" content="Samsung V-NAND SSD | Samsung Semiconductor Official Site"/>
+        <meta property="og:description" content="Samsung V-NAND SSD official website. Find information about Samsung Consumer SSD, Portable SSD, Enterprise SSD products, download, support, and more. 
+"/>
+        <meta property="og:country-name" content="semiconductor/minisite/ssd"/>    
+    
+        <meta itemprop="name" content="Samsung Semiconductor">
+        <meta itemprop="image" content="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/seoimages/products/img_product_01_2.png">
+        <meta itemprop="url" content="//www.samsung.com/semiconductor/minisite/ssd/">
+        <meta itemprop="description" content="Samsung V-NAND SSD official website. Find information about Samsung Consumer SSD, Portable SSD, Enterprise SSD products, download, support, and more. ">
+        <meta itemprop="keywords" content="Samsung V-NAND SSD, Samsung Magician, Samsung Portable SSD, Samsung Enterprise SSD, Samsung Consumer SSD">
+
+        <link rel="shortcut icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/favicon.ico">
+        <link rel="apple-touch-icon" href="//cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.gif">
+        
+
+ 
+            <link rel="stylesheet" href="//cdn.samsung.com/etc/designs/semi/ssd/business/templates/page.css" type="text/css"/>
+
+	        
+	        
+
+	        
+
+	        <link rel="stylesheet" href="//cdn.samsung.com/etc/designs/semi/ssd/business/templates/page-ssd.css" type="text/css"/>
+
+
+	        <!--[if lt IE 9]>
+	            <script src="/etc/designs/semi/global/business/js/modern.lib.min.js"></script>
+	        <![endif]-->
+	        
+	        
+<script type="text/javascript">
+var siteCode = "global";
+
+var pagePath = window.location.pathname.replace("/content/samsung", "").replace(".html", "/").split("/");
+var digitalData = {
+   "page" : { 
+      "pageInfo" : {
+         "siteCode" : siteCode,
+         "siteSection" : siteCode + ":" + pagePath[1], 
+         "pageName" : "", 
+		 "pageURL" : window.location.href,
+		 "pageTrack" : "semiconductor minisite home" 
+      },
+      "pathIndicator" : { 
+         "depth_2" : "",
+		 "depth_3" : "",
+		 "depth_4" : "",
+		 "depth_5" : ""
+	  }
+   },
+   "product" : {
+      "category" : "", 
+	  "model_code" : "", 
+	  "model_name" : ""
+   },
+   "insight" : {
+	  "contents_type" : "",
+      "content_title" : ""
+   }
+}
+
+// depth Info.
+var depth = pagePath.length;
+var depth_last = pagePath[depth-1];
+if(depth_last ==""){
+    depth -= 1;
+}
+
+//set pathIndicator
+digitalData.page.pathIndicator.depth_2 = pagePath[1];
+
+if(depth >= 3) digitalData.page.pathIndicator.depth_3 = pagePath[2];
+if(depth >= 4) digitalData.page.pathIndicator.depth_4 = pagePath[3];
+if(depth >= 5) digitalData.page.pathIndicator.depth_5 = pagePath[4];
+
+//set pageName
+var pageName = siteCode;
+if(digitalData.page.pathIndicator.depth_2 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_2;
+if(digitalData.page.pathIndicator.depth_3 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_3;
+if(digitalData.page.pathIndicator.depth_4 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_4;
+if(digitalData.page.pathIndicator.depth_5 != "")
+ 	pageName += ":" + digitalData.page.pathIndicator.depth_5.trim();
+digitalData.page.pageInfo.pageName = pageName;
+</script>
+
+			
+	        <script src='//assets.adobedtm.com/2f39014c5d5172df150d19eb00fe42ddba079437/satelliteLib-57b62d37865ba865d0e7a626b3a8ca43ad0651ec.js'></script>
+	        
+	        <!-- Google Tag Manager iProspect Korea-->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-PW2Z36M');</script>
+			<!-- End Google Tag Manager iProspect Korea-->
+	    </head>
+	    <body class="cookie-warning">
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW2Z36M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+            
+	        
+	        <div id="wrap">
+	            
+<header id="header" role="banner">
+	<div class="s-skip-content">
+        <a href="#content" id="skipToContent">Skip to content</a>    
+	</div>
+    <div class="ge-ssd-gnb gnb">
+<nav class="gb-gnb" role="navigation" id="gbGnb">
+    
+    <div class="gb-gnb__notice-bar" style="display: none;">
+        <div class="gb-gnb__notice-bar-inner">
+            <p class="gb-gnb__notice-bar-desc">This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.
+            <br><a href="//www.samsung.com/semiconductor/privacy-global/" title="Open in a new window" target="_blank" class="gb-gnb__notice-bar-link">Find out more here<span class="s-svg s-arw-right"></span></a></p>
+            <button type="button" class="s-svg s-ico-close"><span class="blind">Close</span></button>
+        </div>
+    </div>
+    
+    <div class="gb-gnb__utility-navi">
+        <a href="/semiconductor/minisite/ssd" class="utility-business" title="Go to Samsung SSD" data-omni="b2c_utility menu:MEMORY & STORAGE">MEMORY &amp; STORAGE</a>
+        <span class="utility-right">
+            <a href="//www.samsung.com/ssd " title="Open in a new window" target="_blank" class="s-svg" data-omni="b2c_utility menu:samsung official site"><span class="s-ico-new-window">SAMSUNG OFFICIAL SITE</span></a>
+            <a href="https://www.facebook.com/SamsungSSD/" title="Open in a new window" target="_blank" class="s-svg" data-omni="b2c_utility menu:samsung memory facebook"><span class="s-ico-new-window">SAMSUNG MEMORY FACEBOOK</span></a>
+            <!-- <a href="#" class="s-svg no-outlink"><span>MY PAGE</span></a> -->
+        </span>
+    </div>
+    
+    
+    <div class="gb-gnb__dimmed" style="display: none"></div>
+    
+    
+    <div class="gb-gnb__bar">
+        <div class="gb-gnb__bar-inner">
+            
+            <a href="/semiconductor/minisite/ssd/" class="s-svg gb-gnb__logo" title="Go to Samsung SSD"><span class="blind">Samsung</span></a>
+
+            
+            <button type="button" class="s-svg s-gnb-toggler"><span class="blind">Open the Menu</span></button>
+
+            
+            <ul class="gb-gnb__main" role="menubar">
+                
+                <li class="s-depth1-wrap" role="menu"><a href="#" class="s-btn-toggler js-toggler" aria-selected="false" data-omni="b2c_products">Products</a>
+                    <div class="gb-gnb__drop-desktop">
+                        <div class="gb-gnb__drop-inner" role="menuitem">
+                            
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/product/consumer/overview" class="s-depth2-link" data-omni="b2c_products:Consumer SSD">Consumer SSD</a>
+                                        <div class="s-depth3-wrap">
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/970pro" class="s-depth3-link" data-omni="b2c_products:Consumer SSD:970 PRO">970 PRO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/970evo" class="s-depth3-link" data-omni="b2c_products:Consumer SSD:970 EVO">970 EVO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/860pro" class="s-depth3-link" data-omni="b2c_products:Consumer SSD:860 PRO">860 PRO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/860evo" class="s-depth3-link" data-omni="b2c_products:Consumer SSD:860 EVO">860 EVO</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/product/portable/overview" class="s-depth2-link" data-omni="b2c_products:Portable SSD">Portable SSD</a>
+                                        <div class="s-depth3-wrap">
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/portable/t5" class="s-depth3-link" data-omni="b2c_products:Portable SSD:T5">T5</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/portable/t3" class="s-depth3-link" data-omni="b2c_products:Portable SSD:T3">T3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/product/enterprise/overview" class="s-depth2-link" data-omni="b2c_products:Enterprise SSD">Enterprise SSD</a>
+                                        <div class="s-depth3-wrap">
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/enterprise/sm863a" class="s-depth3-link" data-omni="b2c_products:Enterprise SSD:SM863a">SM863a</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/enterprise/pm863a" class="s-depth3-link" data-omni="b2c_products:Enterprise SSD:PM863a">PM863a</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="gb-gnb__drop-feature">
+                                <div class="gb-gnb__drop-feature-in">
+
+                                    <div class="feature-visual">
+                                        <a href="/semiconductor/minisite/ssd/product/consumer/gaming">
+                                            <img class="js-img-src" alt="LEARN MORE : Go to Gaming SSDs Page" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/gaming-gnb-banner.png?$ORIGIN_PNG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/gaming-gnb-banner.png?$ORIGIN_PNG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/gaming-gnb-banner.png?$ORIGIN_PNG$">
+                                            <noscript>
+                                                <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/gaming-gnb-banner.png?$ORIGIN_PNG$" alt="LEARN MORE : Go to Gaming SSDs Page">
+                                            </noscript>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="s-depth1-wrap" role="menu"><a href="#" class="s-btn-toggler js-toggler" aria-selected="false" data-omni="b2c_Support">Support</a>
+                    <div class="gb-gnb__drop-desktop">
+                        <div class="gb-gnb__drop-inner" role="menuitem">
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/download/overview" class="s-depth2-link" data-omni="b2c_Support:Download">Download</a>
+                                        <div class="s-depth3-wrap">
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/download/tools" class="s-depth3-link" data-omni="b2c_Support:Download:Tools & Software">Tools &amp; Software</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/download/documents" class="s-depth3-link" data-omni="b2c_Support:Download:Documents">Documents</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/support/warranty" class="s-depth2-link" data-omni="b2c_Support:Warranty">Warranty</a>
+                                    </li>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/support/faqs" class="s-depth2-link" data-omni="b2c_Support:FAQs">FAQs</a>
+                                    </li>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/support/cs" class="s-depth2-link" data-omni="b2c_Support:Customer Service">Customer Service</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s-depth2-col">
+                                <ul>
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/support/purchase" class="s-depth2-link" data-omni="b2c_Support:Business Purchase">Business Purchase</a>
+                                    </li>    
+                                    <li class="s-depth2-wrap">
+                                        <a href="/semiconductor/minisite/ssd/support/eu-gdpr-privacy-notice/ssd" class="s-depth2-link" data-omni="b2c_Support:Download:EU GDPR Privacy Notice">EU GDPR Privacy Notice</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="gb-gnb__drop-feature">
+                                <div class="gb-gnb__drop-feature-in">
+
+                                    <div class="feature-visual">
+                                        <a href="/semiconductor/minisite/ssd/product/consumer/magician">
+                                            <img class="js-img-src" alt="LEARN MORE : Go to Samsung Magician Page" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/magician-gnb-banner.png?$ORIGIN_PNG$" data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/magician-gnb-banner.png?$ORIGIN_PNG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/magician-gnb-banner.png?$ORIGIN_PNG$">
+                                            <noscript>
+                                                <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/magician-gnb-banner.png?$ORIGIN_PNG$" alt="LEARN MORE : Go to Samsung Magician Page"/>
+                                            </noscript>
+                                        </a>                                                                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            
+
+            
+            
+            <div class="gb-gnb__drop-mobile drilldown" style="min-height: 575px">
+                <div class="gb-gnb__drop-mobile-wrap drilldown-container">
+                    <div class="drilldown-root">
+                        <ul class="s-depth1-wrap">
+                            
+                            <li>
+                                <a href="#" class="s-depth1-link" data-omni="b2c_Products">Products<span class="s-svg s-arw-right"></span></a>
+                                <div class="drilldown-sub">
+                                    <div class="drilldown-back">
+                                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                                    </div>
+                                    <ul>
+                                        
+                                        <li class="s-depth2-wrap">
+                                            <a href="#" class="s-depth2-link" title="Expand Anchor Menu" data-omni="b2c_Products:Consumer SSD">Consumer SSD</a>
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/overview" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:Overview">Overview</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/magician" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:Samsung Magician">Samsung Magician</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/gaming" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:Gaming SSDs">Gaming SSDs</a></li>                                                
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/970pro" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:970 PRO">970 PRO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/970evo" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:970 EVO">970 EVO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/860pro" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:860 PRO">860 PRO</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/consumer/860evo" class="s-depth3-link" data-omni="b2c_Products:Consumer SSD:860 EVO">860 EVO</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="s-depth2-wrap">
+                                            <a href="#" class="s-depth2-link" title="Expand Anchor Menu" data-omni="b2c_Products:Portable SSD">Portable SSD</a>
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/portable/overview" class="s-depth3-link" data-omni="b2c_Products:Portable SSD:Overview">Overview</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/portable/t5" class="s-depth3-link" data-omni="b2c_Products:Portable SSD:T5">T5</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/portable/t3" class="s-depth3-link" data-omni="b2c_Products:Portable SSD:T3">T3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="#" class="s-depth2-link" title="Expand Anchor Menu" data-omni="b2c_Products:Enterprise SSD">Enterprise SSD</a>
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/product/enterprise/overview" class="s-depth3-link" data-omni="b2c_Products:Enterprise SSD:Overview">Overview</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/enterprise/sm863a" class="s-depth3-link" data-omni="b2c_Products:Enterprise SSD:SM863a">SM863a</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/product/enterprise/pm863a" class="s-depth3-link" data-omni="b2c_Products:Enterprise SSD:PM863a">PM863a</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="s-depth1-link" data-omni="b2c_Support">Support<span class="s-svg s-arw-right"></span></a>
+                                <div class="drilldown-sub">
+                                    <div class="drilldown-back">
+                                        <a href="#" class="s-btn-back"><span class="s-svg s-arw-left"></span><span class="blind">Back to 1 Depth Menu</span></a>
+                                    </div>
+                                    <ul>
+                                        <li class="s-depth2-wrap">
+                                            <a href="#" class="s-depth2-link" title="Expand Anchor Menu" data-omni="b2c_Support:Download">Download</a>
+                                            <ul>
+                                                <li><a href="/semiconductor/minisite/ssd/download/overview" class="s-depth3-link" data-omni="b2c_Support:Download:Overview">Overview</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/download/tools" class="s-depth3-link" data-omni="b2c_Support:Download:Tools & Software">Tools &amp; Software</a></li>
+                                                <li><a href="/semiconductor/minisite/ssd/download/documents" class="s-depth3-link" data-omni="b2c_Support:Download:Documents">Documents</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="/semiconductor/minisite/ssd/support/warranty" class="s-depth2-link" data-omni="b2c_Support:Download:Warranty">Warranty</a>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="/semiconductor/minisite/ssd/support/faqs" class="s-depth2-link" data-omni="b2c_Support:Download:FAQs">FAQs</a>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="/semiconductor/minisite/ssd/support/cs" class="s-depth2-link" data-omni="b2c_Support:Download:Customer Service">Customer Service</a>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="/semiconductor/minisite/ssd/support/purchase" class="s-depth2-link" data-omni="b2c_Support:Download:Business Purchase">Business Purchase</a>
+                                        </li>
+                                        <li class="s-depth2-wrap">
+                                            <a href="/semiconductor/minisite/ssd/support/eu-gdpr-privacy-notice/ssd" class="s-depth2-link" data-omni="b2c_Support:EU GDPR Privacy Notice">EU GDPR Privacy Notice</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <button type="button" class="s-svg s-ico-close js-mo-close"><span class="blind">Close the Menu</span></button>
+            
+        </div>
+
+    </div>
+    
+</nav>
+
+</div>
+
+    
+    <div class="breadcrumb ge-ssd-breadcrumb">
+
+
+
+
+</div>
+
+    
+</header>
+
+	            
+	            
+<div id="content" role="main">
+     
+    <!-- include the parsys component -->
+    <div class="par parsys"><div class="section he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-gaming-ssd-mobile-720x875.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-gaming-ssd-pc-1440x645.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO, SSD 970 PRO, Portable SSD T5 against an image of car racing game - Need for Speed Payback™" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-gaming-ssd-pc-1440x645.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-gaming-ssd-pc-1440x645.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO, SSD 970 PRO, Portable SSD T5 against an image of car racing game - Need for Speed Payback™"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">Gaming SSDs</p>
+
+                <h2 class="hero-carousel__slide-title">Load Fast. Play Fast.</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_ssd gaming_20180712" href="/semiconductor/minisite/ssd/product/consumer/gaming/" title="LEARN MORE : Go to Gaming SSDs Page" class="s-btn-encased s-btn-encased-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-970-pro-mobile-720x875.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-970-pro-pc-1440x645.jpg?$ORIGIN_JPG$" alt="970 PRO with SAMSUNG DRAM and SAMSUNG PHOENIX coming out from circular mechanical structure" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-970-pro-pc-1440x645.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-970-pro-pc-1440x645.jpg?$ORIGIN_JPG$" alt="970 PRO with SAMSUNG DRAM and SAMSUNG PHOENIX coming out from circular mechanical structure"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left hero-carousel--vtop">
+                <p class="hero-carousel__text-eybrow">SSD 970 PRO | EVO</p>
+
+                <h2 class="hero-carousel__slide-title">Unreal Performance,<br />
+Realized.</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_ssd 970 pro | evo_20180712" href="/semiconductor/minisite/ssd/product/consumer/970pro" title="LEARN MORE : Go to SSD 970 PRO Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-t5-mobile-720x875_3.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-t5-pc-1440x645.jpg?$ORIGIN_JPG$" alt="2 SSD products are shown, one is black and the other one is turquoise." data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-t5-pc-1440x645.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-t5-pc-1440x645.jpg?$ORIGIN_JPG$" alt="2 SSD products are shown, one is black and the other one is turquoise."/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap text-black">
+                <p class="hero-carousel__text-eybrow">PORTABLE  SSD T5</p>
+
+                <h2 class="hero-carousel__slide-title">Storage<br />
+Made New</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_ssd t5 portable _20180712" href="/semiconductor/minisite/ssd/product/portable/t5" title="LEARN MORE : Go to Portable SSD T5 Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-magician-mobile-720x875.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-magician-pc-1440x645.png?$ORIGIN_PNG$" alt="There is a monitor on both sides of the image, and each monitors show 45 degreed angle view of the SSD." data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-magician-pc-1440x645.png?$ORIGIN_PNG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/0-kv-magician-pc-1440x645.png?$ORIGIN_PNG$" alt="There is a monitor on both sides of the image, and each monitors show 45 degreed angle view of the SSD."/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap text-black">
+                <p class="hero-carousel__text-eybrow">SAMSUNG MAGICIAN</p>
+
+                <h2 class="hero-carousel__slide-title">Maximize Your <br />
+SSD's Potential</h2>
+                    
+                
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_ssd magician_20180712" href="/semiconductor/minisite/ssd/product/consumer/magician" title="LEARN MORE : Go to Samsung Magician Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</section></div>
+<div class="section he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel slide-title__type-h2">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/1-kf-ssd-970-home-mobile_2.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/1-kf-ssd-970-home-pc_3.jpg?$ORIGIN_JPG$" alt="Front views of SSD 970 PRO and SSD 970 EVO" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/1-kf-ssd-970-home-pc_3.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/1-kf-ssd-970-home-pc_3.jpg?$ORIGIN_JPG$" alt="Front views of SSD 970 PRO and SSD 970 EVO"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left text-black">
+                
+
+                <h2 class="hero-carousel__slide-title">SSD 970 PRO | EVO</h2>
+                    
+                <p class="hero-carousel__text-body">Experience the best. For intensive workloads on PCs<br />
+and workstations, the 970 PRO gives utmost performance<br />
+enabled by Samsung's NVMe™ SSD leadership.</p>
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_ssd 970 pro | evo:learn more_20180720" href="/semiconductor/minisite/ssd/product/consumer/970pro" title="LEARN MORE : Go to SSD 970 PRO Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+</section></div>
+<div class="section he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel slide-title__type-h2">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/2-kf-ssd-home-mobile.jpeg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/2-kf-ssd-home-pc.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD Portable SSD T5" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/2-kf-ssd-home-pc.png?$ORIGIN_PNG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/2-kf-ssd-home-pc.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD Portable SSD T5"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-right text-black">
+                
+
+                <h2 class="hero-carousel__slide-title">Portable SSD T5</h2>
+                    
+                <p class="hero-carousel__text-body">The Samsung Portable SSD sets the new standard for external <br />
+storage with speed, durability and connectivity.  </p>
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_portable ssd t5:learn more_20180712" href="/semiconductor/minisite/ssd/product/portable/t5" title="LEARN MORE : Go to Portable SSD T5 Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+</section></div>
+<div class="section he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel slide-title__type-h2">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/3-kf-ssd-gaming-mobile.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/3-kf-ssd-gaming-pc.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO, SSD 970 PRO, Portable SSD T5 against an image of car racing game - Need for Speed Payback™" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/3-kf-ssd-gaming-pc.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/3-kf-ssd-gaming-pc.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO, SSD 970 PRO, Portable SSD T5 against an image of car racing game - Need for Speed Payback™"/>
+                </noscript>
+
+                
+            </div>
+            
+            <div class="hero-carousel__text-wrap hero-carousel__text-left">
+                
+
+                <h2 class="hero-carousel__slide-title">Gaming SSDs<br /></h2>
+                    
+                <p class="hero-carousel__text-body">Your ultimate secret weapon. Prepare for full gaming immersion <br />
+with Samsung SSD's advanced V-NAND technology.<br /></p>
+                    
+                <div class="hero-carousel__button">
+                    <a data-omni="image_gaming ssds:learn more_20180712" href="/semiconductor/minisite/ssd/product/consumer/gaming" title="LEARN MORE : Go to Gaming SSDs Page" class="s-btn-encased s-btn-encased-button">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+</section></div>
+<div class="st-semi-static-title section">
+
+
+
+<div class="s-title-box s-mtop-normal">
+      <h2 class="s-tit s-align-center"><strong>VIDEOS</strong></h2>
+</div></div>
+<div class="section fb-semi-feature-image-view">
+    
+    
+
+    
+
+<section class="feature-full-bleed-imageview s-mtop-none">
+    <div class="feature-full-bleed-imageview__wrap">
+        <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/solutions/applications/solution-detail-bar/1-detail-white-bar-mobile.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/solutions/applications/solution-detail-bar/1-detail-white-bar-pc.jpg?$ORIGIN_JPG$" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/solutions/applications/solution-detail-bar/1-detail-white-bar-pc.jpg?$ORIGIN_JPG$" class="js-img-src"/>
+        <noscript>
+            <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/solutions/applications/solution-detail-bar/1-detail-white-bar-pc.jpg?$ORIGIN_JPG$"/>
+        </noscript>
+    </div>
+</section></div>
+<div class="section he-semi-hero-carousel"><section class="hero-carousel">
+    
+
+    <div class="hero-carousel__slide-wrap s-slick js-prd-eco-high-carousel slide-title__type-h2">
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                <div class="s-view-video">
+    <button type="button" class="s-btn-video js-video js-pop-btn" data-omni="video_ samsung ssd 970 pro | evo : unreal performance, realized_20180712" data-vid-type="youtube" data-vid-view="inner" data-vid-data='{
+            "videoID"        : "BRQISBdwOvs",
+            "autoPlay"        : "true",
+            "divID"            : "video_play_050698653d8b459187fa79fb112c7779"
+        }'>
+        <span class="s-play-video">WATCH VIDEO</span>
+    </button></div>
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/970pro/0-970pro-video_thumb.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/970pro/0-970pro-video_thumb.jpg?$ORIGIN_JPG$" alt="Video thumbnail of Samsung SSD 970 PRO | EVO; Inversed pyramid with V-NAND logo is hovering on the top of the futuristic mechanical island city" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/970pro/0-970pro-video_thumb.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/970pro/0-970pro-video_thumb.jpg?$ORIGIN_JPG$" alt="Video thumbnail of Samsung SSD 970 PRO | EVO; Inversed pyramid with V-NAND logo is hovering on the top of the futuristic mechanical island city"/>
+                </noscript>
+
+                
+        <div class="s-video-inner-wrapper">
+            <div id="video_play_050698653d8b459187fa79fb112c7779"></div>
+            <button type="button" class="s-media-close brightcove-bcc-btn-close js-pop-close" data-div-id="video_play_050698653d8b459187fa79fb112c7779">Close</button>
+        </div>
+            </div>
+            
+            
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                <div class="s-view-video">
+    <button type="button" class="s-btn-video js-video js-pop-btn" data-omni="video_  _20180712" data-vid-type="youtube" data-vid-view="inner" data-vid-data='{
+            "videoID"        : "7LVQofdXK74",
+            "autoPlay"        : "true",
+            "divID"            : "video_play_0c9db8daebb64ce5babdc7ee8529e9cc"
+        }'>
+        <span class="s-play-video">WATCH VIDEO</span>
+    </button></div>
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/860pro/0-860pro-video_thumb.jpg?$ORIGIN_JPG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/860pro/0-860pro-video_thumb.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO l EVO : Performance that endures" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/860pro/0-860pro-video_thumb.jpg?$ORIGIN_JPG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/products/consumer-ssd/860pro/0-860pro-video_thumb.jpg?$ORIGIN_JPG$" alt="Samsung SSD 860 PRO l EVO : Performance that endures"/>
+                </noscript>
+
+                
+        <div class="s-video-inner-wrapper">
+            <div id="video_play_0c9db8daebb64ce5babdc7ee8529e9cc"></div>
+            <button type="button" class="s-media-close brightcove-bcc-btn-close js-pop-close" data-div-id="video_play_0c9db8daebb64ce5babdc7ee8529e9cc">Close</button>
+        </div>
+            </div>
+            
+            
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                <div class="s-view-video">
+    <button type="button" class="s-btn-video js-video js-pop-btn" data-omni="video_portable ssd t5 product feature video_20180712" data-vid-type="youtube" data-vid-view="inner" data-vid-data='{
+            "videoID"        : "-9So6n85_tg",
+            "autoPlay"        : "true",
+            "divID"            : "video_play_5d746584fa8149e0a127dccdd3f0a579"
+        }'>
+        <span class="s-play-video">WATCH VIDEO</span>
+    </button></div>
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-01.png?$ORIGIN_PNG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-01.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD - Portable SSD T5 Product feature video" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-01.png?$ORIGIN_PNG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-01.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD - Portable SSD T5 Product feature video"/>
+                </noscript>
+
+                
+        <div class="s-video-inner-wrapper">
+            <div id="video_play_5d746584fa8149e0a127dccdd3f0a579"></div>
+            <button type="button" class="s-media-close brightcove-bcc-btn-close js-pop-close" data-div-id="video_play_5d746584fa8149e0a127dccdd3f0a579">Close</button>
+        </div>
+            </div>
+            
+            
+        </div>
+    
+        <div class="hero-carousel__slide">
+
+            <div class="hero-carousel__img-wrap">
+                
+                <div class="s-view-video">
+    <button type="button" class="s-btn-video js-video js-pop-btn" data-omni="video_portable ssd t5 launch video_20180712" data-vid-type="youtube" data-vid-view="inner" data-vid-data='{
+            "videoID"        : "0sFtt9bYjmc",
+            "autoPlay"        : "true",
+            "divID"            : "video_play_fb1a410c31dc41139ceccb83334097ea"
+        }'>
+        <span class="s-play-video">WATCH VIDEO</span>
+    </button></div>
+
+                <img data-src-mobile="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-02.png?$ORIGIN_PNG$" src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-02.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD Portable SSD T5 Launch video - Business professional" data-src-pc="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-02.png?$ORIGIN_PNG$" class="js-img-src js-img-lazy"/>
+                <noscript>
+                    <img src="//images.samsung.com/is/image/samsung/p5/semiconductor/minisite/ssd/homepage/4-video-pc-02.png?$ORIGIN_PNG$" alt="Samsung Semiconductor SSD Portable SSD T5 Launch video - Business professional"/>
+                </noscript>
+
+                
+        <div class="s-video-inner-wrapper">
+            <div id="video_play_fb1a410c31dc41139ceccb83334097ea"></div>
+            <button type="button" class="s-media-close brightcove-bcc-btn-close js-pop-close" data-div-id="video_play_fb1a410c31dc41139ceccb83334097ea">Close</button>
+        </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</section></div>
+<div class="st-semi-static-content section">
+
+
+
+<section class="static-content">
+    <style scoped="scoped">.footer_sup {display: block; padding: 10px 0; border-top: 1px solid #d0d0d0; background:#f7f7f7; text-align: center; font-size: 14px;}
+
+@media screen and (max-width: 1440px){
+.footer_sup {font-size: 0.97222vw;}
+}
+
+@media screen and (max-width: 1024px){
+.footer_sup {font-size: 1.36719vw;}
+}
+
+@media screen and (max-width: 768px){
+.footer_sup {font-size: 3.05556vw;}
+}</style>
+    
+    
+    <sup class="footer_sup">Need for Speed Materials © 2018 Electronic Arts Inc. Need for Speed is a trademark of Electronic Arts Inc.<br>
+The NVM Express® design mark is a registered trademark of NVM Express, Inc.</sup>
+
+    
+</section></div>
+
+</div>
+
+    
+</div>
+
+                
+    <!--googleoff: all-->
+    <!--/* [S] footer */-->
+    <footer id="footer" role="contentinfo">
+        <!-- include the parsys component -->
+    <div class="ge-ssd-footer">
+<div class="gb-footer" id="gbfooter">
+    <div class="gb-footer__top">
+        <div class="gb-footer__inner">
+            <div class="gb-footer__container">
+                <div class="gb-footer__btn-top">
+                    <a href="#">Back to Top</a>
+                </div>
+                <div class="gb-footer__col-wrap">
+                    
+                    <div class="gb-footer__nav-link gb-footer__col2">
+                        
+                        <div class="gb-footer__col4-wrap">
+                            <strong><a href="#" data-omni="b2c_footer:products">Products</a></strong>
+                            <ul class="gb-footer__col4">
+                                <!-- <li class="gb-footer__item gb-footer__blank"><a href="#" target="_blank" title="Open in a new window">text</a></li> -->
+                                <li class="gb-footer__item">
+                                    <a href="/semiconductor/minisite/ssd/product/consumer/overview" class="gb-footer__item-link" data-omni="b2c_footer:products_consumer ssd">Consumer SSD</a>
+                                    <ul>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/970pro" data-omni="b2c_footer:products_consumer ssd_970 PRO">970 PRO</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/970evo" data-omni="b2c_footer:products_consumer ssd_970 EVO">970 EVO</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/860pro" data-omni="b2c_footer:products_consumer ssd_860 PRO">860 PRO</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/860evo" data-omni="b2c_footer:products_consumer ssd_860 EVO">860 EVO</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/magician" data-omni="b2c_footer:products_consumer ssd_Samsung Magician">Samsung Magician</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/consumer/gaming" data-omni="b2c_footer:products_consumer ssd_Gaming SSDs">Gaming SSDs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gb-footer__item gb-footer__item-mobile">
+                                    <a href="/semiconductor/minisite/ssd/product/portable/overview" class="gb-footer__item-link" data-omni="b2c_footer:products_Portable SSD">Portable SSD</a>
+                                    <ul>
+                                        <li><a href="/semiconductor/minisite/ssd/product/portable/t5" data-omni="b2c_footer:products_Portable SSD_T5">T5</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/portable/t3" data-omni="b2c_footer:products_Portable SSD_T3">T3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gb-footer__item gb-footer__item-mobile">
+                                    <a href="/semiconductor/minisite/ssd/product/enterprise/overview" class="gb-footer__item-link" data-omni="b2c_footer:products_Enterprise SSD">Enterprise SSD</a>
+                                    <ul>
+                                        <li><a href="/semiconductor/minisite/ssd/product/enterprise/sm863a" data-omni="b2c_footer:products_Enterprise SSD_SM863a">SM863a</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/enterprise/pm863a" data-omni="b2c_footer:products_Enterprise SSD_PM863a">PM863a</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="gb-footer__col4-wrap gb-footer__col4-wrap-pc">
+                            <ul class="gb-footer__col4 gb-footer__col4-second">
+                                <li class="gb-footer__item">
+                                    <a href="/semiconductor/minisite/ssd/product/portable/overview" class="gb-footer__item-link" data-omni="b2c_footer:products_Portable SSD">Portable SSD</a>
+                                    <ul>
+                                        <li><a href="/semiconductor/minisite/ssd/product/portable/t5" data-omni="b2c_footer:products_Portable SSD_T5">T5</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/portable/t3" data-omni="b2c_footer:products_Portable SSD_T3">T3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="gb-footer__col4 gb-footer__col4-second">
+                                <li class="gb-footer__item">
+                                    <a href="/semiconductor/minisite/ssd/product/enterprise/overview" class="gb-footer__item-link" data-omni="b2c_footer:products_Enterprise SSD">Enterprise SSD</a>
+                                    <ul>
+                                        <li><a href="/semiconductor/minisite/ssd/product/enterprise/sm863a" data-omni="b2c_footer:products_Enterprise SSD_SM863a">SM863a</a></li>
+                                        <li><a href="/semiconductor/minisite/ssd/product/enterprise/pm863a" data-omni="b2c_footer:products_Enterprise SSD_PM863a">PM863a</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gb-footer__col4-wrap">
+                            <strong><a href="#" data-omni="b2c_footer:Support_Download">Download</a></strong>
+                            <ul class="gb-footer__col4">
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/overview" data-omni="b2c_footer:Support_Download_Overview">Overview</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/tools" data-omni="b2c_footer:Support_Download_Tools &amp; Software">Tools &amp; Software</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/documents" data-omni="b2c_footer:Support_Download_Documents">Documents</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/consumer" data-omni="b2c_footer:Support_Download_Consumer SSD">Consumer SSD</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/portable" data-omni="b2c_footer:Support_Download_Portable SSD">Portable SSD</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/download/enterprise" data-omni="b2c_footer:Support_Download_Enterprise SSD">Enterprise SSD</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- <div class="gb-footer__col4-wrap gb-footer__col4-wrap-empty"></div> -->  <!-- class gb-footer__col4-wrap-empty option add -->
+                        
+                        <div class="gb-footer__col4-wrap">
+                            <strong><a href="#" data-omni="b2c_footer:Support">Support</a></strong>
+                            <ul class="gb-footer__col4">
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/support/purchase" data-omni="b2c_footer:Support_Business Purchase">Business Purchase</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/support/warranty" data-omni="b2c_footer:Support_Warranty">Warranty</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/support/faqs" data-omni="b2c_footer:Support_FAQs">FAQs</a></li>
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/support/cs" data-omni="b2c_footer:Support_Customer Service">Customer Service</a></li>
+                            </ul>
+                            <ul class="gb-footer__col4 gb-footer__col4-second">
+                                <li class="gb-footer__item"><a href="/semiconductor/minisite/ssd/support/eu-gdpr-privacy-notice/ssd/" data-omni="b2c_footer:Support_EU GDPR Privacy Notice">EU GDPR Privacy Notice</a></li>
+                            </ul>
+                        </div>
+                        <div class="gb-footer__col4-wrap">
+                            <strong><a href="#" data-omni="b2c_footer:Support_Global Sites">Global Sites</a></strong>
+                            <ul class="gb-footer__col4">
+                                <li class="gb-footer__item gb-footer__blank"><a href="//www.samsung.com/" target="_blank" title="Open in a new window" data-omni="b2c_footer:Support_Global Sites_Samsung.com">Samsung.com</a></li>
+                                <li class="gb-footer__item gb-footer__blank"><a href="//www.samsung.com/semiconductor/" target="_blank" title="Open in a new window" data-omni="b2c_footer:Support_Global Sites_Samsung Semiconductor">Samsung Semiconductor</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="gb-footer__col4-wrap-sns">
+                            <div class="gb-footer__col4-wrap">
+                                <strong>Follow us</strong>
+                                <ul class="gb-footer__col4">
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="https://www.facebook.com/SamsungSSD/" target="_blank" title="Facebook : Open in a new window" data-omni="facebook">
+                                            <img src="//cdn.samsung.com/etc/designs/semi/jp/business/img/svg-gb-facebook.svg" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="https://www.youtube.com/samsung" target="_blank" title="Youtube : Open in a new window" data-omni="youtube">
+                                            <img src="//cdn.samsung.com/etc/designs/semi/jp/business/img/svg-gb-youtube.svg" alt="Youtube">
+                                        </a>
+                                    </li>
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="https://www.instagram.com/samsungmemory/" target="_blank" title="Instagram : Open in a new window" data-omni="instagram">
+                                            <img src="//cdn.samsung.com/etc/designs/semi/jp/business/img/svg-gb-instagram.svg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <!-- <li class="gb-footer__item gb-footer__svg">
+                                        <a href="#" target="_blank" title="Open in a new window">
+                                            <img src="/etc/designs/semi/jp/business/img/svg-gb-twitter.svg">
+                                        </a>
+                                    </li>
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="#" target="_blank" title="Open in a new window">
+                                            <img src="/etc/designs/semi/jp/business/img/svg-gb-emailto.svg">
+                                        </a>
+                                    </li>
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="#" target="_blank" title="Open in a new window">
+                                            <img src="/etc/designs/semi/jp/business/img/svg-gb-in-square.svg">
+                                        </a>
+                                    </li>
+                                    <li class="gb-footer__item gb-footer__svg">
+                                        <a href="#" target="_blank" title="Open in a new window">
+                                            <img src="/etc/designs/semi/jp/business/img/svg-gb-weibo.svg">
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="gb-footer__copyright">
+                    <p class="gb-footer__text">Copyright &#169; 1995-2018 SAMSUNG All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gb-footer__bottom">
+        <div class="gb-footer__inner">
+            <div class="gb-footer__container">
+                <div class="gb-footer__bottom-list">
+                    
+                    <ul class="gb-footer__list">
+                        <!-- <li class="gb-footer__item"><a href="#">Sitemap</a></li> -->
+                        <li class="gb-footer__item gb-footer__blank"><a href="/semiconductor/privacy-global" target="_blank" title="Open in a new window">Privacy</a></li>
+                        <li class="gb-footer__item gb-footer__blank"><a href="/semiconductor/legal" target="_blank" title="Open in a new window">Legal</a></li>  
+                    </ul>
+                    
+                    
+                    <!-- <div class="gb-footer__lang">
+                        <a href="#" class="gb-footer__link"><img src="/etc/designs/semi/ssd/business/img/flag/ico_UnitedKingdom.gif" width="20" height="13" class="gb-footer__flag">SINGAPORE  &#47; ENGLISH</a>
+                    </div> -->
+                    
+                </div>
+                <p class="gb-footer__browser">This website is best viewed using Microsoft Internet Explorer 9 or higher, and/or latest version of Google Chrome and Mozila Firefox browsers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="s-to-top-btn">
+	<button>Go to Top</button>
+</div>
+</div>
+
+    </footer> 
+    <!--/* [E] footer */-->
+    <!--googleon: all-->
+	        </div>
+	        
+	        <script type="text/javascript" src="//cdn.samsung.com/etc/designs/semi/ssd/business/templates/page.js"></script>
+
+	        
+	        
+<script type="text/javascript" src="//cdn.samsung.com/etc/designs/semi/ssd/business/templates/page-ssd.js"></script>
+ 
+	        
+	        <script type="text/javascript">_satellite.pageBottom();</script>
+	    </body>
+	</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.cart.items">
+            <referenceContainer name="checkout.cart.container" >
+				<referenceContainer name="cart.summary" htmlClass="cart-summary row">
+					<referenceBlock name="checkout.cart.summary.title" remove="true" />
+					<container name="cart.summary.totals" htmlClass="totals-wrapper" htmlTag="div" after="-">
+						<container name="cart.summary.inner" htmlClass="totals-inner clearfix" htmlTag="div" after="-" />
+					</container>
+				</referenceContainer>
+			</referenceContainer>
+        </referenceContainer>
+        <move element="checkout.cart.form.before" destination="checkout.cart.container" before="cart.summary"/>
+        <move element="checkout.cart.form" destination="checkout.cart.container" before="-"/>
+        <move element="checkout.cart.widget" destination="checkout.cart.container" after="checkout.cart.form"/>
+        <move element="checkout.cart.coupon" destination="cart.summary"  before="-" />
+        <move element="checkout.cart.order.actions" destination="cart.summary" after="checkout.cart.coupon" />
+        <move element="checkout.cart.shipping" destination="cart.summary" before="cart.summary.totals" />
+        <move element="checkout.cart.totals.container" destination="cart.summary.inner" before="-"/>
+        <move element="checkout.cart.methods.bottom" destination="cart.summary.inner"/>
+    </body>
+</page>
