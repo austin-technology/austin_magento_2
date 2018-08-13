@@ -33,11 +33,10 @@
     DirectoryIndex index.php
 
 <IfModule mod_php5.c>
-
 ############################################
 ## adjust memory limit
 
-    php_value memory_limit 768M
+    php_value memory_limit 756M
     php_value max_execution_time 18000
 
 ############################################
@@ -55,15 +54,12 @@
 ## disable user agent verification to not break multiple image upload
 
     php_flag suhosin.session.cryptua off
-
 </IfModule>
-
 <IfModule mod_php7.c>
-
 ############################################
 ## adjust memory limit
 
-    php_value memory_limit 768M
+    php_value memory_limit 756M
     php_value max_execution_time 18000
 
 ############################################
@@ -81,9 +77,7 @@
 ## disable user agent verification to not break multiple image upload
 
     php_flag suhosin.session.cryptua off
-
 </IfModule>
-
 <IfModule mod_security.c>
 ###########################################
 ## disable POST processing to not break multiple image upload
@@ -209,76 +203,166 @@
     RedirectMatch 403 /\.git
 
     <Files composer.json>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files composer.lock>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files .gitignore>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files .htaccess>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files .htaccess.sample>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
-    <Files .php_cs>
-        order allow,deny
-        deny from all
+    <Files .php_cs.dist>
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files .travis.yml>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files CHANGELOG.md>
-        order allow,deny
-        deny from all
-    </Files>
-    <Files CONTRIBUTING.md>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files COPYING.txt>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files Gruntfile.js>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files LICENSE.txt>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files LICENSE_AFL.txt>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files nginx.conf.sample>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files package.json>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files php.ini.sample>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files README.md>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
+    </Files>
+    <Files auth.json>
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
     <Files magento_umask>
-        order allow,deny
-        deny from all
+        <IfVersion < 2.4>
+            order allow,deny
+            deny from all
+        </IfVersion>
+        <IfVersion >= 2.4>
+            Require all denied
+        </IfVersion>
     </Files>
 
 # For 404s and 403s that aren't handled by the application, show plain 404 response
@@ -325,9 +409,3 @@ ErrorDocument 403 /pub/errors/404.php
     </FilesMatch>
 
 </IfModule>
-
-# php -- BEGIN cPanel-generated handler, do not edit
-# NOTE this account's php is controlled via FPM and the vhost, this is a place holder.
-# Do not edit. This next line is to support the cPanel php wrapper (php_cli).
-# AddType application/x-httpd-ea-php71 .php .phtml
-# php -- END cPanel-generated handler, do not edit
