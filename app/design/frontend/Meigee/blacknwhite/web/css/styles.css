@@ -6008,7 +6008,7 @@ body.cms-no-route .container_12 {background: none!important}
 .map-container .map-block a:hover{text-decoration: underline;}
 
 /* Footer ================================================================================ */
-.footer {padding: 0; margin-top:90px;}
+.footer {padding: 0; margin-top:90px;border-top: solid 5px #e41e25;}
 body.wide-layout .footer .footer-topline,
 body.boxed-layout .footer .footer-topline .container {
 	padding-top: 3.333em;
