@@ -1,3 +1,4 @@
+
 #home-slider .item .slide-container .title,
 #home-slider .item .slide-container .subtitle,
 #home-slider .item .slide-container .slider-link,
@@ -200,7 +201,8 @@ header#header .top-cart .block-content .actions .button:hover > span span {
 	line-height: 40px;
 }
 body > div.page-wrapper > div.header-wrapper > header > div { background-color: #021f44; margin-bottom:25px; padding:0px !important;}
-body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div {background-color: #1f4c86;}
+body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div {background-color: #1f4c86;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);}
 
 button.button span span {font-size: inherit !important;}
 .block-vertical-nav li.level-top.parent ul.level0 li a {font-size: 1.25em; color: rgba(0,0,0,0.5);}
@@ -341,6 +343,10 @@ body > div.breadcrumbs-wrapper > div {
 	padding-right:0px;
 	
 }
+
+body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div > div > div > div.mobile-menu-wrapper > div.links-top-right > a:nth-child(6) {
+	padding-right:0px !important;
+}
 .header-links {
 	color: #fff;
     /* padding-left: 25px; */
@@ -348,7 +354,7 @@ body > div.breadcrumbs-wrapper > div {
     text-transform: none;
     font-weight: 600;
     font-size: 1em;
-    padding: 1em 20px;
+    padding: 1em 35px 0px 7px;
 }
 .page-header.header-2 .header-top-right {
     display: inline-block;
@@ -433,7 +439,7 @@ body > div.breadcrumbs-wrapper > div {
     line-height: 1.1;
     transition-duration: 0s;
 }
-.page-header.header-2 .header.links li a {white-space: nowrap; display: inline-block; vertical-align: middle;}
+.page-header.header-2 .header.links li a {white-space: nowrap; display: inline-block; vertical-align: middle; font-weight:600;}
 .page-header.header-2 .minicart-wrapper .block-content > .actions {display: table; width: 100%;}
 .page-header.header-2 .minicart-wrapper .block-content > .actions div.primary,
 .page-header.header-2 .minicart-wrapper .block-content > .actions div.secondary {
@@ -443,7 +449,7 @@ body > div.breadcrumbs-wrapper > div {
     margin: 0;
 }
 .page-header.header-2 .minicart-wrapper .block-content > .actions div.primary {padding-left: 10px;}
-.header-wrapper .navbar-collapse.collapse li.first a.level-top {border-radius:0; pointer-events: none; background-color: #e41e26; }
+.header-wrapper .navbar-collapse.collapse li.first a.level-top {border-radius:0; pointer-events: none; background-color: #e41e26; padding-right:55px; }
 .header-wrapper .navbar-collapse.collapse a.level-top {   
 	text-transform: none;
     font-weight: 600;
