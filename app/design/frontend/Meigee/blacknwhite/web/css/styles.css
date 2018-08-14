@@ -2163,8 +2163,9 @@ body.parallax .header-wrapper .menu-inner{
 
 /* Breadcrumbs ============================================================================= */
 div.breadcrumbs{
-	padding: 0px 75px 5px 75px;
-	display: block;
+	max-width: 1250px;
+	width: 100%;
+	margin: 0 auto;
 }
 body .breadcrumb,
 body .breadcrumbs > .items {
