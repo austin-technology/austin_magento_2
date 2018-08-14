@@ -91,7 +91,7 @@ $canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinima
                     <span><?= /* @escapeNotVerified */ __('Qty') ?></span>
                 </label>
                 <div class="control qty-box clearfix">
-					<div class="quantity-decrease" onclick="qtyDown<?= $_item->getId() ?>()"><i class="fa fa-minus-square-o"></i></div>
+					<div class="quantity-decrease" onclick="qtyDown<?= $_item->getId() ?>()"><i class="fas fa-minus"></i></div>
                     <input id="cart-<?= /* @escapeNotVerified */ $_item->getId() ?>-qty"
                            name="cart[<?= /* @escapeNotVerified */ $_item->getId() ?>][qty]"
                            data-cart-item-id="<?= $block->escapeHtml($_item->getSku()) ?>"
@@ -103,7 +103,7 @@ $canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinima
                            maxlength="12"
                            data-validate="{required:true,'validate-greater-than-zero':true}"
                            data-role="cart-item-qty"/>
-					<div class="quantity-increase" onclick="qtyUp<?= $_item->getId() ?>()"><i class="fa fa-plus-square-o"></i></div>
+					<div class="quantity-increase" onclick="qtyUp<?= $_item->getId() ?>()"><i class="fas fa-plus"></i></div>
                 </div>
 				<script type="text/javascript">
 					function qtyDown<?= $_item->getId() ?>(){
