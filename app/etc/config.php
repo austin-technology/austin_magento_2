@@ -1637,7 +1637,7 @@ T: {{var telephone}}
           'debug' => '0',
           'sort_order' => NULL,
           'specificcountry' => NULL,
-          'countrycreditcard' => '[]',
+          'countrycreditcard' => [],
           'verify_3dsecure' => '0',
           'threshold_amount' => NULL,
           'verify_all_countries' => '0',
@@ -6032,7 +6032,7 @@ Mbhn7YyvMj9yxpyzmk9Z+gYm2BNR+DI46Lsd2Hh+7XCCy2IUdiWoW1nBnbB8IHYP
         [
           'options' => 
           [
-            'allow' => 'EUR,USD',
+            'allow' => 'AUD',
           ],
         ],
         'aw_osc' => 
