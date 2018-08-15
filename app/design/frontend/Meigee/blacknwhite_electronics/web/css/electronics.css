@@ -193,7 +193,7 @@ button.button span span {font-size: inherit !important;}
 .block-vertical-nav li.level-top.parent ul.level0 li a {font-size: 1.25em; color: rgba(0,0,0,0.5);}
 /*end*/
 .action primary checkout {color:#fff !important;}
-html body {background-color: #eee;}
+html body {background-color: #fff;}
 html body.wide-layout {background-color: #fff;}
 .main-container {padding-bottom: 20px;/* padding-top: 1.7em;*/}
 body button,
@@ -1525,6 +1525,8 @@ aside.sidebar .block.block-layered-nav .currently + .actions {
 	font-size: 2em;
 	color: rgba(0,0,0,0.8);
 	letter-spacing: 0;
+	line-height:1.5;
+	padding-bottom:5px;
 }
 .product-view .product-shop .ratings {
 	border-bottom: none;
@@ -1642,12 +1644,17 @@ table input.qty {height: 35px; width: 35px; line-height: 35px; font-size: 1.1em;
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
-	background-color: rgba(0,0,0,0.06);
+	background-color: #f1f1f1;
 	border-radius: 50%;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	color: #aaa;
+	color: #021f44;
+}
+.fotorama__caption__wrap {display: none !important;}
+#product-attribute-specs-table > tbody > tr > th {background-color:#f5f5f5;}
+#product-attribute-specs-table {
+	border:none;
 }
 .bundle-options-container .product-add-form .product-addto-links a:hover,
 .product-info-main .product-social-links .product-addto-links a:hover,

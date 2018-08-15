@@ -120,7 +120,7 @@ html body {
 }
 html body .container {background: #fff; max-width: 1175px; width: 100%;}
 .content-wrapper > .container {width: 100%; padding-bottom: 3.667em; border-radius: 5px;
-    padding: 35px;}
+    padding: 10px 0;}
 a, i, .btn {
 	transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
@@ -1471,7 +1471,7 @@ a.hover-img-wrapper:hover img {-webkit-transform: scale(1.2); transform: scale(1
 
 
 
-.main-container .content-inner{transition: width 100ms ease; padding-lef:35px;}
+.main-container .content-inner{transition: width 100ms ease; padding-left:40px;}
 .main-container .content-inner,
 .main-container > .sidebar{float: left;}
 
@@ -2170,10 +2170,10 @@ div.breadcrumbs{
 body .breadcrumb,
 body .breadcrumbs > .items {
 	background: none;
-	padding: 0;
+	padding:15px 0;
 	margin-bottom: 1em;
 	margin-top: 1em;
-	font-size: .917em; 
+	font-size: 1.2em; 
 	list-style: none;
 }
 body .breadcrumb > li,
@@ -2184,7 +2184,7 @@ body .breadcrumb > .items > li{position: relative;}
 body .breadcrumb a,
 body .breadcrumbs > .items a {
 	margin: 0 4px;
-	color: #021f44;
+	color: #8e8e8e;
 	position: relative;
 	transition: color .8s ease;
 	-moz-transition: color .8s ease;
@@ -2194,7 +2194,7 @@ body .breadcrumbs > .items a {
 body .breadcrumb strong,
 body .breadcrumbs > .items strong {font-weight: normal;
 	color: rgb(228, 30, 38);
-	font-size: 1.1em;}
+	font-size: 1em;}
 body .breadcrumb span {margin-right: 2px; display: inline-block; position: relative;}
 body .breadcrumb span:after,
 body .breadcrumbs > .items > li:before {
@@ -2965,8 +2965,8 @@ a.action.delete:before {
 .product-info-main .sku strong,
 .product-info-main .sku div {display: inline-block; font-weight: normal;}
 .product-info-main .sku strong:after {content: ':';}
-.product-info-main .product-reviews-summary {margin-top: -3px; padding-bottom: 1.5em; border-bottom: dotted 1px #ddd;}
-.product-info-main .product-info-price-inner {padding: 1.5em 0; border-bottom: dotted 1px #ddd; margin-bottom: 1.5em;}
+.product-info-main .product-reviews-summary {margin-top: -3px;}
+.product-info-main .product-info-price-inner {padding: 15px 0;}
 .product-info-main .product-info-price-inner .price-box {display: inline-block;}
 .product-info-main .product-info-price-inner .stock {    display: inline-block;
     /* vertical-align: middle; */
@@ -2978,7 +2978,7 @@ a.action.delete:before {
 .product-info-main .product-info-price-inner .stock.available span {color: #3ebd00;}
 .product-info-main .product-info-price-inner .stock.unavailable span {color: #ff1341;}
 .product-info-main .product-info-price-inner .stock.unavailable span:before,
-.product-info-main .product-info-price-inner .stock.available span:before {content: ':';}
+.product-info-main .product-info-price-inner .stock.available span:before {}
 .product-info-main .product.attibute.overview {margin-bottom: 1.5em;}
 .product-info-main .product-options-wrapper {padding: 1.5em 20px; border: solid 1px #eee;}
 .product-options-wrapper .block-title {width: 100%; display: block; margin-bottom: 1em;}
@@ -2997,7 +2997,7 @@ a.action.delete:before {
 .product-info-main .box-tocart .actions {float: left;}
 .product-info-main .box-tocart {display: inline-block; vertical-align: middle; margin-right: 15px;}
 .product-info-main .product-social-links,
-.product-add-form .product-social-links{display: inline-block; vertical-align: middle;}
+.product-add-form .product-social-links{display: inline-block; vertical-align: middle; width:100%; padding:35px 0;}
 
 .product-info-main .product-social-links .product-addto-links,
 .product-add-form .product-social-links .product-addto-links {display: inline-block; vertical-align: middle;}
@@ -3189,7 +3189,6 @@ div.quantity-increase {
 	background: #fff;
 	margin-top: 40px;
 	padding: 1.5em;
-    border: solid 1px #ddd;
     font-size: 1em;
     color: #888;
     line-height: 1.5em;
@@ -3232,7 +3231,7 @@ div.quantity-increase {
 
 .related + .upsell {margin-top: 3em;}
 
-.product-custom-social-links {margin-top: 1.5em;}
+.product-custom-social-links {margin-top: 1.5em; display: none;}
 .product-custom-social-links .fb_iframe_widget.fb-like {vertical-align: top; margin-right: 20px;}
 .product-custom-social-links .twitter-share-button {margin-right: 20px;}
 
@@ -3244,6 +3243,7 @@ div.quantity-increase {
   position: relative;
   overflow: hidden;
 }
+.product-add-form {padding:15px 0;}
 .meigee-instagram-widget .insta-photo:not(:last-of-type) {
   margin-right: 20px;
 }
