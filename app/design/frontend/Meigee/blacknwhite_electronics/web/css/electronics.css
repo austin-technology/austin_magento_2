@@ -185,9 +185,10 @@ header#header .top-cart .block-content .actions .button:hover > span span {
 	height: 40px;
 	line-height: 40px;
 }
-body > div.page-wrapper > div.header-wrapper > header > div { background-color: #021f44; margin-bottom:25px; padding:0px !important;}
+
+body > div.page-wrapper > div.header-wrapper > header > div { background-color: #021f44; padding:0px !important;}
 body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div {background-color: #1f4c86;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12);}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12); margin-bottom:15px;}
 .action mailto friend {display: none;}
 button.button span span {font-size: inherit !important;}
 .block-vertical-nav li.level-top.parent ul.level0 li a {font-size: 1.25em; color: rgba(0,0,0,0.5);}

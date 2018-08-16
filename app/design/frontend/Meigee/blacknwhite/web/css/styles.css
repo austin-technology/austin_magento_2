@@ -825,7 +825,7 @@ body .page-header {margin: 0; border: none; padding: 0;}
 .page-header .right-block .top-block {padding: 1.5em 0; position: relative;}
 .page-header .right-block .bottom-block {float: right;}
 .page-header .panel {margin: 0; border: none; box-shadow: none; border-radius: 0;}
-.page-header > .container {padding-bottom: 1.5em;}
+.page-header > .container {padding-bottom: 1.5em; padding-left:0px;margin-bottom:25px;}
 .page-header .logo {
 	display: inline-block;
 	vertical-align: middle;
@@ -912,7 +912,7 @@ fieldset[disabled] .customer-welcome .action.switch{ cursor: not-allowed; pointe
 .customer-welcome .header.links {min-width: 175px; padding: 20px !important;}
 .customer-welcome.active .customer-menu {display: block;}
 .customer-welcome .greet {display: none;}
-.header-wrapper .header.links {padding: 0; list-style: none none; float: right;  padding-right:35px; padding-top:8px !important;}
+.header-wrapper .header.links {padding: 0; list-style: none none; float: right;  padding-right:35px; padding-top:10px !important;}
 .header-wrapper .header.links > li {display: block; vertical-align: top;}
 .header-wrapper .header.links > li.welcome,
 .header-wrapper .header.links > li > a {display: block; line-height: 1.4;}
@@ -1471,7 +1471,7 @@ a.hover-img-wrapper:hover img {-webkit-transform: scale(1.2); transform: scale(1
 
 
 
-.main-container .content-inner{transition: width 100ms ease; padding-left:40px;}
+.main-container .content-inner{transition: width 100ms ease; }
 .main-container .content-inner,
 .main-container > .sidebar{float: left;}
 
@@ -2173,7 +2173,7 @@ body .breadcrumbs > .items {
 	padding:15px 0;
 	margin-bottom: 1em;
 	margin-top: 1em;
-	font-size: 1.2em; 
+	font-size: 1.4em; 
 	list-style: none;
 }
 body .breadcrumb > li,
@@ -2184,7 +2184,7 @@ body .breadcrumb > .items > li{position: relative;}
 body .breadcrumb a,
 body .breadcrumbs > .items a {
 	margin: 0 4px;
-	color: #8e8e8e;
+	color: #B3B3B3;
 	position: relative;
 	transition: color .8s ease;
 	-moz-transition: color .8s ease;
@@ -6046,7 +6046,7 @@ body.cms-no-route .container_12 {background: none!important}
 .map-container .map-block a:hover{text-decoration: underline;}
 
 /* Footer ================================================================================ */
-.footer {padding: 0; margin-top:90px;border-top: solid 5px #e41e25;}
+.footer {padding:25px 0; margin-top:90px;}
 body.wide-layout .footer .footer-topline,
 body.boxed-layout .footer .footer-topline .container {
 	padding-top: 3.333em;
@@ -6925,7 +6925,12 @@ body > .loading-mask {z-index: 9999;}
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+	background-color:#021f44;
 }
+.header content container checkout-header {
+	padding-left:0px !important;
+}
+#checkout > div.aw-mobile > div.aw-onestep.aw-onestep-sidebar {display:none;}
 .onestepcheckout-index-index .page-main .checkout-container {
     color: #333333;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
