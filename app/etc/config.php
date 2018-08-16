@@ -1,13 +1,13 @@
 <?php
 return [
-  'modules' => 
-  [
+  'modules' => [
     'Magento_Store' => 1,
     'Magento_Directory' => 1,
     'Magento_Eav' => 1,
     'Magento_Theme' => 1,
     'Magento_Customer' => 1,
     'Magento_Backend' => 1,
+    'ICEShop_Icecatlive' => 1,
     'Magento_AdminNotification' => 1,
     'Magento_Indexer' => 1,
     'Magento_Cms' => 1,
@@ -135,6 +135,6 @@ return [
     'Temando_Shipping' => 1,
     'Vertex_Tax' => 1,
     'WeltPixel_Backend' => 1,
-    'WeltPixel_Quickview' => 1,
-  ],
+    'WeltPixel_Quickview' => 1
+  ]
 ];
