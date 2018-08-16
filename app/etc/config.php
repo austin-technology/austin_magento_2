@@ -7,7 +7,7 @@ return [
     'Magento_Theme' => 1,
     'Magento_Customer' => 1,
     'Magento_Backend' => 1,
-    'ICEShop_Icecatlive' => 1,
+    'ICEShop_Icecatlive' => 0,
     'Magento_AdminNotification' => 1,
     'Magento_Indexer' => 1,
     'Magento_Cms' => 1,
