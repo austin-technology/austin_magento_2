@@ -8,7 +8,6 @@ return [
     'Magento_Theme' => 1,
     'Magento_Customer' => 1,
     'Magento_Backend' => 1,
-    'ICEShop_Icecatlive' => 1,
     'Magento_AdminNotification' => 1,
     'Magento_Indexer' => 1,
     'Magento_Cms' => 1,
@@ -1638,7 +1637,10 @@ T: {{var telephone}}
           'debug' => '0',
           'sort_order' => NULL,
           'specificcountry' => NULL,
-          'countrycreditcard' => '[]',
+          'countrycreditcard' => 
+          [
+
+          ],
           'verify_3dsecure' => '0',
           'threshold_amount' => NULL,
           'verify_all_countries' => '0',
@@ -6033,7 +6035,7 @@ Mbhn7YyvMj9yxpyzmk9Z+gYm2BNR+DI46Lsd2Hh+7XCCy2IUdiWoW1nBnbB8IHYP
         [
           'options' => 
           [
-            'allow' => 'EUR,USD',
+            'allow' => 'AUD',
           ],
         ],
         'aw_osc' => 
