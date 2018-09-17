@@ -2173,7 +2173,7 @@ body .breadcrumbs > .items {
 	padding:15px 0;
 	margin-bottom: 1em;
 	margin-top: 1em;
-	font-size: 1.4em; 
+	font-size: 1.2em; 
 	list-style: none;
 }
 body .breadcrumb > li,
@@ -2434,8 +2434,8 @@ body .breadcrumbs > .items > li:last-child:after{content:none;}
 /* Listing ================================================================================ */
 .product-item-name a {
 font-size: 14px;
-    color: #222;
-    line-height: 1.583em;
+    color: #000000;
+    line-height: 1.5em;
     text-align: left;
     font-weight: 400;
     overflow: hidden;
@@ -2508,7 +2508,7 @@ body .products-grid.eight-columns .item:nth-of-type(8n+8) {clear: right;}
 .products-list .item .product-item-details .weltpixel-quickview {display: none;}
 .products-grid .product-item-actions {margin-top: .75em; padding-top: 1em; border-top: solid 1px #ddd;}
 .products-grid .actions-primary,
-.products-grid .actions-secondary {display: inline-block; vertical-align: middle;}
+.products-grid .actions-secondary {display: none; vertical-align: middle;}
 .products-grid .actions-secondary a {font-size: 1.16em; color: #aaa; display: inline-block; margin-left: 20px;}
 .products-grid .actions-secondary a:hover {color: #ff1341;}
 .products-grid {

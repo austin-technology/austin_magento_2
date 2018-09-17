@@ -187,7 +187,7 @@ header#header .top-cart .block-content .actions .button:hover > span span {
 }
 
 body > div.page-wrapper > div.header-wrapper > header > div { background-color: #021f44; padding:0px !important;}
-body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div {background-color: #1f4c86;
+body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div {background-color: #e41e26;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 3px rgba(0, 0, 0, 0.12); margin-bottom:15px;}
 .action mailto friend {display: none;}
 button.button span span {font-size: inherit !important;}
@@ -304,7 +304,7 @@ fieldset.fieldset .legend,
 .products-list li.item .image-wrapper,
 .products-grid .item .image-wrapper {border-radius: 5px; overflow: hidden; margin-bottom: 10px;}
 /*Header*/
-.header-wrapper .menu-inner {background-color: #1f4c86; border: none;}
+.header-wrapper .menu-inner {background-color: #e41e26; border: none;}
 body.wide-layout .page-header.header-2 > .container,
 body.boxed-layout .page-header.header-2 > .container {
     padding-top: 1.9em;
@@ -773,11 +773,11 @@ ul.social-links li a i {background-color: #FFFFFF; color: #B2B2B2; border-color:
 ul.social-links li a i:hover {color: #222222; background-color: #FFD800; border-color: #FFD800;}
 .footer .switcher-store {margin-top: 7px; display: none;}
 #contact-form-mini label.label {display: none;}
-
+body > div.page-wrapper > div.header-wrapper > header > div > div.menu-wrapper > div > div > div > div.mobile-menu-wrapper > div.links-top-right > a:nth-child(4) {padding-right:0;}
 /*Products*/
 .products-grid .stock,
 .products-list .stock {display: none;}
-.price {font-size: 16px; font-weight: 700;}
+.price {font-size: 20px; font-weight: 600;}
 .old-price .price {color: #AAAAAA; color:#021f44;}
 .old-price {float: left; margin-top: 4px;}
 .products-grid .price-box,
@@ -982,7 +982,7 @@ ul.social-links li a i:hover {color: #222222; background-color: #FFD800; border-
 .products-list .ratings {margin-bottom: 0; margin-top: 1.1em;}
 .products-list .timer-box {margin-bottom: 1em; padding-top: 5px;}
 
-.toolbar {border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1.2em;}
+.toolbar {border-bottom: 1px solid rgba(0,0,0,0.1);}
 .toolbar-bottom .toolbar {border-bottom: none; padding-bottom: 0;}
 .sorter .sorter-label {color: rgba(0,0,0,0.5); text-transform: none; font-size: 1.09em;}
 .toolbar .sidebar-button > span {color: rgba(0,0,0,0.5); text-transform: none; font-size: 1.09em;}
@@ -1743,7 +1743,7 @@ table input.qty {height: 35px; width: 35px; line-height: 35px; font-size: 1.1em;
 .sidebar .block .block-title strong,
 .block-collapsible-nav-title strong,
 .sidebar .block.filter .filter-options-title {
-    font-size: 18px;
+    font-size: 14px;
     color: rgba(0,0,0,0.8);
     text-transform: uppercase;
     letter-spacing: -.2px;
