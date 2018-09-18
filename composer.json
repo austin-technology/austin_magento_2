@@ -10,7 +10,8 @@
     "require": {
         "magento/product-community-edition": "2.2.4",
         "composer/composer": "@alpha",
-        "olegkoval/magento2-regenerate-url-rewrites": "dev-master"
+        "olegkoval/magento2-regenerate-url-rewrites": "dev-master",
+        "klevu/module-search": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
