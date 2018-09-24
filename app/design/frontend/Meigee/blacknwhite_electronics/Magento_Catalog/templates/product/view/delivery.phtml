@@ -1,0 +1,46 @@
+<?php
+$objectManager = \Magento\ Framework\ App\ ObjectManager::getInstance();
+$mediaurl = $objectManager->get( 'Magento\Store\Model\StoreManagerInterface' )->getStore()->getBaseUrl( \Magento\ Framework\ UrlInterface::URL_TYPE_MEDIA );
+$_product = $block->getProduct();
+?>
+
+<div class="inventory-section">
+
+
+<div class="free" style="display:block">
+	<i class="fas fa-truck"></i>
+	<span class="delivery-title">Fast Delivery</span>
+	</div>
+	<div class="content">
+		<p class="inventory-description">Dispatched within 1 business day</p>
+	</div>
+	<div class="in-stock" style="display: block">
+	<i class="fas fa-check-circle" style="color:#3ca400;"></i>
+	<span class="in-stock">In stock</span>
+</div>
+<div class="section-2">		
+<div class="free" style="display: block">
+	<i class="fas fa-map-marker-alt"></i>
+	<span class="delivery-title"> Free Pick Up </span>
+</div>
+<p class="inventory-description">This store is open from <strong>9am-5pm</strong>
+</p>
+
+<select>
+	<option>Osborne Park</option>
+	<option>Cannington</option>
+	<option>Bibra Lake</option>
+	<option>Midland</option>
+	<option>Joondalup</option>
+	<option>Rockingham</option>
+</select>
+
+<div class="no-stock" style="display: block">
+	<i class="fas fa-times-circle"></i>
+	<span class="no-stock">Out of stock</span>
+</div>
+	</div>
+</div>
+
+
+

@@ -308,15 +308,15 @@ html {
     max-width: 8.333333%;
   }
   .col-sm-2 {
-    -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    -ms-flex: 0 0 19.666667%;
+        flex: 0 0 19.666667%;
+    max-width: 19.666667%;
   }
   .col-sm-3 {
-    -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-    max-width: 20%;
-	  margin-right:20px;
+    -ms-flex: 0 0 21%;
+        flex: 0 0 21%;
+    max-width: 21%;
+	  margin-right:5px;
   }
   .col-sm-4 {
     -ms-flex: 0 0 33.333333%;
@@ -508,9 +508,10 @@ html {
     max-width: 66.666667%;
   }
   .col-md-9 {
-    -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-    max-width: 75%;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+	  padding: 0px 60px;
   }
   .col-md-10 {
     -ms-flex: 0 0 83.333333%;
