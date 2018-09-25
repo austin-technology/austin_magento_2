@@ -1,0 +1,57 @@
+<?php /** @var \Klevu\Search\Block\Adminhtml\Wizard\Configure\Store $block */ ?>
+<?php echo $block->getLayout()->getMessagesBlock()->getGroupedHtml(); ?>
+<div class="kuWizardSteps">
+<ol class="wizard-progress clearfix">
+	<li class="active-step">
+		<span class="step-name"><?php echo __("Register/Login");?></span>
+		<span class="visuallyhidden"><?php echo __("Step");?> </span><span class="step-num">&nbsp;</span>
+	</li>
+	<li class="active-step">
+		<span class="step-name"><?php echo __("Select Plan");?></span>
+		<span class="visuallyhidden"><?php echo __("Step");?> </span><span class="step-num">&nbsp;</span>
+	</li>
+	<li>
+		<span class="step-name"><?php echo __("Configure Store");?></span>
+		<span class="visuallyhidden"><?php echo __("Step");?></span><span class="step-num">&nbsp;</span>
+	</li>
+	<li>
+		<span class="step-name"><?php echo __("Finish & Sync");?></span>
+		<span class="visuallyhidden"><?php echo __("Step");?> </span><span class="step-num">&nbsp;</span>
+	</li>
+</ol>
+</div>
+
+
+<form id="klevu_search_wizard_configure_store_form" action="<?php echo $block->getFormActionUrl() ?>" method="POST">
+    <input type="hidden" name="form_key" value="<?php echo $block->getFormKey() ?>" />
+	 
+	<div class="kuSelectPlanHeader">
+	<h2><?php echo __("Start 14-Day risk free trial");?></h2>
+	<h5><?php echo __("No obligation to continue, no credit card required");?></h5>
+	</div>
+        <table cellspacing="0" cellpadding="10" class="form-list kuPlanDetails">
+            <tbody>
+                <tr>
+				    <?php foreach($block->getPlans() as $key => $value) { ?>
+                    <td>
+						<table class="kuPlanColumn" cellspacing="0">
+						<tbody>
+								<tr>
+									<td><input type="radio" name="userPlan" value="<?php echo $value['planName'];?>" id="kuStarter"/> <label for="kuStarter"><?php echo ucfirst($value['planName']);?></label></td>
+								</tr>
+								<tr>
+									<td><img src="<?php echo $value['planImageUrl']; ?>"/></td>
+								</tr>
+						</tbody>
+						</table>
+                    </td>
+					<?php } ?>
+				</tr>
+            </tbody>
+        </table>
+    
+    <div class="button-set">
+        <button type="submit" class="action-default primary"><span><?php echo __("Next") ?></span></button>
+    </div>
+	
+</form>

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+
+    <route url="/V1/icecatconnect/1" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="getICEshopIcecatconnectorExtensionVersion"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/2" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="getProductsBatch"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/3" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="getLanguageMapping"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/4" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="catalogProductAttributeSetList"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/5" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="getProductAttributeList"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/6" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="saveAttributeSetBatch"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/7" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="saveProductsBatch"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/8" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="queueProductsImages"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+
+    <route url="/V1/icecatconnect/9" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="updateLanguageCodes"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/10" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="setIndexerMode"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/11" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="runFullReindex"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/12" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="processProductsImagesQueue"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/13" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="processBrokenProductsImages"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/14" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="fixFailedAttributes"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/15" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="processDefaultProductsImages"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+    <route url="/V1/icecatconnect/16" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="saveMainAttributesBatch"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+
+    <route url="/V1/icecatconnect/17" method="GET">
+        <service class="ICEShop\ICECatConnect\Api\ICECatConnectInterface"
+                 method="attributesRefresh"/>
+        <resources>
+            <resource ref="ICEShop_ICECatConnect::iceshop_icecatconnect"/>
+        </resources>
+    </route>
+
+</routes>

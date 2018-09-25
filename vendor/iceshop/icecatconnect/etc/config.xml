@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <iceshop_icecatconnect>
+            <icecatconnect_products_mapping>
+                <default_description_attributes>1</default_description_attributes>
+            </icecatconnect_products_mapping>
+            <icecatconnect_language_mapping>
+                <multilingual_mode>1</multilingual_mode>
+            </icecatconnect_language_mapping>
+        </iceshop_icecatconnect>
+        <icecatconnect_service_settings>
+            <filter_image_size>0</filter_image_size>
+            <filter_image_size_value>80</filter_image_size_value>
+        </icecatconnect_service_settings>
+    </default>
+</config>

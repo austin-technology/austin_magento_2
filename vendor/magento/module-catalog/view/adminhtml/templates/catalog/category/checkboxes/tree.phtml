@@ -1,0 +1,35 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+/**
+ * @var $block \Magento\Catalog\Block\Adminhtml\Category\Tree
+ */
+?>
+
+<?php $_divId = 'tree-div_' . time() ?>
+<div id="<?= /* @escapeNotVerified */ $_divId ?>" class="tree"></div>
+<script id="ie-deferred-loader" defer="defer" src="//:"></script>
+
+<script>
+    require(["Magento_Catalog/js/category-checkbox-tree"], function (element) {
+        element({
+            "dataUrl":       "<?= /* @escapeNotVerified */ $block->getLoadTreeUrl() ?>" ,
+            "divId":         "<?= /* @escapeNotVerified */$_divId ?>",
+            "rootVisible":   <?php if ($block->getRoot()->getIsVisible()): ?>true<?php else : ?>false<?php endif; ?>,
+            "useAjax":       <?= /* @escapeNotVerified */ $block->getUseAjax() ?>,
+            "currentNodeId": <?= (int)$block->getCategoryId() ?>,
+            "jsFormObject":  <?= /* @escapeNotVerified */ $block->getJsFormObject() ?>,
+            "name":          "<?= /* @escapeNotVerified */ htmlentities($block->getRoot()->getName()) ?>",
+            "checked":       "<?= /* @escapeNotVerified */ $block->getRoot()->getChecked() ?>",
+            "allowDrop":     <?php if ($block->getRoot()->getIsVisible()): ?>true<?php else : ?>false<?php endif; ?>,
+            "rootId":        <?= (int)$block->getRoot()->getId() ?>,
+            "expanded":      <?= (int)$block->getIsWasExpanded() ?>,
+            "categoryId":    <?= (int)$block->getCategoryId() ?>,
+            "treeJson":      <?= /* @escapeNotVerified */ $block->getTreeJson() ?>
+        });
+    })
+</script>

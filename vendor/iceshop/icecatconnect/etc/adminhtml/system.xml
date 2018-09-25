@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="iceshop" translate="label" sortOrder="10">
+            <label>ICEShop</label>
+        </tab>
+        <section id="iceshop_icecatconnect_information" translate="label" type="text" sortOrder="8" showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>ICECatConnect Information</label>
+            <tab>iceshop</tab>
+            <resource>ICEShop_ICECatConnect::iceshop_icecatconnect</resource>
+            <group id="icecatconnect_information" translate="label" type="text" sortOrder="10" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Products statistics</label>
+                <field id="path_url" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Checksystem</source_model>
+                    <frontend_class>empty_ice_field</frontend_class>
+                </field>
+                <field id="path_url_2" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Path Url</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Test</source_model>
+                </field>
+            </group>
+            <group id="attributes_content_statistic" translate="label" type="text" sortOrder="11"
+                   showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Attributes content statistics</label>
+                <field id="icecatconnect_attributes_content_statistic_info" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_ice_field</frontend_class>
+                </field>
+            </group>
+            <group id="image_statistic" translate="label" type="text" sortOrder="12"
+                   showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Images statistics</label>
+                <field id="icecatconnect_image_statistic_info" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <frontend_class>empty_ice_field</frontend_class>
+                </field>
+            </group>
+        </section>
+        <section id="iceshop_icecatconnect" translate="label" type="text" sortOrder="9" showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>ICECatConnect Settings</label>
+            <tab>iceshop</tab>
+            <resource>ICEShop_ICECatConnect::iceshop_icecatconnect</resource>
+            <group id="icecatconnect_products_mapping" translate="label" type="text" sortOrder="10" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Products Mapping</label>
+                <field id="products_mapping_mpn" translate="label" type="select" sortOrder="38" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>MPN</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="products_mapping_brand" translate="label" type="select" sortOrder="39" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Brand</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="products_mapping_gtin" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>GTIN</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="import_gtin" translate="label" type="select" sortOrder="41" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Import GTIN</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="import_brand_mpn" translate="label" type="select" sortOrder="42" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Import Brand/MPN</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="default_description_attributes" translate="label" type="select" sortOrder="43" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Default description attributes</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="name_attribute" translate="label" type="select" sortOrder="44" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Name attribute</label>
+                    <depends>
+                        <field id="*/*/default_description_attributes">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="short_description_attribute" translate="label" type="select" sortOrder="45" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Short description attribute</label>
+                    <depends>
+                        <field id="*/*/default_description_attributes">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="long_description_attribute" translate="label" type="select" sortOrder="46" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Long description attribute</label>
+                    <depends>
+                        <field id="*/*/default_description_attributes">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+                <field id="icecat_products_name_attribute" translate="label" type="select" sortOrder="47" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>ICECat product name attribute</label>
+                    <depends>
+                        <field id="*/*/default_description_attributes">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Attributes</source_model>
+                </field>
+            </group>
+            <group id="icecatconnect_service_settings" translate="label" type="text" sortOrder="11" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Service Settings</label>
+                <field id="products_reindex_required" translate="label" type="select" sortOrder="38" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Re-index Required</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="products_update_attributes" translate="label" type="select" sortOrder="39" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Update attributes</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="products_update_sort_order" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Update sort order</label>
+                    <depends>
+                        <field id="*/*/products_update_attributes">1</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="update_attribute_labels" translate="label" type="select" sortOrder="41" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Update attribute labels</label>
+                    <depends>
+                        <field id="*/*/products_update_attributes">1</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="update_attribute_option_labels" translate="label" type="select" sortOrder="42"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Update attribute option labels</label>
+                    <depends>
+                        <field id="*/*/products_update_attributes">1</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="replace_product_images_by_icecat" translate="label" type="select" sortOrder="43"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Replace product images by Icecat</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="change_indexer_mode" translate="label" type="select" sortOrder="44"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Change indexer mode</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="selected_indexer_mode" translate="label" type="select" sortOrder="45"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Indexer mode</label>
+                    <depends>
+                        <field id="*/*/change_indexer_mode">1</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\IndexerMode</source_model>
+                </field>
+                <field id="filter_image_size" translate="label" type="select" sortOrder="46"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Filter image size</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="filter_image_size_value" translate="label" type="text" sortOrder="47"
+                       showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Image size (maximum image size in MB)</label>
+                    <depends>
+                        <field id="*/*/filter_image_size">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="icecatconnect_language_mapping" translate="label" type="text" sortOrder="12" showInDefault="1"
+                   showInWebsite="0"
+                   showInStore="0">
+                <fieldset_css>icecatconnect_group</fieldset_css>
+                <label>Languages Mapping</label>
+                <field id="strict_language_import" translate="label" type="select" sortOrder="38" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Strict Language Import</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="multilingual_mode" translate="label" type="select" sortOrder="39" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Multilingual Mode</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\OnOff</source_model>
+                </field>
+                <field id="main_language_single" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Main language</label>
+                    <depends>
+                        <field id="*/*/multilingual_mode">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Languages</source_model>
+                </field>
+                <field id="insurance_language_single" translate="label" type="select" sortOrder="41" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Insurance language</label>
+                    <depends>
+                        <field id="*/*/multilingual_mode">0</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Languages</source_model>
+                </field>
+                <field id="insurance_language_multilingual" translate="label" type="select" sortOrder="42" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Insurance language</label>
+                    <depends>
+                        <field id="*/*/multilingual_mode">1</field>
+                    </depends>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Languages</source_model>
+                </field>
+                <field id="stores" translate="label" type="select" sortOrder="43" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Stores</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Stores</source_model>
+                </field>
+                <field id="languages_values" translate="label" type="select" sortOrder="44" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Languages values</label>
+                    <source_model>ICEShop\ICECatConnect\Model\Source\Languages</source_model>
+                </field>
+                <field id="multilingual_values" translate="label" type="text" sortOrder="45" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Multilinguals values</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
