@@ -58,6 +58,8 @@ atlassian*
 /pub/media/tmp/*
 !/pub/media/tmp/.htaccess
 /pub/media/captcha/*
+pub/media/klevu_images/*
+!/pub/media/klevu_images/.htaccess
 /pub/static/*
 !/pub/static/.htaccess
 
