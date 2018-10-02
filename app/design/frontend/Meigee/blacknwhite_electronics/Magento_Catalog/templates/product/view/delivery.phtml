@@ -1,8 +1,6 @@
 <?php
 $objectManager = \Magento\ Framework\ App\ ObjectManager::getInstance();
 $mediaurl = $objectManager->get( 'Magento\Store\Model\StoreManagerInterface' )->getStore()->getBaseUrl( \Magento\ Framework\ UrlInterface::URL_TYPE_MEDIA );
-$_product = $block->getCurrentProduct();
-var_dump($_product);
 ?>
 
 <div class="inventory-section">

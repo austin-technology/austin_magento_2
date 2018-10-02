@@ -111,7 +111,7 @@ html {
 }
 html body {
     color: #888;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 12px;
     line-height: 1.5em;
     background-color: #ececec !important;
@@ -2211,7 +2211,7 @@ body .breadcrumbs > .items a {
 }
 body .breadcrumb strong,
 body .breadcrumbs > .items strong {font-weight: normal;
-	color: rgb(0, 0, 0);
+	color: rgb(152, 152, 152);
 	font-size: 1em;}
 body .breadcrumb span {margin-right: 2px; display: inline-block; position: relative;}
 body .breadcrumb span:after,
