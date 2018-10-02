@@ -1589,8 +1589,8 @@ class ICECatConnect implements ICECatConnectInterface
                                 curl_setopt($chs[$key], CURLOPT_URL, $image['url']);
                                 curl_setopt($chs[$key], CURLOPT_RETURNTRANSFER, 1);
                                 curl_setopt($chs[$key], CURLOPT_SSL_VERIFYHOST, 0);
-                                curl_setopt($chs[$key], CURLOPT_CONNECTTIMEOUT, 2);
-                                curl_setopt($chs[$key], CURLOPT_TIMEOUT, 6);
+                                curl_setopt($chs[$key], CURLOPT_CONNECTTIMEOUT, 20);
+                                curl_setopt($chs[$key], CURLOPT_TIMEOUT, 60);
                                 curl_multi_add_handle($cmh, $chs[$key]);
                             }
 
