@@ -368,12 +368,13 @@ abstract class Builder extends DataObject implements BuilderInterface
      * Get Terms URL
      *
      * @param $store
+     * @param $configPath
      * @return mixed|string
      */
-    public function getTermsUrl($store)
+    public function getTermsUrl($store, $configPath = 'terms_url')
     {
-        $termsUrl = $this->configHelper->getCheckoutConfig('terms_url', $store);
-        if (!parse_url($termsUrl, PHP_URL_SCHEME)) {
+        $termsUrl = $this->configHelper->getCheckoutConfig($configPath, $store);
+        if (!empty($termsUrl) && !parse_url($termsUrl, PHP_URL_SCHEME)) {
             $termsUrl = $this->url->getDirectUrl($termsUrl, ['_nosid' => true]);
             return $termsUrl;
         }
@@ -403,7 +404,9 @@ abstract class Builder extends DataObject implements BuilderInterface
         /**
          * Shipping Address
          */
-        if (isset($create['billing_address']) && $this->isConfigFlag('separate_address', $store)) {
+        if (isset($create['billing_address'])
+            && $this->configHelper->isCheckoutConfigFlag('separate_address', $store)
+        ) {
             $create['shipping_address'] = $this->getAddressData($quote, Address::TYPE_SHIPPING);
         }
         return $create;
@@ -505,6 +508,10 @@ abstract class Builder extends DataObject implements BuilderInterface
         $resultObject->setStreetAddress($street_address[0]);
         $resultObject->setData('street_address2', $street_address[1]);
 
+        if (isset($result['email'])) {
+            $resultObject->setEmail($result['email']);
+        }
+
         return array_filter($resultObject->toArray());
     }
 
@@ -522,32 +529,6 @@ abstract class Builder extends DataObject implements BuilderInterface
             $street_address[] = '';
         }
         return $street_address;
-    }
-
-    /**
-     * Return checkout config flag
-     *
-     * @param $key
-     * @param $store
-     * @return bool
-     */
-    protected function isConfigFlag($key, $store)
-    {
-        return $this->configHelper->isCheckoutConfigFlag($key, $store);
-    }
-
-    /**
-     * Get GUI options
-     *
-     * @param $store
-     * @return array
-     */
-    public function getGuiOptions($store)
-    {
-        if (!$this->isConfigFlag('auto_focus', $store)) {
-            return ['disable_autofocus'];
-        }
-        return null;
     }
 
     /**

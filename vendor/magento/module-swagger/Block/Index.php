@@ -26,7 +26,8 @@ class Index extends Template
      * @return string
      */
     public function getSchemaUrl()
-    {
+    { 
+		
         return rtrim($this->getBaseUrl(), '/') . '/rest/' . $this->getParamStore() . '/schema?services=all';
     }
 }

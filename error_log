@@ -1,0 +1,21 @@
+[29-Oct-2018 10:41:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Magento\Setup\Module\DataSetup::getIdxName() in /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php:128
+Stack trace:
+#0 /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php(25): Sparx\Delivery\Setup\UpgradeData->updateQuoteShippingAddresses(Object(Magento\Setup\Module\DataSetup))
+#1 /home/magento2/public_html/setup/src/Magento/Setup/Model/Installer.php(856): Sparx\Delivery\Setup\UpgradeData->upgrade(Object(Magento\Setup\Module\DataSetup), Object(Magento\Setup\Model\ModuleContext))
+#2 /home/magento2/public_html/setup/src/Magento/Setup/Model/Installer.php(792): Magento\Setup\Model\Installer->handleDBSchemaData(Object(Magento\Setup\Module\DataSetup), 'data')
+#3 /home/magento2/public_html/setup/src/Magento/Setup/Console/Command/UpgradeCommand.php(94): Magento\Setup\Model\Installer->installDataFixtures()
+#4 /home/magento2/public_html/vendor/symfony/console/Command/Command.php(242): Magento\Setup\Console\Command\UpgradeCommand->execut in /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php on line 128
+[29-Oct-2018 10:48:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Magento\Setup\Module\DataSetup::getIdxName() in /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php:128
+Stack trace:
+#0 /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php(25): Sparx\Delivery\Setup\UpgradeData->updateQuoteShippingAddresses(Object(Magento\Setup\Module\DataSetup))
+#1 /home/magento2/public_html/setup/src/Magento/Setup/Model/Installer.php(856): Sparx\Delivery\Setup\UpgradeData->upgrade(Object(Magento\Setup\Module\DataSetup), Object(Magento\Setup\Model\ModuleContext))
+#2 /home/magento2/public_html/setup/src/Magento/Setup/Model/Installer.php(792): Magento\Setup\Model\Installer->handleDBSchemaData(Object(Magento\Setup\Module\DataSetup), 'data')
+#3 /home/magento2/public_html/setup/src/Magento/Setup/Console/Command/UpgradeCommand.php(94): Magento\Setup\Model\Installer->installDataFixtures()
+#4 /home/magento2/public_html/vendor/symfony/console/Command/Command.php(242): Magento\Setup\Console\Command\UpgradeCommand->execut in /home/magento2/public_html/app/code/Sparx/Delivery/Setup/UpgradeData.php on line 128
+[09-Nov-2018 06:32:49 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home/magento2/public_html/app/code/Austin/Productexport/Controller/Index/Index.php on line 93
+[14-Nov-2018 13:16:43 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9
+[14-Nov-2018 13:20:23 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9
+[14-Nov-2018 13:23:00 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9
+[14-Nov-2018 13:24:47 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9
+[15-Nov-2018 02:04:47 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9
+[15-Nov-2018 08:46:29 UTC] PHP Fatal error:  Cannot inherit previously-inherited or override constant SHIP_STORE from interface Sparx\StorePickup\Api\Data\OrderInterface in /home/magento2/public_html/app/code/Sparx/StorePickup/Model/Order/Ship.php on line 9

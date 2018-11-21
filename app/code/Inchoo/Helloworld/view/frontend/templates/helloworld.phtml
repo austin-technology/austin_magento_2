@@ -1,0 +1,25 @@
+<?php 
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+$directory = $objectManager->get('\Magento\Framework\Filesystem\DirectoryList');
+
+$productCollection = $block->getProductCollection();
+
+$rootPath  =  $directory->getRoot();
+
+$fileName = $rootPath.'/product_not_found_Vpn_and_Manufacturer.csv';
+
+$file = fopen($fileName,"w");
+$data = [];
+$i = 1;
+foreach ($productCollection as $product) {
+
+	if(!$product->getVpn() && !$product->getManufacturer())
+	{  
+       $data = $product->getId().'bmw'.$product->getSku().'bmw'.$product->getName().'bmw'.$i;
+       fputcsv($file,explode('bmw',$data));
+       $i++;
+    }
+}
+?>

@@ -32,12 +32,10 @@ class ClassExistenceResource implements SelfCheckingResourceInterface, \Serializ
      * @param string    $resource The fully-qualified class name
      * @param bool|null $exists   Boolean when the existency check has already been done
      */
-    public function __construct($resource, $exists = null)
+    public function __construct(string $resource, bool $exists = null)
     {
         $this->resource = $resource;
-        if (null !== $exists) {
-            $this->exists = (bool) $exists;
-        }
+        $this->exists = $exists;
     }
 
     /**
@@ -154,7 +152,7 @@ class ClassExistenceResource implements SelfCheckingResourceInterface, \Serializ
             $props = array(
                 'file' => $trace[$i]['file'],
                 'line' => $trace[$i]['line'],
-                'trace' => array_slice($trace, 1 + $i),
+                'trace' => \array_slice($trace, 1 + $i),
             );
 
             foreach ($props as $p => $v) {

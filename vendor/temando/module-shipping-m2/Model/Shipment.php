@@ -5,7 +5,6 @@
 namespace Temando\Shipping\Model;
 
 use Magento\Framework\DataObject;
-use Temando\Shipping\Model\Shipment\ShipmentOriginInterface;
 
 /**
  * Temando Shipment Entity
@@ -13,10 +12,10 @@ use Temando\Shipping\Model\Shipment\ShipmentOriginInterface;
  * This model contains a subset of data that is used in the shipping module.
  * It does not contain all data as available in its platform representation.
  *
- * @package  Temando\Shipping\Model
- * @author   Christoph Aßmann <christoph.assmann@netresearch.de>
- * @license  http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link     http://www.temando.com/
+ * @package Temando\Shipping\Model
+ * @author  Christoph Aßmann <christoph.assmann@netresearch.de>
+ * @license https://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link    https://www.temando.com/
  */
 class Shipment extends DataObject implements ShipmentInterface
 {
@@ -45,7 +44,15 @@ class Shipment extends DataObject implements ShipmentInterface
     }
 
     /**
-     * @return ShipmentOriginInterface
+     * @return string
+     */
+    public function getCustomerReference()
+    {
+        return $this->getData(ShipmentInterface::CUSTOMER_REFERENCE);
+    }
+
+    /**
+     * @return \Temando\Shipping\Model\Shipment\Location
      */
     public function getOriginLocation()
     {
@@ -53,11 +60,19 @@ class Shipment extends DataObject implements ShipmentInterface
     }
 
     /**
-     * @return \Temando\Shipping\Model\Shipment\ShipmentDestinationInterface
+     * @return \Temando\Shipping\Model\Shipment\Location
      */
     public function getDestinationLocation()
     {
         return $this->getData(ShipmentInterface::DESTINATION_LOCATION);
+    }
+
+    /**
+     * @return \Temando\Shipping\Model\Shipment\Location
+     */
+    public function getFinalRecipientLocation()
+    {
+        return $this->getData(ShipmentInterface::FINAL_RECIPIENT_LOCATION);
     }
 
     /**
@@ -66,6 +81,14 @@ class Shipment extends DataObject implements ShipmentInterface
     public function getFulfillment()
     {
         return $this->getData(ShipmentInterface::FULFILLMENT);
+    }
+
+    /**
+     * @return \Temando\Shipping\Model\Shipment\ShipmentItemInterface[]
+     */
+    public function getItems()
+    {
+        return $this->getData(ShipmentInterface::ITEMS);
     }
 
     /**

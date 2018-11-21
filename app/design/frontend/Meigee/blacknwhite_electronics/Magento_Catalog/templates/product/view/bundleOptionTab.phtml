@@ -1,0 +1,6 @@
+<?php 
+	$productType = $block->getProduct()->getTypeId(); 
+	if($productType == 'bundle' || $productType == 'configurable'){
+		echo "&nbsp;";
+	}
+?>

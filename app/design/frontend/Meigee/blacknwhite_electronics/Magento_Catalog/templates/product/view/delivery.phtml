@@ -1,5 +1,15 @@
 <?php
 $objectManager = \Magento\ Framework\ App\ ObjectManager::getInstance();
+$curr_product = $objectManager->get("\Magento\Framework\Registry");
+$product_id = $curr_product->registry('current_product')->getId();
+$product = $objectManager->create('Magento\Catalog\Model\Product')->load($product_id);
+//print_r($product->getName());
+$del_avail = 0;
+if($product->getData('c2c_branch_osb_qty') != 0){
+$del_avail = 1;
+}
+//echo $del_avail;
+//echo "<br>"."ss".$product->getC2cBranchOsbQty();
 $mediaurl = $objectManager->get( 'Magento\Store\Model\StoreManagerInterface' )->getStore()->getBaseUrl( \Magento\ Framework\ UrlInterface::URL_TYPE_MEDIA );
 ?>
 
@@ -13,10 +23,18 @@ $mediaurl = $objectManager->get( 'Magento\Store\Model\StoreManagerInterface' )->
 	<div class="content">
 		<p class="inventory-description">Dispatched within 1 business day</p>
 	</div>
+<?php if($del_avail){ ?>
 	<div class="in-stock" style="display: block">
-	<i class="fas fa-check-circle" style="color:#3ca400;"></i>
-	<span class="in-stock">In stock</span>
-</div>
+		<i class="fas fa-check-circle" style="color:#3ca400;"></i>
+		<span class="in-stock">In stock</span>
+	</div>
+<?php }else{ ?>
+	<div class="no-stock" style="display: block">
+                <i class="fas fa-times-circle" style="color:#FF0000;"></i>
+                <span class="no-stock" style = "color:#FF0000;font-weight: bold;"><?php echo __('Not Available for Delivery') ?></span>
+        </div>
+<?php } ?>
+
 <div class="section-2">		
 <div class="free" style="display: block">
 	<i class="fas fa-map-marker-alt"></i>
@@ -25,21 +43,40 @@ $mediaurl = $objectManager->get( 'Magento\Store\Model\StoreManagerInterface' )->
 <p class="inventory-description">This store is open from <strong>9am-5pm</strong>
 </p>
 
-<select>
-	<option>Osborne Park</option>
-	<option>Cannington</option>
-	<option>Bibra Lake</option>
-	<option>Midland</option>
-	<option>Joondalup</option>
-	<option>Rockingham</option>
+<select class="available_stock">
+	<option <?php if($product->getData('c2c_branch_osb_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_osb_qty'); ?>">Osborne Park <?php if($product->getData('c2c_branch_osb_qty') != 0){echo " - IN Stock";}else{echo " - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_can_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_can_qty'); ?>">Cannington <?php if($product->getData('c2c_branch_can_qty') != 0){echo "&nbsp&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp&nbsp - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_bib_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_bib_qty'); ?>">Bibra Lake <?php if($product->getData('c2c_branch_bib_qty') != 0){echo "&nbsp&nbsp&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp&nbsp&nbsp - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_mid_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_mid_qty'); ?>">Midland <?php if($product->getData('c2c_branch_mid_qty') != 0){echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_jdl_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_jdl_qty'); ?>">Joondalup <?php if($product->getData('c2c_branch_jdl_qty') != 0){echo "&nbsp&nbsp&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp&nbsp&nbsp - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_roc_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_roc_qty'); ?>">Rockingham <?php if($product->getData('c2c_branch_roc_qty') != 0){echo "&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp - 2-3 days";} ?></option>
+	<option <?php if($product->getData('c2c_branch_aub_qty') != 0){echo "selected";} ?> value = "<?php echo $product->getData('c2c_branch_aub_qty'); ?>">Sydney <?php if($product->getData('c2c_branch_aub_qty') != 0){echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - IN Stock";}else{echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 2-3 days";} ?></option>
+
 </select>
 
-<div class="no-stock" style="display: block">
+<div class="no-stock avail_in" style="display: none">
 	<i class="fas fa-times-circle"></i>
-	<span class="no-stock">Out of stock</span>
+	<span class="no-stock"><?php echo __('No Stock - Stock will be transferred to this store in 2-3 days'); ?></span>
+</div>
+<div class="in-stock avail_out" style="display: block">
+        <i class="fas fa-check-circle"></i>
+        <span class="in-stock"><?php echo __('In stock') ?></span>
 </div>
 	</div>
 </div>
 
 
-
+<script>
+require(['jquery', 'jquery/ui'], function($){
+	$('.available_stock').change(function() {
+		var item=$(this);
+		if(item.val() > 0){
+			$(".avail_in").hide();
+			$(".avail_out").show();
+		}else{
+			$(".avail_out").hide();
+			$(".avail_in").show();
+		}
+	});
+});
+</script>

@@ -2,7 +2,7 @@
     "name": "klarna/module-kp",
     "type": "magento2-module",
     "description": "Klarna Payments Magento 2 Extension",
-    "version": "5.1.3",
+    "version": "5.5.4",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -10,22 +10,30 @@
             "email": "joe.constant@klarna.com"
         },
         {
+            "name": "Dario Kassler",
+            "email": "dario.kassler@klarna.com"
+        },
+        {
+            "name": "Fei Chen",
+            "email": "fei.chen@klarna.com"
+        },
+        {
             "name": "Jason Grim",
             "email": "jason.grim@klarna.com"
         }
     ],
     "require": {
-        "php": "^5.6|~7.0.13|~7.1.0",
+        "php": "~7.0.13|~7.1.0|~7.2.0",
         "klarna/module-core": "^4.0",
-        "klarna/module-ordermanagement": "^4.0",
-        "magento/framework": "^100.1||^101.0",
+        "klarna/module-ordermanagement": "^4.0||^5.0",
+        "magento/framework": "^100.1||^101.0||^102.0",
         "magento/module-checkout": "^100.1",
-        "magento/module-customer": "^100.1||^101.0",
+        "magento/module-customer": "^100.1||^101.0||^102.0",
         "magento/module-directory": "^100.1",
         "magento/module-payment": "^100.1",
         "magento/module-quote": "^100.1||^101.0",
-        "magento/module-sales": "^100.1||^101.0",
-        "magento/module-store": "^100.1"
+        "magento/module-sales": "^100.1||^101.0||^102.0",
+        "magento/module-store": "^100.1||^101.0"
     },
     "replace": {
         "klarna/module-enterprise": "*"

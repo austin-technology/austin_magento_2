@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2018 Amasty (https://www.amasty.com)
+ * @package Amasty_Mostviewed
+ */
+-->
+<!--
+/**
+ * Copyright © 2015 Amasty. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ammostviewed" translate="label" type="text" sortOrder="161809" showInDefault="1" showInWebsite="1" showInStore="1">
+            <resource>Amasty_Mostviewed::config</resource>
+            <class>separator-top</class>
+            <label>Automatic Related Products</label>
+            <tab>amasty</tab>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="limit" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Query Limit</label>
+                    <comment>Limit of records in query for period.</comment>
+                </field>
+            </group>
+
+            <group id="up_sells" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Up-Sells</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="size" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Products Count</label>
+                </field>
+                <field id="replace" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manually Added Products</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Manually</source_model>
+                </field>
+                <field id="in_stock" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show In Stock Products Only</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="out_of_stock_only" translate="label" type="select" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Up-Sells products only for Out of stock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="data_source" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data Source</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\DataSource</source_model>
+                </field>
+                <field id="condition_id" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Rule</label>
+                    <validate>required-entry</validate>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\ConditionSource</source_model>
+                    <comment>To create a rule, please, navigate to Marketing->Related Product Rules->Add New</comment>
+                    <depends>
+                        <field id="data_source">2</field>
+                    </depends>
+                </field>
+                <field id="period" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data gathered period (days)</label>
+                    <depends>
+                        <field id="data_source" separator=",">0,1</field>
+                    </depends>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                    <depends>
+                        <field id="data_source">1</field>
+                    </depends>
+                </field>
+
+                <field id="conditions" translate="label" type="label" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Conditions</label>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+
+                <field id="category_condition" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Category</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="brand_condition" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Brand</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="brand_attribute" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Attribute</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\BrandAttribute</source_model>
+                    <depends>
+                        <field id="brand_condition">1</field>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="price_condition" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Price</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+            </group>
+
+            <group id="cross_sells" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Cross-Sells</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="size" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Products Count</label>
+                </field>
+                <field id="replace" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manually Added Products</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Manually</source_model>
+                </field>
+                <field id="in_stock" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show In Stock Products Only</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="out_of_stock_only" translate="label" type="select" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Cross-Sell products only for Out of stock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="data_source" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data Source</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\DataSource</source_model>
+                </field>
+                <field id="condition_id" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Rule</label>
+                    <validate>required-entry</validate>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\ConditionSource</source_model>
+                    <comment>To create a rule, please, navigate to Marketing->Related Product Rules->Add New</comment>
+                    <depends>
+                        <field id="data_source">2</field>
+                    </depends>
+                </field>
+                <field id="period" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data gathered period (days)</label>
+                    <depends>
+                        <field id="data_source" separator=",">0,1</field>
+                    </depends>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                    <depends>
+                        <field id="data_source">1</field>
+                    </depends>
+                </field>
+                <field id="conditions" translate="label" type="label" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Conditions</label>
+                    <depends>
+                        <field id="data_source" separator=",">3</field>
+                    </depends>
+                </field>
+
+                <field id="category_condition" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Category</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">3</field>
+                    </depends>
+                </field>
+                <field id="brand_condition" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Brand</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">3</field>
+                    </depends>
+                </field>
+                <field id="brand_attribute" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Attribute</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\BrandAttribute</source_model>
+                    <depends>
+                        <field id="brand_condition">1</field>
+                        <field id="data_source" separator=",">3</field>
+                    </depends>
+                </field>
+                <field id="price_condition" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Price</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">3</field>
+                    </depends>
+                </field>
+            </group>
+
+
+            <group id="related_products" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Related Products</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="size" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Products Count</label>
+                </field>
+                <field id="replace" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Manually Added Products</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Manually</source_model>
+                </field>
+                <field id="in_stock" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show In Stock Products Only</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="out_of_stock_only" translate="label" type="select" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show related products only for Out of stock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="data_source" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data Source</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\DataSource</source_model>
+                </field>
+                <field id="condition_id" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Rule</label>
+                    <validate>required-entry</validate>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\ConditionSource</source_model>
+                    <comment>To create a rule, please, navigate to Marketing->Related Product Rules->Add New</comment>
+                    <depends>
+                        <field id="data_source">2</field>
+                    </depends>
+                </field>
+                <field id="period" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data gathered period (days)</label>
+                    <depends>
+                        <field id="data_source" separator=",">0,1</field>
+                    </depends>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                    <depends>
+                        <field id="data_source">1</field>
+                    </depends>
+                </field>
+
+                <field id="conditions" translate="label" type="label" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Conditions</label>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+
+                <field id="category_condition" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Category Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Category</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="brand_condition" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Brand</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="brand_attribute" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Brand Attribute</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\BrandAttribute</source_model>
+                    <depends>
+                        <field id="brand_condition">1</field>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+                <field id="price_condition" translate="label" type="select" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Condition</label>
+                    <source_model>Amasty\Mostviewed\Model\Config\Source\Condition\Price</source_model>
+                    <depends>
+                        <field id="data_source" separator=",">0,1,3</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

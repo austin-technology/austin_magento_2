@@ -9,8 +9,12 @@ use Magento\Framework\Api\AttributeInterfaceFactory;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Multishipping\Model\Checkout\Type\Multishipping;
-use Magento\Quote\Api\Data\AddressExtensionInterfaceFactory;
+use Magento\Store\Model\StoreManagerInterface;
+use Temando\Shipping\Api\Data\Checkout\AddressInterface;
+use Temando\Shipping\Api\Data\Checkout\AddressInterfaceFactory;
 use Temando\Shipping\Model\Checkout\Schema\CheckoutFieldsSchema;
+use Temando\Shipping\Model\Config\ModuleConfigInterface;
+use Temando\Shipping\Model\ResourceModel\Repository\AddressRepositoryInterface;
 
 /**
  * @package  Temando\Shipping\Plugin
@@ -26,14 +30,19 @@ class MultishippingSavePlugin
     private $request;
 
     /**
-     * @var AddressExtensionInterfaceFactory
-     */
-    private $addressExtensionFactory;
-
-    /**
      * @var AttributeInterfaceFactory
      */
     private $attributeFactory;
+
+    /**
+     * @var AddressRepositoryInterface
+     */
+    private $addressRepository;
+
+    /**
+     * @var AddressInterfaceFactory
+     */
+    private $addressFactory;
 
     /**
      * @var CheckoutFieldsSchema
@@ -41,22 +50,42 @@ class MultishippingSavePlugin
     private $schema;
 
     /**
+     * @var ModuleConfigInterface
+     */
+    private $moduleConfig;
+
+    /**
+     * @var StoreManagerInterface
+     */
+    private $storeManager;
+
+    /**
      * MultishippingSavePlugin constructor.
-     * @param RequestInterface $request
-     * @param AddressExtensionInterfaceFactory $addressExtensionFactory
-     * @param CheckoutFieldsSchema $schema
-     * @param AttributeInterfaceFactory $attributeFactory
+     *
+     * @param RequestInterface           $request
+     * @param AddressRepositoryInterface $addressRepository
+     * @param AddressInterfaceFactory    $addressFactory
+     * @param CheckoutFieldsSchema       $schema
+     * @param AttributeInterfaceFactory  $attributeFactory
+     * @param ModuleConfigInterface      $moduleConfig
+     * @param StoreManagerInterface      $storeManager
      */
     public function __construct(
         RequestInterface $request,
-        AddressExtensionInterfaceFactory $addressExtensionFactory,
+        AddressRepositoryInterface $addressRepository,
+        AddressInterfaceFactory $addressFactory,
         CheckoutFieldsSchema $schema,
-        AttributeInterfaceFactory $attributeFactory
+        AttributeInterfaceFactory $attributeFactory,
+        ModuleConfigInterface $moduleConfig,
+        StoreManagerInterface $storeManager
     ) {
-        $this->request = $request;
-        $this->addressExtensionFactory = $addressExtensionFactory;
-        $this->schema = $schema;
-        $this->attributeFactory = $attributeFactory;
+        $this->request           = $request;
+        $this->addressRepository = $addressRepository;
+        $this->addressFactory    = $addressFactory;
+        $this->schema            = $schema;
+        $this->attributeFactory  = $attributeFactory;
+        $this->moduleConfig      = $moduleConfig;
+        $this->storeManager      = $storeManager;
     }
 
     /**
@@ -134,8 +163,12 @@ class MultishippingSavePlugin
      *
      * @return null Argument of original method remains unaltered.
      */
-    public function beforeSave(Multishipping $subject)
+    public function afterSave(Multishipping $subject, $result)
     {
+        if (!$this->moduleConfig->isEnabled($this->storeManager->getStore()->getId())) {
+            return $result;
+        }
+
         $ship = $this->request->getParam('ship');
 
         if (empty($ship)) {
@@ -147,25 +180,35 @@ class MultishippingSavePlugin
 
         foreach ($ship as $quoteItems) {
             foreach ($quoteItems as $itemId => $quoteItem) {
+                // Skip item if it has no address (virtual or downloadable...)
+                if (!isset($quoteItem['address'])) {
+                    continue;
+                }
                 // obtain shipping address for current quote item
                 $addressId = $quoteItem['address'];
-                $address = $subject->getQuote()->getShippingAddressByCustomerAddressId($addressId);
-                $extensionAttributes = $address->getExtensionAttributes();
+                $shippingAddress = $subject->getQuote()->getShippingAddressByCustomerAddressId($addressId);
 
-                if (!$extensionAttributes) {
-                    // address not processed yet; add checkout field selection to extension attributes
-                    $extensionAttributes = $this->addressExtensionFactory->create();
-                    $checkoutFields = $this->extractCheckoutFields($quoteItem);
-                    $extensionAttributes->setCheckoutFields($checkoutFields);
-                    $address->setExtensionAttributes($extensionAttributes);
-                } else {
-                    // address already processed; verify consistency of checkout field selection
-                    $checkoutFields = $this->extractCheckoutFields($quoteItem);
-                    $this->verifyCheckoutFieldSelection($checkoutFields, $extensionAttributes->getCheckoutFields());
+                try {
+                    $address = $this->addressRepository->getByQuoteAddressId($shippingAddress->getId());
+                } catch (LocalizedException $e) {
+                    $address = $this->addressFactory->create(['data' => [
+                        AddressInterface::SHIPPING_ADDRESS_ID => $shippingAddress->getId()
+                    ]]);
                 }
+                $checkoutFields = $this->extractCheckoutFields($quoteItem);
+                if ($address->getServiceSelection()) {
+                    $this->verifyCheckoutFieldSelection($checkoutFields, $address->getServiceSelection());
+                }
+
+                $address->setServiceSelection($checkoutFields);
+                $this->addressRepository->save($address);
+
+                // re-collect rates with checkout field selection
+                $shippingAddress->setCollectShippingRates(true);
+                $shippingAddress->collectShippingRates();
             }
         }
 
-        return null;
+        return $result;
     }
 }

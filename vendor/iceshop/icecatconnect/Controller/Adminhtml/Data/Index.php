@@ -105,6 +105,14 @@ class Index extends \Magento\Framework\App\Action\Action
         $return['Import last started'] = (!empty($lastStarted)) ? date('Y-m-d H:i:s', $lastStarted) : __('Not started');
         $return['Import last finished'] =
             (!empty($lastFinished)) ? date('Y-m-d H:i:s', $lastFinished) : __('Not finished');
+
+        $notMatchedProductsUrl = ObjectManager::getInstance()->create('\Magento\Framework\UrlInterface')->getUrl('iceshop_icecatconnect/data/downloadnotmatchedproducts');
+        $return['Download not matched products'] = '
+            <button id="download_sample_file" onclick="window.location.href=\'' . $notMatchedProductsUrl . '\';"  title="Download not matched products list" type="button" class="primary">
+                <span class="">
+                    <span>Download unmatched products list</span>
+                </span>
+            </button>';
         return $return;
     }
 

@@ -166,17 +166,15 @@
 ############################################
 ## never rewrite for existing files, directories and links
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-l
-
 ############################################
 ## rewrite everything else to index.php
 
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
     RewriteRule .* index.php [L]
 
 </IfModule>
-
 
 ############################################
 ## Prevent character encoding issues from server overrides
@@ -409,3 +407,21 @@ ErrorDocument 403 /pub/errors/404.php
     </FilesMatch>
 
 </IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors Off
+   php_value max_execution_time 900
+   php_value max_input_time 900
+   php_value max_input_vars 10000
+   php_value memory_limit 4096M
+   php_value post_max_size 100M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php71"
+   php_value upload_max_filesize 100M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

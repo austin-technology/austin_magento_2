@@ -68,3 +68,7 @@ pub/media/klevu_images/*
 /generated/*
 !/generated/.htaccess
 .DS_Store
+
+/*.sql.gz
+/DBbackup*.sql
+/*.zip

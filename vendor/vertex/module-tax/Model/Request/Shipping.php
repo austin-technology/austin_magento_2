@@ -6,7 +6,9 @@
 
 namespace Vertex\Tax\Model\Request;
 
-use Magento\Quote\Model\Quote\Address;
+use Magento\Quote\Api\Data\AddressInterface;
+use Vertex\Data\LineItemInterface;
+use Vertex\Data\LineItemInterfaceFactory;
 use Vertex\Tax\Model\Calculation\VertexCalculator;
 use Vertex\Tax\Model\Config;
 use Vertex\Tax\Model\Repository\TaxClassNameRepository;
@@ -18,74 +20,59 @@ class Shipping
 {
     const LINE_ITEM_ID = VertexCalculator::VERTEX_SHIPPING_LINE_ITEM_ID;
 
-    /** @var Customer */
-    private $customerFormatter;
-
-    /** @var Seller */
-    private $sellerFormatter;
-
     /** @var Config */
     private $config;
 
-    /** @var DeliveryTerm */
-    private $deliveryTerm;
+    /** @var LineItemInterfaceFactory */
+    private $lineItemFactory;
 
     /** @var TaxClassNameRepository */
     private $taxClassNameRepository;
 
     /**
-     * @param Seller $sellerFormatter
-     * @param Customer $customerFormatter
      * @param Config $config
-     * @param DeliveryTerm $deliveryTerm
      * @param TaxClassNameRepository $taxClassNameRepository
+     * @param LineItemInterfaceFactory $lineItemFactory
      */
     public function __construct(
-        Seller $sellerFormatter,
-        Customer $customerFormatter,
         Config $config,
-        DeliveryTerm $deliveryTerm,
-        TaxClassNameRepository $taxClassNameRepository
+        TaxClassNameRepository $taxClassNameRepository,
+        LineItemInterfaceFactory $lineItemFactory
     ) {
-        $this->customerFormatter = $customerFormatter;
-        $this->sellerFormatter = $sellerFormatter;
         $this->config = $config;
-        $this->deliveryTerm = $deliveryTerm;
         $this->taxClassNameRepository = $taxClassNameRepository;
+        $this->lineItemFactory = $lineItemFactory;
     }
 
     /**
      * Create properly formatted Line Item data for the Order Shipping
      *
-     * @param Address $taxAddress
-     * @return array
-     * @throws \Magento\Framework\Exception\LocalizedException
-     * @throws \Magento\Framework\Exception\NoSuchEntityException
+     * @param AddressInterface $taxAddress
+     * @param string|null $scopeCode
+     * @return LineItemInterface
      */
-    public function getFormattedShippingLineItemData(Address $taxAddress)
+    public function getFormattedShippingLineItemData(AddressInterface $taxAddress, $scopeCode = null)
     {
-        $data = [];
+        /** @var LineItemInterface $item */
+        $item = $this->lineItemFactory->create();
 
-        $data['Seller'] = $this->sellerFormatter->getFormattedSellerData();
-        $data['Customer'] = $this->customerFormatter->getFormattedCustomerData($taxAddress);
-        $data['Product'] = [
-            '_' => substr($taxAddress->getShippingMethod(), 0, Config::MAX_CHAR_PRODUCT_CODE_ALLOWED),
-            'productClass' => substr(
+        $item->setProductCode(substr($taxAddress->getShippingMethod(), 0, Config::MAX_CHAR_PRODUCT_CODE_ALLOWED));
+        $item->setProductClass(
+            substr(
                 $this->taxClassNameRepository->getById(
-                    $this->config->getShippingTaxClassId()
+                    $this->config->getShippingTaxClassId($scopeCode)
                 ),
                 0,
                 Config::MAX_CHAR_PRODUCT_CODE_ALLOWED
             )
-        ];
+        );
 
-        $data['Quantity'] = 1;
+        $item->setQuantity(1);
+        $rate = $taxAddress->getShippingRateByCode($taxAddress->getShippingMethod());
 
-        if (!$taxAddress->getShippingMethod()) {
+        if (!$rate && $taxAddress->getShippingMethod()) {
             $taxAddress->setCollectShippingRates(true)->collectShippingRates();
         }
-
-        $rate = null;
 
         foreach ($taxAddress->getAllShippingRates() as $rateCandidate) {
             if ($rateCandidate->getCode() === $taxAddress->getShippingMethod()) {
@@ -95,16 +82,13 @@ class Shipping
             }
         }
 
-        $price = $rate ? $rate->getPrice() : 0;
-        $price -= $rate ? $taxAddress->getBaseShippingDiscountAmount() : 0;
+        $unitPrice = $rate ? $rate->getPrice() : 0;
+        $extendedPrice = $unitPrice ? $unitPrice - $taxAddress->getBaseShippingDiscountAmount() : 0;
 
-        $data['UnitPrice'] = $price;
-        $data['ExtendedPrice'] = $data['UnitPrice'];
-        $data['lineItemId'] = static::LINE_ITEM_ID;
-        $data['locationCode'] = $this->config->getLocationCode();
+        $item->setUnitPrice($unitPrice);
+        $item->setExtendedPrice($extendedPrice);
+        $item->setLineItemId(static::LINE_ITEM_ID);
 
-        $data = $this->deliveryTerm->addDeliveryTerm($data, $taxAddress);
-
-        return $data;
+        return $item;
     }
 }

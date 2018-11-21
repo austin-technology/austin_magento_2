@@ -17,12 +17,20 @@ use Magento\Sales\Model\Order\Invoice;
 use Magento\Store\Api\Data\StoreInterface;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Tax\Model\Config as TaxConfig;
+use Magento\Quote\Api\Data\CartInterface;
 
 /**
  * Generate shipping order line details
  */
 class Shipping extends AbstractLine
 {
+
+    /**
+     * shipping is a line item collector
+     *
+     * @var bool
+     */
+    protected $isTotalCollector = false;
 
     /**
      * Checkout item types
@@ -42,10 +50,10 @@ class Shipping extends AbstractLine
         $object = $checkout->getObject();
         $store = null;
 
-        if ($object instanceof Quote) {
+        if ($object instanceof CartInterface) {
             $store = $object->getStore();
             $totals = $object->getTotals();
-            if (isset($totals['shipping']) && !$object->isVirtual()) {
+            if (isset($totals['shipping'])) {
                 /** @var \Magento\Quote\Model\Quote\Address $total */
                 $total = $totals['shipping'];
                 $address = $object->getShippingAddress();
@@ -56,9 +64,9 @@ class Shipping extends AbstractLine
                     $taxRate = 0;
                     $taxAmount = 0;
                 } else {
-                    $taxRate = $this->calculateShippingTax($store);
-                    $taxAmount = $address->getShippingTaxAmount() + $address->getShippingHiddenTaxAmount();
+                    $taxRate = $this->calculateShippingTax($checkout, $store);
                     $unitPrice = $address->getShippingInclTax();
+                    $taxAmount = $unitPrice * ($taxRate / (100 + $taxRate));
                 }
 
                 $checkout->addData(
@@ -77,7 +85,7 @@ class Shipping extends AbstractLine
 
         if ($object instanceof Invoice || $object instanceof Creditmemo) {
             $unitPrice = $object->getBaseShippingInclTax();
-            $taxRate = $this->calculateShippingTax($object->getStore());
+            $taxRate = $this->calculateShippingTax($checkout, $object->getStore());
             $taxAmount = $object->getShippingTaxAmount() + $object->getShippingHiddenTaxAmount();
 
             $checkout->addData(
@@ -97,24 +105,6 @@ class Shipping extends AbstractLine
     }
 
     /**
-     * Calculate shipping tax rate for an object
-     *
-     * @param StoreInterface $store
-     * @return float
-     */
-    protected function calculateShippingTax(StoreInterface $store)
-    {
-        $request = $this->calculator->getRateRequest(null, null, null, $store);
-        $taxRateId = $this->config->getValue(
-            TaxConfig::CONFIG_XML_PATH_SHIPPING_TAX_CLASS,
-            ScopeInterface::SCOPE_STORES,
-            $store
-        );
-
-        return $this->calculator->getRate($request->setProductClassId($taxRateId));
-    }
-
-    /**
      * Add order details to checkout request
      *
      * @param BuilderInterface $checkout
@@ -123,20 +113,18 @@ class Shipping extends AbstractLine
      */
     public function fetch(BuilderInterface $checkout)
     {
-        if ($checkout->getShippingTotalAmount()) {
-            $checkout->addOrderLine(
-                [
-                    'type'             => self::ITEM_TYPE_SHIPPING,
-                    'reference'        => $checkout->getShippingReference(),
-                    'name'             => $checkout->getShippingTitle(),
-                    'quantity'         => 1,
-                    'unit_price'       => $checkout->getShippingUnitPrice(),
-                    'tax_rate'         => $checkout->getShippingTaxRate(),
-                    'total_amount'     => $checkout->getShippingTotalAmount(),
-                    'total_tax_amount' => $checkout->getShippingTaxAmount(),
-                ]
-            );
-        }
+        $checkout->addOrderLine(
+            [
+                'type'             => self::ITEM_TYPE_SHIPPING,
+                'reference'        => $checkout->getShippingReference(),
+                'name'             => $checkout->getShippingTitle(),
+                'quantity'         => 1,
+                'unit_price'       => $checkout->getShippingUnitPrice(),
+                'tax_rate'         => $checkout->getShippingTaxRate(),
+                'total_amount'     => $checkout->getShippingTotalAmount(),
+                'total_tax_amount' => $checkout->getShippingTaxAmount(),
+            ]
+        );
 
         return $this;
     }

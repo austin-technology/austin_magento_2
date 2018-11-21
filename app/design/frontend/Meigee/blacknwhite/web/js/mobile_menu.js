@@ -73,6 +73,7 @@ define([
                 $('html').removeClass('nav-open');
                 setTimeout(function () {
                     $('html').removeClass('nav-before-open');
+                     $('html').removeClass('nav-open');
                 }, 300);
             } else {
                 $('html').addClass('nav-before-open');
@@ -374,6 +375,7 @@ define([
                 html.removeClass('nav-open');
                 setTimeout(function () {
                     html.removeClass('nav-before-open');
+                    html.removeClass('nav-open');
                 }, 300);
             }
         },

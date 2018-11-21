@@ -3,6 +3,7 @@
     <div class="group-title">
         <h2><span class="mark"></span><span data-bind="i18n: 'Shipping method'"></span></h2>
     </div>
+    <span class="zip-content">Please enter your Zip/Postal Code above for shipping options to display</span>
     <div class="group-content">
         <div class="onestep-shipping-method" data-bind="blockLoader: isLoading">
             <!-- ko if: rates().length  -->
@@ -64,3 +65,80 @@
     </div>
 </li>
 <!-- /ko -->
+<div id="del_pop" class="del_pop">
+
+  <!-- Modal content -->
+  <div class="delpop-content">
+<!--    <span class="close">&times;</span> -->
+    <div class="section-2">		
+<div class="free" style="display: block">
+	<i class="fas fa-map-marker-alt"></i>
+	<span class="delivery-title"> Free Pick Up </span>
+</div>
+<p class="inventory-description">This store is open from <strong>9am-5pm</strong>
+</p>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Osborne Park" name="available_stock" id = "c2c_branch_osb_qty" value="c2c_branch_osb_qty" style = "display:inline-block"><label for = "c2c_branch_osb_qty">Osborne Park</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Cannington" name="available_stock" id ="c2c_branch_can_qty"  value="c2c_branch_can_qty" style = "display:inline-block"><label for = "c2c_branch_can_qty">Cannington</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Bibra Lake" name="available_stock" id = "c2c_branch_bib_qty" value="c2c_branch_bib_qty" style = "display:inline-block"><label for = "c2c_branch_bib_qty">Bibra Lake</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Midland" name="available_stock" id = "c2c_branch_mid_qty" value="c2c_branch_mid_qty" style = "display:inline-block"><label for = "c2c_branch_mid_qty">Midland</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Joondalup" name="available_stock" id = "c2c_branch_jdl_qty" value="c2c_branch_jdl_qty" style = "display:inline-block"><label for = "c2c_branch_jdl_qty">Joondalup</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Rockingham" name="available_stock" id = "c2c_branch_roc_qty" value="c2c_branch_roc_qty" style = "display:inline-block"><label for = "c2c_branch_roc_qty">Rockingham</label></div>
+<div class = "input_radios"><input class="available_stock" type="radio" textval = "Sydney" name="available_stock" id = "c2c_branch_aub_qty" value="c2c_branch_aub_qty" style = "display:inline-block"><label for = "c2c_branch_aub_qty">Sydney</label></div>
+
+<select class="available_stock" style = "display:none">
+	<option value="c2c_branch_osb_qty">Osborne Park</option>
+	<option value="c2c_branch_can_qty">Cannington</option>
+	<option value="c2c_branch_bib_qty">Bibra Lake</option>
+	<option value="c2c_branch_mid_qty">Midland</option>
+	<option value="c2c_branch_jdl_qty">Joondalup</option>
+	<option value="c2c_ibranch_roc_qty">Rockingham</option>
+	<option value="c2c_branch_aub_qty">Sydney</option>
+
+</select>
+<div class = "address_stor"></div>
+<input class = "submit-pop" type = "submit" value = "Ok" ></input>
+	</div>
+  </div>
+
+</div>
+<style>
+
+/* The Modal (background) */
+.del_pop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.delpop-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>

@@ -1,0 +1,15 @@
+<script>
+  	testFreaks = window.testFreaks || [];
+  	pSku = '<?php echo $block->getProduct()->getSku();?>';
+  	testFreaks.push(["setProductId", pSku]);
+  	testFreaks.push(["load", ["badge", "reviews", "qa"]]);
+
+require(['jquery', 'jquery/ui'], function($) {
+  	testFreaks.push(["onBadgeClick", function() {
+  		$('#tab-label-reviews').trigger('click');
+  		$('html, body').animate({
+	        scrollTop: $(".main-container .detailed").offset().top
+	    }, 1000);
+	}]);
+});
+</script>

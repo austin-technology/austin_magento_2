@@ -6,38 +6,39 @@
 
 namespace Vertex\Tax\Model;
 
-use Magento\Framework\Exception\LocalizedException;
 use Magento\Sales\Api\Data\OrderInterface;
+use Magento\Store\Model\ScopeInterface;
 use Magento\Store\Model\StoreManagerInterface;
 use Psr\Log\LoggerInterface;
 use Vertex\Tax\Api\ClientInterface;
+use Vertex\Tax\Model\ApiClient\ObjectConverter;
+use Vertex\Utility\SoapClientFactory;
 
 /**
- * Initial implementation of {@see ClientInterface}
- *
- * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+ * {@inheritdoc}
+ * @deprecated
  */
 class ApiClient implements ClientInterface
 {
     const CONNECTION_TIMEOUT = 12; // seconds
 
-    /** @var LoggerInterface */
-    private $logger;
-
     /** @var Config */
     private $config;
 
-    /** @var StoreManagerInterface */
-    private $storeManager;
+    /** @var LoggerInterface */
+    private $logger;
 
-    /** @var SoapClientFactory */
-    private $soapClientFactory;
+    /** @var ObjectConverter */
+    private $objectConverter;
 
     /** @var RequestLogger */
     private $requestLogger;
 
-    /** @var ObjectConverter */
-    private $objectConverter;
+    /** @var SoapClientFactory */
+    private $soapClientFactory;
+
+    /** @var StoreManagerInterface */
+    private $storeManager;
 
     /**
      * @param LoggerInterface $logger
@@ -64,73 +65,37 @@ class ApiClient implements ClientInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
+     * @deprecated
      */
     public function sendApiRequest(array $request, $type, OrderInterface $order = null)
     {
-        $objectId = $this->getOrderId($order);
-        $storeId = $this->getStoreId($order);
+        $scopeType = ScopeInterface::SCOPE_STORE;
+        $scopeCode = $this->getStoreId($order);
 
-        $apiUrl = $this->config->getVertexHost($storeId);
+        $apiUrl = $this->config->getVertexHost($scopeCode, $scopeType);
         if ($type === 'tax_area_lookup') {
-            $apiUrl = $this->config->getVertexAddressHost($storeId);
+            $apiUrl = $this->config->getVertexAddressHost($scopeCode, $scopeType);
         }
 
         $apiUrl = $this->getWsdlUrl($apiUrl);
 
+        $client = null;
         try {
             $client = $this->createSoapClient($apiUrl);
-        } catch (\Exception $e) {
-            $this->logger->critical(
-                $e->getMessage() . PHP_EOL . $e->getTraceAsString()
-            );
-            return false;
-        }
-
-        try {
-            $taxResponse = $this->performSoapCall($client, $type, $request, $storeId);
+            $taxResponse = $this->performSoapCall($client, $type, $request);
             $taxResponseArray = $this->objectConverter->convertToArray($taxResponse);
-
-            $keys = is_array($taxResponseArray) ? array_keys($taxResponseArray) : [];
-            $taxResponseArray = isset($keys[1]) ? $taxResponseArray[$keys[1]] : [];
-
-            $totalTax = $this->getTotalTax($taxResponseArray);
-            $this->logRequest(
-                $type,
-                $objectId,
-                $client->__getLastRequest(),
-                $client->__getLastResponse(),
-                isset($totalTax) ? $totalTax : null
-            );
-            return $taxResponseArray;
-        } catch (\SoapFault $e) {
-            $this->logger->critical($e->getMessage() . PHP_EOL . $e->getTraceAsString());
-            $this->logRequest(
-                $type,
-                $objectId,
-                $client->__getLastRequest(),
-                $client->__getLastResponse(),
-                isset($totalTax) ? $totalTax : null
-            );
-            return false;
         } catch (\Exception $e) {
-            $this->logger->critical($e->getMessage() . PHP_EOL . $e->getTraceAsString());
+            $this->logException($e, $type, $client);
             return false;
         }
-    }
 
-    /**
-     * Get the WSDL version of an API URL
-     *
-     * @param string $apiUrl
-     * @return string
-     */
-    private function getWsdlUrl($apiUrl)
-    {
-        if (stripos($apiUrl, 'wsdl') === false) {
-            $apiUrl .= '?wsdl';
-        }
-        return $apiUrl;
+        $this->logRequest(
+            $type,
+            $client->__getLastRequest(),
+            $client->__getLastResponse()
+        );
+        return $taxResponseArray;
     }
 
     /**
@@ -151,15 +116,7 @@ class ApiClient implements ClientInterface
         $context = [
             'ssl_method' => SOAP_SSL_METHOD_TLS,
             'connection_timeout' => static::CONNECTION_TIMEOUT,
-            // stream_context_create necessary to enforce TLS 1.2
-            'stream_context' => stream_context_create(
-                [
-                    'ssl' => [
-                        'crypto_method' => STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT,
-                        'ciphers' => 'SHA2',
-                    ]
-                ]
-            )
+            'stream_context' => $this->createStreamContext(),
         ];
 
         $soapParams['stream_context'] = $context; // for TLS 1.2
@@ -168,79 +125,22 @@ class ApiClient implements ClientInterface
     }
 
     /**
-     * Log an API Request
+     * Create a communication context for the client.
      *
-     * @param string $type
-     * @param string|int $objectId
-     * @param string $requestXml
-     * @param string $responseXml
-     * @param int|array $totalTax
-     * @param int $taxAreaId
+     * Returns context to properly negotiate on TLS 1.2.
+     *
+     * @return resource
      */
-    private function logRequest($type, $objectId, $requestXml, $responseXml, $totalTax = null, $taxAreaId = null)
+    private function createStreamContext()
     {
-        try {
-            $this->requestLogger->log(
-                $type,
-                $objectId,
-                $requestXml,
-                $responseXml,
-                $totalTax,
-                $taxAreaId
-            );
-        } catch (\Exception $originalException) {
-            // Logging Exception
-            $exception = new \Exception('Failed to log Vertex Request', 0, $originalException);
-            $this->logger->critical(
-                $exception->getMessage() . PHP_EOL . $exception->getTraceAsString()
-            );
-        }
-    }
-
-    /**
-     * Perform a SOAP Call given a client and request data and type
-     *
-     * Uses type to determine which function to call against SOAP
-     *
-     * @param \SoapClient $client
-     * @param string $type
-     * @param array $request
-     * @param int|string|null $storeId
-     * @return mixed
-     * @throws LocalizedException
-     * @throws \SoapFault
-     */
-    private function performSoapCall(\SoapClient $client, $type, $request, $storeId = null)
-    {
-        if ($type === 'tax_area_lookup') {
-            $lookupFunc = $this->config->getValidationFunction($storeId);
-            if (!$lookupFunc) {
-                throw new LocalizedException(__('No Validation function set'));
-            }
-            $taxResponse = $client->$lookupFunc($request);
-        } else {
-            $calculationFunc = $this->config->getCalculationFunction($storeId);
-            if (!$calculationFunc) {
-                throw new LocalizedException(__('No Calculation function set'));
-            }
-            $taxResponse = $client->$calculationFunc($request);
-        }
-        if ($taxResponse instanceof \SoapFault) {
-            throw $taxResponse;
-        }
-
-        return $taxResponse;
-    }
-
-    /**
-     * Retrieve the ID of an Order object
-     *
-     * @param OrderInterface|null $order
-     * @return int|null
-     */
-    private function getOrderId(OrderInterface $order = null)
-    {
-        return $order !== null ? $order->getEntityId() : null;
+        return stream_context_create(
+            [
+                'ssl' => [
+                    'crypto_method' => STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT,
+                    'ciphers' => 'SHA2',
+                ]
+            ]
+        );
     }
 
     /**
@@ -269,5 +169,93 @@ class ApiClient implements ClientInterface
         }
 
         return $totalTax;
+    }
+
+    /**
+     * Get the WSDL version of an API URL
+     *
+     * @param string $apiUrl
+     * @return string
+     */
+    private function getWsdlUrl($apiUrl)
+    {
+        if (stripos($apiUrl, 'wsdl') === false) {
+            $apiUrl .= '?wsdl';
+        }
+        return $apiUrl;
+    }
+
+    /**
+     * Log an exception that occurred during an API request
+     *
+     * @param \Throwable $exception
+     * @param string $type Request Type
+     * @param \SoapClient|null $client
+     */
+    private function logException($exception, $type, \SoapClient $client = null)
+    {
+        $this->logger->critical($exception->getMessage() . PHP_EOL . $exception->getTraceAsString());
+        $this->logRequest(
+            $type,
+            $client !== null ? $client->__getLastRequest() : '',
+            $client !== null ? $client->__getLastResponse() : ''
+        );
+    }
+
+    /**
+     * Log an API Request
+     *
+     * @param string $type
+     * @param string $requestXml
+     * @param string $responseXml
+     */
+    private function logRequest($type, $requestXml, $responseXml)
+    {
+        try {
+            $this->requestLogger->log(
+                $type,
+                $requestXml,
+                $responseXml
+            );
+        } catch (\Exception $originalException) {
+            // Logging Exception
+            $exception = new \Exception('Failed to log Vertex Request', 0, $originalException);
+            $this->logger->critical(
+                $exception->getMessage() . PHP_EOL . $exception->getTraceAsString()
+            );
+        }
+    }
+
+    /**
+     * Perform a SOAP Call given a client and request data and type
+     *
+     * Uses type to determine which function to call against SOAP
+     *
+     * @param \SoapClient $client
+     * @param string $type
+     * @param array $request
+     * @param string $scopeType
+     * @param string $scopeCode
+     * @return mixed
+     * @throws Exception
+     * @throws \SoapFault
+     */
+    private function performSoapCall(
+        \SoapClient $client,
+        $type,
+        $request
+    ) {
+        if ($type === 'tax_area_lookup') {
+            $taxResponse = $client->LookupTaxAreas60($request);
+        } elseif (in_array($type, ['quote', 'invoice', 'invoice_refund'])) {
+            $taxResponse = $client->CalculateTax60($request);
+        } else {
+            throw new \Exception('Invalid request type');
+        }
+        if ($taxResponse instanceof \SoapFault) {
+            throw $taxResponse;
+        }
+
+        return $taxResponse;
     }
 }

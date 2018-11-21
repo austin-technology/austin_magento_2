@@ -46,7 +46,7 @@ class Session
      *
      * @var QuoteRepositoryInterface
      */
-    private $klarnaQuoteRepository;
+    private $kQuoteRepository;
 
     /**
      * Klarna Quote Factory
@@ -76,19 +76,19 @@ class Session
      * @param \Magento\Checkout\Model\Session $session
      * @param CreditApiInterface              $api
      * @param BuilderInterface                $builder
-     * @param QuoteRepositoryInterface        $klarnaQuoteRepository
+     * @param QuoteRepositoryInterface        $kQuoteRepository
      * @param KlarnaQuoteFactory              $klarnaQuoteFactory
      */
     public function __construct(
         \Magento\Checkout\Model\Session $session,
         CreditApiInterface $api,
         BuilderInterface $builder,
-        QuoteRepositoryInterface $klarnaQuoteRepository,
+        QuoteRepositoryInterface $kQuoteRepository,
         KlarnaQuoteFactory $klarnaQuoteFactory
     ) {
         $this->api = $api;
         $this->builder = $builder;
-        $this->klarnaQuoteRepository = $klarnaQuoteRepository;
+        $this->kQuoteRepository = $kQuoteRepository;
         $this->klarnaQuoteFactory = $klarnaQuoteFactory;
         $this->session = $session;
     }
@@ -164,9 +164,6 @@ class Session
         $data = $this->getGeneratedCreateRequest();
         $klarnaResponse = $this->initKlarnaQuote($data);
 
-        if (!$klarnaResponse->isSuccessfull()) {
-            throw new KlarnaApiException(__('Unable to initialize Klarna payments session'));
-        }
         return $klarnaResponse;
     }
 
@@ -179,7 +176,15 @@ class Session
     private function getGeneratedCreateRequest()
     {
         return $this->builder->setObject($this->getQuote())->generateRequest(BuilderInterface::GENERATE_TYPE_CREATE)
-                             ->getRequest();
+            ->getRequest();
+    }
+
+    /**
+     * @return \Magento\Quote\Model\Quote
+     */
+    public function getQuote()
+    {
+        return $this->session->getQuote();
     }
 
     /**
@@ -191,15 +196,15 @@ class Session
     private function initKlarnaQuote(RequestInterface $data)
     {
         try {
-            $klarnaQuote = $this->klarnaQuoteRepository->getActiveByQuote($this->getQuote());
+            $klarnaQuote = $this->kQuoteRepository->getActiveByQuote($this->getQuote());
             $sessionId = $klarnaQuote->getSessionId();
             if (null === $sessionId) {
-                $this->klarnaQuoteRepository->markInactive($klarnaQuote);
+                $this->kQuoteRepository->markInactive($klarnaQuote);
                 return $this->api->createSession($data);
             }
             $resp = $this->updateOrCreateSession($sessionId, $data);
             if ($resp->getSessionId() !== $sessionId) {
-                $this->klarnaQuoteRepository->markInactive($klarnaQuote);
+                $this->kQuoteRepository->markInactive($klarnaQuote);
             }
             return $resp;
         } catch (NoSuchEntityException $e) {
@@ -251,29 +256,16 @@ class Session
     private function generateKlarnaQuote(ResponseInterface $klarnaResponse)
     {
         try {
-            return $this->klarnaQuoteRepository->getBySessionId($klarnaResponse->getSessionId());
+            $klarnaQuote = $this->kQuoteRepository->getBySessionId($klarnaResponse->getSessionId());
+            $klarnaQuote->setPaymentMethods(
+                $this->extractPaymentMethods($klarnaResponse->getPaymentMethodCategories())
+            );
+            $klarnaQuote->setPaymentMethodInfo($klarnaResponse->getPaymentMethodCategories());
+            $this->kQuoteRepository->save($klarnaQuote);
+            return $klarnaQuote;
         } catch (NoSuchEntityException $e) {
             return $this->createNewQuote($klarnaResponse);
         }
-    }
-
-    /**
-     * Create a new Klarna quote object
-     *
-     * @param ResponseInterface $resp
-     * @return QuoteInterface
-     */
-    private function createNewQuote(ResponseInterface $resp)
-    {
-        /** @var QuoteInterface $klarnaQuote */
-        $klarnaQuote = $this->klarnaQuoteFactory->create();
-        $klarnaQuote->setSessionId($resp->getSessionId());
-        $klarnaQuote->setClientToken($resp->getClientToken());
-        $klarnaQuote->setIsActive(1);
-        $klarnaQuote->setQuoteId($this->getQuote()->getId());
-        $klarnaQuote->setPaymentMethods($this->extractPaymentMethods($resp->getPaymentMethodCategories()));
-        $this->klarnaQuoteRepository->save($klarnaQuote);
-        return $klarnaQuote;
     }
 
     /**
@@ -287,6 +279,30 @@ class Session
             $payment_methods[] = 'klarna_' . $category['identifier'];
         }
         return implode(',', $payment_methods);
+    }
+
+    /**
+     * Create a new Klarna quote object
+     *
+     * @param ResponseInterface $resp
+     * @return QuoteInterface
+     */
+    private function createNewQuote(ResponseInterface $resp)
+    {
+        if (!$this->getQuote()->getId()) {
+            throw new KlarnaApiException(__('Unable to initialize Klarna payments session'));
+        }
+
+        /** @var QuoteInterface $klarnaQuote */
+        $klarnaQuote = $this->klarnaQuoteFactory->create();
+        $klarnaQuote->setSessionId($resp->getSessionId());
+        $klarnaQuote->setClientToken($resp->getClientToken());
+        $klarnaQuote->setIsActive(1);
+        $klarnaQuote->setQuoteId($this->getQuote()->getId());
+        $klarnaQuote->setPaymentMethods($this->extractPaymentMethods($resp->getPaymentMethodCategories()));
+        $klarnaQuote->setPaymentMethodInfo($resp->getPaymentMethodCategories());
+        $this->kQuoteRepository->save($klarnaQuote);
+        return $klarnaQuote;
     }
 
     /**
@@ -309,13 +325,5 @@ class Session
     {
         $this->klarnaQuote = $klarnaQuote;
         return $this;
-    }
-
-    /**
-     * @return \Magento\Quote\Model\Quote
-     */
-    public function getQuote()
-    {
-        return $this->session->getQuote();
     }
 }

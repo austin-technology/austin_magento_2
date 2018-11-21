@@ -1,4 +1,111 @@
 
+4.5.6 / 2018-10-22
+==================
+
+  * PPI-582 Removed the check for a virtual quote.
+  * PPI-580 Force billing and shipping address to have same email address
+
+4.5.5 / 2018-10-17
+==================
+
+  * PPI-581 Fix DB upgrade script for table prefixes
+
+4.5.4 / 2018-10-09
+==================
+
+  * PPI-557 Fix issue with running under Magento Commerce with split DB
+  * PPI-573 Fix issue with fixed product tax
+
+4.5.3 / 2018-09-27
+==================
+
+  * PI-471 Fix customer VAT calculation on shipping
+  * PI-473 Add shipping line to API even when shipping costs are 0
+  * PI-488 Add index to klarna_core_order table for is_acknowledged
+  * PPI-557 Fix checkout doesn't work after enabling Klarna
+  * PPI-561 Fix composer requirements after 2.3.0 change
+
+4.5.2 / 2018-08-31
+==================
+
+  * PPI-500 2.3.0 Compatibility updates
+
+4.5.1 / 2018-08-27
+==================
+
+  * PPI-508 Revert change to PPI-258 that broke payment method display
+
+4.5.0 / 2018-08-24
+==================
+
+  * PPI-258 Add link to Merchant Portal in admin
+  * PPI-467 Extended cleanser filtering
+  * PPI-500 Add support for PHP 7.2 and Magento 2.3
+
+4.4.5 / 2018-08-28
+==================
+  * PPI-507 Fix discount issue
+
+4.4.4 / 2018-08-16
+==================
+
+  * PPI-419 Compatibility fixes for splitting modules
+
+4.4.3 / 2018-08-03
+==================
+
+  * PPI-317: Fixed product tax is now working when using bundled products.
+
+4.4.2 / 2018-07-26
+==================
+
+  * PPI-449 Cleanup code
+
+4.4.1 / 2018-07-25
+==================
+
+  * PPI-449 Feedback from Magento for 2.2.6 release
+  * PPI-403 Use the country value from the website level and add US onboarding link
+
+4.4.0 / 2018-07-23
+==================
+
+  * PPI-403 Add link for Klarna on boarding - Phase 1
+  * PPI-317 Add support for Fixed Product Tax
+  * Fix schema scripts
+
+4.3.2 / 2018-06-26
+==================
+
+  * BUNDLE-1462 Validation issues
+  * PI-198 Fix giftwrapping tax issues
+
+4.3.1 / 2018-06-08
+==================
+
+  * PPI-259 Add Shipping and discount order lines to OM calls
+  * PI-254 Fix order with discount fails
+
+4.2.3 / 2018-05-22
+==================
+
+  * Dummy release to bypass Marketplace submission block because of out of order release
+
+4.2.1 / 2018-05-18
+==================
+
+  * PPI-413 Remove isConfigFlag method in favor of direct calling ConfigHelper
+  * PPI-410 Fix issue invoicing v2 orders
+
+4.2.0 / 2018-05-14
+==================
+
+  * Restrict to Magento 2.2 or later
+  * PPI-410 Fix qty on v2 invoice items
+  * PPI-349 Add cancellation_terms URL (for DE/AT)
+  * PI-198 Fix issue with tax on gift wrap applied on order level
+  * PPI-394 Move method to KCO module
+
 4.1.5 / 2018-04-27
 ==================
 

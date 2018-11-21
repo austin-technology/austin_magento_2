@@ -35,7 +35,7 @@ class GlobResource implements \IteratorAggregate, SelfCheckingResourceInterface,
      *
      * @throws \InvalidArgumentException
      */
-    public function __construct($prefix, $pattern, $recursive)
+    public function __construct(?string $prefix, string $pattern, bool $recursive)
     {
         $this->prefix = realpath($prefix) ?: (file_exists($prefix) ? $prefix : false);
         $this->pattern = $pattern;
@@ -93,8 +93,8 @@ class GlobResource implements \IteratorAggregate, SelfCheckingResourceInterface,
             return;
         }
 
-        if (false === strpos($this->pattern, '/**/') && (defined('GLOB_BRACE') || false === strpos($this->pattern, '{'))) {
-            foreach (glob($this->prefix.$this->pattern, defined('GLOB_BRACE') ? GLOB_BRACE : 0) as $path) {
+        if (0 !== strpos($this->prefix, 'phar://') && false === strpos($this->pattern, '/**/') && (\defined('GLOB_BRACE') || false === strpos($this->pattern, '{'))) {
+            foreach (glob($this->prefix.$this->pattern, \defined('GLOB_BRACE') ? GLOB_BRACE : 0) as $path) {
                 if ($this->recursive && is_dir($path)) {
                     $files = iterator_to_array(new \RecursiveIteratorIterator(
                         new \RecursiveCallbackFilterIterator(
@@ -130,7 +130,7 @@ class GlobResource implements \IteratorAggregate, SelfCheckingResourceInterface,
             $regex = substr_replace($regex, '(/|$)', -2, 1);
         }
 
-        $prefixLen = strlen($this->prefix);
+        $prefixLen = \strlen($this->prefix);
         foreach ($finder->followLinks()->sortByName()->in($this->prefix) as $path => $info) {
             if (preg_match($regex, substr('\\' === \DIRECTORY_SEPARATOR ? str_replace('\\', '/', $path) : $path, $prefixLen)) && $info->isFile()) {
                 yield $path => $info;

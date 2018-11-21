@@ -1,3 +1,113 @@
+## [1.3.3] - 2018-08-28
+### Fixed
+
+- [`#17363`](https://github.com/magento/magento2/issues/17363) Improve sanity check before accessing shipping method property
+
+## [1.3.2] - 2018-08-17
+### Fixed
+
+- Improve performance
+- Display collection point experiences only after a delivery location was chosen
+
+## [1.3.1] - 2018-08-07
+### Fixed
+
+- Consider virtual products in multi shipping checkout
+- Prevent exception when unable to display a Shipment’s capability value
+
+### Added
+
+- Delivery Options for UPS
+    - Adult Signature
+    - Direct Delivery
+
+### Changed
+
+- Improved error messages for dispatch errors
+- Improved error messages during booking a shipment with _Magento Shipping_
+
+## [1.3.0] - 2018-07-23
+### Added
+
+- Bulk Booking of Shipments
+
+## [1.2.9] - 2018-07-13
+### Fixed
+
+- Consider partially shipped orders during shipment synchronization
+- Download shipping labels to database if shipment was created through auto-processing or shipment synchronization
+- UI display issues:
+  - Enhance dispatch error messages
+  - Add customer reference number
+  - Add _Delivery Availability_ capability
+  - Add UPS _High Value Report_ documentation
+
+## [1.2.8] - 2018-06-15
+### Fixed
+
+- Limit shipping methods after collection point selection
+
+## [1.2.7] - 2018-06-08
+### Fixed
+
+- Comparison of value-added shipping services in multishipping checkout
+- Confirmation messages in grid delete actions
+
+## [1.2.6] - 2018-05-31
+### Fixed
+
+- Connection name fallback in single-master setups
+
+## [1.2.5] - 2018-05-17
+### Added
+
+- Display module version number in shipping method configuration
+
+### Fixed
+
+- Support multi-master setup ([split database performance solution](https://devdocs.magento.com/guides/v2.2/config-guide/multi-master/multi-master.html)).
+- Render collection point add-on on shipment details page
+
+## [1.2.4] - 2018-05-04
+### Fixed
+
+- Hide return shipment table heading if no rows are displayed
+- Update result message if no collection points were found
+- Show only regular addresses if no collection point was chosen during checkout
+- Fix loading virtual orders
+
+### Changed
+
+- Save value-added shipping services in checkout through dedicated webapi endpoint
+
+## [1.2.3] - 2018-04-27
+### Fixed
+
+- Checkout component loading error
+- Display documentation on dispatch details page
+- Display addresses from platform on shipment details page
+
+## [1.2.2] - 2018-04-23
+### Fixed
+
+- Support apostrophes in customer addresses
+- Limit shipping methods when collection point was chosen
+- Display selected collection point in checkout sidebar
+- Format collection point opening hours
+
+## [1.2.1] - 2018-04-16
+### Fixed
+
+- Adapt to collection point API changes
+- Display selected collection point in admin panel
+
+## [1.2.0] - 2018-04-11
+### Added
+
+- Pre-Booked Returns: Automatically create return shipment labels for new shipments
+- Auto-Processing: Automatically create shipments for incoming orders
+- Collection Points: Enable customers to collect parcels from a drop point
+
 ## [1.1.3] - 2018-03-27
 ### Fixed
 

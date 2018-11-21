@@ -8,6 +8,7 @@ use Magento\Backend\Block\Template\Context;
 use Magento\Backend\Block\Widget;
 use Magento\Backend\Block\Widget\Tab\TabInterface;
 use Magento\Framework\Registry;
+use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Model\Order;
 use Temando\Shipping\Model\Shipping\Carrier;
 
@@ -50,7 +51,7 @@ class Shipments extends Widget implements TabInterface
      */
     public function getHeaderText()
     {
-        return __('Added Shipments');
+        return __('Return Shipments');
     }
 
     /**
@@ -64,7 +65,7 @@ class Shipments extends Widget implements TabInterface
     }
 
     /**
-     * Prepare title for tab
+     * Prepare tab title
      *
      * @return string
      */
@@ -74,7 +75,7 @@ class Shipments extends Widget implements TabInterface
     }
 
     /**
-     * Returns status flag about this tab can be showen or not
+     * Can show tab in tabs
      *
      * @return true
      */
@@ -82,7 +83,12 @@ class Shipments extends Widget implements TabInterface
     {
         // only display if original order was shipped with temando shipping
         /** @var Order $order */
-        $order          = $this->registry->registry('current_order');
+        $order = $this->registry->registry('current_order');
+        if (!$order instanceof OrderInterface || !$order->getData('shipping_method')) {
+            // wrong type, virtual or corrupt order
+            return false;
+        }
+
         $shippingMethod = $order->getShippingMethod(true);
         $carrierCode    = $shippingMethod->getData('carrier_code');
 

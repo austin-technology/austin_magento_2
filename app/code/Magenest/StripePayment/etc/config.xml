@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <payment>
+            <magenest_stripe>
+                <test>0</test>
+                <api>v3</api>
+                <active>0</active>
+                <save>0</save>
+                <title>Stripe Card</title>
+                <three_d_secure>0</three_d_secure>
+                <order_status>processing</order_status>
+                <payment_action>authorize_capture</payment_action>
+                <active_moto>0</active_moto>
+                <email_customer>0</email_customer>
+                <cctypes>AE,VI,MC,DI,JCB</cctypes>
+                <useccv>1</useccv>
+                <allowspecific>0</allowspecific>
+                <model>Magenest\StripePayment\Model\StripePaymentMethod</model>
+            </magenest_stripe>
+
+            <magenest_stripe_iframe>
+                <active>0</active>
+                <title>Stripe iFrame</title>
+                <allow_bitcoin>0</allow_bitcoin>
+                <payment_action>authorize_capture</payment_action>
+                <allow_alipay>0</allow_alipay>
+                <collect_billing>1</collect_billing>
+                <collect_shipping>0</collect_shipping>
+                <order_status>processing</order_status>
+                <collect_zip>1</collect_zip>
+                <display_name>Demo Site</display_name>
+                <button_label>Pay now</button_label>
+                <allow_remember>0</allow_remember>
+                <locale>auto</locale>
+                <model>Magenest\StripePayment\Model\StripePaymentIframe</model>
+            </magenest_stripe_iframe>
+
+            <magenest_stripe_applepay>
+                <active>0</active>
+                <title>Apple Pay, Google Pay, Microsoft Pay</title>
+                <payment_action>authorize_capture</payment_action>
+                <replace_placeorder>0</replace_placeorder>
+                <paybutton_type>default</paybutton_type>
+                <paybutton_theme>dark</paybutton_theme>
+                <order_status>processing</order_status>
+                <model>Magenest\StripePayment\Model\ApplePay</model>
+            </magenest_stripe_applepay>
+
+            <magenest_stripe_giropay>
+                <active>0</active>
+                <title>Stripe Giropay</title>
+                <payment_action>authorize_capture</payment_action>
+                <order_status>processing</order_status>
+                <model>Magenest\StripePayment\Model\GiroPay</model>
+            </magenest_stripe_giropay>
+
+            <magenest_stripe_alipay>
+                <active>0</active>
+                <title>Stripe Alipay</title>
+                <payment_action>authorize_capture</payment_action>
+                <order_status>processing</order_status>
+                <model>Magenest\StripePayment\Model\Alipay</model>
+            </magenest_stripe_alipay>
+
+            <magenest_stripe_sofort>
+                <active>0</active>
+                <title>Stripe SOFORT</title>
+                <payment_action>authorize_capture</payment_action>
+                <allow_select_bank_country>1</allow_select_bank_country>
+                <allow_select_language>0</allow_select_language>
+                <default_bank_country>AT</default_bank_country>
+                <default_language>en</default_language>
+                <model>Magenest\StripePayment\Model\Sofort</model>
+            </magenest_stripe_sofort>
+
+            <magenest_stripe_ideal>
+                <active>0</active>
+                <title>Stripe iDEAL</title>
+                <payment_action>authorize_capture</payment_action>
+                <use_element>0</use_element>
+                <allow_select_bank>1</allow_select_bank>
+                <model>Magenest\StripePayment\Model\Ideal</model>
+            </magenest_stripe_ideal>
+
+            <magenest_stripe_bancontact>
+                <active>0</active>
+                <title>Stripe Bancontact</title>
+                <payment_action>authorize_capture</payment_action>
+                <allow_select_language>0</allow_select_language>
+                <default_language>en</default_language>
+                <model>Magenest\StripePayment\Model\Bancontact</model>
+            </magenest_stripe_bancontact>
+
+            <magenest_stripe_p24>
+                <active>0</active>
+                <title>Stripe P24</title>
+                <payment_action>authorize_capture</payment_action>
+                <model>Magenest\StripePayment\Model\Przelewy</model>
+            </magenest_stripe_p24>
+
+            <magenest_stripe_eps>
+                <active>0</active>
+                <title>Stripe EPS</title>
+                <payment_action>authorize_capture</payment_action>
+                <model>Magenest\StripePayment\Model\Eps</model>
+            </magenest_stripe_eps>
+
+            <magenest_stripe_multibanco>
+                <active>0</active>
+                <title>Stripe Multibanco</title>
+                <payment_action>authorize_capture</payment_action>
+                <model>Magenest\StripePayment\Model\Multibanco</model>
+            </magenest_stripe_multibanco>
+        </payment>
+    </default>
+</config>

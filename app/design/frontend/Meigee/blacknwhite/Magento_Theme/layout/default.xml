@@ -86,9 +86,9 @@
       <referenceContainer name="div.sidebar.additional">
         <block class="Magento\Framework\View\Element\Template" as="facebook_sidebar" template="Meigee_Blacknwhite::facebook_sidebar.phtml" />
       </referenceContainer>
-      <referenceContainer name="div.sidebar.additional">
+      <!--referenceContainer name="div.sidebar.additional">
         <block class="Magento\Framework\View\Element\Template" as="facebook_sidebar" template="Meigee_Blacknwhite::facebook_sidebar.phtml" />
-      </referenceContainer>
+      </referenceContainer -->
       
       <referenceContainer name="footer-container">
         <block class="Meigee\Blacknwhite\Block\Template" name="meigee_footer" template="Magento_Theme::html/footer.phtml">

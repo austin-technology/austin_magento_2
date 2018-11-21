@@ -313,9 +313,9 @@ html {
     max-width: 19.666667%;
   }
   .col-sm-3 {
-    -ms-flex: 0 0 21%;
-        flex: 0 0 21%;
-    max-width: 21%;
+    -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+    max-width: 24%;
 	  margin-right:5px;
   }
   .col-sm-4 {
@@ -344,9 +344,9 @@ html {
     max-width: 66.666667%;
   }
   .col-sm-9 {
-    -ms-flex: 0 0 78%;
-        flex: 0 0 78%;
-    max-width: 78%;
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+    max-width: 75%;
   }
   .col-sm-10 {
     -ms-flex: 0 0 83.333333%;

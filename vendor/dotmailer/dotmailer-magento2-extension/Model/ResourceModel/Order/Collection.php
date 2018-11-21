@@ -17,7 +17,7 @@ class Collection extends
     protected $_idFieldName = 'email_order_id';
 
     /**
-     * @var \Magento\Sales\Model\ResourceModel\Order\CollectionFactory
+     * @var \Magento\Sales\Api\Data\OrderSearchResultInterfaceFactory
      */
     private $orderCollection;
 
@@ -25,6 +25,11 @@ class Collection extends
      * @var \Magento\Quote\Model\ResourceModel\Quote\CollectionFactory
      */
     private $quoteCollection;
+
+    /**
+     * @var \Dotdigitalgroup\Email\Helper\Data
+     */
+    private $helper;
 
     /**
      * Initialize resource collection.
@@ -40,14 +45,17 @@ class Collection extends
     }
 
     /**
+     * Collection constructor.
+     *
      * @param \Magento\Framework\Data\Collection\EntityFactoryInterface $entityFactory
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Magento\Framework\Data\Collection\Db\FetchStrategyInterface $fetchStrategy
      * @param \Magento\Framework\Event\ManagerInterface $eventManager
      * @param \Magento\Quote\Model\ResourceModel\Quote\CollectionFactory $quoteCollection
-     * @param \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollection
-     * @param \Magento\Framework\DB\Adapter\AdapterInterface $connection
-     * @param \Magento\Framework\Model\ResourceModel\Db\AbstractDb $resource
+     * @param \Magento\Sales\Api\Data\OrderSearchResultInterfaceFactory $orderCollection
+     * @param \Dotdigitalgroup\Email\Helper\Data; $helper
+     * @param \Magento\Framework\DB\Adapter\AdapterInterface|null $connection
+     * @param \Magento\Framework\Model\ResourceModel\Db\AbstractDb|null $resource
      */
     public function __construct(
         \Magento\Framework\Data\Collection\EntityFactoryInterface $entityFactory,
@@ -55,12 +63,14 @@ class Collection extends
         \Magento\Framework\Data\Collection\Db\FetchStrategyInterface $fetchStrategy,
         \Magento\Framework\Event\ManagerInterface $eventManager,
         \Magento\Quote\Model\ResourceModel\Quote\CollectionFactory $quoteCollection,
-        \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollection,
+        \Magento\Sales\Api\Data\OrderSearchResultInterfaceFactory $orderCollection,
+        \Dotdigitalgroup\Email\Helper\Data $helper,
         \Magento\Framework\DB\Adapter\AdapterInterface $connection = null,
         \Magento\Framework\Model\ResourceModel\Db\AbstractDb $resource = null
     ) {
         $this->quoteCollection    = $quoteCollection;
         $this->orderCollection    = $orderCollection;
+        $this->helper             = $helper;
         parent::__construct(
             $entityFactory,
             $logger,
@@ -77,7 +87,7 @@ class Collection extends
      * @param int $orderId
      * @param int $quoteId
      *
-     * @return mixed
+     * @return boolean|\Dotdigitalgroup\Email\Model\Order
      */
     public function loadByOrderIdAndQuoteId($orderId, $quoteId)
     {
@@ -99,7 +109,7 @@ class Collection extends
      * @param int $quoteId
      * @param int $storeId
      *
-     * @return mixed
+     * @return boolean|\Dotdigitalgroup\Email\Model\Order
      */
     public function getEmailOrderRow($orderId, $quoteId, $storeId)
     {
@@ -178,8 +188,8 @@ class Collection extends
      * Get sales collection for review.
      *
      * @param string $orderStatusFromConfig
-     * @param mixed $created
-     * @param array $storeIds
+     * @param string $created
+     * @param \Magento\Store\Model\Website $website
      * @param array $campaignOrderIds
      *
      * @return \Magento\Sales\Model\ResourceModel\Order\Collection
@@ -187,10 +197,10 @@ class Collection extends
     public function getSalesCollectionForReviews(
         $orderStatusFromConfig,
         $created,
-        $storeIds,
+        $website,
         $campaignOrderIds = []
     ) {
-    
+        $storeIds = $website->getStoreIds();
         $collection = $this->orderCollection->create()
             ->addFieldToFilter(
                 'main_table.status',
@@ -209,6 +219,10 @@ class Collection extends
             );
         }
 
+        if ($this->helper->isOnlySubscribersForReview($website->getWebsiteId())) {
+            $collection = $this->joinSubscribersOnCollection($collection);
+        }
+
         return $collection;
     }
 
@@ -218,7 +232,7 @@ class Collection extends
      * @param \Magento\Customer\Model\Customer $customer
      * @param array $storeIds
      *
-     * @return mixed
+     * @return boolean|\Magento\Sales\Model\Order
      */
     public function getCustomerLastOrderId(\Magento\Customer\Model\Customer $customer, $storeIds)
     {
@@ -241,7 +255,7 @@ class Collection extends
      * @param \Magento\Customer\Model\Customer $customer
      * @param array $storeIds
      *
-     * @return mixed
+     * @return boolean|\Magento\Quote\Model\Quote
      */
     public function getCustomerLastQuoteId(\Magento\Customer\Model\Customer $customer, $storeIds)
     {
@@ -262,7 +276,7 @@ class Collection extends
      * Get store quotes excluding inactive and empty.
      *
      * @param int $storeId
-     * @param mixed $updated
+     * @param string $updated
      * @param bool $guest
      *
      * @return \Magento\Quote\Model\ResourceModel\Quote\Collection
@@ -274,7 +288,7 @@ class Collection extends
         $salesCollection->addFieldToFilter('is_active', 1)
             ->addFieldToFilter('items_count', ['gt' => 0])
             ->addFieldToFilter('customer_email', ['neq' => ''])
-            ->addFieldToFilter('store_id', $storeId)
+            ->addFieldToFilter('main_table.store_id', $storeId)
             ->addFieldToFilter('main_table.updated_at', $updated);
         //guests
         if ($guest) {
@@ -282,6 +296,10 @@ class Collection extends
         } else {
             //customers
             $salesCollection->addFieldToFilter('main_table.customer_id', ['notnull' => true]);
+        }
+
+        if ($this->helper->isOnlySubscribersForAC($storeId)) {
+            $salesCollection = $this->joinSubscribersOnCollection($salesCollection);
         }
 
         return $salesCollection;
@@ -299,5 +317,24 @@ class Collection extends
         $collection = $this->orderCollection->create()
             ->addFieldToFilter('customer_email', ['in' => $emails]);
         return $collection->getColumnValues('customer_email');
+    }
+
+    /**
+     * Join subscriber on collection
+     *
+     * @param \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection $collection
+     * @param string $emailColumn
+     * @return \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
+     */
+    public function joinSubscribersOnCollection($collection, $emailColumn = "main_table.customer_email")
+    {
+        $subscriberTable = $this->getTable('newsletter_subscriber');
+        $collection->getSelect()
+            ->joinInner(
+                ["st" => $subscriberTable],
+                "st.subscriber_email = {$emailColumn}",
+                []
+            )->where("st.subscriber_status = ?", \Magento\Newsletter\Model\Subscriber::STATUS_SUBSCRIBED);
+        return $collection;
     }
 }

@@ -16,13 +16,14 @@
 
 /* klevu container for fluid layout*/
 .kuProListing{
+    margin-top:20px;
     margin-bottom:20px;
 }
 
 /* klevu filters */
 .kuFilters{
     float:left;
-    width: 22%;
+    width: 20%;
 }
 
 /* set the height of each filter*/
@@ -35,9 +36,10 @@
 /* heading of filters i.e brand, color */
 .kuFilterHead{
     padding: 6px;
-    font-size: 16px;
+    font-size: 13px;
     text-align: left;
     line-height: 1.8;
+    border-bottom: 1px solid #c7c8ca;
     text-transform: uppercase;
     font-weight: 600;
     color: #414042;
@@ -91,18 +93,17 @@
 }
 
 .kuFilterNames ul li a{
-display: block;
+    display: block;
     position: relative;
     overflow: hidden;
     margin: 0 5px;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
-    font-family: 'Open Sans';
     cursor: pointer;
-    font-style: normal;
-    color: #021f44;
+    font-style:normal;
+    color:#414042;
 }
 
 /* set background color on hover of filter */
@@ -121,7 +122,6 @@ display: block;
     width:86%;
     margin:0px;
     padding:0px;
-	padding-bottom:10px;
     font-weight:normal;
 }
 
@@ -164,17 +164,15 @@ transition: background 200ms;
 }
 
 .kuMulticheck .kuFilterLabel:before {
-        content: '';
+    content: '';
     border: 1px solid #c7c8ca;
-    border-radius: 3px;
+    border-radius:0px;
     margin-right: 8px;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     color: #777;
-    top: 3px;
-    margin-bottom: -1px;
+    margin-bottom:-1px;
     position: relative;
-    background-color: #ffffff;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -182,8 +180,8 @@ transition: background 200ms;
     -webkit-transition: background 200ms;
     -moz-transition: background 200ms;
     transition: border-color 200ms;
-    -webkit-transition: border-color 200ms;
-    -moz-transition: border-color 200ms;
+-webkit-transition: border-color 200ms;
+-moz-transition: border-color 200ms;
 }
 
 
@@ -256,7 +254,7 @@ transition: background 200ms;
 /* klevu results box */
 .kuResultList{
     float:right;
-    width: 75%;
+    width: 78%;
     margin-top:3px;
 }
 
@@ -268,6 +266,7 @@ transition: background 200ms;
 
 
 .kuResultInfo{
+    border-bottom: 1px solid #c7c8ca;
 }
 
 
@@ -278,12 +277,12 @@ transition: background 200ms;
 }
 
 .kuTotResults{
-        text-align: left;
-    margin-bottom: 10px;
-    line-height: 24px;
-    /* font-weight: bold; */
-    font-size: 16px;
-    float: left;
+    text-align:left;
+    margin-bottom:10px;
+    line-height:24px;
+    font-weight:bold;
+    font-size:14px;
+    float:left;
     color: #414042;
 }
 
@@ -397,7 +396,7 @@ transition: background 200ms;
 }
 
 .kuPerPage label{
-    display:none;
+    display:inline;
     color: #414042;
 }
 
@@ -423,10 +422,10 @@ transition: background 200ms;
     display: inline-block;
     padding-left: 4px;
     padding-right: 5px;
-    color: #021f44;
+    color: #414042;
     cursor: pointer;
     text-decoration:none;
-    border-right:1px solid #e6e6e6;
+    border-right:1px solid #c7c8ca;
     font-size: 13px;
 }
 
@@ -663,6 +662,7 @@ transition: background 200ms;
 .kuGridView ul li{
     display: inline-block;
     width: 23.5%;
+    min-height: 365px;
     padding: 0;
     vertical-align: top;
     text-align:center;
@@ -676,6 +676,7 @@ transition: background 200ms;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     padding: 10px;
+    border:1px solid #eeeeee;
     border-radius:3px;
 }
 
@@ -761,15 +762,7 @@ transition: background 200ms;
 }
 
 .kuGridView ul li .kuName{
-        margin-bottom: 5px;
-    /* min-height: 60px; */
-    /* max-height: 60px; */
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
-    height: 3.4em;
-    line-height: 1.8em;
-    text-overflow: ellipsis;
+    margin-bottom:5px;
 }
 
 .kuGridView .kuStarsSmall {
@@ -888,13 +881,12 @@ transition: background 200ms;
 
 /* In GRIDVIEW: div to display saleprice */
 .kuGridView ul li .kuSalePrice{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight:bold;
     font-family: inherit;
     text-align: left;
     display: inline;
     margin-right: 10px;
-    color: #021f44;
 }
 
 .priceGreyText{
@@ -983,7 +975,7 @@ transition: background 200ms;
 
 /* Klevu Price slider style */
  .kuPriceRangeSlider{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 30px;
     min-height: 50px;
@@ -1185,11 +1177,8 @@ transition: background 200ms;
 	transition: all 0.3s ease 0s;
 }
 .kuCollapse {
-	    position: relative !important;
-    transition: all 0.3s ease;
-    /* margin: 10px 0 10px 10px; */
-    /* border: 1px solid #aaa; */
-
+	position: relative !important;
+	transition: all 0.3s ease;
 }
 .kuFilterHead.kuCollapse::after {
 	-moz-border-bottom-colors: none;
