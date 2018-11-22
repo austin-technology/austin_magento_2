@@ -1,0 +1,143 @@
+<!-- ko if: isShown -->
+<li class="aw-onestep-groups_item shipping-method">
+    <div class="group-title">
+        <h2><span class="mark"></span><span data-bind="i18n: 'Shipping method'"></span></h2>
+    </div>
+    <div class="group-content">
+        <div class="onestep-shipping-method" data-bind="blockLoader: isLoading">
+            <!-- ko if: rates().length  -->
+            <form class="form" novalidate="novalidate">
+                <div id="checkout-shipping-method-load">
+                    <div class="onestep-shipping-method-list">
+                    <!--ko foreach: { data: rates(), as: 'method'}-->
+                    <div class="shipping-method-card field choice">
+                        <div class="shipping-method-title">
+                            <!-- ko ifnot: method.error_message -->
+                            <input class="radio"
+                                       type="radio"
+                                       data-bind="
+                                value: method.carrier_code + '_' + method.method_code,
+                                checked: $parent.isSelected,
+                                attr: {
+                                    'id': 's_method_' + method.carrier_code + '_' + method.method_code,
+                                    'aria-labelledby': 'label_method_' + method.method_code + '_' + method.carrier_code + ' ' + 'label_carrier_' + method.method_code + '_' + method.carrier_code,
+                                    'disabled': $parent.isLoading
+                                },
+                                click: $parent.selectShippingMethod"/>
+                            <!-- /ko -->
+                            <!-- ko if: method.error_message -->
+                            <div class="clearfix"></div>
+                            <!-- /ko -->
+                                <label data-bind="
+                                        attr: {
+                                        'id': 'label_method_' + method.method_code + '_' + method.carrier_code,
+                                        'for': 's_method_' + method.carrier_code + '_' + method.method_code
+                                        }
+                                " class="label"><!-- ko text: method.carrier_title --><!-- /ko --></label>
+                                <div class="shipping-method-subtitle" data-bind="
+                        text: method.method_title,
+                        attr: {'id': 'label_carrier_' + method.method_code + '_' + method.carrier_code}"></div>
+                        </div>
+                        <div class="shipping-method-price">
+                        <!-- ko foreach: $parent.getRegion('price') -->
+                        <!-- ko template: getTemplate() --><!-- /ko -->
+                        <!-- /ko -->
+                        </div>
+                    </div>
+                    <!-- /ko -->
+                    </div>
+                </div>
+                <!-- ko if: errorValidationMessage().length > 0 -->
+                <div class="message notice">
+                    <span><!-- ko text: errorValidationMessage()--><!-- /ko --></span>
+                </div>
+                <!-- /ko -->
+            </form>
+            <!-- /ko -->
+            <!-- ko ifnot: rates().length > 0 -->
+            <div class="no-quotes-block"><!-- ko i18n: 'Sorry, no quotes are available for this order at this time'--><!-- /ko --></div>
+            <!-- /ko -->
+        </div>
+        <!-- ko foreach: getRegion('delivery-date') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+    </div>
+</li>
+<!-- /ko -->
+<div id="del_pop" class="del_pop">
+
+  <!-- Modal content -->
+  <div class="delpop-content">
+<!--    <span class="close">&times;</span> -->
+    <div class="section-2">		
+<div class="free" style="display: block">
+	<i class="fas fa-map-marker-alt"></i>
+	<span class="delivery-title"> Free Pick Up </span>
+</div>
+<p class="inventory-description">This store is open from <strong>9am-5pm</strong>
+</p>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_osb_qty" style = "display:block">Osborne Park<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_can_qty" style = "display:block">Cannington<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_bib_qty" style = "display:block">Bibra Lake<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_mid_qty" style = "display:block">Midland<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_jdl_qty" style = "display:block">Joondalup<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_roc_qty" style = "display:block">Rockingham<br>
+<input class="available_stock" type="radio" name="available_stock" value="c2c_branch_aub_qty" style = "display:block">Sydney<br>
+
+<select class="available_stock" style = "display:none">
+	<option value="c2c_branch_osb_qty">Osborne Park</option>
+	<option value="c2c_branch_can_qty">Cannington</option>
+	<option value="c2c_branch_bib_qty">Bibra Lake</option>
+	<option value="c2c_branch_mid_qty">Midland</option>
+	<option value="c2c_branch_jdl_qty">Joondalup</option>
+	<option value="c2c_ibranch_roc_qty">Rockingham</option>
+	<option value="c2c_branch_aub_qty">Sydney</option>
+
+</select>
+<div class = "address_stor"></div>
+<input class = "submit-pop" type = "submit" value = "Ok" ></input>
+	</div>
+  </div>
+
+</div>
+<style>
+
+/* The Modal (background) */
+.del_pop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.delpop-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>

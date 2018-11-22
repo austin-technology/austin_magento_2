@@ -24,7 +24,7 @@ class CheckArgumentsValidityPass extends AbstractRecursivePass
 {
     private $throwExceptions;
 
-    public function __construct($throwExceptions = true)
+    public function __construct(bool $throwExceptions = true)
     {
         $this->throwExceptions = $throwExceptions;
     }
@@ -41,7 +41,7 @@ class CheckArgumentsValidityPass extends AbstractRecursivePass
         $i = 0;
         foreach ($value->getArguments() as $k => $v) {
             if ($k !== $i++) {
-                if (!is_int($k)) {
+                if (!\is_int($k)) {
                     $msg = sprintf('Invalid constructor argument for service "%s": integer expected but found string "%s". Check your service definition.', $this->currentId, $k);
                     $value->addError($msg);
                     if ($this->throwExceptions) {
@@ -63,7 +63,7 @@ class CheckArgumentsValidityPass extends AbstractRecursivePass
             $i = 0;
             foreach ($methodCall[1] as $k => $v) {
                 if ($k !== $i++) {
-                    if (!is_int($k)) {
+                    if (!\is_int($k)) {
                         $msg = sprintf('Invalid argument for method call "%s" of service "%s": integer expected but found string "%s". Check your service definition.', $methodCall[0], $this->currentId, $k);
                         $value->addError($msg);
                         if ($this->throwExceptions) {

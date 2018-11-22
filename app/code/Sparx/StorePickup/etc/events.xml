@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name = "checkout_onepage_controller_success_action">
+        <observer name="sparx_checkout_onepage_controller_success_action" instance="Sparx\StorePickup\Observer\Observer" />
+    </event>
+    <event name = "checkout_submit_before">
+        <observer name="sparx_checkout_submit_before" instance="Sparx\StorePickup\Observer\Savebef" />
+    </event>
+    <!--event name="sales_order_load_after">
+      <observer name="sales_order_load_order_attribute" instance="Sparx\StorePickup\Observer\OrderLoadAfter" />
+  </event-->
+</config>

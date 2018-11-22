@@ -1,4 +1,88 @@
 
+5.5.4 / 2018-10-15
+==================
+
+  * PPI-559 Allow OM module to be version 4.x or 5.x
+  * PPI-579 Fix system configuration to remove unused settings
+
+5.5.3 / 2018-10-09
+==================
+
+  * PPI-557 Fix issue with running under Magento Commerce with split DB
+  * PPI-577 Fix MFTF test
+
+5.5.2 / 2018-09-27
+==================
+
+  * PPI-557 Fix checkout doesn't work after enabling Klarna
+  * PPI-561 Fix composer requirements after 2.3.0 change
+
+5.5.1 / 2018-08-31
+==================
+
+  * PPI-500 2.3.0 Compatibility updates
+
+5.5.0 / 2018-08-24
+==================
+
+  * PI-397 Disable purchase button if payment declined
+  * PPI-450 Add initial MFTF test
+  * PPI-497 Fix 'elements with non-unique id' errors
+  * PPI-498 Remove 'store view' span
+  * PPI-499 Fix HTML tags as string in admin table
+  * PPI-500 Add support for PHP 7.2 and Magento 2.3
+
+5.4.4 / 2018-08-15
+==================
+
+  * PPI-465 Fix issue with loading of payment methods when cart is virtual
+  * PPI-464 Fix issue with billing address form not loading
+
+5.4.3 / 2018-07-26
+==================
+
+  * PPI-449 Cleanup code
+
+5.4.2 / 2018-07-25
+==================
+
+  * PPI-449 Feedback from Magento for 2.2.6 release
+  * PPI-403 Use the onboarding model
+  * PPI-449 Fixed not existing column in upgrade data script
+
+5.4.1 / 2018-07-24
+==================
+
+  * PPI-449 Fix table name
+
+5.4.0 / 2018-07-23
+==================
+
+  * PI-385 Allow KP to be disabled at default scope but enabled at website scope
+  * PPI-317 Add support for Fixed Product Tax
+  * PPI-383 Fix setup scripts
+  * PPI-403 Add link for Klarna on boarding - Phase 1
+
+5.3.3 / 2018-06-26
+==================
+
+  * PPI-383 Fix duplicate logo when viewing order in admin
+
+5.3.2 / 2018-06-08
+==================
+
+  * PPI-383 Migrate from hard-coded mapping to dynamic name & assets
+
+5.2.3 / 2018-05-30
+==================
+
+ * PI-289 Remove exclusion as we now generate a 'min' file
+
+5.2.0 / 2018-05-14
+==================
+
+  * PPI-357 Retrieve payment_method_categories array on update_session
+
 5.1.3 / 2018-04-20
 ==================
 

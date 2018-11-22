@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2018 Amasty (https://www.amasty.com)
+ * @package Amasty_Mostviewed
+ */
+-->
+<!--
+/**
+* Copyright © 2015 Amasty. All rights reserved.
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ammostviewed>
+            <general>
+                <!--<period>1000</period>-->
+                <limit>1000</limit>
+            </general>
+            <up_sells>
+                <enabled>1</enabled>
+                <size>4</size>
+                <replace>0</replace>
+                <in_stock>1</in_stock>
+                <out_of_stock_only>0</out_of_stock_only>
+                <data_source>0</data_source>
+                <period>30</period>
+                <order_status>0</order_status>
+                <category_condition>0</category_condition>
+                <brand_condition>0</brand_condition>
+                <brand_attribute></brand_attribute>
+                <price_condition>0</price_condition>
+            </up_sells>
+            <cross_sells>
+                <enabled>1</enabled>
+                <size>4</size>
+                <replace>0</replace>
+                <in_stock>1</in_stock>
+                <out_of_stock_only>0</out_of_stock_only>
+                <data_source>0</data_source>
+                <period>30</period>
+                <order_status>0</order_status>
+                <!--<category_condition>0</category_condition>
+                <brand_condition>0</brand_condition>
+                <brand_attribute></brand_attribute>
+                <price_condition>0</price_condition>-->
+            </cross_sells>
+            <related_products>
+                <enabled>1</enabled>
+                <size>4</size>
+                <replace>0</replace>
+                <in_stock>1</in_stock>
+                <out_of_stock_only>0</out_of_stock_only>
+                <data_source>0</data_source>
+                <period>30</period>
+                <order_status>0</order_status>
+                <category_condition>0</category_condition>
+                <brand_condition>0</brand_condition>
+                <brand_attribute></brand_attribute>
+                <price_condition>0</price_condition>
+            </related_products>
+        </ammostviewed>
+    </default>
+</config>

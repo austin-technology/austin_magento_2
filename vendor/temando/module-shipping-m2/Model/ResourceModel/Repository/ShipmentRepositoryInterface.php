@@ -15,10 +15,10 @@ namespace Temando\Shipping\Model\ResourceModel\Repository;
  * information from the Temando platform as well as creating/reading/updating
  * the local reference.
  *
- * @package  Temando\Shipping\Model
- * @author   Christoph Aßmann <christoph.assmann@netresearch.de>
- * @license  http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
- * @link     http://www.temando.com/
+ * @package Temando\Shipping\Model
+ * @author  Christoph Aßmann <christoph.assmann@netresearch.de>
+ * @license https://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ * @link    https://www.temando.com/
  */
 interface ShipmentRepositoryInterface
 {
@@ -89,11 +89,21 @@ interface ShipmentRepositoryInterface
     /**
      * Load local reference to external shipment entity by Temando shipment ID.
      *
-     * @param int $extShipmentId
+     * @param string $extShipmentId
      * @return \Temando\Shipping\Api\Data\Shipment\ShipmentReferenceInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getReferenceByExtShipmentId($extShipmentId);
+
+    /**
+     * Load local reference to external shipment entity by Temando return shipment ID.
+     *
+     * @param string $extShipmentId
+     *
+     * @return \Temando\Shipping\Api\Data\Shipment\ShipmentReferenceInterface
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    public function getReferenceByExtReturnShipmentId($extShipmentId);
 
     /**
      * Load local reference to external shipment entity by tracking number.
@@ -103,4 +113,12 @@ interface ShipmentRepositoryInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getReferenceByTrackingNumber($trackingNumber);
+
+    /**
+     * List shipment references that match specified search criteria.
+     *
+     * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
+     * @return \Temando\Shipping\Model\ResourceModel\Shipment\ShipmentReferenceCollection
+     */
+    public function getList(\Magento\Framework\Api\SearchCriteriaInterface $searchCriteria);
 }

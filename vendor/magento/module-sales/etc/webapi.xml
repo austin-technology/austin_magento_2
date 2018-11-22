@@ -10,7 +10,7 @@
     <route url="/V1/orders/:id" method="GET">
         <service class="Magento\Sales\Api\OrderRepositoryInterface" method="get"/>
         <resources>
-            <resource ref="Magento_Sales::sales" />
+            <resource ref="anonymous" />
         </resources>
     </route>
     <route url="/V1/orders" method="GET">

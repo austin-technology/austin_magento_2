@@ -7,7 +7,6 @@ namespace Temando\Shipping\Block\Adminhtml;
 use Magento\Backend\Block\Template as BackendTemplate;
 use Magento\Backend\Block\Template\Context;
 use Temando\Shipping\Model\DispatchProviderInterface;
-use Temando\Shipping\Model\DocumentationCollection;
 use Temando\Shipping\Model\DocumentationInterface;
 use Temando\Shipping\Model\ResourceModel\Rma\RmaAccess;
 use Temando\Shipping\Model\Shipment\ShipmentProviderInterface;
@@ -22,6 +21,8 @@ use Temando\Shipping\Model\Shipment\ShipmentProviderInterface;
  * @link     http://www.temando.com/
  *
  * @api
+ * @deprecated since 1.1.3 | Block data is provided by view model
+ * @see \Temando\Shipping\ViewModel\Shipment\ShipmentDetails
  */
 class Documentation extends BackendTemplate
 {
@@ -88,7 +89,7 @@ class Documentation extends BackendTemplate
     }
 
     /**
-     * @return DocumentationCollection|DocumentationInterface[]
+     * @return DocumentationInterface[]
      */
     public function getDocumentation()
     {
@@ -109,6 +110,7 @@ class Documentation extends BackendTemplate
             'codTurnInPage' => 'Cash On Delivery Turn In Page',
             'commercialInvoice' => 'Commercial Invoice',
             'customerInvoice' => 'Customer Invoice',
+            'highValueReport' => 'High Value Report',
             'manifestSummary' => 'Manifest Summary',
             'packageLabel' => 'Package Label',
             'packageReturnLabel' => 'Package Return Label',

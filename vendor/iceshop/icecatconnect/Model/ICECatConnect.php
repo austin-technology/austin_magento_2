@@ -1310,6 +1310,9 @@ class ICECatConnect implements ICECatConnectInterface
      */
     public function runFullReindex()
     {
+        $this->getConfigWriter();
+        $this->configWriter->save('icecatconnect_content_last_finish', time());
+
         $indexerCollection = $this->_indexerCollectionFactory->create();
         $ids = $indexerCollection->getAllIds();
         try {
@@ -1589,8 +1592,8 @@ class ICECatConnect implements ICECatConnectInterface
                                 curl_setopt($chs[$key], CURLOPT_URL, $image['url']);
                                 curl_setopt($chs[$key], CURLOPT_RETURNTRANSFER, 1);
                                 curl_setopt($chs[$key], CURLOPT_SSL_VERIFYHOST, 0);
-                                curl_setopt($chs[$key], CURLOPT_CONNECTTIMEOUT, 20);
-                                curl_setopt($chs[$key], CURLOPT_TIMEOUT, 60);
+                                curl_setopt($chs[$key], CURLOPT_CONNECTTIMEOUT, 10);
+                                curl_setopt($chs[$key], CURLOPT_TIMEOUT, 30);
                                 curl_multi_add_handle($cmh, $chs[$key]);
                             }
 

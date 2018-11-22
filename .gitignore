@@ -68,3 +68,9 @@ pub/media/klevu_images/*
 /generated/*
 !/generated/.htaccess
 .DS_Store
+
+/*.sql.gz
+/DBbackup*.sql
+/*.zip
+/pub/feeds/GoogleShopping_full.xml
+/pub/feeds/GoogleShopping_inventory.xml

@@ -7,14 +7,44 @@
 -->
 <page layout="2columns-right" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
    <body>
- 
+        <referenceBlock name="header.container">
+            <block class="Magento\Catalog\Block\Product\View\Description" name="product.review.testfreaks" template="Magento_Catalog::product/view/testfreaks.phtml"/>
+        </referenceBlock>
         <referenceContainer name="sidebar.additional">
             <block class="Magento\Framework\View\Element\Template" name="free_delivery" template="Magento_Catalog::product/view/delivery.phtml">
             </block>
+            <block class="Magento\Cms\Block\Block" name="product_block_one">
+		        <arguments>
+		            <argument name="block_id" xsi:type="string">product_block_one</argument>
+		        </arguments>
+		    </block>
+            
+		    <!-- <block class="Magento\Catalog\Block\Product\ProductList\Upsell" name="product.info.upsell" template="Magento_Catalog::product/list/items.phtml"/> -->
         </referenceContainer>
-        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Cms\Block\Block" name="product_block_two" after="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">product_block_two</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="product.info.details">
+          <block class="Magento\Catalog\Block\Product\View\Description" name="bundleoptiontab" template="Magento_Catalog::product/view/bundleOptionTab.phtml" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Product Options</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <move element="product.info.form.options" destination="bundleoptiontab"/>
+
+        <!-- <referenceBlock name="catalog.compare.sidebar" remove="true"/> -->
         <referenceBlock name="wishlist_sidebar" remove="true" />
         <referenceBlock name="sidebar.main" remove="true"/>
+
+        <move element="product.info.upsell" destination="sidebar.additional"/>
    
     </body>
 </page>

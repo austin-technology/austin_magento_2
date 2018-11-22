@@ -26,15 +26,21 @@ class Cleanser
         'password',
         'shared_secret',
         'secret',
+        'secret:Klarna\XMLRPC\Klarna:private',
+        '_secret:Klarna_Checkout_BasicConnector:private',
         'date_of_birth',
         '_secret',
+        'street',
         'Authorization',
         'given_name',
+        'firstname',
         'gender',
         'family_name',
+        'lastname',
         'email',
         'street_address',
         'phone',
+        'telephone',
         'title'
     ];
 

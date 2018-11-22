@@ -563,6 +563,26 @@ interface OrderInterface extends \Magento\Framework\Api\ExtensibleDataInterface
      * Status histories.
      */
     const STATUS_HISTORIES = 'status_histories';
+     /*
+     * Ship Store.
+     */
+    const SHIP_STORE = 'ship_store';
+    
+    
+	/**
+	 * Gets the Ship Store
+	 *
+	 * @return string
+	 */
+
+		public function getShipStore();
+	/**
+	 * Sets the Ship Store
+	 *
+	 * @param int $id
+	 * @return $this
+	 */
+	public function setShipStore($id);
 
     /**
      * Gets the negative adjustment value for the order.
@@ -570,7 +590,7 @@ interface OrderInterface extends \Magento\Framework\Api\ExtensibleDataInterface
      * @return float|null Negative adjustment value.
      */
     public function getAdjustmentNegative();
-
+ 
     /**
      * Gets the positive adjustment value for the order.
      *

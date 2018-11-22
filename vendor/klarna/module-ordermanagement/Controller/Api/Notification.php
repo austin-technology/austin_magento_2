@@ -96,7 +96,11 @@ class Notification extends Action
      */
     public function execute()
     {
-        $this->checkIsPost();
+        if (!$this->getRequest()->isPost()) {
+            $resultPage = $this->resultJsonFactory->create();
+            $resultPage->setHttpResponseCode(404);
+            return $resultPage;
+        }
 
         $checkoutId = $this->getRequest()->getParam('id');
 
@@ -125,6 +129,12 @@ class Notification extends Action
             switch ($notification->getEventType()) {
                 case Ordermanagement::ORDER_NOTIFICATION_FRAUD_STOPPED:
                     // Intentionally fall through as logic is the same
+                    $order->addStatusHistoryComment(__('Suspected Fraud: DO NOT SHIP. If already shipped, 
+                    please attempt to stop the carrier from delivering.'));
+                    $payment->setNotificationResult(true);
+                    $payment->setIsFraudDetected(true);
+                    $payment->deny(false);
+                    break;
                 case Ordermanagement::ORDER_NOTIFICATION_FRAUD_REJECTED:
                     $payment->setNotificationResult(true);
                     $payment->setIsFraudDetected(true);
@@ -153,20 +163,6 @@ class Notification extends Action
         $resultPage->setHttpResponseCode(200);
         $resultPage->setData([]);
         return $resultPage;
-    }
-
-    /**
-     * @throws WebException
-     */
-    private function checkIsPost()
-    {
-        if (!$this->getRequest()->isPost()) {
-            throw new WebException(
-                __('Nope'),
-                WebException::HTTP_METHOD_NOT_ALLOWED,
-                WebException::HTTP_METHOD_NOT_ALLOWED
-            );
-        }
     }
 
     /**

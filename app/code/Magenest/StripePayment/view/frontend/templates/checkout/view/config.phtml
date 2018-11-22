@@ -1,0 +1,44 @@
+<?php
+    /** @var \Magenest\StripePayment\Block\Checkout\View\Config $block */
+    $publishableKey = $block->getPublishableKey();
+    $iframeConfigUrl = $block->getUrl('stripe/checkout/iframeConfig');
+    $giroPayConfigUrl = $block->getUrl('stripe/checkout/giropayConfig');
+    $isSave = ($block->isSave()) ? "1" : "0";
+    $data = $block->getDataCard();
+    $datas = json_encode($data);
+    $hasCard = $block->checkFlag;
+    $threeDSecure = $block->getUrl('stripe/checkout/threedSecure');
+    $chargeUrlForApplePay = $block->getUrl('stripe/checkout/charge');
+    $logUrlForApplePay = $block->getUrl('stripe/checkout/applelog');
+    $giroPayChargeUrl = $block->getUrl('stripe/checkout/GiroPayCharge');
+    $instructions = $block->getConfig()->getInstructions();
+    $isDebugMode =  $block->getConfig()->isDebugMode();
+    $isLogin = $block->getCustomerSession()->isLoggedIn();
+?>
+<script type="text/javascript" src="https://checkout.stripe.com/checkout.js"></script>
+<script>
+    if (typeof(window.magenest) === 'undefined')
+    {
+        window.magenest = {};
+    }
+    window.magenest.stripe = {};
+    window.magenest.stripe.publishableKey = '<?php echo $publishableKey; ?>';
+    window.magenest.stripe.iframeConfigUrl = '<?php echo $iframeConfigUrl; ?>';
+    window.magenest.stripe.giroPayConfigUrl = '<?php echo $giroPayConfigUrl; ?>';
+    window.magenest.stripe.isSave = Boolean('<?php echo $isSave; ?>' === '1');
+    window.magenest.stripe.hasCard = '<?php echo $hasCard; ?>';
+    window.magenest.stripe.cards= '<?php echo $datas ?>';
+    window.magenest.stripe.threedSecureUrl = '<?php echo $threeDSecure ?>';
+    window.magenest.stripe.giroPayChargeUrl = '<?php echo $giroPayChargeUrl ?>';
+    window.magenest.stripe.instructions = '<?php echo $instructions ?>';
+    window.magenest.stripe.isLogin = Boolean('<?php echo $isLogin; ?>' === '1');
+    window.magenest.stripe.chargeUrl = '<?php echo $chargeUrlForApplePay ?>';
+    window.magenest.stripe.appleLogUrl = '<?php echo $logUrlForApplePay ?>';
+    <?php if ($isDebugMode) { ?>
+        window.magenest.stripe.applePayDebug = true;
+    <?php } else { ?>
+    window.magenest.stripe.applePayDebug = false;
+
+    <?php }  ?>
+    window.magenest.stripe.isZeroDecimal = Boolean('<?php echo $block->checkIsZeroDecimal(); ?>' === '1');
+</script>

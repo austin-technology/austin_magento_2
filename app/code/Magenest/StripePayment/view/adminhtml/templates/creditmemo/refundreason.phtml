@@ -1,0 +1,23 @@
+<?php
+// @codingStandardsIgnoreFile
+?>
+<?php if($block->canShowOption()){ ?>
+    <div class="admin-refund-reason">
+        <div class="admin__page-section-item-title">
+            <span class="title">Stripe Refund Reason</span>
+        </div>
+        <div>
+            <select name="refund_reason">
+                <option value="">No Reason</option>
+                <option value="duplicate">Duplicate</option>
+                <option value="fraudulent">Fraudulent</option>
+                <option value="requested_by_customer">Requested By Customer</option>
+            </select>
+        </div>
+    </div>
+    <style>
+        .admin-refund-reason{
+            margin-top: 20px
+        }
+    </style>
+<?php } ?>

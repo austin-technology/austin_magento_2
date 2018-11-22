@@ -16,7 +16,22 @@
 
 <?= $block->getChildHtml('order_info') ?>
 <input type="hidden" name="order_id" value="<?= /* @escapeNotVerified */ $_order->getId() ?>"/>
-
+<section class = "admin__page-section order-view-billing-shipping">
+    <div class="admin__page-section-title">
+        <span class="title"><?= /* @escapeNotVerified */ __('Shipping Store') ?></span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item-title">
+                <span class="title"><?= /* @escapeNotVerified */ __('Selected Store to pickup') ?></span>
+        </div>
+        <div class="admin__page-section-item-content">
+		<?php if($_order->getShipStore()){ ?>
+                <div class="order-pickup-ship-title"><?= $_order->getShipStore() ?></div>
+		<?php }else{ ?>
+		<div class="order-pickup-ship-title"><?= "Not available"; ?></div>	
+		<?php } ?>
+    </div>
+</section>
 <section class="admin__page-section order-view-billing-shipping">
     <div class="admin__page-section-title">
         <span class="title"><?= /* @escapeNotVerified */ __('Payment &amp; Shipping Method') ?></span>

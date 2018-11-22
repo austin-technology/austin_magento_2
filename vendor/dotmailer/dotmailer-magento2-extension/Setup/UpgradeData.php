@@ -86,6 +86,41 @@ class UpgradeData implements UpgradeDataInterface
             $this->config->reinit();
         }
 
+        if (version_compare($context->getVersion(), '2.5.0', '<')) {
+            // Save config for allow non subscriber for features; AC and order review trigger campaign
+            //For AC
+            $this->helper->saveConfigData(
+                \Dotdigitalgroup\Email\Helper\Config::XML_PATH_REVIEW_ALLOW_NON_SUBSCRIBERS,
+                1,
+                ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
+                0
+            );
+
+            //For order review
+            $this->helper->saveConfigData(
+                \Dotdigitalgroup\Email\Helper\Config::XML_PATH_CONNECTOR_CONTENT_ALLOW_NON_SUBSCRIBERS,
+                1,
+                ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
+                0
+            );
+
+            //Clear config cache
+            $this->config->reinit();
+        }
+
+        if (version_compare($context->getVersion(), '2.5.1', '<')) {
+            // Save config for allow non subscriber contacts to sync
+            $this->helper->saveConfigData(
+                \Dotdigitalgroup\Email\Helper\Config::XML_PATH_CONNECTOR_SYNC_ALLOW_NON_SUBSCRIBERS,
+                1,
+                ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
+                0
+            );
+
+            //Clear config cache
+            $this->config->reinit();
+        }
+
         $installer->endSetup();
     }
 
@@ -105,7 +140,7 @@ class UpgradeData implements UpgradeDataInterface
     /**
      * Encrypt token and save
      *
-     * @param $user
+     * @param \Magento\User\Model\User $user
      */
     private function encryptAndSaveRefreshToken($user)
     {

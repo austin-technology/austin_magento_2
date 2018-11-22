@@ -36,7 +36,7 @@ class Stopwatch
     /**
      * @param bool $morePrecision If true, time is stored as float to keep the original microsecond precision
      */
-    public function __construct($morePrecision = false)
+    public function __construct(bool $morePrecision = false)
     {
         $this->morePrecision = $morePrecision;
         $this->reset();
@@ -85,7 +85,7 @@ class Stopwatch
     {
         $this->stop('__section__');
 
-        if (1 == count($this->activeSections)) {
+        if (1 == \count($this->activeSections)) {
             throw new \LogicException('There is no started section to stop.');
         }
 

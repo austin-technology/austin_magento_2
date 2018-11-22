@@ -1,4 +1,60 @@
 
+4.4.2 / 2018-09-27
+==================
+
+  * PPI-560 Fix validation message with html tags
+  * PPI-561 Fix composer requirements after 2.3.0 change
+  * PPI-563 Fix store lookup on cancel observer
+
+4.4.1 / 2018-08-31
+==================
+
+  * PPI-500 2.3.0 Compatibility updates
+
+4.4.0 / 2018-08-24
+==================
+
+  * PPI-63 Add description in refund API call
+  * PPI-260 Show detailed Klarna error message in Magento backend
+  * PPI-500 Add support for PHP 7.2 and Magento 2.3
+
+4.3.4 / 2018-08-15
+==================
+
+  * PPI-468 Fix Invoice fails with no tracking info
+
+4.3.3 / 2018-08-03
+==================
+
+  * PI-331 Trunate shipping tracking number and company name if too long
+  * PPI-419 Fix check when processing shipment with invoice
+
+4.3.2 / 2018-07-26
+==================
+
+  * PPI-449 Cleanup code
+
+4.3.1 / 2018-07-23
+==================
+
+  * PPI-419 Remove replaces line from composer.json
+
+4.3.0 / 2018-06-26
+==================
+
+  * PI-91 Add support for passing shipping details in capture request
+
+4.2.0 / 2018-06-08
+==================
+
+  * PPI-372 Add support for FRAUD_STOPPED
+
+4.1.3 / 2018-05-14
+==================
+
+  * PPI-390 Change post check to return 404 instead of exception
+  * PPI-394 Handle for order being a null
+
 4.1.2 / 2018-04-26
 ==================
 
