@@ -1,0 +1,78 @@
+Delete,Delete
+"Are you sure you want to delete this?","Are you sure you want to delete this?"
+"Save and Continue Edit","Save and Continue Edit"
+Save,Save
+"Product Conditions","Product Conditions"
+Conditions,Conditions
+"Related Product Rules","Related Product Rules"
+"The rule is deleted.","The rule is deleted."
+"Can't delete item right now. Please review the log and try again.","Can't delete item right now. Please review the log and try again."
+"This rule no longer exists.","This rule no longer exists."
+"Manage Related Product Rule","Manage Related Product Rule"
+"New Related Product Rule","New Related Product Rule"
+"Edit Related Product Rule","Edit Related Product Rule"
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"The rule is saved.","The rule is saved."
+"Something went wrong while saving the rule data. Please review the error log.","Something went wrong while saving the rule data. Please review the error log."
+Any,Any
+"Same as","Same as"
+More,More
+Less,Less
+"Viewed together","Viewed together"
+"Bought together","Bought together"
+"Product currently viewed","Product currently viewed"
+"Display Manually Added Products Only","Display Manually Added Products Only"
+"Replace Manually Added Products","Replace Manually Added Products"
+"Append to Manually Added Products","Append to Manually Added Products"
+"This rule is using in extension. 
+                Please remove rule from Stores >  Configuration >  Amasty extension > Automated Related Products 
+                before deleting.","This rule is using in extension. 
+                Please remove rule from Stores >  Configuration >  Amasty extension > Automated Related Products 
+                before deleting."
+"Please specify a store.","Please specify a store."
+"Unable to save rule with ID %1. Error: %2","Unable to save rule with ID %1. Error: %2"
+"Unable to save new rule. Error: %1","Unable to save new rule. Error: %1"
+"Rule with specified ID ""%1"" not found.","Rule with specified ID ""%1"" not found."
+"Unable to remove rule with ID %1. Error: %2","Unable to remove rule with ID %1. Error: %2"
+"Unable to remove rule rule. Error: %1","Unable to remove rule rule. Error: %1"
+Edit,Edit
+"Delete ${ $.$data.name }","Delete ${ $.$data.name }"
+"Are you sure you wan't to delete a ${ $.$data.name } record?","Are you sure you wan't to delete a ${ $.$data.name } record?"
+"Click <a href=""https://amasty.com/docs/lib/exe/fetch.php?media=magento_2:customer_group_catalog:customer-group-catalog-attribute-lost.gif"" target=""_blank"">here</a>
+    if you can't find the required attribute from the list below.","Click <a href=""https://amasty.com/docs/lib/exe/fetch.php?media=magento_2:customer_group_catalog:customer-group-catalog-attribute-lost.gif"" target=""_blank"">here</a>
+    if you can't find the required attribute from the list below."
+"Amasty Related Products","Amasty Related Products"
+"Automatic Related Products","Automatic Related Products"
+General,General
+"Query Limit","Query Limit"
+"Limit of records in query for period.","Limit of records in query for period."
+Up-Sells,Up-Sells
+Enabled,Enabled
+"Maximum Products Count","Maximum Products Count"
+"Manually Added Products","Manually Added Products"
+"Show In Stock Products Only","Show In Stock Products Only"
+"Show Up-Sells products only for Out of stock","Show Up-Sells products only for Out of stock"
+"Data Source","Data Source"
+"Product Rule","Product Rule"
+"Data gathered period (days)","Data gathered period (days)"
+"Order Status","Order Status"
+"Category Condition","Category Condition"
+"Brand Condition","Brand Condition"
+"Brand Attribute","Brand Attribute"
+"Price Condition","Price Condition"
+Cross-Sells,Cross-Sells
+"Show Cross-Sell products only for Out of stock","Show Cross-Sell products only for Out of stock"
+"Related Products","Related Products"
+"Show related products only for Out of stock","Show related products only for Out of stock"
+"Indexed rule/product association","Indexed rule/product association"
+"Related Product Rule","Related Product Rule"
+Back,Back
+"Rule Information","Rule Information"
+Name,Name
+Stores,Stores
+"Add New Rule","Add New Rule"
+"All Store Views","All Store Views"
+"Store View","Store View"
+"Delete items","Delete items"
+"Are you sure to delete selected rules?","Are you sure to delete selected rules?"
+ID,ID

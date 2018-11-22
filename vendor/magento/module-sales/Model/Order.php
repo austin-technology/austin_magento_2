@@ -399,6 +399,9 @@ class Order extends AbstractModel implements EntityInterface, OrderInterface
      * @param string $action
      * @return boolean|null
      */
+
+
+
     public function getActionFlag($action)
     {
         if (isset($this->_actionFlag[$action])) {
@@ -1986,6 +1989,26 @@ class Order extends AbstractModel implements EntityInterface, OrderInterface
         }
         return $this->getData(OrderInterface::STATUS_HISTORIES);
     }
+
+
+
+	/**
+	 * {@inheritdoc}
+	 * @return string|null
+	 */
+	public function getShipStore()
+	{		
+		return $this->getData(OrderInterface::SHIP_STORE);
+	}
+	/**
+	 * {@inheritdoc}	 
+	 */
+	 
+	public function setShipStore($id)
+	{
+		
+		return $this->setData(OrderInterface::SHIP_STORE, $id);
+	}
 
     /**
      * {@inheritdoc}

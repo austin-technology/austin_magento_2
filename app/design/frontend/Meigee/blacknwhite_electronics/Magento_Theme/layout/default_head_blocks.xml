@@ -8,5 +8,6 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Meigee_Blacknwhite/etc/page_configuration.xsd">
 	<head>
 		<css src="css/electronics.css" />
+		<script src="js/custom.js"></script>
 	</head>
 </page>

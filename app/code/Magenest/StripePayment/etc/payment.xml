@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magenest. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Payment/etc/payment.xsd">
+    <methods>
+        <method name="magenest_stripe">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_iframe">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_applepay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_giropay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_alipay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_sofort">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_ideal">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_bancontact">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_p24">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+
+        <method name="magenest_stripe_eps">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>

@@ -676,7 +676,7 @@ position: static;
   #mobile-nav .megamenu-wrapper.tabs-menu .megamenu-inner {display: none;}
   #mobile-nav .megamenu-wrapper.tabs-menu .megamenu-inner.expanded li.clicked > .megamenu-inner.expanded,
   #mobile-nav .megamenu-wrapper.tabs-menu li.clicked > .megamenu-inner .submenu.level1 {display: block !important;}
-  .header-wrapper .navbar-collapse.collapse #mobile-nav li.parent a {position: relative;}
+  .header-wrapper .navbar-collapse.collapse #mobile-nav li.parent a {position: relative; opacity: 1;}
   .header-wrapper .navbar-collapse.collapse #mobile-nav li.parent a .icon-more {
     position: absolute;
     right: 5px;

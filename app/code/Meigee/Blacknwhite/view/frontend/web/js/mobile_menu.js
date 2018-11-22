@@ -67,12 +67,13 @@ define([
             this._on(controls.toggleBtn, {'click': toggle});
             this._on(controls.swipeArea, {'swipeleft': toggle});
         },
-
+/*
         toggle: function () {
             if ($('html').hasClass('nav-open')) {
                 $('html').removeClass('nav-open');
                 setTimeout(function () {
                     $('html').removeClass('nav-before-open');
+                    $('html').removeClass('nav-open');
                 }, 300);
             } else {
                 $('html').addClass('nav-before-open');
@@ -80,7 +81,7 @@ define([
                     $('html').addClass('nav-open');
                 }, 42);
             }
-        },
+        },*/
 
         //Add class for expanded option
         isExpanded: function () {
@@ -374,6 +375,7 @@ define([
                 html.removeClass('nav-open');
                 setTimeout(function () {
                     html.removeClass('nav-before-open');
+                    html.removeClass('nav-open');
                 }, 300);
             }
         },
