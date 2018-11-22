@@ -3586,7 +3586,7 @@ table input.qty {	height: 35px;	width: 35px;	line-height: 35px;	font-size: 1.1em
 
 
 
-	
+
 
 
 
@@ -3606,7 +3606,7 @@ table input.qty {	height: 35px;	width: 35px;	line-height: 35px;	font-size: 1.1em
 
 
 
-	
+
 
 
 
@@ -3814,7 +3814,7 @@ font-size: 12px;	padding-top: 10px; padding-bottom:10px;}
 
 
 
-	
+
 
 
 
@@ -3962,7 +3962,7 @@ margin-top: 30px;
 
 
 
-	
+
 
 
 
@@ -4002,7 +4002,7 @@ margin-top: 30px;
 
 
 
-	color:#000;	
+	color:#000;
 
 
 
@@ -4090,9 +4090,9 @@ margin-top: 30px;
  	padding: 20px 5px 0 7px;
  }
 
-.onestepcheckout-index-index .page-main .shipping-method 
+.onestepcheckout-index-index .page-main .shipping-method
 
-.onestep-shipping-method .onestep-shipping-method-list 
+.onestep-shipping-method .onestep-shipping-method-list
 
 .shipping-method-card .shipping-method-title .shipping-method-subtitle {
 
@@ -4156,7 +4156,7 @@ margin-top: 30px;
 
 
 
-  } 
+  }
 
 
 
@@ -4268,7 +4268,7 @@ margin-top: 30px;
 
 	    font-size: 20px;
 
-} 
+}
 
 
 
@@ -4345,4 +4345,3 @@ margin-top: 30px;
 
 
 .action.primary.tocart:hover {background-color:#e41e26;}
-
